@@ -1,0 +1,5 @@
+{
+    "python.pythonPath": "/Users/kqhasaki/Documents/GitHub/Thesis/数据和代码/code/bin/python3",
+    "python.formatting.provider": "autopep8",
+    "git.ignoreLimitWarning": true
+}
