@@ -18,4 +18,5 @@ def display_nd_array(ndarray, name: str = ''):
     '''
     plt.matshow(ndarray, cmap=plt.get_cmap('Greys'))
     plt.savefig(
-        f'{DIR_PATH}/pics/matrixfig-{time.ctime()}' if not name else f'{DIR_PATH}/pics/{name}')
+        f'{DIR_PATH}/pics/matrixfig-{time.ctime()}.pdf' if not name else f'{DIR_PATH}/pics/{name}.pdf',
+        dpi=600)

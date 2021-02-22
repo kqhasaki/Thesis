@@ -1,0 +1,50 @@
+\documentclass{ctexart}
+% 导言区 主要进行一些全局设置
+\usepackage{ctex}
+\usepackage{amsmath,amsfonts,amssymb}
+\usepackage{geometry}                                               
+\usepackage{booktabs}
+\usepackage{caption}
+\usepackage{graphicx, subfig}
+\usepackage{float}
+\usepackage{bm}
+
+\geometry{left=3.2cm,right=3.2cm,top=3.8cm,bottom=3.8cm}    
+\ctexset{section={
+   name={第,章},
+   number=\arabic{section},
+   }
+}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead[RE]{\rightmark} % 在偶数页的右侧显示章名
+\fancyhead[LO]{\rightmark} % 在奇数页的左侧显示小节名
+\fancyhead[LE,RO]{} 
+\renewcommand{\baselinestretch}{1.0}
+\renewcommand\sectionmark[1]{
+\numberwithin{figure}{section}
+\markright{\CTEXifname{\CTEXthesection——}{}#1}}
+\addtolength{\voffset}{0.5cm} \addtolength{\textheight}{-0.5cm}
+\addtolength{\hoffset}{0.4cm}
+% macOS下的字体设置
+\setCJKmainfont{STSong}
+\setCJKsansfont[BoldFont=STHeiti]{STXihei}
+\setCJKmonofont{STFangsong}
+% \titleformat{\section}{}
+% \titleformat{\subsection}{}
+% \titleformat{\subsubsection}{}
+\title{南京审计大学硕士研究生毕业论文}
+\author{蒯强}
+\date{\today}
+
+% 正文区 一个latex文件有且只有一个document环境
+\begin{document}
+   \maketitle % 标题页
+   \newpage
+   % \include{abstract}
+   \tableofcontents
+   \include{chapter1}
+   \include{chapter2}
+   \include{chapter3}
+   \include{chapter4}
+\end{document}

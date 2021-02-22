@@ -29,7 +29,7 @@ end
 # unset irrelevant variables
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV "/Users/kqhasaki/Documents/GitHub/Thesis/数据和代码/code"
+set -gx VIRTUAL_ENV "/Users/kqhasaki/Documents/GitHub/Thesis/data-and-code/code"
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH

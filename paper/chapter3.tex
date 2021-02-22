@@ -1,0 +1,179 @@
+\section{$L_1$范数最小化算法的性能研究}
+在解决式（$2-10$）的优化问题时，我们将问题转化为式（$2-11$）的线性规划问题。
+前文已经提到，这些子问题都需要通过线性规划解决，需要较大的计算量，这就给$L_1$算法在计算性能上提出了改进的需要。
+
+本章我们开拓新的思路来解决（$2-8a$）的优化问题，提出一种近似的方法将问题转化为一个使用牛顿-拉弗森迭代来解决的优化问题。
+避开了一次迭代需要解决多个线性规划的计算量，并通过模拟实验证明我们的方法能够在较小的误差范围内显著提升计算效率。
+
+\subsection{线性规划方法}
+
+\subsection{转化为二次优化问题}
+
+\subsection{一种新的方法}
+
+\subsubsection{理论推导}
+首先我们再次观察式（$2-10$），
+$$
+    f_j = \underset{\theta}{\operatorname{arg\ min}} |A^{(t-1)}\theta - x_j|
+$$
+其中$x_j$为$p$维向量，因而目标函数可以改写成
+$$
+    |A^{(t-1)}\theta -x_j| = \sum_{i=1}^{p}|A^{(t-1)}_i \theta - x_{ji}| 
+    = \sum_{i=1}^{p}\rho(A^{(t-1)}_i \theta - x_{ji})
+$$
+其中$\rho(x) = x(0.5 - \mathbb{I}[x \leq 0])$，
+$\mathbb{I}(x)$为指示函数。$A_i^{(t-1)}$为矩阵$A^{(t-1)}$的第i行。
+即
+$$
+    f_j =  \underset{\theta}{\operatorname{arg\ min}} \sum_{i=1}^{p}\rho(A^{(t-1)}_i \theta - x_{ji}) 
+    \eqno{(3-1)}
+$$
+
+考虑如下线性回归问题：
+$$ Y = \bm{X}^T\bm{\beta}^* + e$$
+其中$\bm{X} = (\bm{X}_1, \bm{X}_2, ..., \bm{X}_{p+1})^T$为$p+1$维随机变量，$\bm{\beta}^* = (\bm{\beta}_0,\bm{\beta}_1, ..., \bm{\beta}_p)^T$为
+回归系数，$Y$为响应变量，$e$为独立于$\bm{X}$的噪声。
+假设我们使用$L_1$损失函数来估计$\bm{\beta}$，
+$$\bm{\beta}^* = \underset{\bm{\beta} \in \mathbb{R}^{p+1}}{\operatorname{arg\ min}}\mathbb{E}|Y - \bm{X}^T\bm{\beta}| = 
+\underset{\bm{\beta} \in \mathbb{R}^{p+1}}{\operatorname{arg\ min}}\mathbb{E}\rho(Y - \bm{X}^T\bm{\beta})
+\eqno{(3-2)}
+$$
+若已知n\ $i.i.d.$ 的样本$(\bm{X}_i, Y_i)\ (1 \leq i \leq n)$，令$\hat{\bm{\beta}}$为$\bm{\beta}^*$的估计量，则
+$$
+    \hat{\bm{\beta}} = \underset{\bm{\beta} \in \mathbb{R}^{p+1}}{\operatorname{arg\ min}}\frac1{n}\sum_{i=1}^{n}\rho(Y_i - \bm{X}_i^T\bm{\beta})
+    \eqno{(3-3)}
+$$
+可以发现式（$3-3$）与（$3-1$）有相同的问题形式，因此我们不妨考虑换一种方法估计$\bm{\beta}^{*}$，用新的估计量来代替$\hat{\bm{\beta}}$。
+
+我们使用牛顿迭代法求解下面的随机优化问题：
+$$
+    \bm{\beta}^* = \underset{\bm{\beta} \in \mathbb{R}^{p+1}}{\operatorname{arg\ min}} \mathbb{E}[G(\bm{\beta};\bm{X},Y)]
+    \eqno{(3-4)}
+$$
+其中$G(\bm{\beta};\bm{X}, Y)$是损失函数，$\bm{X}$和$Y$分别是$p+1$维自变量和一元响应变量，$\bm{\beta}$为回归系数。使用牛顿-拉弗森迭代来求解，
+$$
+    \tilde{\bm{\beta}}_1 = \bm{\beta}_0 - \bm{H}(\bm{\beta}_0)^{-1}\mathbb{E}[g(\bm{\beta};\bm{X},Y)]
+    \eqno{(3-5)}
+$$
+其中$\bm{\beta}_0$是一个初始估计，$g(\bm{\beta};\bm{X},Y)$为损失函数$G(\bm{\beta};\bm{X},Y)$关于$\bm{\beta}$的梯度。\\
+$\bm{H}(\bm{\beta}):=\partial\mathbb{E}[g(\bm{\beta};\bm{X},Y)
+/\partial\bm{\beta}$表示$\mathbb{E}G(\bm{\beta};\bm{X},Y)$的海赛矩阵。特别地，我们这里考虑损失函数为$L_1$损失的特殊情形，
+$$
+    G(\bm{\beta};\bm{X},Y) = \rho(Y - \bm{X}^T\bm{\beta})
+    \eqno{(3-6)}
+$$
+在（$3-6$）的条件下，$g(\bm{\beta};\bm{X},Y) = \bm{X}(\mathbb{I}[Y - \bm{X}^T\bm{\beta} < 0] - 0.5)$。\\
+并且，$\bm{H}(\bm{\beta}) = \mathbb{E}(\bm{X}\bm{X}^Tf(\bm{X}^T(\bm{\beta} - \bm{\beta}^*)))$，这里
+$f(x)$是噪声$e$的密度函数。当初始估计量$\bm{\beta}_0$和$\bm{\beta}^*$很接近时，$\bm{H}(\bm{\beta}_0)$就会很接近
+$\bm{H}(\bm{\beta}^*) = \bm{\Sigma}f(0)$，这里$\bm{\Sigma} = \mathbb{E}\bm{X}\bm{X}^T$是$\bm{X}$的协方差
+矩阵。使用$\bm{H}(\bm{\beta}^*)$替换式（$3-5$）中的$\bm{H}(\bm{\beta}_0)$，可得
+$$
+    \bm{\beta}_1 = \bm{\beta}_0 - \bm{H}(\bm{\beta}^*)^{-1}\mathbb{E}[g(\bm{\beta};\bm{X}, Y)]
+    = \bm{\beta}_0 - \bm{\Sigma}^{-1}f^{-1}(0)\mathbb{E}[g(\bm{\beta}_0;\bm{X},Y)]
+    \eqno{(3-7)}
+$$
+我们在$\bm{\beta}^*$对$\mathbb{E}[g(\bm{\beta}_0;\bm{X},Y)$进行泰勒展开，
+\begin{equation*}
+    \begin{split}
+\mathbb{E}[g(\bm{\beta}_0;\bm{X},Y) &= \bm{H}(\bm{\beta}^*)(\bm{\beta}_0 - \bm{\beta}^*) + O(|\bm{\beta}_0 - \bm{\beta}^*|_2^2) \\
+ &= \bm{\Sigma}f(0)(\bm{\beta}_0 - \bm{\beta}^*) + O(|\bm{\beta}_0 - \bm{\beta}^*|_2^2)
+    \end{split}
+\end{equation*}
+结合式（$3-7$），可以得到
+\begin{equation*}
+    \begin{split}
+        |\bm{\beta}_1 - \bm{\beta}^*|_2 &=  |\bm{\beta}_0 - \bm{\Sigma}^{-1}f^{-1}(0)(
+            \bm{\Sigma}f(0)(\bm{\beta}_0 - \bm{\beta}^*) + O(|\bm{\beta}_0 - \bm{\beta}^*|_2^2)
+        ) - \bm{\beta}^*|_2\\
+        &= O(|\bm{\beta}_0 - \bm{\beta}^*|_2^2)
+    \end{split}
+\end{equation*}
+因此，如果我们得到一个$\bm{\beta}^*$的一致估计量$\bm{\beta}_0$，我们就可以通过式（$3-7$）中的牛顿-拉弗森迭代得到
+偏误更小的估计。
+
+下面我们将（$3-7$）转化成一个最小二乘问题。首先我们重写该式，
+\begin{equation*}
+    \begin{split}
+    \bm{\beta}_1 &= \bm{\Sigma}^{-1}(\bm{\Sigma}\bm{\beta}_0 - f^{-1}(0)\mathbb{E}[g(\bm{\beta}_0;\bm{X},Y)])\\
+    &= \bm{\Sigma}^{-1}\mathbb{E}[\bm{X}\{\bm{X}^T\bm{\beta}_0 - f^{-1}(0)(\mathbb{I}[Y \leq \bm{X}^T\bm{\beta}_0] - 0.5)\}]
+    \end{split}
+\end{equation*}
+这里我们定义一个新的响应变量$\tilde Y$，
+$$
+    \tilde Y = \bm{X}^T\bm{\beta}_0 - f^{-1}(0) (\mathbb{I}[Y \leq \bm{X}^T\bm{\beta}_0] - 0.5)
+$$
+那么$\bm{\beta}_1 = \bm{\Sigma}^{-1}\mathbb{E}(\bm{X}\tilde{Y})$就是线性回归问题$\tilde Y = \bm{X}^T\bm{\beta}$
+的最优回归系数，即
+$$
+    \bm{\beta}_1 = \underset{\bm{\beta} \in \mathbb{R}^{p+1}}{\operatorname{arg\ min}} 
+    \mathbb{E}(\tilde Y - \bm{X}^T \bm{\beta})^2
+$$
+
+\subsubsection{算法步骤}
+假设我们获得了$i.i.d.$样本$(\bm{X}_i, Y_i)$，则构造
+$$
+    \tilde{Y}_i = \bm{X}_i^T\hat{\bm{\beta}}_0 - \hat{f}^{-1}(0)
+    (\mathbb{I}[Y_i \leq \bm{X}_i^T \hat{\bm{\beta}}_0] - 0.5)
+$$
+其中$\hat{\bm{\beta}}_0$为$\bm{\beta}^*$的一个初始估计，$\hat{f}(0)$为$f(0)$的一个估计，那么在牛顿迭代的每一步骤，
+$$
+    \hat{\bm{\beta}} = \underset{\bm{\beta} \in \mathbb{R}^{p+1}}{\operatorname{arg\ min}}
+    \frac1{n} \sum_{i=1}^n(\tilde{Y}_i - \bm{X}_i^T\bm{\beta})^2
+$$
+这里我们选择最小二乘估计量作为$\hat{\bm{\beta}}_0$，并且采用$f(0)$的核密度估计作为$\hat{f}(0)$，
+$$
+    \hat{\bm{\beta}}_0 = \underset{\bm{\beta} \in \mathbb{R}^{p+1}}{\operatorname {arg\ min}}
+    \frac1{n} \sum_{i=1}^n(Y_i - \bm{X}_i^T\bm{\beta})^2
+$$
+$$
+    \hat{f}(0) = \frac1{nh}\sum_{i=1}^nK(\frac{Y_i - \bm{X}^T_i\hat{\bm{\beta}}_0}{h})
+$$
+其中$K(x)$为高斯核函数，$h \rightarrow 0$是带宽。
+
+回到式（$3-1$），我们采用以上介绍的牛顿-拉弗森迭代方法来求解该问题，算法2给出了详细的算法步骤，在每一次迭代时，
+我们需要重新计算$\hat{f}(0)$，·$(\tilde Y_1, \tilde Y_2, ..., \tilde Y_n)$和$\hat{\bm{\beta}}$。这几个量都通过显式表达式计算，
+其中前两者计算的时间复杂度都是$O(n)$，而计算最小二乘结果涉及到矩阵的逆运算，其运算的时间复杂度和输入变量$\bm{X}$的维数$p$有关，
+一般来说时间复杂度为$O(p^3)$。
+
+考虑我们的算法用来解决（$3-1$）的问题，对于维数特别巨大、样本数量较小的宏观经济数据来说，意味着在算法输入中$n >> p$。
+考虑到牛顿-拉弗森迭代算法通常具有迭代迅速的特征。我们认为该算法的时间复杂度小于$O(n^{3.5})$即快于线性规划的方法。
+
+
+\begin{table}[H]%%%%%%开始表格
+    \caption{\textbf{}}
+    \centering%把表居中
+    \begin{tabular}{{p{0.9\columnwidth}}}%三个c代表该表一共三列，内容全部居中
+    
+    \toprule%第一道横线 表头
+    算法2 使用牛顿-拉弗森迭代计算$L_1$最小化问题\\
+    \midrule%第二道横线 符号+解释+单位 中间用&隔开
+    输入：$Y$和$\bm{X}$的样本$\bm{Y} = (Y_1, Y2, ..., Y_n)$，$\bm{X} = (\bm{X}^T_1, \bm{X}^T_2, ..., \bm{X}^T_n)$，
+    迭代次数$t$，高斯核函数$K$，带宽$h_g(g = 1, ..., t)。$
+    \\
+    初始化：给出$$\hat{\bm{\beta}}^{(0)} = \underset{\bm{\beta} \in \mathbb{R}^{p+1}}{\operatorname{arg\ min}}
+    \frac1{n}\sum_{i=1}^n (Y_i - \bm{X}_i^T\bm{\beta})^2$$
+    \\
+    对于$g = 1, ..., t$：
+    \\
+        1. 计算$\hat{f}^{(g)}(0)$，
+        $$
+        \hat{f}^{(g)}(0) = \frac1{nh}\sum_{i=1}^{n}K(\frac{Y_i - \bm{X}_i^T\hat{\bm{\beta}}^{(g-1)}}{h_g})
+        $$
+    \\
+        2. 计算$\tilde{Y} = (\tilde Y_1, \tilde Y_2, ..., \tilde Y_n)$，
+        $$
+        \tilde{Y}_i = \bm{X}^T_i\hat{\bm{\beta}}^{(g-1)} - \hat{f}^{(g)}(0)^{-1}
+        (\mathbb{I}[Y_i \leq \bm{X}_i^T \hat{\bm{\beta}}^{(g-1)}] - 0.5)
+        $$
+    \\
+        3. 计算$\hat{\bm{\beta}}^{(g)}$,
+        $$
+        \hat{\bm{\beta}}^{(g)} = \underset{\bm{\beta} \in \mathbb{R}^{p+1}}{\operatorname{arg\ min}}
+        \frac1{n}\sum_{i=1}^n (\tilde{Y}_i - \bm{X}_i^T\bm{\beta})
+        $$
+    \\
+    输出：$\bm{\beta}^{(t)}$
+    \\
+    \bottomrule%第三道横线
+    \end{tabular}
+\end{table}%%%%%%结束表格

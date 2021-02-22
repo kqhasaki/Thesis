@@ -37,7 +37,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/Users/kqhasaki/Documents/GitHub/Thesis/数据和代码/code"
+VIRTUAL_ENV="/Users/kqhasaki/Documents/GitHub/Thesis/data-and-code/code"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
