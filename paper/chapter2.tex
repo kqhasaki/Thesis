@@ -1,16 +1,61 @@
 \section{$L_1$因子分析}
-\subsection{因子模型简介}
-\subsubsection{经典因子模型}
-设$p$维随机向量$X=(X_1, X_2, ..., X_p)^T$的数学期望为$\mu = (\mu_1, \mu_2, ..., \mu_p)^T$，
-协方差矩阵为$\Sigma$，假设$X$线性依赖于少数几个不可观测的随机变量$f_1, f_2, ..., f_m(m < p)$，和$p$个随机
-误差项$e_1, e_2, ..., e_p$，一般称$f_1, f_2, ..., f_m$为公共因子，称$e_1, e_2, ..., e_p$为特殊因子或
-误差，因子模型有如下表达式：
-$$ X = \mu + Af + e \label{a}  \eqno{(2-1)}$$
-其中$f = (f_1, f_2, ..., f_p)^T$为因子，$A$是因子载荷矩阵，$e = (e_1, e_2, ..., e_p)^T$是特殊因子。
-在式($2-1$)中，随机向量$X$围绕均值的波动由公共因子的线性组合加上一个特殊因子解释。
-经典因子模型假设相互独立，$e_1, e_2, ..., e_p$相互独立并且$f$和$e$的样本之间相互独立。
 
-\subsubsection{近似因子模型}
+\subsection{因子分析简介}
+因子分析是主成分分析的推广和发展，它也是多元统计中广泛使用的一种降维方法。
+因子分析研究相关矩阵或者协方差矩阵的内部依赖关系，它将多个变量综合为少数几个因子，
+以再现原始变量和因子之间的关系。
+
+因子分析最早由英国心理学家Charles Spearman提出，最早用于智力测验得分数据的分析中。
+现在因子分析在心理学、社会学、经济学等学科都取得了广泛应用。
+\subsubsection{正交因子模型}
+
+设$\bm{X} = (X_1, X_2, ..., X_p)^T$是可观测的随机向量，$\mathbb{E}\bm{X} = \bm{\mu}$，
+$\mathbb{D}(\bm{X}) = \bm{\Sigma}$，设$\bm{f} = (f_1, f_2, ..., f_m)^T\\ (m <p)$为不可观测的随机向量，且
+$\mathbb{E}\bm{f} = 0$，$\mathbb{D}(\bm{f}) = \bm{I}_m$（即$\bm{f}$的各分量方差为1，且互不相关）。最后，设
+$\bm{e} = (e_1, e_2, ..., e_p)^T$和$\bm{f}$互不相关，并且
+$$
+    \mathbb{E}(\bm{e}) = \bm{0}\mbox{，}\mathbb{D}(\bm{e}) = diag({\sigma _1}^2, ..., {\sigma _p}^2)
+    \mbox{为对角矩阵。}
+$$
+假设随机向量$\bm{X}$满足以下模型：
+\begin{equation*}
+\left\{
+\begin{array}{clr}
+    X_1 - \mu_1 = a_{11}f_1 + a_{12}f_2 + ... + a_{1m}f_m + e_1, \\
+    X_2 - \mu_2 = a_{21}f_1 + a_{22}f_2 + ... + a_{2m}f_m + e_2, \\
+    ... \\
+    X_p - \mu_p = a_{p1}f_1 + a_{p2}f_2 + ... + a_{pm}f_m + e_p,
+\end{array}
+\right.
+\end{equation*}
+我们称该模型为正交因子模型，矩阵表示为：
+$$
+    \bm{X} = \bm{\mu} + \bm{A}\bm{f} + \bm{e}
+    \eqno{(2-1)}
+$$
+其中$f_1, f_2, ..., f_m$称为$\bm{X}$的公共因子；$e_1, e_2, ..., e_p$称为$\bm{X}$
+的特殊因子。公共因子一般对$\bm{X}$的每一个分量都起作用，而$e_i$一般仅仅对$X_i$起作用。
+并且各个特殊因子之间以及特殊因子和所有公共因子之间都是不相关的。
+其中$\bm{A} = (a_{ij})_{p \times m}$是待估计的系数矩阵，称为因子载荷矩阵。
+$a_{ij}$称为第$i$个变量在第$j$个因子上的载荷，它反映了第$i$个变量在第$j$个因子上的相对重要性。
+
+在因子载荷矩阵$\bm{A}$中，我们计算各列的平方和，记为$q_j^2$，即
+$$
+    q_j^2 = \sum_{i=1}^p a_{ij}^2 (j = 1, 2, ..., m)
+$$
+$q_j^2$表示第$j$个公共因子$f_j$对$\bm{X}$的所有分量的总影响，称为公共因子$f_j$对$\bm{X}$的
+方差贡献。因此如果我们列出$\bm{A}$的所有列平方和，按照方差贡献大小就可以选出最有影响的公共因子。
+因此因子分析的关键步骤就是估计出因子载荷矩阵。
+% 设$p$维随机向量$X=(X_1, X_2, ..., X_p)^T$的数学期望为$\mu = (\mu_1, \mu_2, ..., \mu_p)^T$，
+% 协方差矩阵为$\Sigma$，假设$X$线性依赖于少数几个不可观测的随机变量$f_1, f_2, ..., f_m(m < p)$，和$p$个随机
+% 误差项$e_1, e_2, ..., e_p$，一般称$f_1, f_2, ..., f_m$为公共因子，称$e_1, e_2, ..., e_p$为特殊因子或
+% 误差，因子模型有如下表达式：
+% $$ X = \mu + Af + e \label{a}  \eqno{(2-1)}$$
+% 其中$f = (f_1, f_2, ..., f_p)^T$为因子，$A$是因子载荷矩阵，$e = (e_1, e_2, ..., e_p)^T$是特殊因子。
+% 在式($2-1$)中，随机向量$X$围绕均值的波动由公共因子的线性组合加上一个特殊因子解释。
+% 经典因子模型假设相互独立，$e_1, e_2, ..., e_p$相互独立并且$f$和$e$的样本之间相互独立。
+
+\subsubsection{应用于经济预测的因子模型}
 
 动态因子模型是经典因子模型在时间序数据上的延伸，它提供了从维数众多的经济时间序列数据中提取公共因子来研究和解释
 经济波动的手段。通过放宽模型假设和形式变换，可以将动态因子模型转变为在经济变量预测中更加实用的静态近似因子模型。
@@ -30,14 +75,20 @@ $$X_t = AF_t + e_t \eqno{(2-3)}$$
     $$y_{t+h} = \beta F_t + \beta _yy_t + \varepsilon _{t+h} \eqno{(2-4)}$$
 其中$\beta F_t$包括了近似因子$t$时刻的当期项和滞后项，$\beta _yy_t$代表了指标$y$受自身滞后项的影响，$\varepsilon _{t+h}$
 为预测误差。
-\subsection{因子分析的求解方法}
+
+\subsection{因子模型的估计}
+在$2.1$节中提出，使用因子模型进行分析的关键是找出最具贡献的因子，而关键步骤就是要估计因子载荷矩阵。
+对于（$2-1$）中的因子模型，假设我们已知$p$个相关变量的观测值
+$$\bm{X}_{(i)} = (x_{i1}, ..., x{i_p})^T (i = 1, 2, ..., n)$$
+
+\subsubsection{主成分分析法}
+
+\subsubsection{奇异值分解} 
 述因子模型中，需要估计因子载荷矩阵$A$和因子得分矩阵$F^T$。容易发现，这个问题等价于以下矩阵分解问题：
 $$ X_{p\times n} = \hat{A}_{p\times m} \hat{F^T}_{m\times n} \eqno{(2-5)}$$
 $$
 \hat{A}_{p\times m}, \hat{F^T}_{m\times n} = \underset{A,F^T}{\operatorname{arg\ min} } \|X - AF^T\|_{L_2}
-underset{A, F^T}{\operatorname{arg\ min}} \sum_{i=1}^p \sum_{j=1}^m (x_{ij} - a_i^Tf_i)^2 \eqno{(2-6)}$$
-\subsubsection{奇异值分解}
-\subsubsection{主成分分析}
+ = \underset{A, F^T}{\operatorname{arg\ min}} \sum_{i=1}^p \sum_{j=1}^m (x_{ij} - a_i^Tf_i)^2 \eqno{(2-6)}$$
 
 \subsection{$L_1$因子分析}
 使用最小二乘具有计算简便的特点，
@@ -48,15 +99,36 @@ underset{A, F^T}{\operatorname{arg\ min}} \sum_{i=1}^p \sum_{j=1}^m (x_{ij} - a_
 正因为最小二乘法对数据中的异常值十分敏感，当数据中具有较多离群值时，通过最小二乘、PCA和SVD方法，得到的估计结果也会受到较大影响。
 这里我们提出基于$L_1$范数的方法，来增加估计的健壮性。
 
-\subsection{$L_1$范数及其稳健性}
+
+\subsubsection{$L_1$范数及其稳健性}
 设$\bm{X} = (X_1, X_2, ..., X_p)^T$为一$p$维随机变量，$Y$为响应变量，$\bm{\beta}$为回归系数。
 假设我们观察到$i.i.d. $样本$(\bm{X}_1, \bm{X}_2, ..., \bm{X_n})$和$(Y_1, ..., Y_n)$，我们一般使用$\bm{\beta}$
-的最小二乘估计量¥¥
+的最小二乘估计量
+$$\hat{\bm{\beta}} = \underset{\bm{\beta}}{\operatorname{arg\ min}} \sum_{i=1}^n\|Y_i - \bm{X}^T_i\bm{\beta}\|_{L_2}
+=\underset{\bm{\beta}}{\operatorname{arg\ min}} \sum_{i=1}^n(Y_i - \bm{X}^T_i\bm{\beta})^2$$
+
+在稳健统计中，我们经常使用其他的目标函数，例如使用$L_1$范数来代替$L_2$，
+$$\hat{\bm{\beta}} = \underset{\bm{\beta}}{\operatorname{arg\ min}} \sum_{i=1}^n\|Y_i - \bm{X}^T_i\bm{\beta}\|_{L_1}
+=\underset{\bm{\beta}}{\operatorname{arg\ min}} \sum_{i=1}^n|Y_i - \bm{X}^T_i\bm{\beta}|$$
+
+如图所示，通常使用$L_1$范数在线性回归中可以有效避免离群值造成的干扰。
+\begin{figure}[H]
+    \centering
+    \begin{minipage}[t]{0.48\textwidth}
+    \includegraphics[width=8cm]{pics/l1-l2-diff2.pdf}
+    \end{minipage}
+    \begin{minipage}[t]{0.48\textwidth}
+    \includegraphics[width=8cm]{pics/l1-l2-diff.pdf}
+    \end{minipage}
+    \caption{\small 如图所示，在简单的线性模型的拟合中，出现一个离群值就可以导致最小二乘法拟合出现明显的偏差；
+    而含有较多离群值时最小二乘法拟合变得很不可靠；而采用$L_1$范数则具有相当稳健性。}
+    \label{fig2.1}
+\end{figure}
 
 \subsubsection{$L_1$因子分析算法}
 将式（$2-6$）中的目标函数更换为使用$L_1$范数，可得
 $$\hat{A}_{p\times m}, \hat{F^T}_{m\times n} = \underset{A,F^T}{\operatorname{arg\ min} } \|X - AF^T\|_{L_1}
-=\underset{A, F^T}{\operatorname{arg\ min}} \sum_{i=1}^p \sum_{j=1}^m |x_{ij} - a_i^Tf_i| \eqno{(2-7)}$$
+= \underset{A, F^T}{\operatorname{arg\ min}} \sum_{i=1}^p \sum_{j=1}^m |x_{ij} - a_i^Tf_i| \eqno{(2-7)}$$
 其中$\|.\|_{L_1}$表示矩阵的$L_1$范数。
 
 式（$2-7$）中定义的问题不是一个凸优化问题。但是一旦矩阵$A$或者$F^T$固定为常数，那么该问题就成为了一个凸优化问题，
