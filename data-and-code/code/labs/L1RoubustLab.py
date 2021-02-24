@@ -1,7 +1,7 @@
 import sys
 sys.path.append('..')
 
-import utils.lab as lab
+import utils.low_rank_matrix as lab
 import utils.visualize as visualize
 
 def task1():

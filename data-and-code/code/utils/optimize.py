@@ -69,8 +69,7 @@ def show_l1_l2_diff():
     X = np.asarray([np.ones(x.shape), x]).T
     # y[3] = 30
     # y[12] = 60
-    y[8] = 0
-
+    # y[8] = 0
     res_l1 = l1_optimize(X, y)
     res_l2 = l2_optimize(X, y)
     l1_y_hat = fit_linear(X, res_l1.x)
