@@ -91,5 +91,78 @@ def show_l1_l2_diff():
     plt.savefig(f'{DIR_PATH}/pics/l1-l2-diff-{time.ctime()}.pdf' )
 
 
+def l1_optimize_F(X, A):
+    '''
+        Fix A to optimize F. F = argmin |X - AF|
+
+        for (j = 1, ..., n) {
+            f_j = arg min |Af - x_j|
+        }
+
+        Args: 
+            X: pxn ndarray.
+            A: pxm ndarray.
+        Returns:
+            F: mxn ndarray.
+    '''
+    F_columns = []
+    for x_j in X.T:
+        f_j = l1_optimize(A, x_j).x # f_j mx1
+        F_columns.append(f_j)
+    F = np.asarray(F_columns).T
+    return F
+
+
+def l1_optimize_A(X, F):
+    '''
+        Fix F to optimize A. A = argmin |X - AF|
+
+        for (i = 1, ..., p) {
+            a_j = arg min |x_i - F.Ta_j| # a_j mx1, x_i nx1
+        }
+
+        Args: 
+            X: pxn ndarray.
+            F: mxn ndarray.
+        Returns:
+            A: pxm ndarray.
+    '''
+    A_columns = []
+    for x_i in X:
+        a_i = l1_optimize(F.T, x_i).x
+        A_columns.append(a_i)
+    A = np.asarray(A_columns)
+    return A
+
+
+def l2_optimize_F(X, A):
+    F_columns = []
+    for x_j in X.T:
+        f_j = l2_optimize(A, x_j).x # f_j mx1
+        F_columns.append(f_j)
+    F = np.asarray(F_columns).T
+    return F
+
+
+def l2_optimize_A(X, F):
+    A_columns = []
+    for x_i in X:
+        a_i = l2_optimize(F.T, x_i).x
+        A_columns.append(a_i)
+    A = np.asarray(A_columns)
+    return A
+    
+
+
+def test_l1_optimize():
+    X = np.random.randint(0, 100, [60, 30])
+    A_0 = np.diag(np.ones(60))[:, 0:3]
+    F = l1_optimize_F(X, A_0)
+    print(F.shape)
+    A = l1_optimize_A(X, F)
+    print(A.shape)
+
+
 if __name__ == '__main__':
-    show_l1_l2_diff()
+    # show_l1_l2_diff()
+    test_l1_optimize()

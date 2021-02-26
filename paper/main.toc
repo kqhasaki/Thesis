@@ -1,31 +1,41 @@
-\contentsline {section}{\numberline {第1章}绪论}{3}%
-\contentsline {subsection}{\numberline {1.1}研究背景及意义}{3}%
-\contentsline {subsection}{\numberline {1.2}国内外研究现状}{4}%
-\contentsline {subsubsection}{\numberline {1.2.1}宏观经济预测}{4}%
-\contentsline {subsubsection}{\numberline {1.2.2}因子模型}{4}%
-\contentsline {subsection}{\numberline {1.3}研究内容及技术路线}{4}%
-\contentsline {subsection}{\numberline {1.4}研究创新}{4}%
-\contentsline {subsection}{\numberline {1.5}本文结构}{4}%
-\contentsline {section}{\numberline {第2章}基于$L_1$范数的因子模型估计}{5}%
-\contentsline {subsection}{\numberline {2.1}因子分析简介}{5}%
-\contentsline {subsubsection}{\numberline {2.1.1}正交因子模型}{5}%
-\contentsline {subsubsection}{\numberline {2.1.2}动态因子模型}{5}%
-\contentsline {subsubsection}{\numberline {2.1.3}近似因子模型}{6}%
-\contentsline {subsection}{\numberline {2.2}因子模型的估计}{6}%
-\contentsline {subsubsection}{\numberline {2.2.1}动态因子模型的估计}{6}%
-\contentsline {subsubsection}{\numberline {2.2.2}主成分分析法}{7}%
-\contentsline {subsubsection}{\numberline {2.2.3}奇异值分解}{7}%
-\contentsline {subsection}{\numberline {2.3}基于$L_1$范数的因子模型估计}{8}%
-\contentsline {subsubsection}{\numberline {2.3.1}$L_1$范数及其稳健性}{8}%
-\contentsline {subsubsection}{\numberline {2.3.2}使用$L_1$范数}{9}%
-\contentsline {subsubsection}{\numberline {2.3.3}缺失值处理}{10}%
-\contentsline {subsubsection}{\numberline {2.3.4}算法步骤}{10}%
-\contentsline {subsection}{\numberline {2.4}稳健性实验}{11}%
-\contentsline {subsubsection}{\numberline {2.4.1}数据准备}{11}%
-\contentsline {section}{\numberline {第3章}$L_1$范数最小化算法的性能研究}{13}%
-\contentsline {subsection}{\numberline {3.1}线性规划方法}{13}%
-\contentsline {subsection}{\numberline {3.2}转化为二次优化问题}{13}%
-\contentsline {subsection}{\numberline {3.3}一种新的方法}{13}%
-\contentsline {subsubsection}{\numberline {3.3.1}理论推导}{13}%
-\contentsline {subsubsection}{\numberline {3.3.2}算法步骤}{15}%
-\contentsline {section}{\numberline {第4章}$L_1$因子分析在宏观经济预测中的应用研究}{17}%
+\contentsline {section}{\numberline {第一章}绪论}{4}%
+\contentsline {subsection}{\numberline {\bfseries \S 1.1}研究背景及意义}{4}%
+\contentsline {subsection}{\numberline {\bfseries \S 1.2}国内外研究现状}{6}%
+\contentsline {subsection}{\numberline {\bfseries \S 1.3}研究内容及技术路线}{6}%
+\contentsline {subsection}{\numberline {\bfseries \S 1.4}研究创新}{6}%
+\contentsline {subsection}{\numberline {\bfseries \S 1.5}本文结构}{6}%
+\contentsline {section}{\numberline {第二章}高维最小绝对值回归的性能研究}{7}%
+\contentsline {subsection}{\numberline {\bfseries \S 2.1}简介}{7}%
+\contentsline {subsubsection}{\numberline {\bfseries 2.1.1}$L_1$范数的稳健性}{7}%
+\contentsline {subsubsection}{\numberline {\bfseries 2.1.2}最小绝对值回归的估计方法}{8}%
+\contentsline {subsection}{\numberline {\bfseries \S 2.2}聚类——迭代拆解算法}{8}%
+\contentsline {subsubsection}{\numberline {\bfseries 2.2.1}聚类——迭代拆解算法说明}{8}%
+\contentsline {subsubsection}{\numberline {\bfseries 2.2.2}解决最小绝对值回归问题}{9}%
+\contentsline {subsection}{\numberline {\bfseries \S 2.3}基于替代变量最小二乘的方法}{10}%
+\contentsline {subsection}{\numberline {\bfseries \S 2.4}模拟实验}{12}%
+\contentsline {subsection}{\numberline {\bfseries \S 2.5}本章小结}{12}%
+\contentsline {section}{\numberline {第三章}基于$L_1$范数主成分分析的高维因子模型估计}{13}%
+\contentsline {subsection}{\numberline {\bfseries \S 3.1}因子分析简介}{13}%
+\contentsline {subsubsection}{\numberline {\bfseries 3.1.1}正交因子模型}{13}%
+\contentsline {subsubsection}{\numberline {\bfseries 3.1.2}动态因子模型}{13}%
+\contentsline {subsubsection}{\numberline {\bfseries 3.1.3}近似因子模型}{14}%
+\contentsline {subsection}{\numberline {\bfseries \S 3.2}因子模型的估计}{14}%
+\contentsline {subsubsection}{\numberline {\bfseries 3.2.1}动态因子模型的估计}{14}%
+\contentsline {subsubsection}{\numberline {\bfseries 3.2.2}主成分分析法}{15}%
+\contentsline {subsubsection}{\numberline {\bfseries 3.2.3}奇异值分解}{15}%
+\contentsline {subsection}{\numberline {\bfseries \S 3.3}$L_1$范数主成分分析}{16}%
+\contentsline {subsubsection}{\numberline {\bfseries 3.3.1}使用$L_1$范数}{16}%
+\contentsline {subsubsection}{\numberline {\bfseries 3.3.2}缺失值处理}{16}%
+\contentsline {subsubsection}{\numberline {\bfseries 3.3.3}算法步骤}{17}%
+\contentsline {subsection}{\numberline {\bfseries \S 3.4}稳健性实验}{17}%
+\contentsline {subsubsection}{\numberline {\bfseries 3.4.1}数据准备}{17}%
+\contentsline {subsubsection}{\numberline {\bfseries 3.4.2}实验结果}{18}%
+\contentsline {subsubsection}{\numberline {\bfseries 3.4.3}结论}{19}%
+\contentsline {subsection}{\numberline {\bfseries \S 3.5}基于国内主要月度宏观数据的实证分析}{19}%
+\contentsline {subsubsection}{\numberline {\bfseries 3.5.1}数据说明}{19}%
+\contentsline {subsubsection}{\numberline {\bfseries 3.5.2}实证结果}{20}%
+\contentsline {subsection}{\numberline {\bfseries \S 3.6}本章小结}{21}%
+\contentsline {section}{\numberline {第四章}$L_1$范数主成分分析算法的性能研究}{22}%
+\contentsline {subsection}{\numberline {\bfseries \S 4.1}基于$L_1$范数最大化算法}{22}%
+\contentsline {subsection}{\numberline {\bfseries \S 4.2}基于$L_1$范数最小化算法}{22}%
+\contentsline {subsection}{\numberline {\bfseries \S 4.3}模拟实验}{22}%

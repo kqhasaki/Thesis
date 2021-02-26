@@ -1,39 +1,54 @@
-\documentclass{ctexart}
+\documentclass[zihao=5]{ctexart}
 % 导言区 主要进行一些全局设置
 \usepackage{ctex}
 \usepackage{amsmath,amsfonts,amssymb}
 \usepackage{geometry}                                               
+\geometry{a4paper,scale=0.8}
 \usepackage{booktabs}
 \usepackage{caption}
 \usepackage{graphicx, subfig}
 \usepackage{float}
 \usepackage{bm}
+\usepackage{multirow}
+\usepackage{multirow}
+\usepackage{tabularx}
 
-\geometry{left=3.2cm,right=3.2cm,top=3.8cm,bottom=3.8cm}    
-\ctexset{section={
+
+\ctexset{
+   section={
    name={第,章},
-   number=\arabic{section},
+   number=\chinese{section},
+   format={\Large\centering\heiti}
+   },
+   subsection={
+   name={\bfseries\S},
+   format={\large\centering\heiti}
+   },
+   subsubsection={
+   name={\bfseries},
+   format={\heiti}
    }
 }
 \usepackage{fancyhdr}
 \pagestyle{fancy}
-\fancyhead[RE]{\rightmark} % 在偶数页的右侧显示章名
-\fancyhead[LO]{\rightmark} % 在奇数页的左侧显示小节名
+\fancyhead[R]{\rightmark} % 在偶数页的右侧显示章名
 \fancyhead[LE,RO]{} 
-\renewcommand{\baselinestretch}{1.0}
+
 \renewcommand\sectionmark[1]{
 \numberwithin{figure}{section}
+\numberwithin{equation}{section}
+
 \markright{\CTEXifname{\CTEXthesection——}{}#1}}
 \addtolength{\voffset}{0.5cm} \addtolength{\textheight}{-0.5cm}
 \addtolength{\hoffset}{0.4cm}
 % macOS下的字体设置
-\setCJKmainfont{STSong}
-\setCJKsansfont[BoldFont=STHeiti]{STXihei}
-\setCJKmonofont{STFangsong}
+% \setCJKmainfont{STSong}
+% \setCJKsansfont[BoldFont=STHeiti]{STXihei}
+% \setCJKmonofont{STFangsong}
 % \titleformat{\section}{}
 % \titleformat{\subsection}{}
 % \titleformat{\subsubsection}{}
-\title{南京审计大学硕士研究生毕业论文}
+\title{南京审计大学硕士研究生毕业论文 —— 基于$L_1$范数的稳健方法在高维宏观经济预测中的应用问题研究}
 \author{蒯强}
 \date{\today}
 
