@@ -6,13 +6,13 @@
 \geometry{a4paper,scale=0.8}
 \usepackage{booktabs}
 \usepackage{caption}
-\usepackage{graphicx, subfig}
+\usepackage{subcaption}
+\usepackage{graphicx}
 \usepackage{float}
 \usepackage{bm}
 \usepackage{multirow}
 \usepackage{multirow}
 \usepackage{tabularx}
-
 
 \ctexset{
    section={
@@ -37,6 +37,8 @@
 \renewcommand\sectionmark[1]{
 \numberwithin{figure}{section}
 \numberwithin{equation}{section}
+\renewcommand{\thesubfigure}{\alph{subfigure}}
+
 
 \markright{\CTEXifname{\CTEXthesection——}{}#1}}
 \addtolength{\voffset}{0.5cm} \addtolength{\textheight}{-0.5cm}
