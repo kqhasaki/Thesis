@@ -43,23 +43,19 @@
 \markright{\CTEXifname{\CTEXthesection——}{}#1}}
 \addtolength{\voffset}{0.5cm} \addtolength{\textheight}{-0.5cm}
 \addtolength{\hoffset}{0.4cm}
-% macOS下的字体设置
-% \setCJKmainfont{STSong}
-% \setCJKsansfont[BoldFont=STHeiti]{STXihei}
-% \setCJKmonofont{STFangsong}
-% \titleformat{\section}{}
-% \titleformat{\subsection}{}
-% \titleformat{\subsubsection}{}
-\title{南京审计大学硕士研究生毕业论文 —— 基于$L_1$范数的稳健方法在高维宏观经济预测中的应用问题研究}
+
+\title{南京审计大学硕士研究生毕业论文 —— 稳健$L_1$范数主成分分析在宏观经济预测中的应用研究}
 \author{蒯强}
 \date{\today}
 
-% 正文区 一个latex文件有且只有一个document环境
 \begin{document}
-   \maketitle % 标题页
+   \maketitle 
    \newpage
-   % \include{abstract}
    \tableofcontents
+   \thispagestyle{empty} 
+   \newpage
+   \setcounter{page}{1}
+
    \include{chapter1}
    \include{chapter2}
    \include{chapter3}

@@ -198,10 +198,10 @@ def pca_solution(X, m: int):
 
 def test_method(X, m, method):
     solution_map = {
-        'PCA': pca_solution,
-        'SVD': svd_solution,
-        'L1': l1_solution,
-        'Re-Weighted-L2': l2_solution
+        'SVD': pca_solution,
+        'IRP-L2': svd_solution,
+        'IRP-L1': l1_solution,
+        'IRLS': l2_solution
     }
     solution = solution_map.get(method)
     A, F = solution(X, m)
@@ -212,13 +212,13 @@ def test_method(X, m, method):
 
 def test():
     X = gen_low_rank_matrix(3, 80)
-    X = disturb_matrix(X, 3, 0)
+    X = disturb_matrix(X, 10, 0)
     X = centralize_data(X)
     # print(l1_solution(X, 3))
     # test_method(X, 3, 'SVD')
-    # test_method(X, 3, 'PCA')
-    # test_method(X, 3, 'L1')
-    test_method(X, 3, 'Re-Weighted-L2')
+    # test_method(X, 3, 'IRP-L2')
+    test_method(X, 3, 'IRP-L1')
+    # test_method(X, 3, 'IRLS')
 
 if __name__ == '__main__':
     test()

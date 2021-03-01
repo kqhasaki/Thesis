@@ -1,46 +1,48 @@
 \relax 
-\@writefile{toc}{\contentsline {section}{\numberline {第二章}高维最小绝对值回归的性能研究}{7}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {\bfseries  \S  2.1}简介}{7}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {\bfseries  2.1.1}$L_1$范数的稳健性}{7}\protected@file@percent }
-\newlabel{l2loss}{{2.1}{7}}
-\newlabel{l1loss}{{2.2}{7}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.1}{\ignorespaces \small 如图所示，在简单的线性模型的拟合中，出现一个离群值就可以导致最小二乘法拟合出现明显的偏差； 而含有较多离群值时最小二乘法拟合变得很不可靠；而采用$L_1$范数则具有相当稳健性。\relax }}{8}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {第二章}基于$L_1$范数主成分分析的高维因子模型估计}{4}\protected@file@percent }
+\newlabel{chapter3}{{二}{4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\bfseries  \S  2.1}因子分析简介}{4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\bfseries  2.1.1}正交因子模型}{4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\bfseries  2.1.2}动态因子模型}{4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\bfseries  2.1.3}近似因子模型}{5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\bfseries  \S  2.2}因子模型的估计}{5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\bfseries  2.2.1}近似因子模型的主成分估计}{5}\protected@file@percent }
+\newlabel{s-fac}{{2.4}{5}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\bfseries  2.2.2}$L_2$范数主成分分析}{6}\protected@file@percent }
+\newlabel{pca-l2-p1}{{2.7}{6}}
+\newlabel{pca-l2-p2}{{2.8}{7}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\bfseries  \S  2.3}$L_1$范数主成分分析}{7}\protected@file@percent }
+\newlabel{p3}{{2.9}{7}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\bfseries  2.3.1}$L_1$范数主成分分析的交替凸优化算法}{7}\protected@file@percent }
+\newlabel{pro1}{{2.10}{7}}
+\newlabel{pro2}{{2.11}{8}}
+\newlabel{loss-a}{{2.12}{8}}
+\newlabel{subpro}{{2.13}{8}}
+\newlabel{subproabs}{{2.14}{8}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\bfseries  2.3.2}缺失值处理}{8}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\bfseries  2.3.3}算法步骤}{8}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\bfseries  \S  2.4}稳健性实验}{9}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\bfseries  2.4.1}数据准备}{9}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2.1}{\ignorespaces \small $30\times 30$的模拟矩阵，左下角白色代表缺失值，图中灰度越深代表元素的绝对值越大，因此深黑色的点代表了离群值\relax }}{10}\protected@file@percent }
 \providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
-\newlabel{fig2.1}{{2.1}{8}}
-\newlabel{l1losstotal}{{2.3}{8}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {\bfseries  2.1.2}最小绝对值回归的估计方法}{8}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {\bfseries  \S  2.2}聚类——迭代拆解算法}{8}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {\bfseries  2.2.1}聚类——迭代拆解算法说明}{9}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {\bfseries  2.2.2}优化最小绝对值回归}{9}\protected@file@percent }
-\newlabel{l1loss2}{{2.4}{9}}
-\newlabel{clusterl1}{{2.5}{9}}
-\newlabel{aid-demo1}{{\caption@xref {aid-demo1}{ on input line 165}}{10}}
-\newlabel{sub@aid-demo1}{{}{10}}
-\newlabel{aid-demo2}{{\caption@xref {aid-demo2}{ on input line 169}}{10}}
-\newlabel{sub@aid-demo2}{{a}{10}}
-\newlabel{aid-demo3}{{\caption@xref {aid-demo3}{ on input line 173}}{10}}
-\newlabel{sub@aid-demo3}{{b}{10}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.2}{\ignorespaces \small 聚类拆解步骤示意图\relax }}{10}\protected@file@percent }
-\newlabel{aid-demo}{{2.2}{10}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {\bfseries  2.2.3}优化高维最小绝对值回归}{10}\protected@file@percent }
-\newlabel{l1conclusion}{{2.7}{11}}
-\newlabel{fcondition}{{2.8}{11}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {\bfseries  \S  2.3}一种基于替代变量的估计方法}{11}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {\bfseries  2.3.1}基于替代变量的估计方法}{11}\protected@file@percent }
-\newlabel{rho-problem}{{2.10}{11}}
-\newlabel{rho-condition}{{2.13}{12}}
-\newlabel{rho-beta1}{{2.14}{12}}
-\newlabel{beta1-original}{{2.17}{12}}
-\newlabel{yl2loss}{{2.19}{12}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {\bfseries  2.3.2}优化高维最小绝对值回归}{13}\protected@file@percent }
-\newlabel{beta1-lasso}{{2.21}{13}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {\bfseries  \S  2.4}模拟实验}{13}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {\bfseries  2.4.1}数据准备}{14}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {\bfseries  2.4.2}实验结果}{14}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {\bfseries  \S  2.5}本章小结}{14}\protected@file@percent }
+\newlabel{fig2.1}{{2.1}{10}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\bfseries  2.4.2}实验结果}{10}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2.2}{\ignorespaces \small 图示为取$N = 80, M=3$，缺失值和离群值比例均为$10\%$的情况下，多次实验中平均重构残差的平方的分布情况，横轴表示残差平方， 纵轴表示频数。 可以看出IRP-L1的重构残差表现最好。\relax }}{11}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\bfseries  \S  2.5}基于国内主要月度宏观经济数据的实证研究}{11}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\bfseries  2.5.1}扩散指数模型}{12}\protected@file@percent }
+\newlabel{predict-factor-model}{{2.16}{12}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\bfseries  2.5.2}因子个数判定}{12}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\bfseries  2.5.3}数据说明}{12}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2.3}{\ignorespaces \small 部分指标的箱形图和各经济指标的峰度分布情况\relax }}{13}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\bfseries  2.5.4}实证结果}{14}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2.4}{\ignorespaces \small 因子载荷矩阵\relax }}{14}\protected@file@percent }
+\newlabel{diff-factors}{{2.4}{14}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.5}{\ignorespaces \small 向前一个月预测\relax }}{15}\protected@file@percent }
+\newlabel{one-month}{{2.5}{15}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\bfseries  \S  2.6}本章小结}{15}\protected@file@percent }
 \@setckpt{chapter2}{
-\setcounter{page}{15}
-\setcounter{equation}{21}
+\setcounter{page}{16}
+\setcounter{equation}{16}
 \setcounter{enumi}{0}
 \setcounter{enumii}{0}
 \setcounter{enumiii}{0}
@@ -49,16 +51,16 @@
 \setcounter{mpfootnote}{0}
 \setcounter{part}{0}
 \setcounter{section}{2}
-\setcounter{subsection}{5}
+\setcounter{subsection}{6}
 \setcounter{subsubsection}{0}
 \setcounter{paragraph}{0}
 \setcounter{subparagraph}{0}
-\setcounter{figure}{2}
+\setcounter{figure}{5}
 \setcounter{table}{0}
 \setcounter{parentequation}{0}
 \setcounter{caption@flags}{0}
 \setcounter{continuedfloat}{0}
-\setcounter{subfigure}{3}
+\setcounter{subfigure}{0}
 \setcounter{subtable}{0}
 \setcounter{float@type}{4}
 }
