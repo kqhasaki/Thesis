@@ -17,6 +17,7 @@ from low_rank_matrix import gen_low_rank_matrix, disturb_matrix
 import visualize
 from sklearn import preprocessing
 import optimize
+from sv import SV
 
 
 def is_close(a, b):
@@ -116,7 +117,7 @@ def l1_solution(X, m: int):
         if (iteration > 0 and if_stop_F(F_new, F) and if_stop_A(A_new, A)):
             break
         
-        if (iteration > 30):
+        if (iteration > 20):
             break
 
         F = F_new
@@ -134,6 +135,27 @@ def l1_solution(X, m: int):
     # A = A.dot(np.sqrt(Sigma))
     # F = np.sqrt(Sigma).dot(F)
     return (A, F)
+
+
+def sv_optimize_F(X, A, m):
+    F_columns = []
+    for x_j in X.T:
+        f_j = optimize.l1_optimize(A, x_j).x # f_j mx1
+        F_columns.append(f_j)
+    F = np.asarray(F_columns).T
+    return F
+
+
+def sv_optimize_A(X, F, m):
+    A_columns = []
+    for x_i in X:
+        sv = SV(F.T, x_i, m, int(X.shape[0]/10), None)
+        sv.fit()
+        # a_i = l1_optimize(F.T, x_i).x
+        a_i = sv.beta
+        A_columns.append(a_i)
+    A = np.asarray(A_columns)
+    return A
 
 
 def l2_solution(X, m: int):
@@ -160,7 +182,7 @@ def l2_solution(X, m: int):
         if (iteration > 0 and if_stop_F(F_new, F) and if_stop_A(A_new, A)):
             break
         
-        if (iteration > 30):
+        if (iteration > 20):
             break
 
         F = F_new
@@ -199,9 +221,10 @@ def pca_solution(X, m: int):
 def test_method(X, m, method):
     solution_map = {
         'SVD': pca_solution,
-        'IRP-L2': svd_solution,
-        'IRP-L1': l1_solution,
-        'IRLS': l2_solution
+        'ICP-L2': svd_solution,
+        'ICP-L1': l1_solution,
+        'IRLS': l2_solution,
+        'SV-ICP-L1': sv_l1_solution,
     }
     solution = solution_map.get(method)
     A, F = solution(X, m)
@@ -211,13 +234,14 @@ def test_method(X, m, method):
 
 
 def test():
-    X = gen_low_rank_matrix(3, 80)
+    X = gen_low_rank_matrix(3, 90)
     X = disturb_matrix(X, 10, 0)
     X = centralize_data(X)
     # print(l1_solution(X, 3))
-    # test_method(X, 3, 'SVD')
+    test_method(X, 3, 'SVD')
     # test_method(X, 3, 'IRP-L2')
-    test_method(X, 3, 'IRP-L1')
+    # test_method(X, 3, 'ICP-L1')
+    test_method(X, 3, 'SV-ICP-L1')
     # test_method(X, 3, 'IRLS')
 
 if __name__ == '__main__':

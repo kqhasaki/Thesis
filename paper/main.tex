@@ -30,6 +30,10 @@
    }
 }
 \usepackage{fancyhdr}
+
+\bibliographystyle{plain}
+% \bibliographystyle{unsrt}
+
 \pagestyle{fancy}
 \fancyhead[R]{\rightmark} % 在偶数页的右侧显示章名
 \fancyhead[LE,RO]{} 
@@ -39,12 +43,11 @@
 \numberwithin{equation}{section}
 \renewcommand{\thesubfigure}{\alph{subfigure}}
 
-
 \markright{\CTEXifname{\CTEXthesection——}{}#1}}
 \addtolength{\voffset}{0.5cm} \addtolength{\textheight}{-0.5cm}
 \addtolength{\hoffset}{0.4cm}
 
-\title{南京审计大学硕士研究生毕业论文 —— 稳健$L_1$范数主成分分析在宏观经济预测中的应用研究}
+\title{南京审计大学硕士研究生毕业论文 \\—— $L_1$范数主成分分析及其在宏观经济因子模型中的应用}
 \author{蒯强}
 \date{\today}
 
@@ -56,8 +59,11 @@
    \newpage
    \setcounter{page}{1}
 
+   \nocite{*}
    \include{chapter1}
    \include{chapter2}
    \include{chapter3}
    \include{chapter4}
+   \addcontentsline{toc}{section}{参考文献}%将“参考文献加入目录中”
+   \bibliography{refs}
 \end{document}

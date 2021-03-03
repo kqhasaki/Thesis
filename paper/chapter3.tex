@@ -1,12 +1,12 @@
-\section{高维最小绝对值回归的性能研究}
+\section{最小绝对值回归的性能研究}\label{chapter3}
 
-本文的主题是$L_1$范数稳健方法在宏观经济中的应用问题研究。
+本文的主题是稳健$L_1$范数主成分分析方法在宏观经济中的应用问题研究。
 $L_1$范数是最常用的几种重要范数之一，它在数值计算、统计学、运筹学、
 机器学习等领域有着极为重要的应用。在统计学研究中，已经基于$L_1$范数发展出了许多
 稳健统计方法，主要是利用$L_1$范数的良好统计性质。
 
-$L_1$范数稳健方法在计量经济学中已有广泛应用，
-其中一个重要应用就是最小绝对值回归。最小绝对值回归最早提出是为了弥补最小二乘法的不足。
+$L_1$范数稳健方法在计量经济学中一个重要应用是最小绝对值回归。
+最小绝对值回归最早提出是为了弥补最小二乘法的不足。
 使用最小二乘法建立的线性回归模型虽然具有较好的解释性，
 但是高斯——马尔可夫条件对模型变量的分布有正态性的要求。因此直接使用最小二乘法来建立模型，往往
 对原始数据的分布情况要求高。即使变量满足了正态分布，但在模型系数估计时，样本中离群值的存在对
@@ -35,8 +35,17 @@ $L_1$范数稳健方法在计量经济学中已有广泛应用，
 另一种是基于替代变量的牛顿迭代方法，两种算法基于不同的出发点，
 都在一定程度上对解决最小绝对值回归问题做了优化。
 
+我们在第\ref{chapter2}章中介绍了求解$L_1$主成分分析的交替凸优化算法，
+该算法简洁直观，并交替解决的子凸优化问题可以有最优解。其中\eqref{subpro}和\eqref{subproabs}
+在交替凸优化算法中我们采用线性规划来求解，
+但是对于高维宏观经济数据而言，维数$p$和样本量$n$都非常大，由于交替凸优化算法中大量采用线性规划法求解，
+使得计算开销非常大。而在许多场合，我们常常希望快速得到近似因子用于进一步分析，这就
+对$L_1$主成分分析提出了性能上的要求。本章研究最小绝对值回归的性能优化算法，
+有助于我们改进交替凸优化算法的尝试，对本课题的研究有着重要意义。
+
+
 \subsection{简介}
-\subsubsection{$L_1$范数的稳健性}
+\subsubsection{最小绝对值回归的稳健性}
 
 $L_2$范数最优化问题最常见的是最小二乘法。
 最小二乘法的优点很多，这里不赘述。尽管在求解大部分问题时用最小二乘估计求解可以得到比较令人满意
@@ -227,7 +236,7 @@ $C_{k-}^t = \{i \in C_k^t | \theta_i < 0\}$，见图\ref{aid-demo}b，这两个�
 这就证明了$E^* = E^t$，注意到$ \sum_{k \in K^t} |C_k^t||y_K^t - \sum_{j\in J}x_{kj} \hat{\bm{\beta}}_j^t|$
 就是$F^t$，因此$E^t = F^t$。因此最后一次迭代$F^T$的最优解$\hat{\bm{\beta}}_j^T$就是原问题的最优解。
 
-\subsubsection{优化高维最小绝对值回归}
+\subsubsection{优化带有惩罚项的最小绝对值回归}
 前面给出的算法已经在很大程度上优化了在处理高维宏观经济变量时，最小绝对值回归计算性能的问题。
 而在高维宏观经济实证研究中，变量的维数众多，在建立最小绝对值回归模型时，还需要考虑到变量筛选问题。
 
@@ -268,16 +277,16 @@ $\mathbb{I}(x)$为指示函数。
 \bm{\beta}^* = \underset{\bm{\beta} \in \mathbb{R}^{p}}{\operatorname{arg\ min}}\mathbb{E}|Y - \bm{X}^T\bm{\beta}| = 
 \underset{\bm{\beta} \in \mathbb{R}^{p}}{\operatorname{arg\ min}}\mathbb{E}\rho(Y - \bm{X}^T\bm{\beta})
 \end{equation}
-若已知n\ $i.i.d.$ 的样本$(\bm{X}_i, Y_i)\ (1 \leq i \leq n)$，令$\hat{\bm{\beta}}$为$\bm{\beta}^*$的估计量，则
+若已知n\ $i.i.d.$ 的样本$(\bm{X}_i, Y_i)\ (1 \leq i \leq n)$，令$\hat{\bm{\beta}}$为$\bm{\beta}^*$的估计量，
 \begin{equation}\label{rho-problem}
-    \hat{\bm{\beta}} = \underset{\bm{\beta} \in \mathbb{R}^{p}}{\operatorname{arg\ min}}\frac1{n}\sum_{i=1}^{n}\rho(Y_i - \bm{X}_i^T\bm{\beta})
+    \hat{\bm{\beta}} = \underset{\bm{\beta} \in \mathbb{R}^{p}}{\operatorname{arg\ min}}\frac1{n}\sum_{i=1}^{n}\rho(Y_i - \bm{X}_i^T\bm{\beta}).
 \end{equation}
 
 一般地，我们使用牛顿迭代法求解某随机优化问题：
 \begin{equation}
-    \bm{\beta}^* = \underset{\bm{\beta} \in \mathbb{R}^{p+1}}{\operatorname{arg\ min}} \mathbb{E}[G(\bm{\beta};\bm{X},Y)]
+    \bm{\beta}^* = \underset{\bm{\beta} \in \mathbb{R}^{p}}{\operatorname{arg\ min}} \mathbb{E}[G(\bm{\beta};\bm{X},Y)]
 \end{equation}
-其中$G(\bm{\beta};\bm{X}, Y)$是损失函数，$\bm{X}$和$Y$分别是$p+1$维自变量和一元响应变量，$\bm{\beta}$为回归系数。使用牛顿-拉弗森迭代来求解，
+其中$G(\bm{\beta};\bm{X}, Y)$是损失函数，$\bm{X}$和$Y$分别是$p$维自变量和一元响应变量，$\bm{\beta}$为回归系数。使用牛顿-拉弗森迭代来求解，
 \begin{equation}
     \tilde{\bm{\beta}}_1 = \bm{\beta}_0 - \bm{H}(\bm{\beta}_0)^{-1}\mathbb{E}[g(\bm{\beta};\bm{X},Y)]
 \end{equation}
@@ -287,9 +296,9 @@ $\bm{H}(\bm{\beta}):=\partial\mathbb{E}[g(\bm{\beta};\bm{X},Y)
 \begin{equation}\label{rho-condition}
     G(\bm{\beta};\bm{X},Y) = \rho(Y - \bm{X}^T\bm{\beta})
 \end{equation}
+在\eqref{rho-condition}的条件下，$g(\bm{\beta};\bm{X},Y) = \bm{X}(\mathbb{I}[Y - \bm{X}^T\bm{\beta} < 0] - 0.5)$。
 
-在\eqref{rho-condition}的条件下，$g(\bm{\beta};\bm{X},Y) = \bm{X}(\mathbb{I}[Y - \bm{X}^T\bm{\beta} < 0] - 0.5)$。\\
-并且，$\bm{H}(\bm{\beta}) = \mathbb{E}(\bm{X}\bm{X}^Tf(\bm{X}^T(\bm{\beta} - \bm{\beta}^*)))$，这里
+并且$\bm{H}(\bm{\beta}) = \mathbb{E}(\bm{X}\bm{X}^Tf(\bm{X}^T(\bm{\beta} - \bm{\beta}^*)))$，这里
 $f(x)$是噪声$e$的密度函数。当初始估计量$\bm{\beta}_0$和$\bm{\beta}^*$很接近时，$\bm{H}(\bm{\beta}_0)$就会很接近
 $\bm{H}(\bm{\beta}^*) = \bm{\Sigma}f(0)$，这里$\bm{\Sigma} = \mathbb{E}\bm{X}\bm{X}^T$是$\bm{X}$的协方差
 矩阵。使用$\bm{H}(\bm{\beta}^*)$替换$\bm{H}(\bm{\beta}_0)$，可得
@@ -349,8 +358,8 @@ $\bm{H}(\bm{\beta}^*) = \bm{\Sigma}f(0)$，这里$\bm{\Sigma} = \mathbb{E}\bm{X}
 $$
     \hat{f}(0) = \frac1{nh}\sum_{i=1}^nK(\frac{Y_i - \bm{X}^T_i\hat{\bm{\beta}}_0}{h})
 $$
-其中$K(x)$为核函数，$h \rightarrow 0$是带宽，本方法对待估系数的稀疏性有较强的要求（Weidong Liu，2020），并且
-在每次迭代都需要调整带宽。
+其中$K(x)$为核函数，$h \rightarrow 0$是带宽，本方法
+在每次迭代都需要调整带宽\cite{svn}。
 
 只要给定的初始值$\hat{\bm{\beta}}_0$是$\bm{\beta}^*$的一致估计量，那么$\hat{\bm{\beta}}$就将会是一个更加接近
 $\bm{\beta}^*$的新的估计，并且\eqref{yl2loss}为最小二乘问题，其计算十分简便。
@@ -367,7 +376,7 @@ $\bm{\beta}^*$的新的估计，并且\eqref{yl2loss}为最小二乘问题，其
     输入：$Y$和$\bm{X}$的样本$\bm{Y} = (Y_1, Y2, ..., Y_n)$，$\bm{X} = (\bm{X}^T_1, \bm{X}^T_2, ..., \bm{X}^T_n)$，
     迭代次数$T$，核函数$K$，依赖于迭代次数的带宽$h_t(t = 1, ..., T)。$
     \\
-    初始化：给出初始相合估计量，$\hat{\bm{\beta}}^{(0)} $，将样本划分成$J$个均等子集，样本量均为$m$，为了给出最小绝对值回归估计量的相合估计，
+    初始化：给出初始相合估计量$\hat{\bm{\beta}}^{0} $，将样本划分成$J$个均等子集，样本量均为$m$，为了给出最小绝对值回归估计量的相合估计，
     我们取任一子集里面的数据，直接使用最小一乘法估计$\hat{\bm{\beta}}_{(0)}$。
     \\
     对于$t = 1, ..., T$：
@@ -390,13 +399,13 @@ $\bm{\beta}^*$的新的估计，并且\eqref{yl2loss}为最小二乘问题，其
         \frac1{m}\sum_{i=1}^m (\tilde{Y}_i - \bm{X}_i^T\bm{\beta})^2
         $$
     \\
-    输出：$\bm{\beta}^{(T)}$
+    输出：$\hat{\bm{\beta}}^{T}$
     \\
     \bottomrule%第三道横线
     \end{tabular}
 \end{table}%%%%%%结束表格
 
-\subsubsection{优化高维最小绝对值回归}
+\subsubsection{优化带有惩罚项的最小绝对值回归}
 在高维相依自变量的情形下，我们只需在\eqref{beta1-original}加入惩罚项即可，例如我们使用$L_1$正则化，那么
 \begin{equation}
     \bm{\beta}_{1, \lambda} =\underset{\bm{\beta} \in \mathbb{R}^{p}}{\operatorname{arg\ min}} 
@@ -413,52 +422,54 @@ $\bm{\beta}^*$的新的估计，并且\eqref{yl2loss}为最小二乘问题，其
 本章前面两节介绍了聚类——迭代拆解算法和一种基于替代变量的迭代算法，
 前者通过减小问题规模、逐步逼近最优解的方法来提升计算性能，
 而后者通过变量替换的方法将最小绝对值回归问题转化为最小二乘问题，在给定一个相合估计条件下逼近最优解。
-两种方法都可以处理带有惩罚项和不带有惩罚项的最小绝对值回归问题，并且我们已经给出了各自计算的具体步骤。
+两种方法都可以处理带有惩罚项和不带有惩罚项的最小绝对值回归问题，并且前文已经给出了两种算法实现的具体步骤。
 
-本节将通过一个数值模拟实验来比较和分析两种方法的性能表现，分析其优缺点。
+本节将通过一个数值模拟实验来比较和分析两种方法的性能表现，分析算法的收敛情况，
+并对算法的解的确性进行观察。
 
 \subsubsection{数据准备}
-设定模拟数据来自下面的模型：
+为测试两种算法求解一般最小绝对值回归问题的性能，设定模拟数据来自下面的模型：
 \begin{equation*}
     {Y}_i = \bm{X}_i^T \bm{\beta} + e_i, i = 1, 2, ..., n
 \end{equation*}
-其中$\bm{X}_i = (1, X_{i,1}, ..., X_{i, p-1})$为$p$维随机向量，
-在比较不带惩罚项的最小绝对值回归的场合，令$X_i$的各维度服从独立同分布。
+其中$\bm{X}_i = (1, X_{i,1}, ..., X_{i, p-1})$为$p$维随机向量。
+假设$\bm{X}$的各维独立并服从正态同分布，$\bm{e}$为高斯噪声。
 我们设置不同$p, n$的组合用来测试算法的计算性能，并观察在不同的噪声分布下，估计结果的准确性。
-对于系数$\bm{\beta}$，设$s$为其$L_0$范数，取
+对于系数$\bm{\beta}$，设$l$为其$L_0$范数，取
 $$
-    \bm{\beta} = (\frac{10}{s}, \frac{20}{s}, ..., \frac{10(s-1)}{s}, 10, 0, ..., 0)
+    \bm{\beta} = (\frac{10}{l}, \frac{20}{l}, ..., \frac{10(l-1)}{l}, 10, 0, ..., 0)
 $$
 
-对于算法2.1，以下简称SVN的每步最佳带宽依赖于数据集的性质，参考weidong liu等，这里给出
+算法2.1（以下简称SVN）的每步最佳带宽依赖于数据集的性质，参考weidong liu等，这里给出
 $$
     h^t = \sqrt{\frac{s\log n}{n}} + s^{-1/2} (\frac{s^2\log n}{10m})^{(t+1)/2},
 $$
-核函数选取高斯核函数。
+核函数选取高斯核函数，其中$s$的理论最优取值和$l$有关，而本次实验中取常数。
 
 对于聚类——迭代拆解算法，我们这里选择初始聚类方法如下：
 首先从原始数据中少量采样（本实验取$max\{0.5\%n, m\}$），通过最小绝对值回归给出系数估计$\bm{\beta}^{init}$，
 对每一个原始数据点，计算其在当前模型系数下的残差，然后进行K-means聚类得到$C^0$。
 
-本次实验对比基准使用线性规划内点法（以下简称LP）求解。我们给出了SVN算法和AID算法的Python3实现，数值计算基于numpy包，
+本次实验最小绝对值回归性能测试的对比基准方法是：线性规划内点法（以下简称LP）；
+
+我们给出了SVN算法和AID算法的Python3实现，数值计算基于Numpy包，
 作为基准的LP使用Scipy数值计算包的对应实现。
 
 \subsubsection{实验结果}
-
 我们采用最终估计值和真实值差的$L_2$范数来衡量准确性。
 在实验结果中中我们着重观察算法的收敛性、算法的准确性和计算性能。
 
-我们在高斯噪声下，比较三种算法的性能表现。
-
+首先我们在最小绝对值回归模型下，比较三种算法的性能表现。
 表\ref{tab-performance}中，$r^0$表示AID算法初始聚类$K_0/n$的值，而$r^T$表示算法终止时$K_T/n$的取值。
 需要注意的是，对于AID算法，$T$表示算法终止时经历的迭代次数，$Time$表示算法终止时运算的cpu时间。
-而对于SVN算法，$T$表示其每估计值达到稳定的迭代次数，$Time$表示全部数据参与迭代完毕经历的cpu时间。
+而对于SVN算法，$T$表示在当前带宽选择下使其每估计值达到稳定的迭代次数，$Time$表示全部数据参与迭代完毕经历的cpu时间
+（处理机情况：苹果M1芯片8核，8GB内存，OSX，CPython解释器3.82Arm版）。
 \begin{table}[H]
     \centering
     \begin{tabular}{@{}ccccccccc@{}}
     \toprule
            &     & \multicolumn{4}{c}{AID}        & \multicolumn{2}{c}{SVN} & LP        \\ \midrule
-    n      & m   & $r^0$(\%) & $r^T$(\%) & T  & Time(sec) & T      & Time(sec)      & Time(sec) \\ \midrule
+    n      & p   & $r^0$(\%) & $r^T$(\%) & T  & Time(sec) & T      & Time(sec)      & Time(sec) \\ \midrule
     20000  & 10  & 0.05  & 2.90  & 6  & 2         &  3      &         0.38       & 0.20      \\
     20000  & 50 & 0.15  & 12.00 & 12 & 13        &   7     &          6     & 3       \\
     20000  & 100 & 0.15  & 12.00 & 12 & 38        &  11      &         27    & 21         \\
@@ -473,66 +484,179 @@ $$
     200000  & 200 & 0.80  & 28.00 & 11 & 2476       &  3      &          1631      &   3329     \\ 
     \bottomrule
     \end{tabular}
-    \caption{\small 高斯噪声下三种估计算法的性能比较。（处理机情况：苹果M1芯片8核，8GB内存，OSX，CPython解释器3.82Arm版）}
+    \caption{\small 高斯噪声下三种估计算法的性能比较}
     \label{tab-performance}
 \end{table}
 
-可以看出在$n,m$较大场合下，AID算法和SVN算法均在性能上有领先，尤其是SVN算法具有优异的性能表现。
+从表\ref{tab-performance}可以看出在$n,m$较大场合下，AID算法和SVN算法均在性能上领先，尤其是SVN算法具有更好的性能表现，
+因为以上时间为训练全部数据需要的时间，而在下面可以看到SVN算法具有相当快的收敛速度，在后续性能比较中，我们会
+将SVN算法的停止条件设定为相邻两次迭代的$\hat{\bm{\beta}}^t$夹角小于某个的小正数，能够进一步缩短SVN算法的时间。
+
+接下来我们观察不同噪声分布对估计准确性的影响，这里主要观察SVN算法的准确性（注意AID算法的解就是LP最优解，
+因此它的准确性是不言自明的）。
+图\ref{svn-noise}显示了不同的噪声分布下SVN算法的表现，其中横轴代表迭代的次数。
+可以看到，随着迭代进行，SVN算法估计值随样本信息不断调整，始终保持在和LP解相差不大的水平上
+；SVN算法仅在柯西噪声这种极端重尾场景下，表现稍差。
 
 \begin{figure}[H]
     \centering
     \begin{subfigure}[t]{0.3\textwidth}\label{svn-demo1}
-    \includegraphics[width=5cm]{pics/chapter2/svn-l2.pdf}
+    \includegraphics[width=5cm]{pics/chapter2/gaussian-svn.pdf}
     \captionof{figure}{}
     \end{subfigure}
     \begin{subfigure}[t]{0.3\textwidth}\label{svn-demo2}
-    \includegraphics[width=5cm]{pics/chapter2/svn-l2-3.pdf}
+    \includegraphics[width=5cm]{pics/chapter2/exp-svn.pdf}
     \captionof{figure}{}
     \end{subfigure}
     \begin{subfigure}[t]{0.3\textwidth}\label{svn-demo3}
-    \includegraphics[width=5cm]{pics/chapter2/svn-conver.pdf}
-    \captionof{figure}{}
-    \end{subfigure}
-    \caption{ \small SVN算法的迭代情况图。横轴代表了迭代次数，纵轴代表了估计的误差平方和。(a)中$n=20000,p=10,s=4$，(b)中$n=20000,p=50,s=20$，
-    (c)中$n=20000,p=100,s=80$。}
-    \label{svn-demo}
-
-\end{figure}
-
-图\ref{svn-demo}展示了SVN算法出色的收敛速度。我们观察到SVN算法在系数具有稀疏性时表现明显更好，这也符合该算法提出的理论基础。
-我们可发现，在稀疏条件下，SVN算法在很快趋近平稳；在系数不具有系数性时，SVN算法准确度明显降低，并且收敛速度变慢。
-然而大多数的情况下，对于常见的宏观经济线性模型，系数稀疏的现象更加普遍。在稀疏的条件下，SVN算法表现出了十分出色的性能和估计精确度，需要
-注意的是在样本充分大的情况下，我们不需要将划分的每一组数据纳入计算，在能够使得估计量取值稳定的有限步骤内返回即可，这时SVN算法的计算时间还可以进一步缩短。
-
-接下来我们观察不同噪声分布的影响，由于AID算法和线性规划方法具有同样的解，图\ref{svn-noise}给出了不同的噪声分布下SVN算法的表现，
-可以看到，由于SVN算法并没有直接使用$L_1$损失，其在面对柯西噪声这种重尾的极端情况下精度不如直接优化$L_1$损失的算法。
-
-\begin{figure}[H]
-    \centering
-    \begin{subfigure}[t]{0.3\textwidth}\label{svn-demo1}
-    \includegraphics[width=5cm]{pics/chapter2/gauss.pdf}
-    \captionof{figure}{}
-    \end{subfigure}
-    \begin{subfigure}[t]{0.3\textwidth}\label{svn-demo2}
-    \includegraphics[width=5cm]{pics/chapter2/expential.pdf}
-    \captionof{figure}{}
-    \end{subfigure}
-    \begin{subfigure}[t]{0.3\textwidth}\label{svn-demo3}
-    \includegraphics[width=5cm]{pics/chapter2/cauchy.pdf}
+    \includegraphics[width=5cm]{pics/chapter2/cauchy-svn.pdf}
     \captionof{figure}{}
     \end{subfigure}
     \caption{ \small SVN算法在各种噪声下的表现。$n=20000,p=50,s=20$}
     \label{svn-noise}
-
 \end{figure}
 
-而AID算法虽然在计算时间上并没有SVN算法表现出色，但是它的确在大规模数据下减少了计算量。并且AID算法可以保证获得最优解，
-这是SVN算法不具备的优势；另外，SVN算法的准确度和带估系数的稀疏性紧密相关，在高维非稀疏的场合下，SVN算法并不具备很好的准确性。
+主要到算法3.2中我们使用最小绝对值回归估计量作为初始估计。在柯西噪声下，我们考虑了
+最小二乘估计量作为初始估计的情况，来观察SVN算法的准确性。
 
-考虑到在加入惩罚项后，AID算法和LP需要解决增加该额外约束的线性规划问题，其计算复杂度将上升。
-而SVN算法，需要求解\eqref{beta1-lasso}，目前已有的LASSO算法可以快速求解。
-因此SVN算法在带有$L_1$惩罚项的场景下，更加体现其性能优势，因此本节不再赘述。
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[t]{0.3\textwidth}\label{svn-demo2}
+    \includegraphics[width=5cm]{pics/chapter2/l2-svn-demo.pdf}
+    \captionof{figure}{}
+    \end{subfigure}
+    \begin{subfigure}[t]{0.3\textwidth}\label{svn-demo3}
+    \includegraphics[width=5cm]{pics/chapter2/l1-svn-demo.pdf}
+    \captionof{figure}{}
+    \end{subfigure}
+    \caption{ \small 使用最小二乘估计进行初始化。横轴代表示迭代次数，纵轴代表示估计的误差平方和。}
+    \label{svn-l2-demo}
+\end{figure}
 
+图\ref{svn-l2-demo}表明，选择最小二乘估计量作为初始值，SVN算法依然能够很快收敛。这启发我们
+在使用最小绝对值回归时，如果最小二乘估计量是相合的，那么也可以通过最小二乘估计量产生初始估计，
+这样一来，在计算中可做到完全避免直接求解最小绝对值回归问题。
+
+需要说明的是，SVN算法的收敛速度和带宽选择有很大关系。
+在选择了足够小的带宽时，SVN算法可快速收敛。图\ref{svn-demo}展示了SVN算法的收敛情况。
+观察到SVN算法在带宽较小时收敛速度表现较好，这也符合该算法提出的理论基础。
+在带宽选择较小（$s$较小）时，SVN算法能够迅速收敛，
+当然，如果我们选择了很大的带宽那么算法不能收敛。
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[t]{0.3\textwidth}\label{svn-demo1}
+    \includegraphics[width=5cm]{pics/chapter2/svn-con-1.pdf}
+    \captionof{figure}{}
+    \end{subfigure}
+    \begin{subfigure}[t]{0.3\textwidth}\label{svn-demo2}
+    \includegraphics[width=5cm]{pics/chapter2/svn-con-2.pdf}
+    \captionof{figure}{}
+    \end{subfigure}
+    \begin{subfigure}[t]{0.3\textwidth}\label{svn-demo3}
+    \includegraphics[width=5cm]{pics/chapter2/svn-con-3.pdf}
+    \captionof{figure}{}
+    \end{subfigure}
+    \caption{ \small SVN算法的收敛情况。横轴代表示迭代次数，纵轴代表示相邻两次$\bm{\beta}$估计之差的平方和。}
+    \label{svn-demo}
+\end{figure}
+
+然而在核密度估计中，一个更大的带宽意味着对该点密度估计包含了更多的样本信息，
+选择过很小的带宽，可能造成对核密度估计不准，在应用中需要进行合理选择。
+
+下面我们采用最小二乘估计进行初始化，并且设置终止条件，对算法的性能作进一步的比较。
+这次我们将噪声设为正态噪声，但将其中10\%的数据添加柯西噪声，部分性能对比结果见表\ref{perfomance2}。
+
+% Please add the following required packages to your document preamble:
+% \usepackage{booktabs}
+\begin{table}[H]
+
+    \resizebox{\textwidth}{!}{
+    \begin{tabular}{@{}ccccccccccc@{}}
+        \toprule
+        s & n     & p   & Iteration & Time(SVN) & Time(SVN-full) & Time(LP) & Time(AID) & l2-error(SVN) & l2-error(LS) & l2-error(LP) \\ \midrule
+        5 & 20000 & 10  & 12        & 0.12      & 0.42           & 0.17     & 2         & 0.0023        & 0.7304       & 0.0024       \\
+        5 & 20000 & 50  & 8         & 1         & 7              & 3        & 13        & 0.0039        & 3.1548       & 0.0020       \\
+        5 & 20000 & 100 & 14        & 10        & 28             & 19       & 41        & 0.0059        & 15.0373      & 0.0033       \\
+        5 & 20000 & 200 & 27        & 81        & 130            & 170      & 124       & 0.0188        & 151.4039     & 0.0028       \\ 
+        5 & 20000 & 500 & 40        & 437        & 437             & 1119       & 698        & 0.0259        & 245.0070      & 0.0026       \\
+        \bottomrule
+        \end{tabular}
+    }
+    \caption{部分性能结果比对}\label{perfomance2}
+    \end{table}
+\subsubsection{结论}
+AID算法和SVN算法都可以用来求解最小绝对值回归，并且两者在数据规模较大的情况下，都明显快于线性规划。
+SVN算法虽然不能保证取得最优解，但是它可以完全避免线性规划计算，因此在计算性能上很有优势；而AID算法
+在小规模数据下不具有性能优势，然而在数据集很大时优势明显，并且AID算法最终的解就是对全部数据求解线性规划的结果，
+因此它具有更好的稳健性。
+
+我们的结论是，在数据能够服从线性模型时，对最小绝对值回归的计算推荐使用SVN算法，该算法具有很快的速度。
+而在一般求解具有$min\ \Sigma_{i=1}^{n} |y_i - \bm{X}_i^T\bm{\beta}|$形式，但是数据能否服从线性模型未知时，
+可以先使用最小二乘法拟合，并对模型做出检验然后进行算法选择。对于必须用线性规划来求解的形式类似问题，那么
+建议使用AID算法来进行优化。
+
+我们没有进行实验对比带有惩罚项的情况，原因在于：惩罚项主要用来对线性模型中用于系数稀疏化处理，
+避免直接拟合的模型具有共线性，在实际应用中普遍使用$L_1$惩罚项。
+我们通常已经假定了数据服从线性模型，所以此时SVN算法适用。并且前面提到LASSO算法具有很高的性能，而增加额外约束的线性规划
+在速度上就更不具有优势，所以对于带有$L_1$惩罚项的最小绝对值回归，我们始终推荐使用SVN算法。
+
+
+\subsection{SVN-AID算法}
+我们已经研究了AID和SVN两种方法，注意到AID算法的基础思想是具有普适性的。我们不妨再次分析使用AID算法
+解决最小绝对值回归问题的实质：为了避免在整个数据集上一次性求解，我们使用聚类的方法，希望通过尽可能少的
+计算来利用样本的信息。不妨将前文提到的AID算法称为AID-LP算法，它成功减少了解决最小绝对值回归问题的LP计算规模。
+
+在AID算法求解最小绝对值回归时，
+假设在第$t$次迭代中我们得到了$\bm{\beta}^t$，然后根据$\bm{\beta}^t$对现有的聚类进行拆解。
+在下一步，我们重新计算该问题，直到达到问题最优解。而$\bm{\beta}^t$此时已经成功分离了许多聚类，
+而这些聚类在下一个步骤中仍然全部需要进入计算，因为上一步的参数信息$\bm{\beta}^t$在下一步计算时被舍弃了。
+
+而SVN算法，正是通过利用上一步的参数信息来构造代理变量简化计算。我们不妨结合两种算法的优点，将SVN算法
+和AID算法结合起来，进一步优化对最小绝对值回归问题的求解。
+
+\subsubsection{算法步骤}
+以下我们给出SVN-AID的步骤：
+1）初始化：随机采样，进行最小绝对值回归，该步骤使用LP，得到$\hat{\bm{\beta}}^0$。根据各个样本点对该模型的拟合残差进行聚类。
+2）记上一次迭代得出的系数估计为$\hat{\bm{\beta}}^t$，对当前聚类按照规则拆解。本步骤返回被拆解的聚类组成的集合，
+舍弃上一步正确分类的聚类。
+3）根据上一步返回的聚类集合，构造新数据集，并且按照\eqref{svny}构造代理变量数据集，并由\eqref{yl2loss}得出本轮估计。
+
+具体见算法4.2，该算法通过舍弃正确分类的聚类，不断缩小问题规模，迭代优化上一步得出的参数估计值来进行对最优解的近似，
+该算法在理论上可以极大减小AID算法的计算量，并且在舍弃大量样本点的同时，充分利用了前面步骤得出的参数信息。
+
+\begin{table}[H]%%%%%%开始表格
+    \centering%把表居中
+    \begin{tabular}{{p{0.9\columnwidth}}}%三个c代表该表一共三列，内容全部居中
+    \toprule%第一道横线 表头
+    算法4.2 SVN-AID算法\\
+    \midrule%第二道横线 符号+解释+单位 中间用&隔开
+    输入：$Y$和$\bm{X}$的样本$\bm{Y} = (Y_1, Y2, ..., Y_n)$，$\bm{X} = (\bm{X}^T_1, \bm{X}^T_2, ..., \bm{X}^T_n)$，
+    迭代次数$T$，核函数$K$，依赖于迭代次数的带宽$h_t(t = 1, ..., T)。$
+    \\
+    初始化：给出初始估计，$\hat{\bm{\beta}}^{0} $，对每一个样本点$(X_i, Y_i)$根据$Y_i - X_i^T\bm{\beta} $的结果进行
+    K-means聚类，得到聚类结果$C^0 = \{C_1^0, C_2^0, ... , C_K^0\}$。
+    \\
+    对于$t = 1, ..., T$：\\
+        1）根据上一轮$\hat{\bm{\beta}}^{t-1}$，计算带宽$h^t$和
+        $\hat{f(0)}^t = \frac{1}{K^th^t}\sum_{i=1}^{K^t}K(Y_i - \bm{X}_i^T\hat{\bm{\beta}}^{t-1})$。\\
+        据\eqref{svny}在当前聚类上构造替代变量$\tilde{Y} = (\tilde{Y}_1, ..., \tilde{Y}_{K^t})$；
+        求解
+        $$
+            \hat{\bm{\beta}}_t = \underset{\bm{\beta} \in \mathbb{R}^{p}}{\operatorname{arg\ min}}
+            \frac1{K^t} \sum_{k=1}^{K^t}|C_i^{t}|(\tilde{Y}_k - \bm{X}_k^T\bm{\beta})^2
+        $$
+        2）对于$k = 1, ..., K^t$，计算$\theta_i = y_i - \sum_{j \in J}x_{ij}\hat{\bm{\beta}}_j^t$，
+        根据$\theta_i$符号异同，将$C^t_k$分成两个集合，$C_{k+}^t = \{i \in C_k^t | \theta_i > 0\}$ ，
+        $C_{k-}^t = \{i \in C_k^t | \theta_i < 0\}$，这两个集合在下一步形成新的聚类，
+        即$C^{t+1} \leftarrow C^{t+1}\bigcup \{ C_{k+}^t, C_{k-}^t\}$。 
+        
+        输出：$\bm{\beta}^{T}$
+    \\
+    \bottomrule%第三道横线
+    \end{tabular}
+\end{table}%%%%%%结束表格
+
+\subsubsection{数值模拟实验}
 
 \subsection{本章小结}
 
@@ -552,11 +676,10 @@ $$
 另外，本章介绍了另外一种巧妙的算法——一种基于替代变量的迭代算法，该算法通过
 构造替代变量，从而将原来需要通过线性规划解决的最小绝对值回归问题转化为
 解决替代变量的最小二乘问题。这样一来，计算的复杂度就大大降低。该方法在
-实际系数具有系数性时表现十分优秀。
+实际应用中性能表现十分优秀，但是需要注意带宽的选择。
 
-这两种算法都可以在特定的条件下，优化最小绝对值回归的计算速度。
-目前高维宏观经济数据分析中也经常使用最小绝对值回归进行某些计算，
-我们可以根据数据的规模和问题的特点来选择以上两种方法来代替线性规划。
+聚类——迭代拆解算法对和最小绝对值回归目标函数相同的任何优化问题均适用；
+然而SVN算法在其理论基础上需要假设线性模型成立，需要结合我们面临的实际问题酌情使用。
 
-最后，我们在本章对最小绝对值回归性能优化的研究，会对之后
-章节对$L_1$范数主成分分析的应用研究有推动作用。
+最后，我们在本章对最小绝对值回归性能优化的研究，会对后续
+章节中优化$L_1$范数主成分分析法估计近似因子模型的求解算法有推动作用。

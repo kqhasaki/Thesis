@@ -35,7 +35,7 @@ def gen_data(p, n, s: int, dist='normal'):
     X = np.random.random((n, p))
     X.T[0] = np.ones(n)
 
-    Y = np.asarray([x.dot(beta) + np.random.standard_cauchy()*0.01 for x in X])
+    Y = np.asarray([x.dot(beta) + np.random.random()*0.1 for x in X])
     
     return (X, Y.T, beta)
 
@@ -44,21 +44,34 @@ def l2_error(beta):
 
 if __name__ == '__main__':
     n = 200_000 
-    X, Y , beta= gen_data(30, 20000, 10)
-    print(beta)
+    X, Y , beta= gen_data(500, 20000, 100)
     print('-----------')
-
-    sv = SV(X, Y, 10, 500, beta)
+    for i in range(2000):
+        a = np.random.choice(range(20000))
+        Y[a] = Y[a] + np.random.standard_cauchy()
+    
+    s = 2
+# for s in sv_list:
+    sv = SV(X, Y, s, 500, beta)
     sv.fit()
-
-    plt.plot(sv.error_list[:50], label='l2-errors of SVN', color='gray')
-    print(sv.time)
+    plt.plot(sv.error_list[:50], label='convergence of SVN', color='gray')
     start_time = time.time()
     res = l1_optimize(X, Y)
     end_time = time.time()
-    print(end_time -start_time)
+    res2 = l2_optimize(X, Y)
+    # print(end_time -start_time)
     a = sum(np.square(res.x - beta))
-    plt.axhline(y=a, xmin=0, xmax=50, label='l2-error of LP', color='gray', marker='.')
-    plt.legend()
-    plt.title('Cauchy noise')
-    plt.show()
+    b = sum(np.square(sv.beta - beta))
+    c = sum(np.square(res2.x - beta))
+    print(f'-----s ==> {s}------')
+    print('iter', sv.iter)
+    print('l1_time',end_time - start_time)
+    print('sv_time', sv.time)
+    print('l1:', a)
+    print('l2:', c)
+    print('SV:', b)
+    # plt.axhline(y=a, xmin=0, xmax=50, label='l2-error of LP', color='gray', marker='.')
+        # plt.legend()
+        # plt.title('Cauchy noise / beta initialized by LP')
+        # plt.title(f's = {s}')
+        # plt.show()

@@ -75,7 +75,8 @@ class SV:
     
     def __init_beta(self):
         X, Y = self.__get_curXY()
-        ret = l1_optimize(X, Y.T)
+        # ret = l1_optimize(X, Y.T)
+        ret = l2_optimize(X, Y.T)
         beta = ret.x
         self.beta = beta
         self.iter += 1
@@ -85,7 +86,8 @@ class SV:
         a = new_beta
         b = self.beta
         cosangle = a.dot(b)/(np.linalg.norm(a) * np.linalg.norm(b))  
-        return np.arccos(cosangle) < 1e-4
+        return np.arccos(cosangle) < 1e-3
+        # return sum(np.square(a - b)) < 
 
     def fit(self):
         if self.__is_fitted:
@@ -101,9 +103,10 @@ class SV:
             self.__get_f0()
             self.__get_Y_tilde()
             new_beta = l2_optimize(X, self.__Y_tilde.T).x
-            # if self.__call_stop(new_beta):
-            #     break
-            self.error_list.append(sum(np.square(new_beta - self.beta)))
+            if self.real_beta is not None:
+                self.error_list.append(sum(np.square(new_beta - self.real_beta)))
+            if self.__call_stop(new_beta):
+                break
             self.beta = new_beta
             self.iter += 1
         end_time = time.time()

@@ -90,6 +90,28 @@ def show_l1_l2_diff():
 
     plt.savefig(f'{DIR_PATH}/pics/l1-l2-diff-{time.ctime()}.pdf' )
 
+def sv_optimize_F(X, A, s):
+    '''
+        Fix A to optimize F. F = argmin |X - AF|
+
+        for (j = 1, ..., n) {
+            f_j = arg min |Af - x_j|
+        }
+
+        Args: 
+            X: pxn ndarray.
+            A: pxm ndarray.
+        Returns:
+            F: mxn ndarray.
+    '''
+    pass
+    # F_columns = []
+    # for x_j in X.T:
+    #     sv = new SV(A, x_j, s_size, None)
+    #     f_j
+    #     F_columns.append(f_j)
+    # F = np.asarray(F_columns).T
+    # return F
 
 def l1_optimize_F(X, A):
     '''
