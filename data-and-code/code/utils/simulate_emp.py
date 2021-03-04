@@ -10,7 +10,6 @@ plt.rcParams['font.sans-serif'] = ['Arial Unicode MS']
 plt.rcParams['axes.unicode_minus'] = False
 X, a = gen_X(120, 400, 8)
 
-X = np.ones(100)*
 
 a = [stats.kurtosis(x) for x in X]
 plt.hist(a)

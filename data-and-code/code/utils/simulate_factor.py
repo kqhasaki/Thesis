@@ -18,10 +18,8 @@ def gen_X(p, t, m):
     for i in range(p):
         mean = X_means[i]
         X_i = np.asarray([
-            X_means[i] + X_loadings[i].dot(a[i]) + np.random.random() for var in range(t)
+            X_means[i] + X_loadings[i].dot(a[i]) + np.random.standard_cauchy() for var in range(t)
         ])
-        for k in range(int(0.1 * t)):
-            X_i[k] = X_i[k] + np.random.random() * 4
 
         X.append(X_i)
     

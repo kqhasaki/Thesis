@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2021.1.20)  3 MAR 2021 22:42
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2021.1.20)  4 MAR 2021 20:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -504,7 +504,11 @@ LaTeX Warning: Label `svn-demo3' multiply defined.
 
 LaTeX Warning: Label `sub@svn-demo3' multiply defined.
 
-) (./chapter4.aux))
+) (./chapter4.aux
+
+LaTeX Warning: Label `outcome3' multiply defined.
+
+) (./chapter5.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 54.
@@ -685,7 +689,7 @@ LaTeX Font Warning: Font shape `TU/FandolSong-Regular(0)/b/sl' undefined
  (./chapter2.tex [6
 
 
-] [7] [8] [9] [10]
+] [7] [8] [9] [10] [11]
 File: pics/chapter2/matrix.pdf Graphic file (type pdf)
 <use pics/chapter2/matrix.pdf>
 File: pics/lab1/svd.pdf Graphic file (type pdf)
@@ -696,21 +700,28 @@ File: pics/lab1/IRLS.pdf Graphic file (type pdf)
 <use pics/lab1/IRLS.pdf>
 File: pics/lab1/IRP-L1.pdf Graphic file (type pdf)
 <use pics/lab1/IRP-L1.pdf>
- [11] [12]
-File: pics/some-indexes.jpg Graphic file (type bmp)
-<pics/some-indexes.jpg>
-File: pics/chapter2/skew.pdf Graphic file (type pdf)
-<use pics/chapter2/skew.pdf>
- [13] [14]
-Overfull \hbox (12.66267pt too wide) in paragraph at lines 412--413
-[]\TU/FandolSong-Regular(0)/m/n/10.53937 由 于 景 气 指 数 反 映 了 经 济 中 多 方 面 特 征，|  可
- 以 将 几 种 景 气 指 数 的 时 间 序 列 作 为 预 测 变 量，|  也 根 据[]建
+ [12] [13]
+File: pics/chapter2/box.pdf Graphic file (type pdf)
+<use pics/chapter2/box.pdf>
+
+Overfull \hbox (34.14148pt too wide) in paragraph at lines 419--420
+ [][] 
  []
 
-[15]) [16]
+File: pics/chapter2/skew.pdf Graphic file (type pdf)
+<use pics/chapter2/skew.pdf>
+[14] [15]
+
+Package caption Warning: \label without proper reference on input line 253.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `outcome3' on page 16 undefined on input line 455.
+
+[16]) [17]
 \openout2 = `chapter3.aux'.
 
- (./chapter3.tex [17
+ (./chapter3.tex [18
 
 
 ]
@@ -718,39 +729,39 @@ File: pics/chapter2/l1-l2-diff2.pdf Graphic file (type pdf)
 <use pics/chapter2/l1-l2-diff2.pdf>
 File: pics/chapter2/l1-l2-diff.pdf Graphic file (type pdf)
 <use pics/chapter2/l1-l2-diff.pdf>
- [18] [19]
+ [19] [20]
 File: pics/chapter2/aid-demo-a.pdf Graphic file (type pdf)
 <use pics/chapter2/aid-demo-a.pdf>
 
-Overfull \hbox (27.31264pt too wide) in paragraph at lines 202--203
+Overfull \hbox (27.31264pt too wide) in paragraph at lines 203--204
 [][] 
  []
 
 File: pics/chapter2/aid-demo-b.pdf Graphic file (type pdf)
 <use pics/chapter2/aid-demo-b.pdf>
 
-Overfull \hbox (27.31264pt too wide) in paragraph at lines 206--207
+Overfull \hbox (27.31264pt too wide) in paragraph at lines 207--208
 [][] 
  []
 
 File: pics/chapter2/aid-demo-c.pdf Graphic file (type pdf)
 <use pics/chapter2/aid-demo-c.pdf>
 
-Overfull \hbox (27.31264pt too wide) in paragraph at lines 210--211
+Overfull \hbox (27.31264pt too wide) in paragraph at lines 211--212
 [][] 
  []
 
-[20]
-Overfull \hbox (0.4579pt too wide) in paragraph at lines 259--262
+[21]
+Overfull \hbox (0.4579pt too wide) in paragraph at lines 260--264
 []\TU/FandolSong-Regular(0)/m/n/10.53937 而 在 岭 回 归 和 \TU/lmr/m/n/10.53937 LASSO
  \TU/FandolSong-Regular(0)/m/n/10.53937 中，|  都 通 过 给 目 标 函 数 加 上 惩 罚 项 来 进 行 求 
 解，|  岭 回 归 对 应 的 惩 罚 项 $\OML/cmm/m/it/10.53937 s [][] \OML/cmm/b/it/10.53937 ^^
 L[]$\TU/FandolSong-Regular(0)/m/n/10.53937 ，|
  []
 
-[21] [22]
+[22] [23]
 Missing character: There is no 。 in font [lmroman10-regular]:mapping=tex-text;!
- [23] [24] [25]
+ [24] [25] [26]
 File: pics/chapter2/gaussian-svn.pdf Graphic file (type pdf)
 <use pics/chapter2/gaussian-svn.pdf>
 File: pics/chapter2/exp-svn.pdf Graphic file (type pdf)
@@ -761,40 +772,63 @@ File: pics/chapter2/l2-svn-demo.pdf Graphic file (type pdf)
 <use pics/chapter2/l2-svn-demo.pdf>
 File: pics/chapter2/l1-svn-demo.pdf Graphic file (type pdf)
 <use pics/chapter2/l1-svn-demo.pdf>
- [26]
+ [27]
 File: pics/chapter2/svn-con-1.pdf Graphic file (type pdf)
 <use pics/chapter2/svn-con-1.pdf>
 File: pics/chapter2/svn-con-2.pdf Graphic file (type pdf)
 <use pics/chapter2/svn-con-2.pdf>
 File: pics/chapter2/svn-con-3.pdf Graphic file (type pdf)
 <use pics/chapter2/svn-con-3.pdf>
- [27]
+ [28]
+File: pics/chapter2/impro-demo-1.pdf Graphic file (type pdf)
+<use pics/chapter2/impro-demo-1.pdf>
+
+Overfull \hbox (36.42172pt too wide) in paragraph at lines 623--624
+[][] 
+ []
+
+File: pics/chapter2/impro-demo-2.pdf Graphic file (type pdf)
+<use pics/chapter2/impro-demo-2.pdf>
+
+Overfull \hbox (36.42172pt too wide) in paragraph at lines 628--629
+[][] 
+ []
+
+[29]
 Missing character: There is no 。 in font [lmroman10-regular]:mapping=tex-text;!
- [28]) [29]
+ [30]) [31]
 \openout2 = `chapter4.aux'.
 
- (./chapter4.tex [30
+ (./chapter4.tex [32
 
 
-]) [31]
-(./main.bbl [32
+] [33] [34] [35]) [36] [37]
+\openout2 = `chapter5.aux'.
 
-] [33]) [34] (./main.aux (./chapter1.aux) (./chapter2.aux)
-(./chapter3.aux) (./chapter4.aux))
+ (./chapter5.tex) [38
+
+
+] (./main.bbl [39
+
+] [40] [41]) [42] (./main.aux (./chapter1.aux)
+(./chapter2.aux) (./chapter3.aux) (./chapter4.aux) (./chapter5.aux))
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+
+LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 11297 strings out of 479418
- 292741 string characters out of 5884585
- 558079 words of memory out of 5000000
- 28564 multiletter control sequences out of 15000+600000
+ 11359 strings out of 479418
+ 293980 string characters out of 5884585
+ 561769 words of memory out of 5000000
+ 28620 multiletter control sequences out of 15000+600000
  553166 words of font info for 140 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  58i,20n,83p,789b,494s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.pdf (37 pages).
+Output written on main.pdf (45 pages).

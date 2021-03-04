@@ -17,7 +17,8 @@ $L_1$范数稳健方法在计量经济学中一个重要应用是最小绝对值
 因此常常在回归中剔除异常点，使得经济变量接近正态分布，然而代价是有可能损失较多有价值的信息。
 
 采用最小绝对值回归，是更加稳健的做法。实质上它就是中位数回归，模型的系数也具有很好的解释意义，
-已经广泛应用在对居民收入的研究中，并且在金融数据分析领域有着广泛的应用。
+已经广泛应用在研究居民收入\cite{dasgupta2004least}，生存分析\cite{ying1995survival}，
+并且在金融数据分析领域有着广泛的应用\cite{dasgupta2004least}。
 在模型的拟合上，最小绝对值回归对离群值不敏感，具有相当的稳健性，因此可以很好处理重尾的宏观经济变量。
 
 高维宏观经济数据，往往包含了维数众多的经济变量，并且样本数量往往非常大，
@@ -137,14 +138,14 @@ $$
 3）需要在聚类后构造的新数据集上明确定义新的优化问题；
 4）能够判定当前解是否接近最优解。
 
-算法2.1给出了任何一个聚类——迭代拆解算法的主要步骤，注意算法2.1必然在某处停止，
+算法3.1给出了任何一个聚类——迭代拆解算法的主要步骤，注意算法3.1必然在某处停止，
 因为每次不断拆解聚类，当聚类个数$|K^{t}|= n$时，相当于计算原问题，此时算法终止。
 \begin{table}[H]%%%%%%开始表格
     \centering%把表居中
     \begin{tabular}{{p{0.9\columnwidth}}}%三个c代表该表一共三列，内容全部居中
     
     \toprule%第一道横线 表头
-    算法2.1：聚类——迭代拆解算法（Aggregate and Iterative Disaggregate, AID） \\
+    算法3.1：聚类——迭代拆解算法（Aggregate and Iterative Disaggregate, AID） \\
     \midrule%第二道横线 符号+解释+单位 中间用&隔开
     输入：原始数据集$\bm{X}_{n\times p}$，样本点的下标集合${I} = \{1, 2, ..., n\}$，
     数据的特征下标集合${J} = {1, 2, ..., p}$，原优化问题$P$。\\
@@ -215,7 +216,7 @@ $C_{k-}^t = \{i \in C_k^t | \theta_i < 0\}$，见图\ref{aid-demo}b，这两个�
 
 \end{figure}
 
-结合算法2.1，到这里已经给出了完成聚类——迭代拆解最小绝对值回归的所有计算步骤，当聚类无法继续划分时，迭代终止。
+结合算法3.1，到这里已经给出了完成聚类——迭代拆解最小绝对值回归的所有计算步骤，当聚类无法继续划分时，迭代终止。
 
 下面证明最后一次迭代的解$\hat{\bm{\beta}}_j^T$就是\eqref{l1loss2}的解$\bm{\beta}^*$，
 \begin{equation*}
@@ -259,6 +260,7 @@ $f$为任一目标函数，若$f$满足条件
 而在岭回归和LASSO中，都通过给目标函数加上惩罚项来进行求解，岭回归对应的惩罚项$s\sum_{i=1}^p\bm{\beta}_i^2$，
 $L_1$正则化对应的惩罚项为$s\sum_{i=1}^p|\bm{\beta}_i|$，容易发现，加入惩罚项后目标函数仍然满足\eqref{fcondition}
 。因此，对于需要进行变量筛选的高维最小绝对值回归问题，我们可以修改目标函数，通过算法2.1解决。
+对于携带正则项的最小绝对值回归，也可以通过线性规划来处理\cite{wang2006regularized}。
 
 \subsection{一种基于替代变量的估计方法}
 聚类——迭代拆解算法是通过有效减少$L_1$目标函数最小化的问题规模来提升求解性能，
@@ -266,8 +268,8 @@ $L_1$正则化对应的惩罚项为$s\sum_{i=1}^p|\bm{\beta}_i|$，容易发现�
 Weidong Liu等人于2020年提出了一种基于替代变量的估计方法，通过替代变量将分位数损失函数转化为$L_2$损失函数，
 避免使用线性规划求解分位数损失，因此可以显著提升一般分位数回归的求解性能。
 
-考虑到最小绝对值回归为其特殊情形，且该估计量具有良好的性质，可以在一定程度上解决最小绝对值回归的性能问题。
-下面我们介绍如何将该估计应用在最小绝对值回归的场景下，并且给出具体的计算步骤。
+考虑到最小绝对值回归为其特殊情形，因此该算法可以在一定程度上解决最小绝对值回归的性能问题。
+下面我们介绍如何将该方法应用在最小绝对值回归的场景下，并且给出具体的计算步骤。
 
 \subsubsection{基于替代变量的迭代算法}
 考虑\eqref{l1losstotal}，
@@ -283,7 +285,7 @@ $\mathbb{I}(x)$为指示函数。
 \end{equation}
 
 一般地，我们使用牛顿迭代法求解某随机优化问题：
-\begin{equation}
+\begin{equation}\label{randomversion}
     \bm{\beta}^* = \underset{\bm{\beta} \in \mathbb{R}^{p}}{\operatorname{arg\ min}} \mathbb{E}[G(\bm{\beta};\bm{X},Y)]
 \end{equation}
 其中$G(\bm{\beta};\bm{X}, Y)$是损失函数，$\bm{X}$和$Y$分别是$p$维自变量和一元响应变量，$\bm{\beta}$为回归系数。使用牛顿-拉弗森迭代来求解，
@@ -371,7 +373,7 @@ $\bm{\beta}^*$的新的估计，并且\eqref{yl2loss}为最小二乘问题，其
     \begin{tabular}{{p{0.9\columnwidth}}}%三个c代表该表一共三列，内容全部居中
     
     \toprule%第一道横线 表头
-    算法2.2 使用替代变量迭代算法方法求解最小绝对值回归问题(SVN, substitue variable newton method)\\
+    算法3.2 使用替代变量迭代算法方法求解最小绝对值回归问题(SVN, substitue variable newton method)\\
     \midrule%第二道横线 符号+解释+单位 中间用&隔开
     输入：$Y$和$\bm{X}$的样本$\bm{Y} = (Y_1, Y2, ..., Y_n)$，$\bm{X} = (\bm{X}^T_1, \bm{X}^T_2, ..., \bm{X}^T_n)$，
     迭代次数$T$，核函数$K$，依赖于迭代次数的带宽$h_t(t = 1, ..., T)。$
@@ -416,7 +418,8 @@ $\bm{\beta}^*$的新的估计，并且\eqref{yl2loss}为最小二乘问题，其
     \hat{\bm{\beta}} = \underset{\bm{\beta} \in \mathbb{R}^{p}}{\operatorname{arg\ min}}
     \frac1{n} \sum_{i=1}^n(\tilde{Y}_i - \bm{X}_i^T\bm{\beta})^2 + \lambda|\bm{\beta}|
 \end{equation}
-\eqref{beta1-lasso}是著名的LASSO问题，已经有了快速解决的算法。因此，对于高维情形，算法2仅需稍作改动。
+\eqref{beta1-lasso}是著名的LASSO问题，已经有了快速解决的算法。因此对于高维情形算法3.2仅需稍作改动，
+直接更换目标函数即可。
 
 \subsection{模拟实验}
 本章前面两节介绍了聚类——迭代拆解算法和一种基于替代变量的迭代算法，
@@ -614,6 +617,21 @@ SVN算法虽然不能保证取得最优解，但是它可以完全避免线性�
 而SVN算法，正是通过利用上一步的参数信息来构造代理变量简化计算。我们不妨结合两种算法的优点，将SVN算法
 和AID算法结合起来，进一步优化对最小绝对值回归问题的求解。
 
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[t]{0.4\textwidth}\label{impro-demo1}
+    \includegraphics[width=8cm]{pics/chapter2/impro-demo-1.pdf}
+    \captionof{figure}{}
+    \end{subfigure}
+    \centering
+    \begin{subfigure}[t]{0.4\textwidth}\label{impro-demo2}
+    \includegraphics[width=8cm]{pics/chapter2/impro-demo-2.pdf}
+    \captionof{figure}{}
+    \end{subfigure}
+    \caption{ \small SVN-AID算法示意图}
+    \label{impro-demo}
+\end{figure}
+
 \subsubsection{算法步骤}
 以下我们给出SVN-AID的步骤：
 1）初始化：随机采样，进行最小绝对值回归，该步骤使用LP，得到$\hat{\bm{\beta}}^0$。根据各个样本点对该模型的拟合残差进行聚类。
@@ -621,14 +639,14 @@ SVN算法虽然不能保证取得最优解，但是它可以完全避免线性�
 舍弃上一步正确分类的聚类。
 3）根据上一步返回的聚类集合，构造新数据集，并且按照\eqref{svny}构造代理变量数据集，并由\eqref{yl2loss}得出本轮估计。
 
-具体见算法4.2，该算法通过舍弃正确分类的聚类，不断缩小问题规模，迭代优化上一步得出的参数估计值来进行对最优解的近似，
+具体见算法3.3，该算法通过舍弃正确分类的聚类，不断缩小问题规模，迭代优化上一步得出的参数估计值来进行对最优解的近似，
 该算法在理论上可以极大减小AID算法的计算量，并且在舍弃大量样本点的同时，充分利用了前面步骤得出的参数信息。
 
 \begin{table}[H]%%%%%%开始表格
     \centering%把表居中
     \begin{tabular}{{p{0.9\columnwidth}}}%三个c代表该表一共三列，内容全部居中
     \toprule%第一道横线 表头
-    算法4.2 SVN-AID算法\\
+    算法3.3 SVN-AID算法\\
     \midrule%第二道横线 符号+解释+单位 中间用&隔开
     输入：$Y$和$\bm{X}$的样本$\bm{Y} = (Y_1, Y2, ..., Y_n)$，$\bm{X} = (\bm{X}^T_1, \bm{X}^T_2, ..., \bm{X}^T_n)$，
     迭代次数$T$，核函数$K$，依赖于迭代次数的带宽$h_t(t = 1, ..., T)。$

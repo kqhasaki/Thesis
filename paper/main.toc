@@ -12,45 +12,49 @@
 \contentsline {subsubsection}{\numberline {\bfseries 2.1.3}近似因子模型}{7}%
 \contentsline {subsection}{\numberline {\bfseries \S 2.2}$L_2$范数主成分分析}{7}%
 \contentsline {subsection}{\numberline {\bfseries \S 2.3}$L_1$范数主成分分析}{9}%
-\contentsline {subsubsection}{\numberline {\bfseries 2.3.1}求解$L_1$范数主成分分析的交替凸优化算法}{9}%
-\contentsline {subsubsection}{\numberline {\bfseries 2.3.2}算法步骤}{10}%
-\contentsline {subsection}{\numberline {\bfseries \S 2.4}稳健性实验}{10}%
+\contentsline {subsubsection}{\numberline {\bfseries 2.3.1}$L_1$范数简介}{9}%
+\contentsline {subsubsection}{\numberline {\bfseries 2.3.2}求解$L_1$范数主成分分析的交替凸优化算法}{10}%
+\contentsline {subsubsection}{\numberline {\bfseries 2.3.3}算法步骤}{10}%
+\contentsline {subsection}{\numberline {\bfseries \S 2.4}稳健性实验}{11}%
 \contentsline {subsubsection}{\numberline {\bfseries 2.4.1}数据准备}{11}%
-\contentsline {subsubsection}{\numberline {\bfseries 2.4.2}实验结果}{11}%
-\contentsline {subsection}{\numberline {\bfseries \S 2.5}基于国内主要月度宏观经济数据的实证研究}{12}%
-\contentsline {subsubsection}{\numberline {\bfseries 2.5.1}扩散指数模型}{13}%
-\contentsline {subsubsection}{\numberline {\bfseries 2.5.2}因子个数判定}{13}%
-\contentsline {subsubsection}{\numberline {\bfseries 2.5.3}数据说明}{13}%
-\contentsline {subsubsection}{\numberline {\bfseries 2.5.4}实证结果}{15}%
-\contentsline {subsection}{\numberline {\bfseries \S 2.6}本章小结}{16}%
-\contentsline {section}{\numberline {第三章}最小绝对值回归的性能研究}{17}%
-\contentsline {subsection}{\numberline {\bfseries \S 3.1}简介}{17}%
-\contentsline {subsubsection}{\numberline {\bfseries 3.1.1}最小绝对值回归的稳健性}{17}%
-\contentsline {subsubsection}{\numberline {\bfseries 3.1.2}最小绝对值回归的估计方法}{18}%
-\contentsline {subsection}{\numberline {\bfseries \S 3.2}聚类——迭代拆解算法}{19}%
-\contentsline {subsubsection}{\numberline {\bfseries 3.2.1}聚类——迭代拆解算法说明}{19}%
-\contentsline {subsubsection}{\numberline {\bfseries 3.2.2}优化最小绝对值回归}{20}%
-\contentsline {subsubsection}{\numberline {\bfseries 3.2.3}优化带有惩罚项的最小绝对值回归}{21}%
-\contentsline {subsection}{\numberline {\bfseries \S 3.3}一种基于替代变量的估计方法}{21}%
-\contentsline {subsubsection}{\numberline {\bfseries 3.3.1}基于替代变量的迭代算法}{22}%
-\contentsline {subsubsection}{\numberline {\bfseries 3.3.2}优化带有惩罚项的最小绝对值回归}{24}%
-\contentsline {subsection}{\numberline {\bfseries \S 3.4}模拟实验}{24}%
-\contentsline {subsubsection}{\numberline {\bfseries 3.4.1}数据准备}{25}%
-\contentsline {subsubsection}{\numberline {\bfseries 3.4.2}实验结果}{25}%
-\contentsline {subsubsection}{\numberline {\bfseries 3.4.3}结论}{28}%
-\contentsline {subsection}{\numberline {\bfseries \S 3.5}SVN-AID算法}{28}%
-\contentsline {subsubsection}{\numberline {\bfseries 3.5.1}算法步骤}{28}%
-\contentsline {subsubsection}{\numberline {\bfseries 3.5.2}数值模拟实验}{29}%
-\contentsline {subsection}{\numberline {\bfseries \S 3.6}本章小结}{29}%
-\contentsline {section}{\numberline {第四章}近似因子模型的$L_1$范数主成分估计算法研究}{30}%
-\contentsline {subsection}{\numberline {\bfseries \S 4.1}改进的$L_1$主成分分析交替凸优化算法}{30}%
-\contentsline {subsubsection}{\numberline {\bfseries 4.1.1}基于替代变量算法的交替凸优化算法改进}{30}%
-\contentsline {subsubsection}{\numberline {\bfseries 4.1.2}基于聚类——迭代拆解算法的交替凸优化算法改进}{30}%
-\contentsline {subsubsection}{\numberline {\bfseries 4.1.3}数值模拟}{30}%
-\contentsline {subsubsection}{\numberline {\bfseries 4.1.4}高频金融数据的主成分分析}{30}%
-\contentsline {subsection}{\numberline {\bfseries \S 4.2}求解特征空间$L_1$范数最大化的贪婪算法}{30}%
-\contentsline {subsubsection}{\numberline {\bfseries 4.2.1}求解子问题}{30}%
-\contentsline {subsubsection}{\numberline {\bfseries 4.2.2}贪婪策略求解主成分}{31}%
-\contentsline {subsubsection}{\numberline {\bfseries 4.2.3}模拟与实证}{31}%
-\contentsline {subsection}{\numberline {\bfseries \S 4.3}本章小结}{31}%
-\contentsline {section}{参考文献}{32}%
+\contentsline {subsubsection}{\numberline {\bfseries 2.4.2}实验结果}{12}%
+\contentsline {subsection}{\numberline {\bfseries \S 2.5}基于国内主要月度宏观经济数据的实证研究}{13}%
+\contentsline {subsubsection}{\numberline {\bfseries 2.5.1}扩散指数模型}{14}%
+\contentsline {subsubsection}{\numberline {\bfseries 2.5.2}因子个数判定}{14}%
+\contentsline {subsubsection}{\numberline {\bfseries 2.5.3}数据说明}{14}%
+\contentsline {subsubsection}{\numberline {\bfseries 2.5.4}实证结果}{16}%
+\contentsline {subsection}{\numberline {\bfseries \S 2.6}本章小结}{17}%
+\contentsline {section}{\numberline {第三章}最小绝对值回归的性能研究}{18}%
+\contentsline {subsection}{\numberline {\bfseries \S 3.1}简介}{18}%
+\contentsline {subsubsection}{\numberline {\bfseries 3.1.1}最小绝对值回归的稳健性}{18}%
+\contentsline {subsubsection}{\numberline {\bfseries 3.1.2}最小绝对值回归的估计方法}{19}%
+\contentsline {subsection}{\numberline {\bfseries \S 3.2}聚类——迭代拆解算法}{20}%
+\contentsline {subsubsection}{\numberline {\bfseries 3.2.1}聚类——迭代拆解算法说明}{20}%
+\contentsline {subsubsection}{\numberline {\bfseries 3.2.2}优化最小绝对值回归}{21}%
+\contentsline {subsubsection}{\numberline {\bfseries 3.2.3}优化带有惩罚项的最小绝对值回归}{22}%
+\contentsline {subsection}{\numberline {\bfseries \S 3.3}一种基于替代变量的估计方法}{22}%
+\contentsline {subsubsection}{\numberline {\bfseries 3.3.1}基于替代变量的迭代算法}{23}%
+\contentsline {subsubsection}{\numberline {\bfseries 3.3.2}优化带有惩罚项的最小绝对值回归}{25}%
+\contentsline {subsection}{\numberline {\bfseries \S 3.4}模拟实验}{25}%
+\contentsline {subsubsection}{\numberline {\bfseries 3.4.1}数据准备}{26}%
+\contentsline {subsubsection}{\numberline {\bfseries 3.4.2}实验结果}{26}%
+\contentsline {subsubsection}{\numberline {\bfseries 3.4.3}结论}{29}%
+\contentsline {subsection}{\numberline {\bfseries \S 3.5}SVN-AID算法}{29}%
+\contentsline {subsubsection}{\numberline {\bfseries 3.5.1}算法步骤}{30}%
+\contentsline {subsubsection}{\numberline {\bfseries 3.5.2}数值模拟实验}{30}%
+\contentsline {subsection}{\numberline {\bfseries \S 3.6}本章小结}{30}%
+\contentsline {section}{\numberline {第四章}因子模型的$L_1$范数主成分估计算法研究}{32}%
+\contentsline {subsection}{\numberline {\bfseries \S 4.1}改进的$L_1$主成分分析交替凸优化算法}{32}%
+\contentsline {subsubsection}{\numberline {\bfseries 4.1.1}基于替代变量算法的交替凸优化算法改进}{32}%
+\contentsline {subsubsection}{\numberline {\bfseries 4.1.2}基于聚类——迭代拆解算法的交替凸优化算法改进}{33}%
+\contentsline {subsubsection}{\numberline {\bfseries 4.1.3}数值模拟}{33}%
+\contentsline {subsection}{\numberline {\bfseries \S 4.2}求解特征空间$L_1$范数最大化的贪婪算法}{34}%
+\contentsline {subsubsection}{\numberline {\bfseries 4.2.1}求解子问题}{34}%
+\contentsline {subsubsection}{\numberline {\bfseries 4.2.2}贪婪策略求解主成分}{35}%
+\contentsline {subsubsection}{\numberline {\bfseries 4.2.3}模拟与实证}{35}%
+\contentsline {subsection}{\numberline {\bfseries \S 4.3}本章小结}{36}%
+\contentsline {section}{\numberline {第五章}总结与展望}{38}%
+\contentsline {subsection}{\numberline {\bfseries \S 5.1}研究成果总结}{38}%
+\contentsline {subsection}{\numberline {\bfseries \S 5.2}研究不足}{38}%
+\contentsline {subsection}{\numberline {\bfseries \S 5.3}研究展望}{38}%
+\contentsline {section}{参考文献}{39}%
