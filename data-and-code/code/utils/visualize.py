@@ -38,8 +38,9 @@ def display_error_matrix(ndarray, method='squared', name: str = ''):
     plt.hist(error_array, density=False, histtype='stepfilled', bins=
     np.linspace(0, 100, 50), color='dimgrey')
     plt.title(name)
-    plt.savefig(
-         f'{DIR_PATH}/pics/error-matrix-{time.ctime()}-{name}.pdf',
-        dpi=600 
-    )
+    plt.show()
+    # plt.savefig(
+    #      f'{DIR_PATH}/pics/error-matrix-{time.ctime()}-{name}.pdf',
+    #     dpi=600 
+    # )
     plt.clf()

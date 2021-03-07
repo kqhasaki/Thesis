@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2021.1.20)  4 MAR 2021 20:13
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2021.1.20)  7 MAR 2021 21:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -694,12 +694,12 @@ File: pics/chapter2/matrix.pdf Graphic file (type pdf)
 <use pics/chapter2/matrix.pdf>
 File: pics/lab1/svd.pdf Graphic file (type pdf)
 <use pics/lab1/svd.pdf>
-File: pics/lab1/IRP-L2.pdf Graphic file (type pdf)
-<use pics/lab1/IRP-L2.pdf>
+File: pics/lab1/acp-l2.pdf Graphic file (type pdf)
+<use pics/lab1/acp-l2.pdf>
 File: pics/lab1/IRLS.pdf Graphic file (type pdf)
 <use pics/lab1/IRLS.pdf>
-File: pics/lab1/IRP-L1.pdf Graphic file (type pdf)
-<use pics/lab1/IRP-L1.pdf>
+File: pics/lab1/acp-l1.pdf Graphic file (type pdf)
+<use pics/lab1/acp-l1.pdf>
  [12] [13]
 File: pics/chapter2/box.pdf Graphic file (type pdf)
 <use pics/chapter2/box.pdf>

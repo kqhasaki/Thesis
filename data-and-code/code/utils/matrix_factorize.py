@@ -222,8 +222,8 @@ def pca_solution(X, m: int):
 def test_method(X, m, method):
     solution_map = {
         'SVD': pca_solution,
-        'ICP-L2': svd_solution,
-        'ICP-L1': l1_solution,
+        'ACP-L2': svd_solution,
+        'ACP-L1': l1_solution,
         'IRLS': l2_solution,
         # 'SV-ICP-L1': sv_l1_solution,
     }
@@ -232,23 +232,18 @@ def test_method(X, m, method):
     A, F = solution(X, m)
     error = (X - A.dot(F)).flatten()
     error_array = np.abs(error)
-    print(time.time() - time1)
     error_array = np.square(error_array)
-    print(np.median(error_array))
-    plt.hist(error_array, density=False, histtype='stepfilled', bins=
-    np.linspace(0, 100, 50), color='dimgrey')
-    plt.show()
-    # visualize.display_error_matrix(X - A.dot(F), name=method )# , 'absolute')
+    visualize.display_error_matrix(X - A.dot(F), name=method )# , 'absolute')
 
 
 def test():
-    X = gen_low_rank_matrix(3, 100)
-    X = disturb_matrix(X, 10, 0)
+    X = gen_low_rank_matrix(3, 80)
+    X = disturb_matrix(X, 3, 0)
     X = centralize_data(X)
     # print(l1_solution(X, 3))
     # test_method(X, 3, 'SVD')
-    # test_method(X, 3, 'IRP-L2')
-    test_method(X, 3, 'ICP-L1')
+    test_method(X, 3, 'ACP-L2')
+    # test_method(X, 3, 'ACP-L1')
     # test_method(X, 3, 'SV-ICP-L1')
     # test_method(X, 3, 'IRLS')
 
