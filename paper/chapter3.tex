@@ -37,11 +37,11 @@ $L_1$范数稳健方法在计量经济学中一个重要应用是最小绝对值
 都在一定程度上对解决最小绝对值回归问题做了优化。
 
 我们在第\ref{chapter2}章中介绍了求解$L_1$主成分分析的交替凸优化算法，
-该算法简洁直观，并交替解决的子凸优化问题可以有最优解。其中\eqref{subpro}和\eqref{subproabs}
+该算法简洁直观，并且交替迭代的子凸优化问题可以有最优解。其中\eqref{subpro}和\eqref{subproabs}
 在交替凸优化算法中我们采用线性规划来求解，
 但是对于高维宏观经济数据而言，维数$p$和样本量$n$都非常大，由于交替凸优化算法中大量采用线性规划法求解，
 使得计算开销非常大。而在许多场合，我们常常希望快速得到近似因子用于进一步分析，这就
-对$L_1$主成分分析提出了性能上的要求。本章研究最小绝对值回归的性能优化算法，
+对$L_1$主成分分析提出了计算性能上的要求。本章研究最小绝对值回归的性能优化算法，
 有助于我们改进交替凸优化算法的尝试，对本课题的研究有着重要意义。
 
 
@@ -51,11 +51,11 @@ $L_1$范数稳健方法在计量经济学中一个重要应用是最小绝对值
 $L_2$范数最优化问题最常见的是最小二乘法。
 最小二乘法的优点很多，这里不赘述。尽管在求解大部分问题时用最小二乘估计求解可以得到比较令人满意
 的效果, 但最小二乘法也存在一些局限性, 比如, 当收集的数据较少或者具有较多的缺失数据
-并且数据中夹杂有异常点时, 用最小二乘法所得的结果就令人难以接受, 在此情况下应用所得到到的回归方程或模型进行预测或者拟合时, 
-则预测或拟合的精度是相当低的, 甚至根本不能使用。正因为最小二乘法对数据中的异常值十分敏感，当数据中具有较多离群值时，通过最小二乘、PCA和SVD方法，得到的估计结果也会受到较大影响。
+并且数据中夹杂有异常点时, 用最小二乘法所得的结果就令人难以接受, 在此情况下应用所得到的回归方程或模型进行预测或者拟合时, 
+则预测或拟合的精度不可靠。正因为最小二乘法对数据中的异常值十分敏感，
+当数据中具有较多离群值时，通过最小二乘、PCA和SVD方法，得到的估计结果也会受到较大影响。
 
-这里可以不使用最小二乘法而选择$L_1$范数的方法即最小一乘法，它可以增加估计的健壮性。
-设$\bm{X} = (X_1, X_2, ..., X_p)^T$为一$p$维随机变量，$Y$为响应变量，$\bm{\beta}$为回归系数。
+设$\bm{X} = (X_1, X_2, ..., X_p)^T$为一$p$维随机向量，$Y$为响应变量，$\bm{\beta}$为回归系数。
 假设我们观察到$i.i.d. $样本$\bm{X}_{n\times p} = (\bm{x}_1, \bm{x}_2, ..., \bm{x_n})^T$和$\bm{Y}_{n\times1}=
 (y_1, ..., y_n)^T$，我们一般使用$\bm{\beta}$
 的最小二乘估计量
@@ -128,7 +128,7 @@ $$
 \subsubsection{聚类——迭代拆解算法说明}
 聚类是一种在机器学习中常见的做法，就是按照某种给定的规则，将特征接近的样本点归类到一起。
 聚类——迭代拆解算法的提出受到以下事实的启发：
-1）优化问题规面临的数据集模庞大，其中许多的样本点在进行参数估计时的贡献是很接近的；
+1）优化问题面临的数据集规模庞大，其中许多的样本点在进行参数估计时的贡献很接近；
 2）如果对相似的样本点进行聚类，提炼该聚类中的信息，避免每个样本点都进入计算，那么就会大大减小问题的规模；
 3）假设在聚类后构造的新数据集上不能接近问题的最优解，那么就拆解当前的聚类，在新聚类上进行计算，
 聚类个数有限，因此最坏情况下相当于直接求解原问题；
@@ -138,6 +138,7 @@ $$
 3）需要在聚类后构造的新数据集上明确定义新的优化问题；
 4）能够判定当前解是否接近最优解。
 
+\subsubsection{优化最小绝对值回归}
 算法3.1给出了任何一个聚类——迭代拆解算法的主要步骤，注意算法3.1必然在某处停止，
 因为每次不断拆解聚类，当聚类个数$|K^{t}|= n$时，相当于计算原问题，此时算法终止。
 \begin{table}[H]%%%%%%开始表格
@@ -161,10 +162,9 @@ $$
     \end{tabular}
 \end{table}%%%%%%结束表格
 
-\subsubsection{优化最小绝对值回归}
 改写\eqref{l1loss}的目标函数，
 \begin{equation}\label{l1loss2}
-E^* = \underset{\bm{\beta} \in \mathbb{R}^{p}}{\operatorname{min}} 
+\xi^* = \underset{\bm{\beta} \in \mathbb{R}^{p}}{\operatorname{min}} 
 \sum_{i \in I}|y_i - \sum_{j \in J}x_{ij}\bm{\beta}_j|
 \end{equation}
 
@@ -185,11 +185,12 @@ E^* = \underset{\bm{\beta} \in \mathbb{R}^{p}}{\operatorname{min}}
 容易发现，任何\eqref{clusterl1}的可行解都是\eqref{l1loss2}的可行解。
 记$\hat{\bm{\beta}^t}$为\eqref{clusterl1}的解，在每次迭代，我们计算此时的原目标函数的取值
 \begin{equation}
-    E^t = \sum_{i \in I} |y_i - \sum_{j \in J}x_{ij}\hat{\bm{\beta}}_j^t|
+    \xi^t = \sum_{i \in I} |y_i - \sum_{j \in J}x_{ij}\hat{\bm{\beta}}_j^t|
 \end{equation}
 
 接下来给出拆解聚类的准则：设$t$步的聚类集合为$C^{t}$，该步解为$\hat{\bm{\beta}}_t$，
 对于$k = 1, ..., K^t$，计算$\theta_i = y_i - \sum_{j \in J}x_{ij}\hat{\bm{\beta}}_j^t$，
+
 1）若对于任意$i \in C_k^t$，$\theta_i$有相同的符号，那么该聚类$C^t_k$将保留到下次迭代，即$C^{t+1} \leftarrow C^{t+1}\bigcup C^t_k$，见图
 \ref{aid-demo}；
 
@@ -221,21 +222,21 @@ $C_{k-}^t = \{i \in C_k^t | \theta_i < 0\}$，见图\ref{aid-demo}b，这两个�
 下面证明最后一次迭代的解$\hat{\bm{\beta}}_j^T$就是\eqref{l1loss2}的解$\bm{\beta}^*$，
 \begin{equation*}
     \begin{split}
-        E^* & = \sum_{i \in I} |y_i - \sum_{j \in J}x_{ij}\bm{\beta}j^*|
-        = \sum_{k \in K_t}\sum_{i \in C_k^t}|y_i - \sum_{j \in J}x_{ij}\beta_j^*| \\
-        & \geq \sum_{k \in K^t}|\sum_{i\in C_k^t}y_i - \sum_{j \in J}x_{ij}\bm{\beta}_j^*|
+        \xi^* & = \sum_{i \in I} |y_i - \sum_{j \in J}x_{ij}\bm{\beta}_j^*|
+        = \sum_{k \in K_t}\sum_{i \in C_k^t}|y_i - \sum_{j \in J}x_{ij}\bm{\beta}_j^*| \\
+        & \geq \sum_{k \in K^t}|\sum_{i\in C_k^t}(y_i - \sum_{j \in J}x_{ij}\bm{\beta}_j^*)|
         = \sum_{k \in K^t}|C_k^t||y_k^t - \sum_{j \in J}x_{kj}^t\bm{\beta}_j^*|\\
-        & \geq \sum_{k \in K^t} |C_k^t||y_K^t - \sum_{j\in J}x_{kj} \hat{\bm{\beta}}_j^t|
-        = \sum_{k \in K^t} |\sum_{i \in C_k^i} yi - \sum_{i \in C_k^t}\sum_{j \in J}x_{ij}\hat{\bm{\beta}}_j^t| \\
-        & = \sum_{k \in k^t} \sum{i \in C_k^i}|y_i - \sum_{j \in J}x_{ij}\hat{\bm{\beta}}_j^t|
+        & \geq \sum_{k \in K^t} |C_k^t||y_K^t - \sum_{j\in J}x_{kj}^t \hat{\bm{\beta}}_j^t|
+        = \sum_{k \in K^t} |\sum_{i \in C_k^i} y_i - \sum_{i \in C_k^t}\sum_{j \in J}x_{ij}\hat{\bm{\beta}}_j^t| \\
+        & = \sum_{k \in k^t} \sum_{i \in C_k^i}|y_i - \sum_{j \in J}x_{ij}\hat{\bm{\beta}}_j^t|
         = \sum_{i \in I}|y_i - \sum_{j \in J} x_{ij} \hat{\bm{\beta}}_j^t| 
-        = E^t
+        = \xi^t
     \end{split}
 \end{equation*}
 
-因为$\hat{\bm{\beta}}_t$是\eqref{l1loss2}的可行解，又显然$E^* \leq E^t$，
-这就证明了$E^* = E^t$，注意到$ \sum_{k \in K^t} |C_k^t||y_K^t - \sum_{j\in J}x_{kj} \hat{\bm{\beta}}_j^t|$
-就是$F^t$，因此$E^t = F^t$。因此最后一次迭代$F^T$的最优解$\hat{\bm{\beta}}_j^T$就是原问题的最优解。
+因为$\hat{\bm{\beta}}_j^t$是\eqref{l1loss2}的可行解，又显然$E^* \leq E^t$，
+这就证明了$\xi^* = \xi^t$，注意到$ \sum_{k \in K^t} |C_k^t||y_K^t - \sum_{j\in J}x_{kj} \hat{\bm{\beta}}_j^t|$
+就是$F^t$，因此$\xi^t = F^t$。因此最后一次迭代$F^T$的最优解$\hat{\bm{\beta}}_j^T$就是原问题的最优解。
 
 \subsubsection{优化带有惩罚项的最小绝对值回归}
 前面给出的算法已经在很大程度上优化了在处理高维宏观经济变量时，最小绝对值回归计算性能的问题。
@@ -259,7 +260,7 @@ $f$为任一目标函数，若$f$满足条件
 
 而在岭回归和LASSO中，都通过给目标函数加上惩罚项来进行求解，岭回归对应的惩罚项$s\sum_{i=1}^p\bm{\beta}_i^2$，
 $L_1$正则化对应的惩罚项为$s\sum_{i=1}^p|\bm{\beta}_i|$，容易发现，加入惩罚项后目标函数仍然满足\eqref{fcondition}
-。因此，对于需要进行变量筛选的高维最小绝对值回归问题，我们可以修改目标函数，通过算法2.1解决。
+。因此，对于需要进行变量筛选的高维最小绝对值回归问题，我们可以修改目标函数，通过算法3.1解决。
 对于携带正则项的最小绝对值回归，也可以通过线性规划来处理\cite{wang2006regularized}。
 
 \subsection{一种基于替代变量的估计方法}
@@ -294,11 +295,11 @@ $\mathbb{I}(x)$为指示函数。
 \end{equation}
 其中$\bm{\beta}_0$是一个初始估计，$g(\bm{\beta};\bm{X},Y)$为损失函数$G(\bm{\beta};\bm{X},Y)$关于$\bm{\beta}$的梯度。\\
 $\bm{H}(\bm{\beta}):=\partial\mathbb{E}[g(\bm{\beta};\bm{X},Y)
-/\partial\bm{\beta}$表示$\mathbb{E}G(\bm{\beta};\bm{X},Y)$的海赛矩阵。特别地，我们这里考虑损失函数为$L_1$损失的特殊情形，
+/\partial\bm{\beta}$表示$\mathbb{E}G(\bm{\beta};\bm{X},Y)$的海森矩阵（Hessian Matrix）。特别地，我们这里考虑损失函数为$L_1$损失的特殊情形，
 \begin{equation}\label{rho-condition}
     G(\bm{\beta};\bm{X},Y) = \rho(Y - \bm{X}^T\bm{\beta})
 \end{equation}
-在\eqref{rho-condition}的条件下，$g(\bm{\beta};\bm{X},Y) = \bm{X}(\mathbb{I}[Y - \bm{X}^T\bm{\beta} < 0] - 0.5)$。
+在\eqref{rho-condition}的情形下，$g(\bm{\beta};\bm{X},Y) = \bm{X}(\mathbb{I}[Y - \bm{X}^T\bm{\beta} < 0] - 0.5)$。
 
 并且$\bm{H}(\bm{\beta}) = \mathbb{E}(\bm{X}\bm{X}^Tf(\bm{X}^T(\bm{\beta} - \bm{\beta}^*)))$，这里
 $f(x)$是噪声$e$的密度函数。当初始估计量$\bm{\beta}_0$和$\bm{\beta}^*$很接近时，$\bm{H}(\bm{\beta}_0)$就会很接近
@@ -309,7 +310,7 @@ $\bm{H}(\bm{\beta}^*) = \bm{\Sigma}f(0)$，这里$\bm{\Sigma} = \mathbb{E}\bm{X}
     \bm{\beta}_1 = \bm{\beta}_0 - \bm{H}(\bm{\beta}^*)^{-1}\mathbb{E}[g(\bm{\beta};\bm{X}, Y)]
     = \bm{\beta}_0 - \bm{\Sigma}^{-1}f^{-1}(0)\mathbb{E}[g(\bm{\beta}_0;\bm{X},Y)]
 \end{equation}
-在$\bm{\beta}^*$对$\mathbb{E}[g(\bm{\beta}_0;\bm{X},Y)$进行泰勒展开，
+在$\bm{\beta}^*$处对$\mathbb{E}[g(\bm{\beta}_0;\bm{X},Y)$进行泰勒展开，
 \begin{equation*}
     \begin{split}
 \mathbb{E}[g(\bm{\beta}_0;\bm{X},Y) &= \bm{H}(\bm{\beta}^*)(\bm{\beta}_0 - \bm{\beta}^*) + O(|\bm{\beta}_0 - \bm{\beta}^*|_2^2) \\
@@ -367,7 +368,7 @@ $$
 $\bm{\beta}^*$的新的估计，并且\eqref{yl2loss}为最小二乘问题，其计算十分简便。
 
 我们当然可以将$\hat{\bm{\beta}}$作为\eqref{rho-beta1}的初始值，这样继续构造替代变量进行迭代，最终收敛到$\bm{\beta}^*$。
-算法2给出了使用替代变量估计方法的计算步骤。
+算法3.2给出了使用替代变量估计方法的计算步骤。
 \begin{table}[H]%%%%%%开始表格
     \centering%把表居中
     \begin{tabular}{{p{0.9\columnwidth}}}%三个c代表该表一共三列，内容全部居中
@@ -375,8 +376,8 @@ $\bm{\beta}^*$的新的估计，并且\eqref{yl2loss}为最小二乘问题，其
     \toprule%第一道横线 表头
     算法3.2 使用替代变量迭代算法方法求解最小绝对值回归问题(SVN, substitue variable newton method)\\
     \midrule%第二道横线 符号+解释+单位 中间用&隔开
-    输入：$Y$和$\bm{X}$的样本$\bm{Y} = (Y_1, Y2, ..., Y_n)$，$\bm{X} = (\bm{X}^T_1, \bm{X}^T_2, ..., \bm{X}^T_n)$，
-    迭代次数$T$，核函数$K$，依赖于迭代次数的带宽$h_t(t = 1, ..., T)。$
+    输入：$Y$和$\bm{X}$的样本$\bm{Y} = (Y_1, Y_2, ..., Y_n)$，$\bm{X} = (\bm{X}^{\rm T}_1, \bm{X}^T_2, ..., \bm{X}^T_n)$，
+    迭代次数$T$，核函数$K$，依赖于迭代次数的带宽$h^{(t)}(t = 1, ..., T)。$
     \\
     初始化：给出初始相合估计量$\hat{\bm{\beta}}^{0} $，将样本划分成$J$个均等子集，样本量均为$m$，为了给出最小绝对值回归估计量的相合估计，
     我们取任一子集里面的数据，直接使用最小一乘法估计$\hat{\bm{\beta}}_{(0)}$。
@@ -468,6 +469,9 @@ $$
 而对于SVN算法，$T$表示在当前带宽选择下使其每估计值达到稳定的迭代次数，$Time$表示全部数据参与迭代完毕经历的cpu时间
 （处理机情况：苹果M1芯片8核，8GB内存，OSX，CPython解释器3.82Arm版）。
 \begin{table}[H]
+    \small
+    \caption{\small 高斯噪声下三种估计算法的性能比较}
+    \label{tab-performance}
     \centering
     \begin{tabular}{@{}ccccccccc@{}}
     \toprule
@@ -487,8 +491,6 @@ $$
     200000  & 200 & 0.80  & 28.00 & 11 & 2476       &  3      &          1631      &   3329     \\ 
     \bottomrule
     \end{tabular}
-    \caption{\small 高斯噪声下三种估计算法的性能比较}
-    \label{tab-performance}
 \end{table}
 
 从表\ref{tab-performance}可以看出在$n,m$较大场合下，AID算法和SVN算法均在性能上领先，尤其是SVN算法具有更好的性能表现，
@@ -504,15 +506,15 @@ $$
 \begin{figure}[H]
     \centering
     \begin{subfigure}[t]{0.3\textwidth}\label{svn-demo1}
-    \includegraphics[width=5cm]{pics/chapter2/gaussian-svn.pdf}
+    \includegraphics[width=5.5cm]{pics/chapter2/gaussian-svn.pdf}
     \captionof{figure}{}
     \end{subfigure}
     \begin{subfigure}[t]{0.3\textwidth}\label{svn-demo2}
-    \includegraphics[width=5cm]{pics/chapter2/exp-svn.pdf}
+    \includegraphics[width=5.5cm]{pics/chapter2/exp-svn.pdf}
     \captionof{figure}{}
     \end{subfigure}
     \begin{subfigure}[t]{0.3\textwidth}\label{svn-demo3}
-    \includegraphics[width=5cm]{pics/chapter2/cauchy-svn.pdf}
+    \includegraphics[width=5.5cm]{pics/chapter2/cauchy-svn.pdf}
     \captionof{figure}{}
     \end{subfigure}
     \caption{ \small SVN算法在各种噪声下的表现。$n=20000,p=50,s=20$}
@@ -525,11 +527,11 @@ $$
 \begin{figure}[H]
     \centering
     \begin{subfigure}[t]{0.3\textwidth}\label{svn-demo2}
-    \includegraphics[width=5cm]{pics/chapter2/l2-svn-demo.pdf}
+    \includegraphics[width=5.5cm]{pics/chapter2/l2-svn-demo.pdf}
     \captionof{figure}{}
     \end{subfigure}
     \begin{subfigure}[t]{0.3\textwidth}\label{svn-demo3}
-    \includegraphics[width=5cm]{pics/chapter2/l1-svn-demo.pdf}
+    \includegraphics[width=5.5cm]{pics/chapter2/l1-svn-demo.pdf}
     \captionof{figure}{}
     \end{subfigure}
     \caption{ \small 使用最小二乘估计进行初始化。横轴代表示迭代次数，纵轴代表示估计的误差平方和。}
@@ -548,15 +550,15 @@ $$
 \begin{figure}[H]
     \centering
     \begin{subfigure}[t]{0.3\textwidth}\label{svn-demo1}
-    \includegraphics[width=5cm]{pics/chapter2/svn-con-1.pdf}
+    \includegraphics[width=5.5cm]{pics/chapter2/svn-con-1.pdf}
     \captionof{figure}{}
     \end{subfigure}
     \begin{subfigure}[t]{0.3\textwidth}\label{svn-demo2}
-    \includegraphics[width=5cm]{pics/chapter2/svn-con-2.pdf}
+    \includegraphics[width=5.5cm]{pics/chapter2/svn-con-2.pdf}
     \captionof{figure}{}
     \end{subfigure}
     \begin{subfigure}[t]{0.3\textwidth}\label{svn-demo3}
-    \includegraphics[width=5cm]{pics/chapter2/svn-con-3.pdf}
+    \includegraphics[width=5.5cm]{pics/chapter2/svn-con-3.pdf}
     \captionof{figure}{}
     \end{subfigure}
     \caption{ \small SVN算法的收敛情况。横轴代表示迭代次数，纵轴代表示相邻两次$\bm{\beta}$估计之差的平方和。}
@@ -572,7 +574,8 @@ $$
 % Please add the following required packages to your document preamble:
 % \usepackage{booktabs}
 \begin{table}[H]
-
+    \small
+    \caption{部分性能结果对比}\label{perfomance2}
     \resizebox{\textwidth}{!}{
     \begin{tabular}{@{}ccccccccccc@{}}
         \toprule
@@ -585,8 +588,7 @@ $$
         \bottomrule
         \end{tabular}
     }
-    \caption{部分性能结果比对}\label{perfomance2}
-    \end{table}
+\end{table}
 \subsubsection{结论}
 AID算法和SVN算法都可以用来求解最小绝对值回归，并且两者在数据规模较大的情况下，都明显快于线性规划。
 SVN算法虽然不能保证取得最优解，但是它可以完全避免线性规划计算，因此在计算性能上很有优势；而AID算法

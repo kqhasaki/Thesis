@@ -1,82 +1,24 @@
-This is BibTeX, Version 0.99d (TeX Live 2020)
-Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
-The top-level auxiliary file: main.aux
-The style file: plain.bst
-A level-1 auxiliary file: chapter1.aux
-A level-1 auxiliary file: chapter2.aux
-A level-1 auxiliary file: chapter3.aux
-A level-1 auxiliary file: chapter4.aux
-A level-1 auxiliary file: chapter5.aux
-Database file #1: refs.bib
-Repeated entry---line 231 of file refs.bib
- : @article{dasgupta2004least
- :                           ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 364 of file refs.bib
- : @inproceedings{park2016iteratively
- :                                   ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 373 of file refs.bib
- : @article{markopoulos2017efficient
- :                                  ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 384 of file refs.bib
- : @article{markopoulos2014optimal
- :                                ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 437 of file refs.bib
- : @inproceedings{nie2011robust
- :                             ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 462 of file refs.bib
- : @article{ke2003robust
- :                      ,
-I'm skipping whatever remains of this entry
-Warning--empty journal in ke2003robust
-Warning--can't use both volume and number fields in nie2011robust
-Warning--empty school in 梁志贞2013lp
-Warning--empty school in 王维2000人工神经网络在非线性经济预测中的应用
-Warning--empty school in 白仲林2014两类
-Warning--empty school in 郭崇慧2001宏观经济预测模型体系研究
-You've used 62 entries,
-            2118 wiz_defined-function locations,
-            870 strings with 14583 characters,
-and the built_in function-call counts, 20832 in all, are:
-= -- 2143
-> -- 881
-< -- 12
-+ -- 356
-- -- 282
-* -- 1484
-:= -- 3437
-add.period$ -- 190
-call.type$ -- 62
-change.case$ -- 319
-chr.to.int$ -- 0
-cite$ -- 68
-duplicate$ -- 766
-empty$ -- 1627
-format.name$ -- 282
-if$ -- 4324
-int.to.chr$ -- 0
-int.to.str$ -- 62
-missing$ -- 58
-newline$ -- 312
-num.names$ -- 124
-pop$ -- 271
-preamble$ -- 1
-purify$ -- 262
-quote$ -- 0
-skip$ -- 573
-stack$ -- 0
-substring$ -- 1551
-swap$ -- 153
-text.length$ -- 12
-text.prefix$ -- 0
-top$ -- 0
-type$ -- 246
-warning$ -- 6
-while$ -- 227
-width$ -- 64
-write$ -- 677
-(There were 6 error messages)
+[0] Config.pm:304> INFO - This is Biber 2.14
+[0] Config.pm:307> INFO - Logfile is 'main.blg'
+[60] biber-darwin:322> INFO - === 一  3  8, 2021, 17:02:17
+[74] Biber.pm:415> INFO - Reading 'main.bcf'
+[184] Biber.pm:940> INFO - Using all citekeys in bib section 0
+[195] Biber.pm:4256> INFO - Processing section 0
+[196] Utils.pm:75> INFO - Globbing data source 'refs.bib'
+[196] Utils.pm:91> INFO - Globbed data source 'refs.bib' to refs.bib
+[204] Biber.pm:4455> INFO - Looking for bibtex format file 'refs.bib' for section 0
+[206] bibtex.pm:1653> INFO - LaTeX decoding ...
+[270] bibtex.pm:1471> INFO - Found BibTeX data source 'refs.bib'
+[271] Utils.pm:304> WARN - Duplicate entry key: 'dasgupta2004least' in file 'refs.bib', skipping ...
+[272] Utils.pm:304> WARN - Duplicate entry key: 'park2016iteratively' in file 'refs.bib', skipping ...
+[273] Utils.pm:304> WARN - Duplicate entry key: 'markopoulos2017efficient' in file 'refs.bib', skipping ...
+[273] Utils.pm:304> WARN - Duplicate entry key: 'markopoulos2014optimal' in file 'refs.bib', skipping ...
+[273] Utils.pm:304> WARN - Duplicate entry key: 'nie2011robust' in file 'refs.bib', skipping ...
+[273] Utils.pm:304> WARN - Duplicate entry key: 'ke2003robust' in file 'refs.bib', skipping ...
+[656] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[656] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[656] Biber.pm:4084> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[656] Biber.pm:4090> INFO - No sort tailoring available for locale 'en-US'
+[706] bbl.pm:652> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[731] bbl.pm:755> INFO - Output to main.bbl
+[731] Biber.pm:128> INFO - WARNINGS: 6

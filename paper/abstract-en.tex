@@ -1,0 +1,72 @@
+\centerline{\large\bf Abstract}
+\vspace{2ex}
+Monitoring real-time changes in the macro economy and analyzing 
+the future economic situation are substaintial prerequisites for 
+a country's government to formulate economic policies.
+Therefore it is necessary that effective analysis of macroeconomic data can be done. 
+However the macroeconomic data is usually large in scale
+and has many dimensions, making it difficult to model with traditional methods.
+Factor analysis is a commonly used method for data dimensionality reduction, through which
+one can explain high-dimensional observation variables by several potential common factors.
+This provides convenience for modeling and forecasting.
+Therefore, factor analysis has become an effective way to analyze 
+high-dimensional macroeconomic data. And it has been playing a more and more
+ important role in both theory and practice.
+ Traditional factor analysis uses principal component analysis based 
+ on $L_2$ norm to estimate factor loadings and factor scores. Hence it is not robust enough
+  to deal with
+macroeconomic data with heavy tail characteristics in distribution.
+
+\thispagestyle{plain}
+In this paper we use principal component analysis based on $L_1$ norm to 
+estimate factor model. First, an alternating convex programming method , which solves 
+the problem of minimizing $L_1$ norm reconstruction error 
+is introduced. Then an simulation experiment is conducted to verify the robustness of $L_1$ norm
+principal component analysis. 
+Next for empirical research, we collected a set of
+domestic macroeconomic data in which the economic variables are observed at a monthly basis.
+It is observed that the distribution of many economic variables presents a heavy-tailed characteristic 
+in distribution.
+On this data set, both
+$L_1$ norm principal component analysis and $L_2$ 
+norm principal component analysis are used to estimate the static factors. Then 
+those series of static factors are used for macroeconomic predicting through the diffusion index model.
+The empirical results show that principal component analysis based on
+$L_1$ norm is also applicable to the estimation of static factors, 
+while being more robust and accurate.
+
+While the alternating convex optimization algorithm is a classic 
+algorithm for solving the principal component analysis based on $L_1$ norm, it has 
+poor calculation performance because it
+needs to solve multiple least absolute value regression 
+problems through linear programming method at each iteration.
+This paper studies the performance problem of least absolute 
+value regression and introduces two newest algorithms: 
+clustering-and-iterative-disassembling algorithm and
+one Newton method based on substitution variable. 
+Through simulation experiments, the two algorithms' performances
+are compared and analyzed,and some suggestions are made for their application.
+In addition, this article attempts to propose a
+an optimized algorithm that combines the advantages of those two.
+A simulation experiment is conducted  demonstrating that the new algorithm 
+has certain advantages in computational efficiency.
+
+\thispagestyle{plain}
+
+Based on the newest algorithms for least absolute value regression, 
+we can give some improvement to the alternating convex programming method.
+Through simulation experiments, we found that the improved alternating convex optimization algorithm
+shows a significant improvement in efficiency when solving large-scale factor analysis problems. 
+In addition, principal component analysis of $L_1$ can also be performed 
+from the perspective of maximizing $L_1$ norm of the low-demension projection.
+We introduce a greedy algorithm to solve this problem. Then an empirical research is
+conducted showing that both two kinds of principal component analysis methods
+based on $L_1$ norm can estimate factor models well, 
+at the mean time being more robust and accurate.
+
+\vspace{2ex}
+{\bf keywords:} \ $L_1$ norm principal component analysis, factor analysis,
+least absolute value regression, diffusion index model
+
+\thispagestyle{plain}
+\newpage

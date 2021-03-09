@@ -99,7 +99,10 @@ $L_1$范数主成分分析得出的因子同样适用于宏观经济预测中，
 ，其中$L_2$主成分分析的因子残差平方中位数也列出。
 
 \begin{table}[H]
+    \small
     \centering
+    \caption{三种算法的比较结果}
+    \label{three-l1-pca}
     \begin{tabular}{@{}cccccccccc@{}}
     \toprule
        &      &     & \multicolumn{2}{c}{ACP} & \multicolumn{2}{c}{ACP-SVN} & \multicolumn{2}{c}{ACP-AID} & PCA-L2   \\ \midrule
@@ -113,8 +116,6 @@ $L_1$范数主成分分析得出的因子同样适用于宏观经济预测中，
     5  & 2000  & 200 & 3567     & 0.0992       & 1135       & 0.4903         & 3290       & 0.0992         & 2.07     \\
     10 & 2000  & 200 & 3893     & 0.1033       & 1650       & 0.5790         & 5033       & 0.1033         & 3.12     \\ \bottomrule
     \end{tabular}
-    \caption{三种算法的比较结果}
-    \label{three-l1-pca}
 \end{table}
 
 从结果中我们发现，ACP-SVN算法的性能优势较为明显，而ACP-AID算法的性能表现则相对一般，并没有明显的改进效果。而理论上说，
@@ -144,7 +145,7 @@ $L_1$范数主成分分析得出的因子同样适用于宏观经济预测中，
     \text{，其中}\|\bm a\|_{L_2} = 1
 \end{equation}
 
-算法4.1给出了\eqref{m-1}的求解算法。
+算法4.2给出了\eqref{m-1}的求解算法。
 \begin{table}[H]%%%%%%开始表格
     \centering%把表居中
     \begin{tabular}{{p{0.9\columnwidth}}}%三个c代表该表一共三列，内容全部居中
@@ -207,69 +208,65 @@ $\bm a^0$可以任意设置，因此可以采用$L_2$主成分作为其初始值
 
 \begin{table}[H]
     \centering
-
-    \resizebox{\textwidth}{!}{
-    \begin{tabular}{@{}ccccccc@{}}
+    \small
+    \caption{向前一个月预测结果}
+    \label{outcome4}
+    \begin{tabularx}{\textwidth}{lXXXXXX}
     \toprule
-                 & Rel MSE（L1 PCA) & Rel MSE（PCA L1) & Rel MAE(L1 PCA) & Rel MAE（PCA L1） & Rel MPAE(L1 PCA) & Rel MPAE（PCA L1） \\ \midrule
-    工业生产总值     & 0.81            & 0.78        & 0.87            & 0.83        & 0.43             & 0.67         \\
-    原油总产量 & 0.70            & 0.83        & 0.75            & 0.92       & 0.96             & 0.90         \\
+                 &  MSE（L1 PCA) &  MSE（PCA L1) &  MAE(L1 PCA) &  MAE（PCA L1） &  MPAE(L1 PCA) &  MPAE（PCA L1） \\ \midrule
+    消费者满意指数     & 0.81            & 0.78        & 0.87            & 0.83        & 0.43             & 0.67         \\
+    工业生产者出厂价格指数 & 0.70            & 0.83        & 0.75            & 0.92       & 0.96             & 0.90         \\
     货币供应量M2      & 0.76            & 1.01        & 0.90            & 1.00       & 0.45             & 0.92         \\
     固定资产投资总额  & 0.89            & 1.11        & 0.97            & 1.03        & 0.81             & 1.05         \\
     房地产开发投资总额 & 0.79            & 0.94        & 0.95            & 0.97        & 0.91             & 1.10         \\
     社会消费品零售总额 & 0.84            & 0.62        & 0.87            & 0.78        & 0.45             & 0.76         \\
-    出口总额    & 1.24            & 0.99        & 1.06            & 1.14        & 0.90             & 0.82         \\
+    制造业采购经理指数    & 1.24            & 0.99        & 1.06            & 1.14        & 0.90             & 0.82         \\
     住宅新开工面积总数  & 0.89            & 1.20        & 0.85            & 1.12        & 0.45             & 1.19         \\
     股票流通市值     & 0.99            & 1.23        & 0.98            & 1.12        & 0.81             & 0.98         \\
-    城乡储蓄存款余额     & 0.93            & 0.70        & 0.98            & 0.80        & 0.98             & 0.99         \\ \bottomrule
-    \end{tabular}
-    }
-    \caption{向前一个月预测结果}
-    \label{outcome4}
+    消费者信心指数     & 0.93            & 0.70        & 0.98            & 0.80        & 0.98             & 0.99         \\ \bottomrule
+    \end{tabularx}
 \end{table}
 
 \begin{table}[H]
     \centering
-    \resizebox{\textwidth}{!}{
-    \begin{tabular}{@{}ccccccc@{}}
+    \small
+    \caption{向前三个月预测结果}
+    \label{outcome5}
+    \begin{tabularx}{\textwidth}{lXXXXXX}
     \toprule
-                 & Rel MSE（L1 PCA) & Rel MSE（PCA L1) & Rel MAE(L1 PCA) & Rel MAE（PCA L1） & Rel MPAE(L1 PCA) & Rel MPAE（PCA L1） \\ \midrule
-                 工业生产总值     & 0.85            & 1.16        & 0.95            & 1.22        & 1.32             & 0.78         \\
-    原油总产量 & 0.98            & 0.88        & 0.97            & 0.93        & 0.93             & 0.97         \\
+                 &  MSE（L1 PCA) &  MSE（PCA L1) &  MAE(L1 PCA) &  MAE（PCA L1） &  MPAE(L1 PCA) &  MPAE（PCA L1） \\ \midrule
+                 消费者满意指数    & 0.85            & 1.16        & 0.95            & 1.22        & 1.32             & 0.78         \\
+    工业生产者出厂价格指数& 0.98            & 0.88        & 0.97            & 0.93        & 0.93             & 0.97         \\
     货币供应量M2       & 1.08            & 0.59        & 1.05            & 0.71        & 0.66             & 0.70         \\
     固定资产投资总额  & 0.99            & 1.03        & 0.98            & 1.06       & 0.82             & 0.90         \\
     房地产开发投资总额 & 0.91            & 0.97        & 0.92            & 1.00       & 0.66             & 0.89         \\
     社会消费品零售总额 & 0.62            & 1.48        & 0.85            & 1.24        & 1.26             & 1.50        \\
-    出口总额    & 1.26            & 0.90        & 1.10            & 0.93        & 1.04             & 0.87         \\
+    制造业采购经理指数    & 1.26            & 0.90        & 1.10            & 0.93        & 1.04             & 0.87         \\
     住宅新开工面积总数   & 0.81            & 0.75        & 1.12            & 0.89        & 1.04             & 0.90         \\
     股票流通市值   & 0.99            & 1.44        & 1.00            & 1.31        & 1.04             & 1.22         \\
-    城乡储蓄存款余额     & 0.99            & 1.12        & 0.96            & 1.00        & 0.94             & 1.03         \\ \bottomrule
-    \end{tabular}
-    }
-    \caption{向前三个月预测结果}
-    \label{outcome5}
+    消费者信心指数    & 0.99            & 1.12        & 0.96            & 1.00        & 0.94             & 1.03         \\ \bottomrule
+    \end{tabularx}
 \end{table}
 
 \begin{table}[H]\label{outcome3}
     \centering
-    \resizebox{\textwidth}{!}{
-    \begin{tabular}{@{}ccccccc@{}}
+    \small
+    \caption{向前六个月预测结果}
+    \label{outcome6}
+    \begin{tabularx}{\textwidth}{lXXXXXX}
     \toprule
-                 & Rel MSE（L1 PCA) & Rel MSE（PCA L1) & Rel MAE(L1 PCA) & Rel MAE（PCA L1） & Rel MPAE(L1 PCA) & Rel MPAE（PCA L1） \\ \midrule
-                 工业生产总值     & 0.91            & 1.00        & 0.93            & 1.00        & 0.68             & 0.99         \\
-    原油总产量 & 1.00            & 1.40        & 0.94            & 1.19        & 0.79             & 1.28         \\
+                 &  MSE（L1 PCA) &  MSE（PCA L1) &  MAE(L1 PCA) &  MAE（PCA L1） &  MPAE(L1 PCA) &  MPAE（PCA L1） \\ \midrule
+                 消费者满意指数     & 0.91            & 1.00        & 0.93            & 1.00        & 0.68             & 0.99         \\
+    工业生产者出厂价格指数 & 1.00            & 1.40        & 0.94            & 1.19        & 0.79             & 1.28         \\
     货币供应量M2      & 0.84            & 0.99        & 1.06            & 1.00        & 1.46             & 1.04         \\
     固定资产投资总额  & 0.88            & 0.69        & 0.94            & 0.73        & 0.93             & 0.85         \\
     房地产开发投资总额 & 0.90            & 0.58       & 0.91            & 0.67        & 0.73             & 0.79        \\
     社会消费品零售总额 & 0.64            & 1.36        & 0.79            & 1.14        & 1.30             & 1.45         \\
-    出口总额   & 1.46            & 1.20        & 1.20            & 1.09        & 1.45             & 1.42         \\
+    制造业采购经理指数   & 1.46            & 1.20        & 1.20            & 1.09        & 1.45             & 1.42         \\
     住宅新开工面积总数  & 0.85            & 0.83        & 0.96            & 0.92        & 0.70             & 0.69        \\
     股票流通市值   & 0.98            & 1.20        & 1.01            & 1.16        & 1.28             & 0.97         \\
-    城乡储蓄存款余额     & 0.99            & 1.07        & 0.98            & 1.00        & 0.97             & 0.87         \\ \bottomrule
-    \end{tabular}
-    }
-    \caption{向前六个月预测结果}
-    \label{outcome6}
+    消费者信心指数     & 0.99            & 1.07        & 0.98            & 1.00        & 0.97             & 0.87         \\ \bottomrule
+    \end{tabularx}
 \end{table}
 
 \subsection{本章小结}

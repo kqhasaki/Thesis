@@ -1,9 +1,9 @@
-\documentclass[zihao=5]{ctexart}
+\documentclass[zihao=-4,heading=true,scheme=chinese]{ctexart}
 % 导言区 主要进行一些全局设置
 \usepackage{ctex}
 \usepackage{amsmath,amsfonts,amssymb}
 \usepackage{geometry}                                               
-\geometry{a4paper,scale=0.8}
+\geometry{a4paper, scale=0.8}
 \usepackage{booktabs}
 \usepackage{caption}
 \usepackage{subcaption}
@@ -13,6 +13,8 @@
 \usepackage{multirow}
 \usepackage{multirow}
 \usepackage{tabularx}
+\usepackage[final]{pdfpages}
+\usepackage{pdfpages}
 
 \ctexset{
    section={
@@ -31,33 +33,49 @@
 }
 \usepackage{fancyhdr}
 
-\bibliographystyle{plain}
-% \bibliographystyle{unsrt}
+\bibliographystyle{unsrt}
+\usepackage[backend=biber,style=gb7714-2015, gbnamefmt=lowercase, sorting=nty]{biblatex}
+\addbibresource{refs.bib}
 
 \pagestyle{fancy}
-\fancyhead[R]{\rightmark} % 在偶数页的右侧显示章名
-\fancyhead[LE,RO]{} 
+\chead{\small 南京审计大学硕士学位论文}
+\lhead{}
+\rhead{}
+\rfoot{}
+\lfoot{}
+\cfoot{\small \thepage}
 
 \renewcommand\sectionmark[1]{
 \numberwithin{figure}{section}
 \numberwithin{equation}{section}
 \renewcommand{\thesubfigure}{\alph{subfigure}}
 
+\captionsetup{margin=10pt,font={small,bf}}
+
 \markright{\CTEXifname{\CTEXthesection——}{}#1}}
 \addtolength{\voffset}{0.5cm} \addtolength{\textheight}{-0.5cm}
 \addtolength{\hoffset}{0.4cm}
 
-\title{南京审计大学硕士研究生毕业论文 \\—— $L_1$范数主成分分析及其在宏观经济因子模型中的应用}
-\author{蒯强}
-\date{\today}
-
 \begin{document}
-   \maketitle 
-   \newpage
-   \tableofcontents
+   \includepdf{cover.pdf}
+   \includepdf{cover-en.pdf}
    \thispagestyle{empty} 
    \newpage
+
    \setcounter{page}{1}
+   \pagenumbering{Roman}
+   \includepdfset{pagecommand={\thispagestyle{plain}}} % 给下面引入的所有 pdf 标页码
+   \includepdf{declaration.pdf}
+   \addcontentsline{toc}{section}{摘要}
+   \include{abstract-zh}
+   \addcontentsline{toc}{section}{Abstract}
+   \include{abstract-en}
+
+   \thispagestyle{plain}
+   \tableofcontents
+   \thispagestyle{plain}
+   \newpage
+   \pagenumbering{arabic}
 
    \nocite{*}
    \include{chapter1}
@@ -66,5 +84,9 @@
    \include{chapter4}
    \include{chapter5}
    \addcontentsline{toc}{section}{参考文献}%将“参考文献加入目录中”
-   \bibliography{refs}
+   \printbibliography
+   \addcontentsline{toc}{section}{附录}
+   \include{appendix}
+   \addcontentsline{toc}{section}{后记}
+   \include{backnote}
 \end{document}

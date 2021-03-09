@@ -1,360 +1,2804 @@
-\begin{thebibliography}{10}
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
 
-\bibitem{ait2019principal}
-Yacine A{\"\i}t-Sahalia and Dacheng Xiu.
-\newblock Principal component analysis of high-frequency data.
-\newblock {\em Journal of the American Statistical Association},
-  114(525):287--303, 2019.
 
-\bibitem{baccini1996l1}
-Alain Baccini, Ph~Besse, and A~Falguerolles.
-\newblock A l1-norm pca and a heuristic approach.
-\newblock {\em Ordinal and symbolic data analysis}, 1(1):359--368, 1996.
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{ait2019principal}{article}{}
+      \name{author}{2}{}{%
+        {{hash=fa7414bbf3591c1c68753af0a66723dc}{%
+           family={A{ı̈}t-Sahalia},
+           familyi={A\bibinithyphendelim S\bibinitperiod},
+           given={Yacine},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=c07af227d21eedc8d6d13f10a6243d02}{%
+           family={Xiu},
+           familyi={X\bibinitperiod},
+           given={Dacheng},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {Taylor \& Francis}%
+      }
+      \strng{namehash}{259a1640c341217991c5c323e9027902}
+      \strng{fullhash}{dbf48cd6e3990840f60e6d5ce352ddf8}
+      \strng{bibnamehash}{dbf48cd6e3990840f60e6d5ce352ddf8}
+      \strng{authorbibnamehash}{dbf48cd6e3990840f60e6d5ce352ddf8}
+      \strng{authornamehash}{259a1640c341217991c5c323e9027902}
+      \strng{authorfullhash}{dbf48cd6e3990840f60e6d5ce352ddf8}
+      \field{sortinit}{A}
+      \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of the American Statistical Association}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{number}{525}
+      \field{title}{Principal component analysis of high-frequency data}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{french}
+      \field{volume}{114}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \true{nocite}
+      \field{pages}{287\bibrangedash 303}
+      \range{pages}{17}
+      \keyw{ait2019principal}
+    \endentry
+    \entry{baccini1996l1}{article}{}
+      \name{author}{3}{}{%
+        {{hash=9eab0e2abe92a3f68616b33df6382203}{%
+           family={Baccini},
+           familyi={B\bibinitperiod},
+           given={Alain},
+           giveni={A\bibinitperiod}}}%
+        {{hash=23091ed6799e767453f3fa891342e719}{%
+           family={Besse},
+           familyi={B\bibinitperiod},
+           given={Ph},
+           giveni={P\bibinitperiod}}}%
+        {{hash=d19ccdcd9d9489b47593ad959d52f5bf}{%
+           family={Falguerolles},
+           familyi={F\bibinitperiod},
+           given={A},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {Citeseer}%
+      }
+      \strng{namehash}{b4ce4d6586f56c44cc5fa07e60e2c9d0}
+      \strng{fullhash}{8bded0502580c9bfed7b9cbc86d62cbf}
+      \strng{bibnamehash}{8bded0502580c9bfed7b9cbc86d62cbf}
+      \strng{authorbibnamehash}{8bded0502580c9bfed7b9cbc86d62cbf}
+      \strng{authornamehash}{b4ce4d6586f56c44cc5fa07e60e2c9d0}
+      \strng{authorfullhash}{8bded0502580c9bfed7b9cbc86d62cbf}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Ordinal and symbolic data analysis}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{number}{1}
+      \field{title}{A L1-norm PCA and a heuristic approach}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{1}
+      \field{year}{1996}
+      \field{dateera}{ce}
+      \true{nocite}
+      \field{pages}{359\bibrangedash 368}
+      \range{pages}{10}
+      \keyw{baccini1996l1}
+    \endentry
+    \entry{bai2016maximum}{article}{}
+      \name{author}{2}{}{%
+        {{hash=0dc94d98f7e1729d400a45f4d532e4a4}{%
+           family={Bai},
+           familyi={B\bibinitperiod},
+           given={Jushan},
+           giveni={J\bibinitperiod}}}%
+        {{hash=ed011651758f9d0d06ea4862c4902fb8}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Kunpeng},
+           giveni={K\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {MIT Press}%
+      }
+      \strng{namehash}{63372091cae0336f536eba3a6c8faa5d}
+      \strng{fullhash}{44324c1ff542e062560ce0d32e34407e}
+      \strng{bibnamehash}{44324c1ff542e062560ce0d32e34407e}
+      \strng{authorbibnamehash}{44324c1ff542e062560ce0d32e34407e}
+      \strng{authornamehash}{63372091cae0336f536eba3a6c8faa5d}
+      \strng{authorfullhash}{44324c1ff542e062560ce0d32e34407e}
+      \field{extraname}{1}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Review of Economics and Statistics}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{number}{2}
+      \field{title}{Maximum likelihood estimation and inference for approximate factor models of high dimension}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{98}
+      \field{year}{2016}
+      \field{dateera}{ce}
+      \true{nocite}
+      \field{pages}{298\bibrangedash 309}
+      \range{pages}{12}
+      \keyw{bai2016maximum}
+    \endentry
+    \entry{bai2002determining}{article}{}
+      \name{author}{2}{}{%
+        {{hash=0dc94d98f7e1729d400a45f4d532e4a4}{%
+           family={Bai},
+           familyi={B\bibinitperiod},
+           given={Jushan},
+           giveni={J\bibinitperiod}}}%
+        {{hash=3d9598cb5e0ac67e52bb26096e0fd043}{%
+           family={Ng},
+           familyi={N\bibinitperiod},
+           given={Serena},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{63372091cae0336f536eba3a6c8faa5d}
+      \strng{fullhash}{feda9ccfe432a161b59f18da98f3b0f1}
+      \strng{bibnamehash}{feda9ccfe432a161b59f18da98f3b0f1}
+      \strng{authorbibnamehash}{feda9ccfe432a161b59f18da98f3b0f1}
+      \strng{authornamehash}{63372091cae0336f536eba3a6c8faa5d}
+      \strng{authorfullhash}{feda9ccfe432a161b59f18da98f3b0f1}
+      \field{extraname}{2}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Econometrica}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{number}{1}
+      \field{title}{Determining the number of factors in approximate factor models}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{70}
+      \field{year}{2002}
+      \field{dateera}{ce}
+      \true{nocite}
+      \field{pages}{191\bibrangedash 221}
+      \range{pages}{31}
+      \keyw{bai2002determining}
+    \endentry
+    \entry{black1996unification}{article}{}
+      \name{author}{2}{}{%
+        {{hash=54960bfd1d66de256b111681241131bb}{%
+           family={Black},
+           familyi={B\bibinitperiod},
+           given={Michael\bibnamedelima J},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=f7babc8fccb57abd2ce3ec7dcd7a54e8}{%
+           family={Rangarajan},
+           familyi={R\bibinitperiod},
+           given={Anand},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{4eaf769518c9384a5fa8712a665cc3eb}
+      \strng{fullhash}{3729b210801c2c2859f65fdfa4654d30}
+      \strng{bibnamehash}{3729b210801c2c2859f65fdfa4654d30}
+      \strng{authorbibnamehash}{3729b210801c2c2859f65fdfa4654d30}
+      \strng{authornamehash}{4eaf769518c9384a5fa8712a665cc3eb}
+      \strng{authorfullhash}{3729b210801c2c2859f65fdfa4654d30}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International journal of computer vision}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{number}{1}
+      \field{title}{On the unification of line processes, outlier rejection, and robust statistics with applications in early vision}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{19}
+      \field{year}{1996}
+      \field{dateera}{ce}
+      \true{nocite}
+      \field{pages}{57\bibrangedash 91}
+      \range{pages}{35}
+      \keyw{black1996unification}
+    \endentry
+    \entry{brooks2013pure}{article}{}
+      \name{author}{3}{}{%
+        {{hash=7cfd454dc65e3a74ce3169e02be1adc4}{%
+           family={Brooks},
+           familyi={B\bibinitperiod},
+           given={J\bibnamedelima Paul},
+           giveni={J\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=fe9a786ed345a296af013e40e6d8cba3}{%
+           family={Dul{á}},
+           familyi={D\bibinitperiod},
+           given={Jos{é}\bibnamedelima H},
+           giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=8ad1aa768bff970e6dd6b9837a3833de}{%
+           family={Boone},
+           familyi={B\bibinitperiod},
+           given={Edward\bibnamedelima L},
+           giveni={E\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{12d19306014ab6d3d317ad15b351abb2}
+      \strng{fullhash}{052c20c76af7a18fbe96970366996031}
+      \strng{bibnamehash}{052c20c76af7a18fbe96970366996031}
+      \strng{authorbibnamehash}{052c20c76af7a18fbe96970366996031}
+      \strng{authornamehash}{12d19306014ab6d3d317ad15b351abb2}
+      \strng{authorfullhash}{052c20c76af7a18fbe96970366996031}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Computational statistics \& data analysis}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{A pure L1-norm principal component analysis}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{61}
+      \field{year}{2013}
+      \field{dateera}{ce}
+      \true{nocite}
+      \field{pages}{83\bibrangedash 98}
+      \range{pages}{16}
+      \keyw{brooks2013pure}
+    \endentry
+    \entry{chamberlain1982arbitrage}{misc}{}
+      \name{author}{2}{}{%
+        {{hash=cadf3c0a01d3d0ed77596395b933c92b}{%
+           family={Chamberlain},
+           familyi={C\bibinitperiod},
+           given={Gary},
+           giveni={G\bibinitperiod}}}%
+        {{hash=5850362a4d1c3a7593de8f80eba0a12d}{%
+           family={Rothschild},
+           familyi={R\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {National Bureau of Economic Research Cambridge, Mass., USA}%
+      }
+      \strng{namehash}{d6bc6c77128bf952b7aecb4673248012}
+      \strng{fullhash}{2290a7fa26864c3e1fd97af182623e34}
+      \strng{bibnamehash}{2290a7fa26864c3e1fd97af182623e34}
+      \strng{authorbibnamehash}{2290a7fa26864c3e1fd97af182623e34}
+      \strng{authornamehash}{d6bc6c77128bf952b7aecb4673248012}
+      \strng{authorfullhash}{2290a7fa26864c3e1fd97af182623e34}
+      \field{sortinit}{C}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Arbitrage, factor structure, and mean-variance analysis on large asset markets}
+      \field{usera}{Z}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{1982}
+      \field{dateera}{ce}
+      \true{nocite}
+      \keyw{chamberlain1982arbitrage}
+    \endentry
+    \entry{chan1999dynamic}{article}{}
+      \name{author}{3}{}{%
+        {{hash=e7fce00d931564ea13dcf79bf5124568}{%
+           family={Chan},
+           familyi={C\bibinitperiod},
+           given={Yeung\bibnamedelima Lewis},
+           giveni={Y\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=2d01c3b46f4061430cc9eb2a1f6408a4}{%
+           family={Stock},
+           familyi={S\bibinitperiod},
+           given={James\bibnamedelima H},
+           giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=a4050fd715c1bcb50e38ec0f1c74b6bf}{%
+           family={Watson},
+           familyi={W\bibinitperiod},
+           given={Mark\bibnamedelima W},
+           giveni={M\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{fef2c3e5f7c2907eafd2453a17ace296}
+      \strng{fullhash}{18a02df9c9593db310146b3f6851c120}
+      \strng{bibnamehash}{18a02df9c9593db310146b3f6851c120}
+      \strng{authorbibnamehash}{18a02df9c9593db310146b3f6851c120}
+      \strng{authornamehash}{fef2c3e5f7c2907eafd2453a17ace296}
+      \strng{authorfullhash}{18a02df9c9593db310146b3f6851c120}
+      \field{sortinit}{C}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Spanish Economic Review}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{number}{2}
+      \field{title}{A dynamic factor model framework for forecast combination}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{1}
+      \field{year}{1999}
+      \field{dateera}{ce}
+      \true{nocite}
+      \field{pages}{91\bibrangedash 121}
+      \range{pages}{31}
+      \keyw{chan1999dynamic}
+    \endentry
+    \entry{chen2018quantile}{article}{}
+      \name{author}{3}{}{%
+        {{hash=ddc1e4faf59edc7d7675723be4296244}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Liang},
+           giveni={L\bibinitperiod}}}%
+        {{hash=a782b617636000d6fab75246ba3351df}{%
+           family={Dolado},
+           familyi={D\bibinitperiod},
+           given={Juan},
+           giveni={J\bibinitperiod}}}%
+        {{hash=584939fdd1853e5c105498ed3bff9ec7}{%
+           family={Gonzalo},
+           familyi={G\bibinitperiod},
+           given={Jes{ú}s},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {CEPR Discussion Paper No. DP12716}%
+      }
+      \strng{namehash}{089bca6d47c556018292d8fb1b434388}
+      \strng{fullhash}{929323e3e5aa511fac870473b8e60451}
+      \strng{bibnamehash}{929323e3e5aa511fac870473b8e60451}
+      \strng{authorbibnamehash}{929323e3e5aa511fac870473b8e60451}
+      \strng{authornamehash}{089bca6d47c556018292d8fb1b434388}
+      \strng{authorfullhash}{929323e3e5aa511fac870473b8e60451}
+      \field{extraname}{1}
+      \field{sortinit}{C}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Quantile factor models}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \true{nocite}
+      \keyw{chen2018quantile}
+    \endentry
+    \entry{svn}{article}{}
+      \name{author}{4}{}{%
+        {{hash=c6649d02b24225ca4c9012cee6c790de}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Xi},
+           giveni={X\bibinitperiod}}}%
+        {{hash=cd85d0e2aa6430b54c375462603a78c9}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Weidong},
+           giveni={W\bibinitperiod}}}%
+        {{hash=49987150149b04147a868486676dc489}{%
+           family={Mao},
+           familyi={M\bibinitperiod},
+           given={Xiaojun},
+           giveni={X\bibinitperiod}}}%
+        {{hash=ee9169efa67749d9c6c9ea0a8da0d36e}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Zhuoyi},
+           giveni={Z\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{fcec9bb019a48f994cf390066d6aa604}
+      \strng{fullhash}{376bcf35a2bdfd941fe4ce3de46b3714}
+      \strng{bibnamehash}{88a2d560595d465ed6672f6e1f08abc7}
+      \strng{authorbibnamehash}{88a2d560595d465ed6672f6e1f08abc7}
+      \strng{authornamehash}{fcec9bb019a48f994cf390066d6aa604}
+      \strng{authorfullhash}{376bcf35a2bdfd941fe4ce3de46b3714}
+      \field{extraname}{2}
+      \field{sortinit}{C}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Machine Learning Research}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{number}{182}
+      \field{title}{Distributed High-dimensional Regression Under a Quantile Loss Function}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{21}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \true{nocite}
+      \field{pages}{1\bibrangedash 43}
+      \range{pages}{43}
+      \verb{urlraw}
+      \verb http://jmlr.org/papers/v21/20-297.html
+      \endverb
+      \verb{url}
+      \verb http://jmlr.org/papers/v21/20-297.html
+      \endverb
+      \keyw{svn}
+    \endentry
+    \entry{choulakian2006l1}{article}{}
+      \name{author}{1}{}{%
+        {{hash=655cc691ff0bde54644245fde867d6ae}{%
+           family={Choulakian},
+           familyi={C\bibinitperiod},
+           given={Vartan},
+           giveni={V\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{655cc691ff0bde54644245fde867d6ae}
+      \strng{fullhash}{655cc691ff0bde54644245fde867d6ae}
+      \strng{bibnamehash}{655cc691ff0bde54644245fde867d6ae}
+      \strng{authorbibnamehash}{655cc691ff0bde54644245fde867d6ae}
+      \strng{authornamehash}{655cc691ff0bde54644245fde867d6ae}
+      \strng{authorfullhash}{655cc691ff0bde54644245fde867d6ae}
+      \field{sortinit}{C}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Computational statistics \& data analysis}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{number}{6}
+      \field{title}{L1-norm projection pursuit principal component analysis}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{50}
+      \field{year}{2006}
+      \field{dateera}{ce}
+      \true{nocite}
+      \field{pages}{1441\bibrangedash 1451}
+      \range{pages}{11}
+      \keyw{choulakian2006l1}
+    \endentry
+    \entry{clayton1999application}{article}{}
+      \name{author}{2}{}{%
+        {{hash=d9dbe5794b9f94695ff7a8d47b31e779}{%
+           family={Clayton-Matthews},
+           familyi={C\bibinithyphendelim M\bibinitperiod},
+           given={Alan},
+           giveni={A\bibinitperiod}}}%
+        {{hash=2d01c3b46f4061430cc9eb2a1f6408a4}{%
+           family={Stock},
+           familyi={S\bibinitperiod},
+           given={James\bibnamedelima H},
+           giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {IOS Press}%
+      }
+      \strng{namehash}{a42d6ccf8a92f7ddc2495b15582218aa}
+      \strng{fullhash}{880dba20ca1976b8a7625eede81b2908}
+      \strng{bibnamehash}{880dba20ca1976b8a7625eede81b2908}
+      \strng{authorbibnamehash}{880dba20ca1976b8a7625eede81b2908}
+      \strng{authornamehash}{a42d6ccf8a92f7ddc2495b15582218aa}
+      \strng{authorfullhash}{880dba20ca1976b8a7625eede81b2908}
+      \field{sortinit}{C}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Economic and Social Measurement}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{number}{3-4}
+      \field{title}{An application of the Stock/Watson index methodology to the Massachusetts economy}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{25}
+      \field{year}{1999}
+      \field{dateera}{ce}
+      \true{nocite}
+      \field{pages}{183\bibrangedash 233}
+      \range{pages}{51}
+      \keyw{clayton1999application}
+    \endentry
+    \entry{connor1993test}{article}{}
+      \name{author}{2}{}{%
+        {{hash=7291de597c4a021886f41346f7cd1c2a}{%
+           family={Connor},
+           familyi={C\bibinitperiod},
+           given={Gregory},
+           giveni={G\bibinitperiod}}}%
+        {{hash=0d5347cb9c4384916c20ab1487f91b38}{%
+           family={Korajczyk},
+           familyi={K\bibinitperiod},
+           given={Robert\bibnamedelima A},
+           giveni={R\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{29c9f4bea608ddf2509b8e55ec4e9ed0}
+      \strng{fullhash}{a449b65c2518c2acaa62c05fb5039992}
+      \strng{bibnamehash}{a449b65c2518c2acaa62c05fb5039992}
+      \strng{authorbibnamehash}{a449b65c2518c2acaa62c05fb5039992}
+      \strng{authornamehash}{29c9f4bea608ddf2509b8e55ec4e9ed0}
+      \strng{authorfullhash}{a449b65c2518c2acaa62c05fb5039992}
+      \field{sortinit}{C}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{the Journal of Finance}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{number}{4}
+      \field{title}{A test for the number of factors in an approximate factor model}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{48}
+      \field{year}{1993}
+      \field{dateera}{ce}
+      \true{nocite}
+      \field{pages}{1263\bibrangedash 1291}
+      \range{pages}{29}
+      \keyw{connor1993test}
+    \endentry
+    \entry{dasgupta2004least}{article}{}
+      \name{author}{2}{}{%
+        {{hash=f005bf1085d486df789e6df9e8f0d149}{%
+           family={Dasgupta},
+           familyi={D\bibinitperiod},
+           given={Madhuchhanda},
+           giveni={M\bibinitperiod}}}%
+        {{hash=5a441ca38df7e148b3745eef46e258e8}{%
+           family={Mishra},
+           familyi={M\bibinitperiod},
+           given={Sudhanshu\bibnamedelima K},
+           giveni={S\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{4c444153efbf0f566408521c4b3f46cc}
+      \strng{fullhash}{22a45157d707cde372a274a5ef49080f}
+      \strng{bibnamehash}{22a45157d707cde372a274a5ef49080f}
+      \strng{authorbibnamehash}{22a45157d707cde372a274a5ef49080f}
+      \strng{authornamehash}{4c444153efbf0f566408521c4b3f46cc}
+      \strng{authorfullhash}{22a45157d707cde372a274a5ef49080f}
+      \field{sortinit}{D}
+      \field{sortinithash}{c438b3d5d027251ba63f5ed538d98af5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Available at SSRN 552502}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Least absolute deviation estimation of linear econometric models: A literature review}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2004}
+      \field{dateera}{ce}
+      \true{nocite}
+      \keyw{dasgupta2004least}
+    \endentry
+    \entry{davis1997least}{article}{}
+      \name{author}{2}{}{%
+        {{hash=8a2bb053c938a3254c68ec9fb886a907}{%
+           family={Davis},
+           familyi={D\bibinitperiod},
+           given={Richard\bibnamedelima A},
+           giveni={R\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=d06c61746b0f1c657b4928ff011ee43d}{%
+           family={Dunsmuir},
+           familyi={D\bibinitperiod},
+           given={William\bibnamedelima TM},
+           giveni={W\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{2e9116fc2ac130b91e44943c6ee2f35a}
+      \strng{fullhash}{5b650a820009d69bd2e049a6228ac26e}
+      \strng{bibnamehash}{5b650a820009d69bd2e049a6228ac26e}
+      \strng{authorbibnamehash}{5b650a820009d69bd2e049a6228ac26e}
+      \strng{authornamehash}{2e9116fc2ac130b91e44943c6ee2f35a}
+      \strng{authorfullhash}{5b650a820009d69bd2e049a6228ac26e}
+      \field{sortinit}{D}
+      \field{sortinithash}{c438b3d5d027251ba63f5ed538d98af5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Theoretical Probability}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{number}{2}
+      \field{title}{Least absolute deviation estimation for regression with ARMA errors}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{10}
+      \field{year}{1997}
+      \field{dateera}{ce}
+      \true{nocite}
+      \field{pages}{481\bibrangedash 497}
+      \range{pages}{17}
+      \keyw{davis1997least}
+    \endentry
+    \entry{ding2006r}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=24d43467609f9e0dc1dc08fceb70e334}{%
+           family={Ding},
+           familyi={D\bibinitperiod},
+           given={Chris},
+           giveni={C\bibinitperiod}}}%
+        {{hash=061b51ccc7fb3c57ecfcde233c518800}{%
+           family={Zhou},
+           familyi={Z\bibinitperiod},
+           given={Ding},
+           giveni={D\bibinitperiod}}}%
+        {{hash=e1d1bb0e931bea3229ccf09064809f49}{%
+           family={He},
+           familyi={H\bibinitperiod},
+           given={Xiaofeng},
+           giveni={X\bibinitperiod}}}%
+        {{hash=55bb21a31fded4aad976b7902dc8206a}{%
+           family={Zha},
+           familyi={Z\bibinitperiod},
+           given={Hongyuan},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{7939a96f7969d472f2755bd0cce31956}
+      \strng{fullhash}{3d75d8628e84fb58345a4c877d3cd6d4}
+      \strng{bibnamehash}{492bf9bf7cf6e0002b2533f04c15602d}
+      \strng{authorbibnamehash}{492bf9bf7cf6e0002b2533f04c15602d}
+      \strng{authornamehash}{7939a96f7969d472f2755bd0cce31956}
+      \strng{authorfullhash}{3d75d8628e84fb58345a4c877d3cd6d4}
+      \field{sortinit}{D}
+      \field{sortinithash}{c438b3d5d027251ba63f5ed538d98af5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 23rd international conference on Machine learning}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{R 1-pca: rotational invariant l 1-norm principal component analysis for robust subspace factorization}
+      \field{usera}{C}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2006}
+      \field{dateera}{ce}
+      \true{nocite}
+      \field{pages}{281\bibrangedash 288}
+      \range{pages}{8}
+      \keyw{ding2006r}
+    \endentry
+    \entry{eickmeier2008successful}{article}{}
+      \name{author}{2}{}{%
+        {{hash=89cda653f05ceb46c6be59bee737620e}{%
+           family={Eickmeier},
+           familyi={E\bibinitperiod},
+           given={Sandra},
+           giveni={S\bibinitperiod}}}%
+        {{hash=967eaab937be588976fa99fae57eb699}{%
+           family={Ziegler},
+           familyi={Z\bibinitperiod},
+           given={Christina},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{c021ba1e92f55dd6be0c7a429cc9db40}
+      \strng{fullhash}{9826b4781009c1b8e07fc6aac6699980}
+      \strng{bibnamehash}{9826b4781009c1b8e07fc6aac6699980}
+      \strng{authorbibnamehash}{9826b4781009c1b8e07fc6aac6699980}
+      \strng{authornamehash}{c021ba1e92f55dd6be0c7a429cc9db40}
+      \strng{authorfullhash}{9826b4781009c1b8e07fc6aac6699980}
+      \field{sortinit}{E}
+      \field{sortinithash}{c554bd1a0b76ea92b9f105fe36d9c7b0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Forecasting}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{number}{3}
+      \field{title}{How successful are dynamic factor models at forecasting output and inflation? A meta-analytic approach}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{27}
+      \field{year}{2008}
+      \field{dateera}{ce}
+      \true{nocite}
+      \field{pages}{237\bibrangedash 265}
+      \range{pages}{29}
+      \keyw{eickmeier2008successful}
+    \endentry
+    \entry{ellis1998instability}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{hash=4fa17c272f4ac8b6101a9244eda40613}{%
+           family={Ellis},
+           familyi={E\bibinitperiod},
+           given={Steven\bibnamedelima P},
+           giveni={S\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {Institute of Mathematical Statistics}%
+      }
+      \strng{namehash}{1ae3c53c410aabdbf3ecffa2ef3f960e}
+      \strng{fullhash}{1ae3c53c410aabdbf3ecffa2ef3f960e}
+      \strng{bibnamehash}{1ae3c53c410aabdbf3ecffa2ef3f960e}
+      \strng{authorbibnamehash}{1ae3c53c410aabdbf3ecffa2ef3f960e}
+      \strng{authornamehash}{1ae3c53c410aabdbf3ecffa2ef3f960e}
+      \strng{authorfullhash}{1ae3c53c410aabdbf3ecffa2ef3f960e}
+      \field{sortinit}{E}
+      \field{sortinithash}{c554bd1a0b76ea92b9f105fe36d9c7b0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Statistical Science}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{number}{4}
+      \field{title}{Instability of least squares, least absolute deviation and least median of squares linear regression, with a comment by stephen portnoy and ivan mizera and a rejoinder by the author}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{13}
+      \field{year}{1998}
+      \field{dateera}{ce}
+      \true{nocite}
+      \field{pages}{337\bibrangedash 350}
+      \range{pages}{14}
+      \keyw{ellis1998instability}
+    \endentry
+    \entry{eriksson2010efficient}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=12ffe87b462ff07adf45cbad5e2956d8}{%
+           family={Eriksson},
+           familyi={E\bibinitperiod},
+           given={Anders},
+           giveni={A\bibinitperiod}}}%
+        {{hash=391cf8d44b25428741c620023f018f0a}{%
+           family={Van\bibnamedelimb Den\bibnamedelima Hengel},
+           familyi={V\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim H\bibinitperiod},
+           given={Anton},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{a893cdbf31a55aa2e1adc334dc574f5b}
+      \strng{fullhash}{cde519f8ae80f1fc58e57fc59222afd4}
+      \strng{bibnamehash}{cde519f8ae80f1fc58e57fc59222afd4}
+      \strng{authorbibnamehash}{cde519f8ae80f1fc58e57fc59222afd4}
+      \strng{authornamehash}{a893cdbf31a55aa2e1adc334dc574f5b}
+      \strng{authorfullhash}{cde519f8ae80f1fc58e57fc59222afd4}
+      \field{sortinit}{E}
+      \field{sortinithash}{c554bd1a0b76ea92b9f105fe36d9c7b0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2010 IEEE Computer Society Conference on Computer Vision and Pattern Recognition}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Efficient computation of robust low-rank matrix approximations in the presence of missing data using the L 1 norm}
+      \field{usera}{C}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2010}
+      \field{dateera}{ce}
+      \true{nocite}
+      \field{pages}{771\bibrangedash 778}
+      \range{pages}{8}
+      \keyw{eriksson2010efficient}
+    \endentry
+    \entry{forni2000generalized}{article}{}
+      \name{author}{4}{}{%
+        {{hash=da46a0f7ac9d501e7896001447c66543}{%
+           family={Forni},
+           familyi={F\bibinitperiod},
+           given={Mario},
+           giveni={M\bibinitperiod}}}%
+        {{hash=8f2fa5f0999c35286d901c160ec7c642}{%
+           family={Hallin},
+           familyi={H\bibinitperiod},
+           given={Marc},
+           giveni={M\bibinitperiod}}}%
+        {{hash=87f69230e136bd69fe2f8517e0536169}{%
+           family={Lippi},
+           familyi={L\bibinitperiod},
+           given={Marco},
+           giveni={M\bibinitperiod}}}%
+        {{hash=7b2f5c758fdfb711329e5ce8613416ee}{%
+           family={Reichlin},
+           familyi={R\bibinitperiod},
+           given={Lucrezia},
+           giveni={L\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {MIT Press}%
+      }
+      \strng{namehash}{d413cf710e7dc8b87e60a7fb28640e68}
+      \strng{fullhash}{b3ee7ea73f9ecca6ef6158ce1a96eddf}
+      \strng{bibnamehash}{5693ac70961fe54e4a396dab24aff4e9}
+      \strng{authorbibnamehash}{5693ac70961fe54e4a396dab24aff4e9}
+      \strng{authornamehash}{d413cf710e7dc8b87e60a7fb28640e68}
+      \strng{authorfullhash}{b3ee7ea73f9ecca6ef6158ce1a96eddf}
+      \field{sortinit}{F}
+      \field{sortinithash}{fb0c0faa89eb6abae8213bf60e6799ea}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Review of Economics and statistics}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{number}{4}
+      \field{title}{The generalized dynamic-factor model: Identification and estimation}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{82}
+      \field{year}{2000}
+      \field{dateera}{ce}
+      \true{nocite}
+      \field{pages}{540\bibrangedash 554}
+      \range{pages}{15}
+      \keyw{forni2000generalized}
+    \endentry
+    \entry{galpin1987methods}{article}{}
+      \name{author}{2}{}{%
+        {{hash=1418b54f2863998e89b984b3c0f78608}{%
+           family={Galpin},
+           familyi={G\bibinitperiod},
+           given={Jacqueline\bibnamedelima S},
+           giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=374c19ef631c91f386846444ea48e6bb}{%
+           family={Hawkins},
+           familyi={H\bibinitperiod},
+           given={Douglas\bibnamedelima M},
+           giveni={D\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{fdcf6688091afe243473e70516a0fdf3}
+      \strng{fullhash}{7d03ba45de0f01147034b0636e6dafb8}
+      \strng{bibnamehash}{7d03ba45de0f01147034b0636e6dafb8}
+      \strng{authorbibnamehash}{7d03ba45de0f01147034b0636e6dafb8}
+      \strng{authornamehash}{fdcf6688091afe243473e70516a0fdf3}
+      \strng{authorfullhash}{7d03ba45de0f01147034b0636e6dafb8}
+      \field{sortinit}{G}
+      \field{sortinithash}{62eb2aa29549e4fdbd3cb154ec5711cb}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Computational Statistics \& Data Analysis}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{number}{4}
+      \field{title}{Methods of L1 estimation of a covariance matrix}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{5}
+      \field{year}{1987}
+      \field{dateera}{ce}
+      \true{nocite}
+      \field{pages}{305\bibrangedash 319}
+      \range{pages}{15}
+      \keyw{galpin1987methods}
+    \endentry
+    \entry{gao2008robust}{article}{}
+      \name{author}{1}{}{%
+        {{hash=4bffe8d37bb00627710c803cc2e223dd}{%
+           family={Gao},
+           familyi={G\bibinitperiod},
+           given={Junbin},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {MIT Press}%
+      }
+      \strng{namehash}{4bffe8d37bb00627710c803cc2e223dd}
+      \strng{fullhash}{4bffe8d37bb00627710c803cc2e223dd}
+      \strng{bibnamehash}{4bffe8d37bb00627710c803cc2e223dd}
+      \strng{authorbibnamehash}{4bffe8d37bb00627710c803cc2e223dd}
+      \strng{authornamehash}{4bffe8d37bb00627710c803cc2e223dd}
+      \strng{authorfullhash}{4bffe8d37bb00627710c803cc2e223dd}
+      \field{sortinit}{G}
+      \field{sortinithash}{62eb2aa29549e4fdbd3cb154ec5711cb}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Neural computation}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{number}{2}
+      \field{title}{Robust L1 principal component analysis and its Bayesian variational inference}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{20}
+      \field{year}{2008}
+      \field{dateera}{ce}
+      \true{nocite}
+      \field{pages}{555\bibrangedash 572}
+      \range{pages}{18}
+      \keyw{gao2008robust}
+    \endentry
+    \entry{geweke1977dynamic}{article}{}
+      \name{author}{1}{}{%
+        {{hash=73fa8bd1fc6234dda333ed7be4d87999}{%
+           family={Geweke},
+           familyi={G\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {North-Holland}%
+      }
+      \strng{namehash}{73fa8bd1fc6234dda333ed7be4d87999}
+      \strng{fullhash}{73fa8bd1fc6234dda333ed7be4d87999}
+      \strng{bibnamehash}{73fa8bd1fc6234dda333ed7be4d87999}
+      \strng{authorbibnamehash}{73fa8bd1fc6234dda333ed7be4d87999}
+      \strng{authornamehash}{73fa8bd1fc6234dda333ed7be4d87999}
+      \strng{authorfullhash}{73fa8bd1fc6234dda333ed7be4d87999}
+      \field{sortinit}{G}
+      \field{sortinithash}{62eb2aa29549e4fdbd3cb154ec5711cb}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Latent variables in socio-economic models}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{The dynamic factor analysis of economic time series}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{1977}
+      \field{dateera}{ce}
+      \true{nocite}
+      \keyw{geweke1977dynamic}
+    \endentry
+    \entry{jeon2018data}{article}{}
+      \name{author}{4}{}{%
+        {{hash=b7599a9e30f25eebd7c5ed3ebf477d62}{%
+           family={Jeon},
+           familyi={J\bibinitperiod},
+           given={Hong-Min},
+           giveni={H\bibinithyphendelim M\bibinitperiod}}}%
+        {{hash=c3effa23f472c269cd22ca4d4fed10fd}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={Je-Yeol},
+           giveni={J\bibinithyphendelim Y\bibinitperiod}}}%
+        {{hash=40f57657146112d5a0c9c0f2e7d713c1}{%
+           family={Jeong},
+           familyi={J\bibinitperiod},
+           given={Gu-Min},
+           giveni={G\bibinithyphendelim M\bibinitperiod}}}%
+        {{hash=c3f8c60827f171e6b2de61e8c04da5d2}{%
+           family={Choi},
+           familyi={C\bibinitperiod},
+           given={Sang-Il},
+           giveni={S\bibinithyphendelim I\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {Public Library of Science San Francisco, CA USA}%
+      }
+      \strng{namehash}{ca00d70021f16ee4aac6b68be632d05e}
+      \strng{fullhash}{c6bcbd90f15dd7e05c0edef0da7814f8}
+      \strng{bibnamehash}{d4aa724006706b276d6ef523e2be7f86}
+      \strng{authorbibnamehash}{d4aa724006706b276d6ef523e2be7f86}
+      \strng{authornamehash}{ca00d70021f16ee4aac6b68be632d05e}
+      \strng{authorfullhash}{c6bcbd90f15dd7e05c0edef0da7814f8}
+      \field{sortinit}{J}
+      \field{sortinithash}{c45040a764d616897e7f5b30174d7b92}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{PloS one}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{number}{7}
+      \field{title}{Data reconstruction using iteratively reweighted L1-principal component analysis for an electronic nose system}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{13}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \true{nocite}
+      \field{pages}{e0200605}
+      \range{pages}{-1}
+      \keyw{jeon2018data}
+    \endentry
+    \entry{kalman1996singularly}{article}{}
+      \name{author}{1}{}{%
+        {{hash=7a3c0d459b9dfb723098803912a44a89}{%
+           family={Kalman},
+           familyi={K\bibinitperiod},
+           given={Dan},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {Taylor \& Francis}%
+      }
+      \strng{namehash}{7a3c0d459b9dfb723098803912a44a89}
+      \strng{fullhash}{7a3c0d459b9dfb723098803912a44a89}
+      \strng{bibnamehash}{7a3c0d459b9dfb723098803912a44a89}
+      \strng{authorbibnamehash}{7a3c0d459b9dfb723098803912a44a89}
+      \strng{authornamehash}{7a3c0d459b9dfb723098803912a44a89}
+      \strng{authorfullhash}{7a3c0d459b9dfb723098803912a44a89}
+      \field{sortinit}{K}
+      \field{sortinithash}{d3edc18d54b9438a72c24c925bfb38f4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The college mathematics journal}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{number}{1}
+      \field{title}{A singularly valuable decomposition: the SVD of a matrix}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{27}
+      \field{year}{1996}
+      \field{dateera}{ce}
+      \true{nocite}
+      \field{pages}{2\bibrangedash 23}
+      \range{pages}{22}
+      \keyw{kalman1996singularly}
+    \endentry
+    \entry{kapetanios2010testing}{article}{}
+      \name{author}{1}{}{%
+        {{hash=f723227aeafdd8787d902350f1a43144}{%
+           family={Kapetanios},
+           familyi={K\bibinitperiod},
+           given={George},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {Taylor \& Francis}%
+      }
+      \strng{namehash}{f723227aeafdd8787d902350f1a43144}
+      \strng{fullhash}{f723227aeafdd8787d902350f1a43144}
+      \strng{bibnamehash}{f723227aeafdd8787d902350f1a43144}
+      \strng{authorbibnamehash}{f723227aeafdd8787d902350f1a43144}
+      \strng{authornamehash}{f723227aeafdd8787d902350f1a43144}
+      \strng{authorfullhash}{f723227aeafdd8787d902350f1a43144}
+      \field{sortinit}{K}
+      \field{sortinithash}{d3edc18d54b9438a72c24c925bfb38f4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Business \& Economic Statistics}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{number}{3}
+      \field{title}{A testing procedure for determining the number of factors in approximate factor models with large datasets}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{28}
+      \field{year}{2010}
+      \field{dateera}{ce}
+      \true{nocite}
+      \field{pages}{397\bibrangedash 409}
+      \range{pages}{13}
+      \keyw{kapetanios2010testing}
+    \endentry
+    \entry{ke2005robust}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=024834fd2b6e98579bb6cf9e3eb385ff}{%
+           family={Ke},
+           familyi={K\bibinitperiod},
+           given={Qifa},
+           giveni={Q\bibinitperiod}}}%
+        {{hash=45496c6a7530cfbfb4f3218a2602b77e}{%
+           family={Kanade},
+           familyi={K\bibinitperiod},
+           given={Takeo},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{4f784eb791e4343c0029566a53b97c1e}
+      \strng{fullhash}{e8bfc4bafd662d74abe6f1a71e8c6b88}
+      \strng{bibnamehash}{e8bfc4bafd662d74abe6f1a71e8c6b88}
+      \strng{authorbibnamehash}{e8bfc4bafd662d74abe6f1a71e8c6b88}
+      \strng{authornamehash}{4f784eb791e4343c0029566a53b97c1e}
+      \strng{authorfullhash}{e8bfc4bafd662d74abe6f1a71e8c6b88}
+      \field{extraname}{1}
+      \field{sortinit}{K}
+      \field{sortinithash}{d3edc18d54b9438a72c24c925bfb38f4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2005 IEEE Computer Society Conference on Computer Vision and Pattern Recognition (CVPR'05)}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Robust l-1 norm factorization in the presence of outliers and missing data by alternative convex programming}
+      \field{usera}{C}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{1}
+      \field{year}{2005}
+      \field{dateera}{ce}
+      \true{nocite}
+      \field{pages}{739\bibrangedash 746}
+      \range{pages}{8}
+      \keyw{ke2005robust}
+    \endentry
+    \entry{ke2003robust}{article}{}
+      \name{author}{2}{}{%
+        {{hash=024834fd2b6e98579bb6cf9e3eb385ff}{%
+           family={Ke},
+           familyi={K\bibinitperiod},
+           given={Qifa},
+           giveni={Q\bibinitperiod}}}%
+        {{hash=45496c6a7530cfbfb4f3218a2602b77e}{%
+           family={Kanade},
+           familyi={K\bibinitperiod},
+           given={Takeo},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {Carnegie Mellon University}%
+      }
+      \strng{namehash}{4f784eb791e4343c0029566a53b97c1e}
+      \strng{fullhash}{e8bfc4bafd662d74abe6f1a71e8c6b88}
+      \strng{bibnamehash}{e8bfc4bafd662d74abe6f1a71e8c6b88}
+      \strng{authorbibnamehash}{e8bfc4bafd662d74abe6f1a71e8c6b88}
+      \strng{authornamehash}{4f784eb791e4343c0029566a53b97c1e}
+      \strng{authorfullhash}{e8bfc4bafd662d74abe6f1a71e8c6b88}
+      \field{extraname}{2}
+      \field{sortinit}{K}
+      \field{sortinithash}{d3edc18d54b9438a72c24c925bfb38f4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Robust subspace computation using L1 norm}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2003}
+      \field{dateera}{ce}
+      \true{nocite}
+      \keyw{ke2003robust}
+    \endentry
+    \entry{kwak2008principal}{article}{}
+      \name{author}{1}{}{%
+        {{hash=efecb72bd47d26ee1325f135b6665948}{%
+           family={Kwak},
+           familyi={K\bibinitperiod},
+           given={Nojun},
+           giveni={N\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{efecb72bd47d26ee1325f135b6665948}
+      \strng{fullhash}{efecb72bd47d26ee1325f135b6665948}
+      \strng{bibnamehash}{efecb72bd47d26ee1325f135b6665948}
+      \strng{authorbibnamehash}{efecb72bd47d26ee1325f135b6665948}
+      \strng{authornamehash}{efecb72bd47d26ee1325f135b6665948}
+      \strng{authorfullhash}{efecb72bd47d26ee1325f135b6665948}
+      \field{sortinit}{K}
+      \field{sortinithash}{d3edc18d54b9438a72c24c925bfb38f4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE transactions on pattern analysis and machine intelligence}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{number}{9}
+      \field{title}{Principal component analysis based on L1-norm maximization}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{30}
+      \field{year}{2008}
+      \field{dateera}{ce}
+      \true{nocite}
+      \field{pages}{1672\bibrangedash 1680}
+      \range{pages}{9}
+      \keyw{kwak2008principal}
+    \endentry
+    \entry{luciani2014large}{article}{}
+      \name{author}{1}{}{%
+        {{hash=490b7e30469cb93e29afe3359ebfeb80}{%
+           family={Luciani},
+           familyi={L\bibinitperiod},
+           given={Matteo},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{490b7e30469cb93e29afe3359ebfeb80}
+      \strng{fullhash}{490b7e30469cb93e29afe3359ebfeb80}
+      \strng{bibnamehash}{490b7e30469cb93e29afe3359ebfeb80}
+      \strng{authorbibnamehash}{490b7e30469cb93e29afe3359ebfeb80}
+      \strng{authornamehash}{490b7e30469cb93e29afe3359ebfeb80}
+      \strng{authorfullhash}{490b7e30469cb93e29afe3359ebfeb80}
+      \field{sortinit}{L}
+      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Available at SSRN 2511872}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Large-dimensional dynamic factor models in real-time: A survey}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2014}
+      \field{dateera}{ce}
+      \true{nocite}
+      \keyw{luciani2014large}
+    \endentry
+    \entry{markopoulos2014optimal}{article}{}
+      \name{author}{3}{}{%
+        {{hash=8625fbe67d74ae0cc161ddc8fcda031d}{%
+           family={Markopoulos},
+           familyi={M\bibinitperiod},
+           given={Panos\bibnamedelima P},
+           giveni={P\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=201a44659ea19b3431e37f28f96ae03c}{%
+           family={Karystinos},
+           familyi={K\bibinitperiod},
+           given={George\bibnamedelima N},
+           giveni={G\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=dddb00f97b0e5f508e8ae99c2eeb751f}{%
+           family={Pados},
+           familyi={P\bibinitperiod},
+           given={Dimitris\bibnamedelima A},
+           giveni={D\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{43b7d41526f4a0dd9dc794cef4648eb7}
+      \strng{fullhash}{f7c3b2298485335ff9f9d62713d300f6}
+      \strng{bibnamehash}{f7c3b2298485335ff9f9d62713d300f6}
+      \strng{authorbibnamehash}{f7c3b2298485335ff9f9d62713d300f6}
+      \strng{authornamehash}{43b7d41526f4a0dd9dc794cef4648eb7}
+      \strng{authorfullhash}{f7c3b2298485335ff9f9d62713d300f6}
+      \field{extraname}{1}
+      \field{sortinit}{M}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Signal Processing}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{number}{19}
+      \field{title}{Optimal algorithms for $ L\_ $\{$1$\}$ $-subspace signal processing}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{62}
+      \field{year}{2014}
+      \field{dateera}{ce}
+      \true{nocite}
+      \field{pages}{5046\bibrangedash 5058}
+      \range{pages}{13}
+      \keyw{markopoulos2014optimal}
+    \endentry
+    \entry{markopoulos2017efficient}{article}{}
+      \name{author}{4}{}{%
+        {{hash=8625fbe67d74ae0cc161ddc8fcda031d}{%
+           family={Markopoulos},
+           familyi={M\bibinitperiod},
+           given={Panos\bibnamedelima P},
+           giveni={P\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=22f5b9594fb5e4b60682b792befc3a35}{%
+           family={Kundu},
+           familyi={K\bibinitperiod},
+           given={Sandipan},
+           giveni={S\bibinitperiod}}}%
+        {{hash=06fafde5480fc7ee2cf8d856952c0d37}{%
+           family={Chamadia},
+           familyi={C\bibinitperiod},
+           given={Shubham},
+           giveni={S\bibinitperiod}}}%
+        {{hash=dddb00f97b0e5f508e8ae99c2eeb751f}{%
+           family={Pados},
+           familyi={P\bibinitperiod},
+           given={Dimitris\bibnamedelima A},
+           giveni={D\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{43b7d41526f4a0dd9dc794cef4648eb7}
+      \strng{fullhash}{9bfbe9f8dc4f225edc0d3607e867ce96}
+      \strng{bibnamehash}{eeb50758c7522d3097451173abb6aeab}
+      \strng{authorbibnamehash}{eeb50758c7522d3097451173abb6aeab}
+      \strng{authornamehash}{43b7d41526f4a0dd9dc794cef4648eb7}
+      \strng{authorfullhash}{9bfbe9f8dc4f225edc0d3607e867ce96}
+      \field{extraname}{2}
+      \field{sortinit}{M}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Signal Processing}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{number}{16}
+      \field{title}{Efficient L1-norm principal-component analysis via bit flipping}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{65}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \true{nocite}
+      \field{pages}{4252\bibrangedash 4264}
+      \range{pages}{13}
+      \keyw{markopoulos2017efficient}
+    \endentry
+    \entry{masih1996stock}{article}{}
+      \name{author}{2}{}{%
+        {{hash=f8e07d8afa13e6d5569db47e64bb4cfb}{%
+           family={Masih},
+           familyi={M\bibinitperiod},
+           given={Rumi},
+           giveni={R\bibinitperiod}}}%
+        {{hash=2905039121b1d5e134103d9af70d3b1d}{%
+           family={Masih},
+           familyi={M\bibinitperiod},
+           given={Abul\bibnamedelima MM},
+           giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{27fbb86c00cdd1b88ecf09cc428fcc8a}
+      \strng{fullhash}{df5f84da0863ccb441e8049caf3040dc}
+      \strng{bibnamehash}{df5f84da0863ccb441e8049caf3040dc}
+      \strng{authorbibnamehash}{df5f84da0863ccb441e8049caf3040dc}
+      \strng{authornamehash}{27fbb86c00cdd1b88ecf09cc428fcc8a}
+      \strng{authorfullhash}{df5f84da0863ccb441e8049caf3040dc}
+      \field{sortinit}{M}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Energy Economics}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{number}{4}
+      \field{title}{Stock-Watson dynamic OLS (DOLS) and error-correction modelling approaches to estimating long-and short-run elasticities in a demand function: new evidence and methodological implications from an application to the demand for coal in mainland China}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{18}
+      \field{year}{1996}
+      \field{dateera}{ce}
+      \true{nocite}
+      \field{pages}{315\bibrangedash 334}
+      \range{pages}{20}
+      \keyw{masih1996stock}
+    \endentry
+    \entry{mccoy2010two}{article}{}
+      \name{author}{2}{}{%
+        {{hash=cea5ae0d4489579c645cf86bd0554193}{%
+           family={McCoy},
+           familyi={M\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=70bbb242df57330f68a0e5dc1c45f7d4}{%
+           family={Tropp},
+           familyi={T\bibinitperiod},
+           given={Joel},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{2ab0be1e67477f65c4495053e9ec15c0}
+      \strng{fullhash}{25cb3b30da3a0cc4fae3625a3b3402b4}
+      \strng{bibnamehash}{25cb3b30da3a0cc4fae3625a3b3402b4}
+      \strng{authorbibnamehash}{25cb3b30da3a0cc4fae3625a3b3402b4}
+      \strng{authornamehash}{2ab0be1e67477f65c4495053e9ec15c0}
+      \strng{authorfullhash}{25cb3b30da3a0cc4fae3625a3b3402b4}
+      \field{sortinit}{M}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:1012.1086}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Two proposals for robust PCA using semidefinite programming}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2010}
+      \field{dateera}{ce}
+      \true{nocite}
+      \keyw{mccoy2010two}
+    \endentry
+    \entry{mccrae1992introduction}{article}{}
+      \name{author}{2}{}{%
+        {{hash=78a7e01bb7d08a09d2d5fa2cc10e783f}{%
+           family={McCrae},
+           familyi={M\bibinitperiod},
+           given={Robert\bibnamedelima R},
+           giveni={R\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=122e749ee9606b5a5456f163a96bd5d6}{%
+           family={John},
+           familyi={J\bibinitperiod},
+           given={Oliver\bibnamedelima P},
+           giveni={O\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{e67dbbd655dc65c6070e160df97ba05d}
+      \strng{fullhash}{ddc28175dbb91a4b73c9f1801f42dab3}
+      \strng{bibnamehash}{ddc28175dbb91a4b73c9f1801f42dab3}
+      \strng{authorbibnamehash}{ddc28175dbb91a4b73c9f1801f42dab3}
+      \strng{authornamehash}{e67dbbd655dc65c6070e160df97ba05d}
+      \strng{authorfullhash}{ddc28175dbb91a4b73c9f1801f42dab3}
+      \field{sortinit}{M}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of personality}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{number}{2}
+      \field{title}{An introduction to the five-factor model and its applications}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{60}
+      \field{year}{1992}
+      \field{dateera}{ce}
+      \true{nocite}
+      \field{pages}{175\bibrangedash 215}
+      \range{pages}{41}
+      \keyw{mccrae1992introduction}
+    \endentry
+    \entry{nie2011robust}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{hash=45024db5ed1a22dd647c2f6c6681d7df}{%
+           family={Nie},
+           familyi={N\bibinitperiod},
+           given={Feiping},
+           giveni={F\bibinitperiod}}}%
+        {{hash=5c12a772cad8929e4ef0e41937ffc35e}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Heng},
+           giveni={H\bibinitperiod}}}%
+        {{hash=24d43467609f9e0dc1dc08fceb70e334}{%
+           family={Ding},
+           familyi={D\bibinitperiod},
+           given={Chris},
+           giveni={C\bibinitperiod}}}%
+        {{hash=0b20f2fc77a45628b71dc666ad6bb9e0}{%
+           family={Luo},
+           familyi={L\bibinitperiod},
+           given={Dijun},
+           giveni={D\bibinitperiod}}}%
+        {{hash=ecfd4ce17fbe6ed4912699e1ff0317f7}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Hua},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{c5e138f06a9be674a7f838e532a64510}
+      \strng{fullhash}{8f9eb35353d90d2ad4b16742cd5d00c1}
+      \strng{bibnamehash}{0f4288f96230cc3a817b2546acd441ce}
+      \strng{authorbibnamehash}{0f4288f96230cc3a817b2546acd441ce}
+      \strng{authornamehash}{c5e138f06a9be674a7f838e532a64510}
+      \strng{authorfullhash}{8f9eb35353d90d2ad4b16742cd5d00c1}
+      \field{sortinit}{N}
+      \field{sortinithash}{98cf339a479c0454fe09153a08675a15}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{IJCAI proceedings-international joint conference on artificial intelligence}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{number}{1}
+      \field{title}{Robust principal component analysis with non-greedy l1-norm maximization}
+      \field{usera}{C}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{22}
+      \field{year}{2011}
+      \field{dateera}{ce}
+      \true{nocite}
+      \field{pages}{1433}
+      \range{pages}{1}
+      \keyw{nie2011robust}
+    \endentry
+    \entry{osborne2000lasso}{article}{}
+      \name{author}{3}{}{%
+        {{hash=be999e77941c26321f0b2dd69c7e15b6}{%
+           family={Osborne},
+           familyi={O\bibinitperiod},
+           given={Michael\bibnamedelima R},
+           giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=5eea355832af13dd65920d8051c0f83f}{%
+           family={Presnell},
+           familyi={P\bibinitperiod},
+           given={Brett},
+           giveni={B\bibinitperiod}}}%
+        {{hash=b4f8801094c32e2f883bb63e27055334}{%
+           family={Turlach},
+           familyi={T\bibinitperiod},
+           given={Berwin\bibnamedelima A},
+           giveni={B\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {Taylor \& Francis}%
+      }
+      \strng{namehash}{314d4d8cf59dc756f2ae65d082c41c33}
+      \strng{fullhash}{98b2c78e500ceaafa0926161519b4c6d}
+      \strng{bibnamehash}{98b2c78e500ceaafa0926161519b4c6d}
+      \strng{authorbibnamehash}{98b2c78e500ceaafa0926161519b4c6d}
+      \strng{authornamehash}{314d4d8cf59dc756f2ae65d082c41c33}
+      \strng{authorfullhash}{98b2c78e500ceaafa0926161519b4c6d}
+      \field{sortinit}{O}
+      \field{sortinithash}{ff8d4eeb5101e3cf3809959b3592d942}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Computational and Graphical statistics}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{number}{2}
+      \field{title}{On the lasso and its dual}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{9}
+      \field{year}{2000}
+      \field{dateera}{ce}
+      \true{nocite}
+      \field{pages}{319\bibrangedash 337}
+      \range{pages}{19}
+      \keyw{osborne2000lasso}
+    \endentry
+    \entry{park2021optimization}{article}{}
+      \name{author}{1}{}{%
+        {{hash=70d122a0a2da71773ba1d5a1e1915b87}{%
+           family={Park},
+           familyi={P\bibinitperiod},
+           given={Young\bibnamedelima Woong},
+           giveni={Y\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {INFORMS}%
+      }
+      \strng{namehash}{70d122a0a2da71773ba1d5a1e1915b87}
+      \strng{fullhash}{70d122a0a2da71773ba1d5a1e1915b87}
+      \strng{bibnamehash}{70d122a0a2da71773ba1d5a1e1915b87}
+      \strng{authorbibnamehash}{70d122a0a2da71773ba1d5a1e1915b87}
+      \strng{authornamehash}{70d122a0a2da71773ba1d5a1e1915b87}
+      \strng{authorfullhash}{70d122a0a2da71773ba1d5a1e1915b87}
+      \field{sortinit}{P}
+      \field{sortinithash}{bb5b15f2db90f7aef79bb9e83defefcb}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Informs Journal on Computing}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{number}{1}
+      \field{title}{Optimization for L 1-Norm Error Fitting via Data Aggregation}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{33}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \true{nocite}
+      \field{pages}{120\bibrangedash 142}
+      \range{pages}{23}
+      \keyw{park2021optimization}
+    \endentry
+    \entry{park2016iteratively}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=70d122a0a2da71773ba1d5a1e1915b87}{%
+           family={Park},
+           familyi={P\bibinitperiod},
+           given={Young\bibnamedelima Woong},
+           giveni={Y\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=0f7d2eeafeb0f0f52d9f7b3ced4a5e6a}{%
+           family={Klabjan},
+           familyi={K\bibinitperiod},
+           given={Diego},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{3c99beeac8654ba74dd16ebd044bcbbc}
+      \strng{fullhash}{e5653b1b38fd43e27235ebdea175d055}
+      \strng{bibnamehash}{e5653b1b38fd43e27235ebdea175d055}
+      \strng{authorbibnamehash}{e5653b1b38fd43e27235ebdea175d055}
+      \strng{authornamehash}{3c99beeac8654ba74dd16ebd044bcbbc}
+      \strng{authorfullhash}{e5653b1b38fd43e27235ebdea175d055}
+      \field{sortinit}{P}
+      \field{sortinithash}{bb5b15f2db90f7aef79bb9e83defefcb}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2016 IEEE 16th International Conference on Data Mining (ICDM)}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Iteratively reweighted least squares algorithms for L1-norm principal component analysis}
+      \field{usera}{C}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2016}
+      \field{dateera}{ce}
+      \true{nocite}
+      \field{pages}{430\bibrangedash 438}
+      \range{pages}{9}
+      \keyw{park2016iteratively}
+    \endentry
+    \entry{pollard1991asymptotics}{article}{}
+      \name{author}{1}{}{%
+        {{hash=eeca5ef1bad0358c9a2c5521967fce47}{%
+           family={Pollard},
+           familyi={P\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {JSTOR}%
+      }
+      \strng{namehash}{eeca5ef1bad0358c9a2c5521967fce47}
+      \strng{fullhash}{eeca5ef1bad0358c9a2c5521967fce47}
+      \strng{bibnamehash}{eeca5ef1bad0358c9a2c5521967fce47}
+      \strng{authorbibnamehash}{eeca5ef1bad0358c9a2c5521967fce47}
+      \strng{authornamehash}{eeca5ef1bad0358c9a2c5521967fce47}
+      \strng{authorfullhash}{eeca5ef1bad0358c9a2c5521967fce47}
+      \field{sortinit}{P}
+      \field{sortinithash}{bb5b15f2db90f7aef79bb9e83defefcb}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Econometric Theory}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Asymptotics for least absolute deviation regression estimators}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{1991}
+      \field{dateera}{ce}
+      \true{nocite}
+      \field{pages}{186\bibrangedash 199}
+      \range{pages}{14}
+      \keyw{pollard1991asymptotics}
+    \endentry
+    \entry{sargent1977business}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{2}{}{%
+        {{hash=7befdd517ea754e0194ebd60f235f738}{%
+           family={Sargent},
+           familyi={S\bibinitperiod},
+           given={Thomas\bibnamedelima J},
+           giveni={T\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=6ea5ed711258737020e21f785822b8e5}{%
+           family={Sims},
+           familyi={S\bibinitperiod},
+           given={Christopher\bibnamedelima A},
+           giveni={C\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{839cb4516c82d4e34cd359ea9583f35a}
+      \strng{fullhash}{9577bcd3e180b982b58ed51d0eaabc21}
+      \strng{bibnamehash}{9577bcd3e180b982b58ed51d0eaabc21}
+      \strng{authorbibnamehash}{9577bcd3e180b982b58ed51d0eaabc21}
+      \strng{authornamehash}{839cb4516c82d4e34cd359ea9583f35a}
+      \strng{authorfullhash}{9577bcd3e180b982b58ed51d0eaabc21}
+      \field{sortinit}{S}
+      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{New methods in business cycle research}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Business cycle modeling without pretending to have too much a priori economic theory}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{1}
+      \field{year}{1977}
+      \field{dateera}{ce}
+      \true{nocite}
+      \field{pages}{145\bibrangedash 168}
+      \range{pages}{24}
+      \keyw{sargent1977business}
+    \endentry
+    \entry{shlens2014tutorial}{article}{}
+      \name{author}{1}{}{%
+        {{hash=8f128e70084608a2c29c497ebd794f87}{%
+           family={Shlens},
+           familyi={S\bibinitperiod},
+           given={Jonathon},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{8f128e70084608a2c29c497ebd794f87}
+      \strng{fullhash}{8f128e70084608a2c29c497ebd794f87}
+      \strng{bibnamehash}{8f128e70084608a2c29c497ebd794f87}
+      \strng{authorbibnamehash}{8f128e70084608a2c29c497ebd794f87}
+      \strng{authornamehash}{8f128e70084608a2c29c497ebd794f87}
+      \strng{authorfullhash}{8f128e70084608a2c29c497ebd794f87}
+      \field{sortinit}{S}
+      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:1404.1100}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{A tutorial on principal component analysis}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2014}
+      \field{dateera}{ce}
+      \true{nocite}
+      \keyw{shlens2014tutorial}
+    \endentry
+    \entry{srebro2003weighted}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=4a4fc057d8331655775a21a8994f3339}{%
+           family={Srebro},
+           familyi={S\bibinitperiod},
+           given={Nathan},
+           giveni={N\bibinitperiod}}}%
+        {{hash=521085652a07e67bdff5323e2febc138}{%
+           family={Jaakkola},
+           familyi={J\bibinitperiod},
+           given={Tommi},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{0f91f74cb617a8be2c5ff48581f79abe}
+      \strng{fullhash}{3b8e0c80487aa10482a43a63a4df359d}
+      \strng{bibnamehash}{3b8e0c80487aa10482a43a63a4df359d}
+      \strng{authorbibnamehash}{3b8e0c80487aa10482a43a63a4df359d}
+      \strng{authornamehash}{0f91f74cb617a8be2c5ff48581f79abe}
+      \strng{authorfullhash}{3b8e0c80487aa10482a43a63a4df359d}
+      \field{sortinit}{S}
+      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 20th International Conference on Machine Learning (ICML-03)}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Weighted low-rank approximations}
+      \field{usera}{C}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2003}
+      \field{dateera}{ce}
+      \true{nocite}
+      \field{pages}{720\bibrangedash 727}
+      \range{pages}{8}
+      \keyw{srebro2003weighted}
+    \endentry
+    \entry{stock1993simple}{article}{}
+      \name{author}{2}{}{%
+        {{hash=2d01c3b46f4061430cc9eb2a1f6408a4}{%
+           family={Stock},
+           familyi={S\bibinitperiod},
+           given={James\bibnamedelima H},
+           giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=a4050fd715c1bcb50e38ec0f1c74b6bf}{%
+           family={Watson},
+           familyi={W\bibinitperiod},
+           given={Mark\bibnamedelima W},
+           giveni={M\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {JSTOR}%
+      }
+      \strng{namehash}{b6288d8ac2d403b634075df799a0c42f}
+      \strng{fullhash}{73bd348d7c311859349e1b99e53d984a}
+      \strng{bibnamehash}{73bd348d7c311859349e1b99e53d984a}
+      \strng{authorbibnamehash}{73bd348d7c311859349e1b99e53d984a}
+      \strng{authornamehash}{b6288d8ac2d403b634075df799a0c42f}
+      \strng{authorfullhash}{73bd348d7c311859349e1b99e53d984a}
+      \field{extraname}{1}
+      \field{sortinit}{S}
+      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Econometrica: Journal of the Econometric Society}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{A simple estimator of cointegrating vectors in higher order integrated systems}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{1993}
+      \field{dateera}{ce}
+      \true{nocite}
+      \field{pages}{783\bibrangedash 820}
+      \range{pages}{38}
+      \keyw{stock1993simple}
+    \endentry
+    \entry{stock1999business}{article}{}
+      \name{author}{2}{}{%
+        {{hash=2d01c3b46f4061430cc9eb2a1f6408a4}{%
+           family={Stock},
+           familyi={S\bibinitperiod},
+           given={James\bibnamedelima H},
+           giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=a4050fd715c1bcb50e38ec0f1c74b6bf}{%
+           family={Watson},
+           familyi={W\bibinitperiod},
+           given={Mark\bibnamedelima W},
+           giveni={M\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{b6288d8ac2d403b634075df799a0c42f}
+      \strng{fullhash}{73bd348d7c311859349e1b99e53d984a}
+      \strng{bibnamehash}{73bd348d7c311859349e1b99e53d984a}
+      \strng{authorbibnamehash}{73bd348d7c311859349e1b99e53d984a}
+      \strng{authornamehash}{b6288d8ac2d403b634075df799a0c42f}
+      \strng{authorfullhash}{73bd348d7c311859349e1b99e53d984a}
+      \field{extraname}{2}
+      \field{sortinit}{S}
+      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Handbook of macroeconomics}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Business cycle fluctuations in US macroeconomic time series}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{1}
+      \field{year}{1999}
+      \field{dateera}{ce}
+      \true{nocite}
+      \field{pages}{3\bibrangedash 64}
+      \range{pages}{62}
+      \keyw{stock1999business}
+    \endentry
+    \entry{stock1999forecasting}{article}{}
+      \name{author}{2}{}{%
+        {{hash=2d01c3b46f4061430cc9eb2a1f6408a4}{%
+           family={Stock},
+           familyi={S\bibinitperiod},
+           given={James\bibnamedelima H},
+           giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=a4050fd715c1bcb50e38ec0f1c74b6bf}{%
+           family={Watson},
+           familyi={W\bibinitperiod},
+           given={Mark\bibnamedelima W},
+           giveni={M\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{b6288d8ac2d403b634075df799a0c42f}
+      \strng{fullhash}{73bd348d7c311859349e1b99e53d984a}
+      \strng{bibnamehash}{73bd348d7c311859349e1b99e53d984a}
+      \strng{authorbibnamehash}{73bd348d7c311859349e1b99e53d984a}
+      \strng{authornamehash}{b6288d8ac2d403b634075df799a0c42f}
+      \strng{authorfullhash}{73bd348d7c311859349e1b99e53d984a}
+      \field{extraname}{3}
+      \field{sortinit}{S}
+      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Monetary Economics}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{number}{2}
+      \field{title}{Forecasting inflation}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{44}
+      \field{year}{1999}
+      \field{dateera}{ce}
+      \true{nocite}
+      \field{pages}{293\bibrangedash 335}
+      \range{pages}{43}
+      \keyw{stock1999forecasting}
+    \endentry
+    \entry{stock2002forecasting}{article}{}
+      \name{author}{2}{}{%
+        {{hash=2d01c3b46f4061430cc9eb2a1f6408a4}{%
+           family={Stock},
+           familyi={S\bibinitperiod},
+           given={James\bibnamedelima H},
+           giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=a4050fd715c1bcb50e38ec0f1c74b6bf}{%
+           family={Watson},
+           familyi={W\bibinitperiod},
+           given={Mark\bibnamedelima W},
+           giveni={M\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {Taylor \& Francis}%
+      }
+      \strng{namehash}{b6288d8ac2d403b634075df799a0c42f}
+      \strng{fullhash}{73bd348d7c311859349e1b99e53d984a}
+      \strng{bibnamehash}{73bd348d7c311859349e1b99e53d984a}
+      \strng{authorbibnamehash}{73bd348d7c311859349e1b99e53d984a}
+      \strng{authornamehash}{b6288d8ac2d403b634075df799a0c42f}
+      \strng{authorfullhash}{73bd348d7c311859349e1b99e53d984a}
+      \field{extraname}{4}
+      \field{sortinit}{S}
+      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of the American statistical association}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{number}{460}
+      \field{title}{Forecasting using principal components from a large number of predictors}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{97}
+      \field{year}{2002}
+      \field{dateera}{ce}
+      \true{nocite}
+      \field{pages}{1167\bibrangedash 1179}
+      \range{pages}{13}
+      \keyw{stock2002forecasting}
+    \endentry
+    \entry{stock2002macroeconomic}{article}{}
+      \name{author}{2}{}{%
+        {{hash=2d01c3b46f4061430cc9eb2a1f6408a4}{%
+           family={Stock},
+           familyi={S\bibinitperiod},
+           given={James\bibnamedelima H},
+           giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=a4050fd715c1bcb50e38ec0f1c74b6bf}{%
+           family={Watson},
+           familyi={W\bibinitperiod},
+           given={Mark\bibnamedelima W},
+           giveni={M\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {Taylor \& Francis}%
+      }
+      \strng{namehash}{b6288d8ac2d403b634075df799a0c42f}
+      \strng{fullhash}{73bd348d7c311859349e1b99e53d984a}
+      \strng{bibnamehash}{73bd348d7c311859349e1b99e53d984a}
+      \strng{authorbibnamehash}{73bd348d7c311859349e1b99e53d984a}
+      \strng{authornamehash}{b6288d8ac2d403b634075df799a0c42f}
+      \strng{authorfullhash}{73bd348d7c311859349e1b99e53d984a}
+      \field{extraname}{5}
+      \field{sortinit}{S}
+      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Business \& Economic Statistics}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{number}{2}
+      \field{title}{Macroeconomic forecasting using diffusion indexes}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{20}
+      \field{year}{2002}
+      \field{dateera}{ce}
+      \true{nocite}
+      \field{pages}{147\bibrangedash 162}
+      \range{pages}{16}
+      \keyw{stock2002macroeconomic}
+    \endentry
+    \entry{stock1989new}{article}{}
+      \name{author}{2}{}{%
+        {{hash=2d01c3b46f4061430cc9eb2a1f6408a4}{%
+           family={Stock},
+           familyi={S\bibinitperiod},
+           given={James\bibnamedelima H},
+           giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=a4050fd715c1bcb50e38ec0f1c74b6bf}{%
+           family={Watson},
+           familyi={W\bibinitperiod},
+           given={Mark\bibnamedelima W},
+           giveni={M\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {MIT press}%
+      }
+      \strng{namehash}{b6288d8ac2d403b634075df799a0c42f}
+      \strng{fullhash}{73bd348d7c311859349e1b99e53d984a}
+      \strng{bibnamehash}{73bd348d7c311859349e1b99e53d984a}
+      \strng{authorbibnamehash}{73bd348d7c311859349e1b99e53d984a}
+      \strng{authornamehash}{b6288d8ac2d403b634075df799a0c42f}
+      \strng{authorfullhash}{73bd348d7c311859349e1b99e53d984a}
+      \field{extraname}{6}
+      \field{sortinit}{S}
+      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{NBER macroeconomics annual}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{New indexes of coincident and leading economic indicators}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{4}
+      \field{year}{1989}
+      \field{dateera}{ce}
+      \true{nocite}
+      \field{pages}{351\bibrangedash 394}
+      \range{pages}{44}
+      \keyw{stock1989new}
+    \endentry
+    \entry{visentin2016robust}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=f161f337343ff60c96e1a19172268c46}{%
+           family={Visentin},
+           familyi={V\bibinitperiod},
+           given={Andrea},
+           giveni={A\bibinitperiod}}}%
+        {{hash=48723f71036121efe3847a4c1b61635a}{%
+           family={Prestwich},
+           familyi={P\bibinitperiod},
+           given={Steven},
+           giveni={S\bibinitperiod}}}%
+        {{hash=e13c7d63b9abb2a014a8987385ca9f00}{%
+           family={Tarim},
+           familyi={T\bibinitperiod},
+           given={S\bibnamedelima Armagan},
+           giveni={S\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{organization}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{6201ac513c61a851943c23c95cf14992}
+      \strng{fullhash}{c8226a350222176d51474d6ce64cad76}
+      \strng{bibnamehash}{c8226a350222176d51474d6ce64cad76}
+      \strng{authorbibnamehash}{c8226a350222176d51474d6ce64cad76}
+      \strng{authornamehash}{6201ac513c61a851943c23c95cf14992}
+      \strng{authorfullhash}{c8226a350222176d51474d6ce64cad76}
+      \field{sortinit}{V}
+      \field{sortinithash}{02432525618c08e2b03cac47c19764af}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Joint European Conference on Machine Learning and Knowledge Discovery in Databases}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Robust principal component analysis by reverse iterative linear programming}
+      \field{usera}{C}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2016}
+      \field{dateera}{ce}
+      \true{nocite}
+      \field{pages}{593\bibrangedash 605}
+      \range{pages}{13}
+      \keyw{visentin2016robust}
+    \endentry
+    \entry{wang2006regularized}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=944d21a090d2fc32d2cdd40c7a346126}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Li},
+           giveni={L\bibinitperiod}}}%
+        {{hash=2ba142f13b66cd9037bb0a94d1609fd6}{%
+           family={Gordon},
+           familyi={G\bibinitperiod},
+           given={Michael\bibnamedelima D},
+           giveni={M\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=885c2d20b53bf31151fa702f9fadcfe5}{%
+           family={Zhu},
+           familyi={Z\bibinitperiod},
+           given={Ji},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{e3f3b9a24d52da2d0d4b1fe99638d06c}
+      \strng{fullhash}{de1a579706cd13830033add4f57f1d7e}
+      \strng{bibnamehash}{de1a579706cd13830033add4f57f1d7e}
+      \strng{authorbibnamehash}{de1a579706cd13830033add4f57f1d7e}
+      \strng{authornamehash}{e3f3b9a24d52da2d0d4b1fe99638d06c}
+      \strng{authorfullhash}{de1a579706cd13830033add4f57f1d7e}
+      \field{sortinit}{W}
+      \field{sortinithash}{1af34bd8c148ffb32de1494636b49713}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Sixth International Conference on Data Mining (ICDM'06)}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Regularized least absolute deviations regression and an efficient algorithm for parameter tuning}
+      \field{usera}{C}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2006}
+      \field{dateera}{ce}
+      \true{nocite}
+      \field{pages}{690\bibrangedash 700}
+      \range{pages}{11}
+      \keyw{wang2006regularized}
+    \endentry
+    \entry{wold1987principal}{article}{}
+      \name{author}{3}{}{%
+        {{hash=633e6dcc2c798200dfa73780715ac047}{%
+           family={Wold},
+           familyi={W\bibinitperiod},
+           given={Svante},
+           giveni={S\bibinitperiod}}}%
+        {{hash=c87fb09717379ac55d127945ba39af6c}{%
+           family={Esbensen},
+           familyi={E\bibinitperiod},
+           given={Kim},
+           giveni={K\bibinitperiod}}}%
+        {{hash=33beb61995bee952138fa81bb04ea4df}{%
+           family={Geladi},
+           familyi={G\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{2327184eef6cd65f3594c48584e767e5}
+      \strng{fullhash}{53d1dd516fd9335ed516d0336280951c}
+      \strng{bibnamehash}{53d1dd516fd9335ed516d0336280951c}
+      \strng{authorbibnamehash}{53d1dd516fd9335ed516d0336280951c}
+      \strng{authornamehash}{2327184eef6cd65f3594c48584e767e5}
+      \strng{authorfullhash}{53d1dd516fd9335ed516d0336280951c}
+      \field{sortinit}{W}
+      \field{sortinithash}{1af34bd8c148ffb32de1494636b49713}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Chemometrics and intelligent laboratory systems}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{number}{1-3}
+      \field{title}{Principal component analysis}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{2}
+      \field{year}{1987}
+      \field{dateera}{ce}
+      \true{nocite}
+      \field{pages}{37\bibrangedash 52}
+      \range{pages}{16}
+      \keyw{wold1987principal}
+    \endentry
+    \entry{ying1995survival}{article}{}
+      \name{author}{3}{}{%
+        {{hash=ea6b09b643f962cda3a2a1cb641db4a7}{%
+           family={Ying},
+           familyi={Y\bibinitperiod},
+           given={Zhiliang},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=e12d95b8120a243e429d646c4a11c2e3}{%
+           family={Jung},
+           familyi={J\bibinitperiod},
+           given={Sin-Ho},
+           giveni={S\bibinithyphendelim H\bibinitperiod}}}%
+        {{hash=7e97ec47e5729319ac50e9336f17e8a6}{%
+           family={Wei},
+           familyi={W\bibinitperiod},
+           given={Lee-Jen},
+           giveni={L\bibinithyphendelim J\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {Taylor \& Francis}%
+      }
+      \strng{namehash}{95dd2b12117c96f84dd60e13fdd941d8}
+      \strng{fullhash}{80704d4d9490508e131c8edf32971871}
+      \strng{bibnamehash}{80704d4d9490508e131c8edf32971871}
+      \strng{authorbibnamehash}{80704d4d9490508e131c8edf32971871}
+      \strng{authornamehash}{95dd2b12117c96f84dd60e13fdd941d8}
+      \strng{authorfullhash}{80704d4d9490508e131c8edf32971871}
+      \field{sortinit}{Y}
+      \field{sortinithash}{6ae2ff5458ff901249c2745238c951b7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of the American Statistical Association}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{number}{429}
+      \field{title}{Survival analysis with median regression models}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{90}
+      \field{year}{1995}
+      \field{dateera}{ce}
+      \true{nocite}
+      \field{pages}{178\bibrangedash 184}
+      \range{pages}{7}
+      \keyw{ying1995survival}
+    \endentry
+    \entry{何问陶2007我国宏观经济先行指标体系及对经济预测实证研究}{article}{}
+      \name{author}{2}{}{%
+        {{hash=37cc8aae9d153f005e3099804f20bf61}{%
+           family={何问陶},
+           familyi={何\bibinitperiod}}}%
+        {{hash=8db4d490365f0a91b5fb5395ff12b432}{%
+           family={刘朝阳},
+           familyi={刘\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {chinese}%
+      }
+      \strng{namehash}{b4e18d2420dfa9146c42e41931136447}
+      \strng{fullhash}{58445b2d7df0bc870264215194716a02}
+      \strng{bibnamehash}{58445b2d7df0bc870264215194716a02}
+      \strng{authorbibnamehash}{58445b2d7df0bc870264215194716a02}
+      \strng{authornamehash}{b4e18d2420dfa9146c42e41931136447}
+      \strng{authorfullhash}{58445b2d7df0bc870264215194716a02}
+      \field{sortinit}{何}
+      \field{sortinithash}{139155a72b7184966705c4a603310723}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{南方金融}
+      \field{langid}{english}
+      \field{lansortorder}{1}
+      \field{title}{我国宏观经济先行指标体系及对经济预测实证研究}
+      \field{usera}{J}
+      \field{userd}{chinese}
+      \field{userf}{chinese}
+      \field{volume}{4}
+      \field{year}{2007}
+      \field{dateera}{ce}
+      \true{nocite}
+      \field{pages}{14\bibrangedash 19}
+      \range{pages}{6}
+      \keyw{何问陶2007我国宏观经济先行指标体系及对经济预测实证研究}
+    \endentry
+    \entry{刘汉2011中国宏观经济总量的实时预报与短期预测}{article}{}
+      \name{author}{2}{}{%
+        {{hash=0566d2cf90d1d8ac0e9efff4dd8bd52d}{%
+           family={刘汉},
+           familyi={刘\bibinitperiod}}}%
+        {{hash=09550437e95e8fda82fded156a2d929f}{%
+           family={刘金全},
+           familyi={刘\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {chinese}%
+      }
+      \strng{namehash}{250fb281bc35c310f0dd4dd1886f1372}
+      \strng{fullhash}{c3a16a7996c400c587b783c66592b27b}
+      \strng{bibnamehash}{c3a16a7996c400c587b783c66592b27b}
+      \strng{authorbibnamehash}{c3a16a7996c400c587b783c66592b27b}
+      \strng{authornamehash}{250fb281bc35c310f0dd4dd1886f1372}
+      \strng{authorfullhash}{c3a16a7996c400c587b783c66592b27b}
+      \field{sortinit}{刘}
+      \field{sortinithash}{f3ff24b163d4496b49484b7a115b76c9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{经济研究}
+      \field{langid}{english}
+      \field{lansortorder}{1}
+      \field{title}{中国宏观经济总量的实时预报与短期预测——基于混频数据预测模型的实证研究}
+      \field{usera}{J}
+      \field{userd}{chinese}
+      \field{userf}{chinese}
+      \field{volume}{3}
+      \field{year}{2011}
+      \field{dateera}{ce}
+      \true{nocite}
+      \field{pages}{4\bibrangedash 17}
+      \range{pages}{14}
+      \keyw{刘汉2011中国宏观经济总量的实时预报与短期预测}
+    \endentry
+    \entry{孔新兵2019高维}{article}{}
+      \name{author}{3}{}{%
+        {{hash=c1a6484759202cc4f65ef20dd8996988}{%
+           family={孔新兵},
+           familyi={孔\bibinitperiod}}}%
+        {{hash=39c6b0449f025a763f7d0432a3e04258}{%
+           family={蒯强},
+           familyi={蒯\bibinitperiod}}}%
+        {{hash=1f991f351e250b5cc5887d44f497014c}{%
+           family={汪红霞},
+           familyi={汪\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {chinese}%
+      }
+      \strng{namehash}{503ec266eb8ad843a32c5e9a08d59b65}
+      \strng{fullhash}{2337b2e87a0438f0e159d860b2eda086}
+      \strng{bibnamehash}{2337b2e87a0438f0e159d860b2eda086}
+      \strng{authorbibnamehash}{2337b2e87a0438f0e159d860b2eda086}
+      \strng{authornamehash}{503ec266eb8ad843a32c5e9a08d59b65}
+      \strng{authorfullhash}{2337b2e87a0438f0e159d860b2eda086}
+      \field{sortinit}{孔}
+      \field{sortinithash}{56d7b8b24de2aa44d3a9d95aaa457a26}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{吉林工商学院学报}
+      \field{langid}{english}
+      \field{lansortorder}{1}
+      \field{number}{6}
+      \field{title}{高维L1稳健因子分析及其在宏观经济预测中的应用}
+      \field{usera}{J}
+      \field{userd}{chinese}
+      \field{userf}{chinese}
+      \field{volume}{35}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \true{nocite}
+      \field{pages}{5\bibrangedash 12}
+      \range{pages}{8}
+      \keyw{孔新兵2019高维}
+    \endentry
+    \entry{杜勇宏2011动态因子模型与}{article}{}
+      \name{author}{3}{}{%
+        {{hash=b29e6390f5dcc546fd2534cd48bca75a}{%
+           family={杜勇宏},
+           familyi={杜\bibinitperiod}}}%
+        {{hash=d09c322f37e06e18ba37f385d64e6c3b}{%
+           family={王健},
+           familyi={王\bibinitperiod}}}%
+        {{hash=14f61bdb78b86727ca03db857185f787}{%
+           family={王汝芳},
+           familyi={王\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {chinese}%
+      }
+      \strng{namehash}{161d4209f8f12363c8059a2b2feef8e9}
+      \strng{fullhash}{e7b9bd6a2c18694e8ae89d699229f623}
+      \strng{bibnamehash}{e7b9bd6a2c18694e8ae89d699229f623}
+      \strng{authorbibnamehash}{e7b9bd6a2c18694e8ae89d699229f623}
+      \strng{authornamehash}{161d4209f8f12363c8059a2b2feef8e9}
+      \strng{authorfullhash}{e7b9bd6a2c18694e8ae89d699229f623}
+      \field{sortinit}{杜}
+      \field{sortinithash}{000fc8871467512f547887e89288d5b6}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{统计与决策}
+      \field{langid}{english}
+      \field{lansortorder}{1}
+      \field{title}{动态因子模型与 ARMA 模型的比较}
+      \field{usera}{J}
+      \field{userd}{chinese}
+      \field{userf}{chinese}
+      \field{volume}{5}
+      \field{year}{2011}
+      \field{dateera}{ce}
+      \true{nocite}
+      \keyw{杜勇宏2011动态因子模型与}
+    \endentry
+    \entry{杜海韬2013部门价格动态}{article}{}
+      \name{author}{2}{}{%
+        {{hash=5fd7628a5ea3e734e42bd0a2ae2a09d3}{%
+           family={杜海韬},
+           familyi={杜\bibinitperiod}}}%
+        {{hash=f20180a27e99737ac5f73c48ff054de6}{%
+           family={邓翔},
+           familyi={邓\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {chinese}%
+      }
+      \strng{namehash}{23be68c9f9fa6d4143a5a8aa6e77a2ca}
+      \strng{fullhash}{c2b91f8b53373f2d7d7d5bf3218d0aa8}
+      \strng{bibnamehash}{c2b91f8b53373f2d7d7d5bf3218d0aa8}
+      \strng{authorbibnamehash}{c2b91f8b53373f2d7d7d5bf3218d0aa8}
+      \strng{authornamehash}{23be68c9f9fa6d4143a5a8aa6e77a2ca}
+      \strng{authorfullhash}{c2b91f8b53373f2d7d7d5bf3218d0aa8}
+      \field{sortinit}{杜}
+      \field{sortinithash}{000fc8871467512f547887e89288d5b6}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{经济研究}
+      \field{langid}{english}
+      \field{lansortorder}{1}
+      \field{title}{部门价格动态, 特质冲击与货币政策——基于结构动态因子方法}
+      \field{usera}{J}
+      \field{userd}{chinese}
+      \field{userf}{chinese}
+      \field{volume}{12}
+      \field{year}{2013}
+      \field{dateera}{ce}
+      \true{nocite}
+      \field{pages}{93\bibrangedash 105}
+      \range{pages}{13}
+      \keyw{杜海韬2013部门价格动态}
+    \endentry
+    \entry{梁志贞2013lp}{thesis}{}
+      \name{author}{1}{}{%
+        {{hash=7908711eb2208a95c9dcf838fd148a67}{%
+           family={梁志贞},
+           familyi={梁\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {chinese}%
+      }
+      \strng{namehash}{7908711eb2208a95c9dcf838fd148a67}
+      \strng{fullhash}{7908711eb2208a95c9dcf838fd148a67}
+      \strng{bibnamehash}{7908711eb2208a95c9dcf838fd148a67}
+      \strng{authorbibnamehash}{7908711eb2208a95c9dcf838fd148a67}
+      \strng{authornamehash}{7908711eb2208a95c9dcf838fd148a67}
+      \strng{authorfullhash}{7908711eb2208a95c9dcf838fd148a67}
+      \field{sortinit}{梁}
+      \field{sortinithash}{4da9e3d0b3d98bfb9d26b202ef34c2b3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{lansortorder}{1}
+      \field{title}{Lp 范数约束下的最大化 L1 范数主成分分析}
+      \field{type}{phdthesis}
+      \field{usera}{D}
+      \field{userd}{chinese}
+      \field{userf}{chinese}
+      \field{year}{2013}
+      \field{dateera}{ce}
+      \true{nocite}
+      \keyw{梁志贞2013lp}
+    \endentry
+    \entry{王维2000人工神经网络在非线性经济预测中的应用}{thesis}{}
+      \name{author}{1}{}{%
+        {{hash=a374097275e5730300e826cdbc8333f4}{%
+           family={王维},
+           familyi={王\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {chinese}%
+      }
+      \strng{namehash}{a374097275e5730300e826cdbc8333f4}
+      \strng{fullhash}{a374097275e5730300e826cdbc8333f4}
+      \strng{bibnamehash}{a374097275e5730300e826cdbc8333f4}
+      \strng{authorbibnamehash}{a374097275e5730300e826cdbc8333f4}
+      \strng{authornamehash}{a374097275e5730300e826cdbc8333f4}
+      \strng{authorfullhash}{a374097275e5730300e826cdbc8333f4}
+      \field{sortinit}{王}
+      \field{sortinithash}{a5fc2a92fb09729180a9a8525cb1db30}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{lansortorder}{1}
+      \field{title}{人工神经网络在非线性经济预测中的应用}
+      \field{type}{phdthesis}
+      \field{usera}{D}
+      \field{userd}{chinese}
+      \field{userf}{chinese}
+      \field{year}{2000}
+      \field{dateera}{ce}
+      \true{nocite}
+      \keyw{王维2000人工神经网络在非线性经济预测中的应用}
+    \endentry
+    \entry{白仲林2014两类}{thesis}{}
+      \name{author}{1}{}{%
+        {{hash=92473a35702218fe8961e4d34d522708}{%
+           family={白仲林},
+           familyi={白\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {chinese}%
+      }
+      \strng{namehash}{92473a35702218fe8961e4d34d522708}
+      \strng{fullhash}{92473a35702218fe8961e4d34d522708}
+      \strng{bibnamehash}{92473a35702218fe8961e4d34d522708}
+      \strng{authorbibnamehash}{92473a35702218fe8961e4d34d522708}
+      \strng{authornamehash}{92473a35702218fe8961e4d34d522708}
+      \strng{authorfullhash}{92473a35702218fe8961e4d34d522708}
+      \field{sortinit}{白}
+      \field{sortinithash}{14a54ca0f360aa680fad8148a0ff1847}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{lansortorder}{1}
+      \field{title}{两类 DSGE 模型的动态因子模型表示}
+      \field{type}{phdthesis}
+      \field{usera}{D}
+      \field{userd}{chinese}
+      \field{userf}{chinese}
+      \field{year}{2014}
+      \field{dateera}{ce}
+      \true{nocite}
+      \keyw{白仲林2014两类}
+    \endentry
+    \entry{郭崇慧2001宏观经济预测模型体系研究}{thesis}{}
+      \name{author}{1}{}{%
+        {{hash=2b9e2c61f0d30e9bfef512ac356ffb8c}{%
+           family={郭崇慧},
+           familyi={郭\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {chinese}%
+      }
+      \strng{namehash}{2b9e2c61f0d30e9bfef512ac356ffb8c}
+      \strng{fullhash}{2b9e2c61f0d30e9bfef512ac356ffb8c}
+      \strng{bibnamehash}{2b9e2c61f0d30e9bfef512ac356ffb8c}
+      \strng{authorbibnamehash}{2b9e2c61f0d30e9bfef512ac356ffb8c}
+      \strng{authornamehash}{2b9e2c61f0d30e9bfef512ac356ffb8c}
+      \strng{authorfullhash}{2b9e2c61f0d30e9bfef512ac356ffb8c}
+      \field{sortinit}{郭}
+      \field{sortinithash}{8a4078e07583a9878bb1cee5d5b5765b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{lansortorder}{1}
+      \field{title}{宏观经济预测模型体系研究}
+      \field{type}{phdthesis}
+      \field{usera}{D}
+      \field{userd}{chinese}
+      \field{userf}{chinese}
+      \field{year}{2001}
+      \field{dateera}{ce}
+      \true{nocite}
+      \keyw{郭崇慧2001宏观经济预测模型体系研究}
+    \endentry
+    \entry{韩艾2010广义动态因子模型在景气指数构建中的应用}{article}{}
+      \name{author}{3}{}{%
+        {{hash=77210a442160612c6181d0049bbd05ea}{%
+           family={韩艾},
+           familyi={韩\bibinitperiod}}}%
+        {{hash=0a1cd1a220df607530398c8c1c847e5a}{%
+           family={郑桂环},
+           familyi={郑\bibinitperiod}}}%
+        {{hash=532de0574c03b361be8b483f04572c66}{%
+           family={汪寿阳},
+           familyi={汪\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {chinese}%
+      }
+      \strng{namehash}{eb9d4c8d8e0abc323f56eab0ea72f6b0}
+      \strng{fullhash}{a710de46bf8954dc5cfbec1920ce7b62}
+      \strng{bibnamehash}{a710de46bf8954dc5cfbec1920ce7b62}
+      \strng{authorbibnamehash}{a710de46bf8954dc5cfbec1920ce7b62}
+      \strng{authornamehash}{eb9d4c8d8e0abc323f56eab0ea72f6b0}
+      \strng{authorfullhash}{a710de46bf8954dc5cfbec1920ce7b62}
+      \field{sortinit}{韩}
+      \field{sortinithash}{73642266df9f5a4075e324628de00324}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{系统工程理论与实践}
+      \field{langid}{english}
+      \field{lansortorder}{1}
+      \field{number}{5}
+      \field{title}{广义动态因子模型在景气指数构建中的应用——中国金融周期景气分析}
+      \field{usera}{J}
+      \field{userd}{chinese}
+      \field{userf}{chinese}
+      \field{volume}{30}
+      \field{year}{2010}
+      \field{dateera}{ce}
+      \true{nocite}
+      \field{pages}{803\bibrangedash 811}
+      \range{pages}{9}
+      \keyw{韩艾2010广义动态因子模型在景气指数构建中的应用}
+    \endentry
+    \entry{高华川2015动态因子模型及其应用研究综述}{article}{}
+      \name{author}{2}{}{%
+        {{hash=c1ad8664c5e4851ee53e6bcf13137c3d}{%
+           family={高华川},
+           familyi={高\bibinitperiod}}}%
+        {{hash=b37926a3cf8a74cf7e93137e71f12218}{%
+           family={张晓峒},
+           familyi={张\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {chinese}%
+      }
+      \strng{namehash}{cda12fc1509c3690ff04d31b2dd63422}
+      \strng{fullhash}{623e9f05bfe4b9d017b286cd6a507787}
+      \strng{bibnamehash}{623e9f05bfe4b9d017b286cd6a507787}
+      \strng{authorbibnamehash}{623e9f05bfe4b9d017b286cd6a507787}
+      \strng{authornamehash}{cda12fc1509c3690ff04d31b2dd63422}
+      \strng{authorfullhash}{623e9f05bfe4b9d017b286cd6a507787}
+      \field{sortinit}{高}
+      \field{sortinithash}{c5076a941488678597c8377e16ea2771}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{统计研究}
+      \field{langid}{english}
+      \field{lansortorder}{1}
+      \field{number}{12}
+      \field{title}{动态因子模型及其应用研究综述}
+      \field{usera}{J}
+      \field{userd}{chinese}
+      \field{userf}{chinese}
+      \field{volume}{32}
+      \field{year}{2015}
+      \field{dateera}{ce}
+      \true{nocite}
+      \field{pages}{101\bibrangedash 109}
+      \range{pages}{9}
+      \keyw{高华川2015动态因子模型及其应用研究综述}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
 
-\bibitem{bai2016maximum}
-Jushan Bai and Kunpeng Li.
-\newblock Maximum likelihood estimation and inference for approximate factor
-  models of high dimension.
-\newblock {\em Review of Economics and Statistics}, 98(2):298--309, 2016.
-
-\bibitem{bai2002determining}
-Jushan Bai and Serena Ng.
-\newblock Determining the number of factors in approximate factor models.
-\newblock {\em Econometrica}, 70(1):191--221, 2002.
-
-\bibitem{black1996unification}
-Michael~J Black and Anand Rangarajan.
-\newblock On the unification of line processes, outlier rejection, and robust
-  statistics with applications in early vision.
-\newblock {\em International journal of computer vision}, 19(1):57--91, 1996.
-
-\bibitem{brooks2013pure}
-J~Paul Brooks, Jos{\'e}~H Dul{\'a}, and Edward~L Boone.
-\newblock A pure l1-norm principal component analysis.
-\newblock {\em Computational statistics \& data analysis}, 61:83--98, 2013.
-
-\bibitem{chamberlain1982arbitrage}
-Gary Chamberlain and Michael Rothschild.
-\newblock Arbitrage, factor structure, and mean-variance analysis on large
-  asset markets, 1982.
-
-\bibitem{chan1999dynamic}
-Yeung~Lewis Chan, James~H Stock, and Mark~W Watson.
-\newblock A dynamic factor model framework for forecast combination.
-\newblock {\em Spanish Economic Review}, 1(2):91--121, 1999.
-
-\bibitem{svn}
-Xi~Chen, Weidong Liu, Xiaojun Mao, and Zhuoyi Yang.
-\newblock Distributed high-dimensional regression under a quantile loss
-  function.
-\newblock {\em Journal of Machine Learning Research}, 21(182):1--43, 2020.
-
-\bibitem{choulakian2006l1}
-Vartan Choulakian.
-\newblock L1-norm projection pursuit principal component analysis.
-\newblock {\em Computational statistics \& data analysis}, 50(6):1441--1451,
-  2006.
-
-\bibitem{clayton1999application}
-Alan Clayton-Matthews and James~H Stock.
-\newblock An application of the stock/watson index methodology to the
-  massachusetts economy.
-\newblock {\em Journal of Economic and Social Measurement}, 25(3-4):183--233,
-  1999.
-
-\bibitem{connor1993test}
-Gregory Connor and Robert~A Korajczyk.
-\newblock A test for the number of factors in an approximate factor model.
-\newblock {\em the Journal of Finance}, 48(4):1263--1291, 1993.
-
-\bibitem{dasgupta2004least}
-Madhuchhanda Dasgupta and Sudhanshu~K Mishra.
-\newblock Least absolute deviation estimation of linear econometric models: A
-  literature review.
-\newblock {\em Available at SSRN 552502}, 2004.
-
-\bibitem{davis1997least}
-Richard~A Davis and William~TM Dunsmuir.
-\newblock Least absolute deviation estimation for regression with arma errors.
-\newblock {\em Journal of Theoretical Probability}, 10(2):481--497, 1997.
-
-\bibitem{ding2006r}
-Chris Ding, Ding Zhou, Xiaofeng He, and Hongyuan Zha.
-\newblock R 1-pca: rotational invariant l 1-norm principal component analysis
-  for robust subspace factorization.
-\newblock In {\em Proceedings of the 23rd international conference on Machine
-  learning}, pages 281--288, 2006.
-
-\bibitem{eickmeier2008successful}
-Sandra Eickmeier and Christina Ziegler.
-\newblock How successful are dynamic factor models at forecasting output and
-  inflation? a meta-analytic approach.
-\newblock {\em Journal of Forecasting}, 27(3):237--265, 2008.
-
-\bibitem{ellis1998instability}
-Steven~P Ellis et~al.
-\newblock Instability of least squares, least absolute deviation and least
-  median of squares linear regression, with a comment by stephen portnoy and
-  ivan mizera and a rejoinder by the author.
-\newblock {\em Statistical Science}, 13(4):337--350, 1998.
-
-\bibitem{eriksson2010efficient}
-Anders Eriksson and Anton Van Den~Hengel.
-\newblock Efficient computation of robust low-rank matrix approximations in the
-  presence of missing data using the l 1 norm.
-\newblock In {\em 2010 IEEE Computer Society Conference on Computer Vision and
-  Pattern Recognition}, pages 771--778. IEEE, 2010.
-
-\bibitem{forni2000generalized}
-Mario Forni, Marc Hallin, Marco Lippi, and Lucrezia Reichlin.
-\newblock The generalized dynamic-factor model: Identification and estimation.
-\newblock {\em Review of Economics and statistics}, 82(4):540--554, 2000.
-
-\bibitem{galpin1987methods}
-Jacqueline~S Galpin and Douglas~M Hawkins.
-\newblock Methods of l1 estimation of a covariance matrix.
-\newblock {\em Computational Statistics \& Data Analysis}, 5(4):305--319, 1987.
-
-\bibitem{gao2008robust}
-Junbin Gao.
-\newblock Robust l1 principal component analysis and its bayesian variational
-  inference.
-\newblock {\em Neural computation}, 20(2):555--572, 2008.
-
-\bibitem{geweke1977dynamic}
-John Geweke.
-\newblock The dynamic factor analysis of economic time series.
-\newblock {\em Latent variables in socio-economic models}, 1977.
-
-\bibitem{jeon2018data}
-Hong-Min Jeon, Je-Yeol Lee, Gu-Min Jeong, and Sang-Il Choi.
-\newblock Data reconstruction using iteratively reweighted l1-principal
-  component analysis for an electronic nose system.
-\newblock {\em PloS one}, 13(7):e0200605, 2018.
-
-\bibitem{kalman1996singularly}
-Dan Kalman.
-\newblock A singularly valuable decomposition: the svd of a matrix.
-\newblock {\em The college mathematics journal}, 27(1):2--23, 1996.
-
-\bibitem{kapetanios2010testing}
-George Kapetanios.
-\newblock A testing procedure for determining the number of factors in
-  approximate factor models with large datasets.
-\newblock {\em Journal of Business \& Economic Statistics}, 28(3):397--409,
-  2010.
-
-\bibitem{ke2003robust}
-Qifa Ke and Takeo Kanade.
-\newblock Robust subspace computation using l1 norm.
-\newblock 2003.
-
-\bibitem{ke2005robust}
-Qifa Ke and Takeo Kanade.
-\newblock Robust l-1 norm factorization in the presence of outliers and missing
-  data by alternative convex programming.
-\newblock In {\em 2005 IEEE Computer Society Conference on Computer Vision and
-  Pattern Recognition (CVPR'05)}, volume~1, pages 739--746. IEEE, 2005.
-
-\bibitem{kwak2008principal}
-Nojun Kwak.
-\newblock Principal component analysis based on l1-norm maximization.
-\newblock {\em IEEE transactions on pattern analysis and machine intelligence},
-  30(9):1672--1680, 2008.
-
-\bibitem{luciani2014large}
-Matteo Luciani.
-\newblock Large-dimensional dynamic factor models in real-time: A survey.
-\newblock {\em Available at SSRN 2511872}, 2014.
-
-\bibitem{markopoulos2014optimal}
-Panos~P Markopoulos, George~N Karystinos, and Dimitris~A Pados.
-\newblock Optimal algorithms for $ l\_ $\{$1$\}$ $-subspace signal processing.
-\newblock {\em IEEE Transactions on Signal Processing}, 62(19):5046--5058,
-  2014.
-
-\bibitem{markopoulos2017efficient}
-Panos~P Markopoulos, Sandipan Kundu, Shubham Chamadia, and Dimitris~A Pados.
-\newblock Efficient l1-norm principal-component analysis via bit flipping.
-\newblock {\em IEEE Transactions on Signal Processing}, 65(16):4252--4264,
-  2017.
-
-\bibitem{masih1996stock}
-Rumi Masih and Abul~MM Masih.
-\newblock Stock-watson dynamic ols (dols) and error-correction modelling
-  approaches to estimating long-and short-run elasticities in a demand
-  function: new evidence and methodological implications from an application to
-  the demand for coal in mainland china.
-\newblock {\em Energy Economics}, 18(4):315--334, 1996.
-
-\bibitem{mccoy2010two}
-Michael McCoy and Joel Tropp.
-\newblock Two proposals for robust pca using semidefinite programming.
-\newblock {\em arXiv preprint arXiv:1012.1086}, 2010.
-
-\bibitem{mccrae1992introduction}
-Robert~R McCrae and Oliver~P John.
-\newblock An introduction to the five-factor model and its applications.
-\newblock {\em Journal of personality}, 60(2):175--215, 1992.
-
-\bibitem{nie2011robust}
-Feiping Nie, Heng Huang, Chris Ding, Dijun Luo, and Hua Wang.
-\newblock Robust principal component analysis with non-greedy l1-norm
-  maximization.
-\newblock In {\em IJCAI proceedings-international joint conference on
-  artificial intelligence}, volume~22, page 1433, 2011.
-
-\bibitem{osborne2000lasso}
-Michael~R Osborne, Brett Presnell, and Berwin~A Turlach.
-\newblock On the lasso and its dual.
-\newblock {\em Journal of Computational and Graphical statistics},
-  9(2):319--337, 2000.
-
-\bibitem{park2021optimization}
-Young~Woong Park.
-\newblock Optimization for l 1-norm error fitting via data aggregation.
-\newblock {\em Informs Journal on Computing}, 33(1):120--142, 2021.
-
-\bibitem{park2016iteratively}
-Young~Woong Park and Diego Klabjan.
-\newblock Iteratively reweighted least squares algorithms for l1-norm principal
-  component analysis.
-\newblock In {\em 2016 IEEE 16th International Conference on Data Mining
-  (ICDM)}, pages 430--438. IEEE, 2016.
-
-\bibitem{pollard1991asymptotics}
-David Pollard.
-\newblock Asymptotics for least absolute deviation regression estimators.
-\newblock {\em Econometric Theory}, pages 186--199, 1991.
-
-\bibitem{sargent1977business}
-Thomas~J Sargent, Christopher~A Sims, et~al.
-\newblock Business cycle modeling without pretending to have too much a priori
-  economic theory.
-\newblock {\em New methods in business cycle research}, 1:145--168, 1977.
-
-\bibitem{shlens2014tutorial}
-Jonathon Shlens.
-\newblock A tutorial on principal component analysis.
-\newblock {\em arXiv preprint arXiv:1404.1100}, 2014.
-
-\bibitem{stock1989new}
-James~H Stock and Mark~W Watson.
-\newblock New indexes of coincident and leading economic indicators.
-\newblock {\em NBER macroeconomics annual}, 4:351--394, 1989.
-
-\bibitem{stock1993simple}
-James~H Stock and Mark~W Watson.
-\newblock A simple estimator of cointegrating vectors in higher order
-  integrated systems.
-\newblock {\em Econometrica: Journal of the Econometric Society}, pages
-  783--820, 1993.
-
-\bibitem{stock1999business}
-James~H Stock and Mark~W Watson.
-\newblock Business cycle fluctuations in us macroeconomic time series.
-\newblock {\em Handbook of macroeconomics}, 1:3--64, 1999.
-
-\bibitem{stock1999forecasting}
-James~H Stock and Mark~W Watson.
-\newblock Forecasting inflation.
-\newblock {\em Journal of Monetary Economics}, 44(2):293--335, 1999.
-
-\bibitem{stock2002forecasting}
-James~H Stock and Mark~W Watson.
-\newblock Forecasting using principal components from a large number of
-  predictors.
-\newblock {\em Journal of the American statistical association},
-  97(460):1167--1179, 2002.
-
-\bibitem{stock2002macroeconomic}
-James~H Stock and Mark~W Watson.
-\newblock Macroeconomic forecasting using diffusion indexes.
-\newblock {\em Journal of Business \& Economic Statistics}, 20(2):147--162,
-  2002.
-
-\bibitem{visentin2016robust}
-Andrea Visentin, Steven Prestwich, and S~Armagan Tarim.
-\newblock Robust principal component analysis by reverse iterative linear
-  programming.
-\newblock In {\em Joint European Conference on Machine Learning and Knowledge
-  Discovery in Databases}, pages 593--605. Springer, 2016.
-
-\bibitem{wang2006regularized}
-Li~Wang, Michael~D Gordon, and Ji~Zhu.
-\newblock Regularized least absolute deviations regression and an efficient
-  algorithm for parameter tuning.
-\newblock In {\em Sixth International Conference on Data Mining (ICDM'06)},
-  pages 690--700. IEEE, 2006.
-
-\bibitem{wold1987principal}
-Svante Wold, Kim Esbensen, and Paul Geladi.
-\newblock Principal component analysis.
-\newblock {\em Chemometrics and intelligent laboratory systems}, 2(1-3):37--52,
-  1987.
-
-\bibitem{ying1995survival}
-Zhiliang Ying, Sin-Ho Jung, and Lee-Jen Wei.
-\newblock Survival analysis with median regression models.
-\newblock {\em Journal of the American Statistical Association},
-  90(429):178--184, 1995.
-
-\bibitem{何问陶2007我国宏观经济先行指标体系及对经济预测实证研究}
-何问陶 and 刘朝阳.
-\newblock 我国宏观经济先行指标体系及对经济预测实证研究.
-\newblock {\em 南方金融}, 4:14--19, 2007.
-
-\bibitem{冯文权1994经济预测与决策技术}
-冯文权 et~al.
-\newblock {\em 经济预测与决策技术}, volume 203.
-\newblock 武汉大学出版社, 1994.
-
-\bibitem{刘汉2011中国宏观经济总量的实时预报与短期预测}
-刘汉 and 刘金全.
-\newblock
-  中国宏观经济总量的实时预报与短期预测——基于混频数据预测模型的实证研究.
-\newblock {\em 经济研究}, 3:4--17, 2011.
-
-\bibitem{杜勇宏2011动态因子模型与}
-杜勇宏, 王健, and 王汝芳.
-\newblock 动态因子模型与 arma 模型的比较.
-\newblock {\em 统计与决策}, 5, 2011.
-
-\bibitem{杜海韬2013部门价格动态}
-杜海韬 and 邓翔.
-\newblock 部门价格动态,
-  特质冲击与货币政策——基于结构动态因子方法.
-\newblock {\em 经济研究}, 12:93--105, 2013.
-
-\bibitem{梁志贞2013lp}
-梁志贞, 李勇, 夏士雄, and 周勇.
-\newblock {\em Lp 范数约束下的最大化 L1 范数主成分分析}.
-\newblock PhD thesis, 2013.
-
-\bibitem{王维2000人工神经网络在非线性经济预测中的应用}
-王维 and 张灿.
-\newblock {\em 人工神经网络在非线性经济预测中的应用}.
-\newblock PhD thesis, 2000.
-
-\bibitem{白仲林2014两类}
-白仲林 and 汪玲玲.
-\newblock {\em 两类 DSGE 模型的动态因子模型表示}.
-\newblock PhD thesis, 2014.
-
-\bibitem{郭崇慧2001宏观经济预测模型体系研究}
-郭崇慧 and 唐焕文.
-\newblock {\em 宏观经济预测模型体系研究}.
-\newblock PhD thesis, 2001.
-
-\bibitem{韩艾2010广义动态因子模型在景气指数构建中的应用}
-韩艾, 郑桂环, and 汪寿阳.
-\newblock
-  广义动态因子模型在景气指数构建中的应用——中国金融周期景气分析.
-\newblock {\em 系统工程理论与实践}, 30(5):803--811, 2010.
-
-\bibitem{高华川2015动态因子模型及其应用研究综述}
-高华川 and 张晓峒.
-\newblock 动态因子模型及其应用研究综述.
-\newblock {\em 统计研究}, 32(12):101--109, 2015.
-
-\end{thebibliography}
