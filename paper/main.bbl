@@ -19,51 +19,6 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global}
-    \entry{ait2019principal}{article}{}
-      \name{author}{2}{}{%
-        {{hash=fa7414bbf3591c1c68753af0a66723dc}{%
-           family={A{ı̈}t-Sahalia},
-           familyi={A\bibinithyphendelim S\bibinitperiod},
-           given={Yacine},
-           giveni={Y\bibinitperiod}}}%
-        {{hash=c07af227d21eedc8d6d13f10a6243d02}{%
-           family={Xiu},
-           familyi={X\bibinitperiod},
-           given={Dacheng},
-           giveni={D\bibinitperiod}}}%
-      }
-      \list{language}{1}{%
-        {english}%
-      }
-      \list{publisher}{1}{%
-        {Taylor \& Francis}%
-      }
-      \strng{namehash}{259a1640c341217991c5c323e9027902}
-      \strng{fullhash}{dbf48cd6e3990840f60e6d5ce352ddf8}
-      \strng{bibnamehash}{dbf48cd6e3990840f60e6d5ce352ddf8}
-      \strng{authorbibnamehash}{dbf48cd6e3990840f60e6d5ce352ddf8}
-      \strng{authornamehash}{259a1640c341217991c5c323e9027902}
-      \strng{authorfullhash}{dbf48cd6e3990840f60e6d5ce352ddf8}
-      \field{sortinit}{A}
-      \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal of the American Statistical Association}
-      \field{langid}{english}
-      \field{lansortorder}{4}
-      \field{number}{525}
-      \field{title}{Principal component analysis of high-frequency data}
-      \field{usera}{J}
-      \field{userd}{english}
-      \field{userf}{french}
-      \field{volume}{114}
-      \field{year}{2019}
-      \field{dateera}{ce}
-      \true{nocite}
-      \field{pages}{287\bibrangedash 303}
-      \range{pages}{17}
-      \keyw{ait2019principal}
-    \endentry
     \entry{baccini1996l1}{article}{}
       \name{author}{3}{}{%
         {{hash=9eab0e2abe92a3f68616b33df6382203}{%
@@ -109,56 +64,9 @@
       \field{volume}{1}
       \field{year}{1996}
       \field{dateera}{ce}
-      \true{nocite}
       \field{pages}{359\bibrangedash 368}
       \range{pages}{10}
       \keyw{baccini1996l1}
-    \endentry
-    \entry{bai2016maximum}{article}{}
-      \name{author}{2}{}{%
-        {{hash=0dc94d98f7e1729d400a45f4d532e4a4}{%
-           family={Bai},
-           familyi={B\bibinitperiod},
-           given={Jushan},
-           giveni={J\bibinitperiod}}}%
-        {{hash=ed011651758f9d0d06ea4862c4902fb8}{%
-           family={Li},
-           familyi={L\bibinitperiod},
-           given={Kunpeng},
-           giveni={K\bibinitperiod}}}%
-      }
-      \list{language}{1}{%
-        {english}%
-      }
-      \list{publisher}{1}{%
-        {MIT Press}%
-      }
-      \strng{namehash}{63372091cae0336f536eba3a6c8faa5d}
-      \strng{fullhash}{44324c1ff542e062560ce0d32e34407e}
-      \strng{bibnamehash}{44324c1ff542e062560ce0d32e34407e}
-      \strng{authorbibnamehash}{44324c1ff542e062560ce0d32e34407e}
-      \strng{authornamehash}{63372091cae0336f536eba3a6c8faa5d}
-      \strng{authorfullhash}{44324c1ff542e062560ce0d32e34407e}
-      \field{extraname}{1}
-      \field{sortinit}{B}
-      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Review of Economics and Statistics}
-      \field{langid}{english}
-      \field{lansortorder}{4}
-      \field{number}{2}
-      \field{title}{Maximum likelihood estimation and inference for approximate factor models of high dimension}
-      \field{usera}{J}
-      \field{userd}{english}
-      \field{userf}{english}
-      \field{volume}{98}
-      \field{year}{2016}
-      \field{dateera}{ce}
-      \true{nocite}
-      \field{pages}{298\bibrangedash 309}
-      \range{pages}{12}
-      \keyw{bai2016maximum}
     \endentry
     \entry{bai2002determining}{article}{}
       \name{author}{2}{}{%
@@ -185,7 +93,6 @@
       \strng{authorbibnamehash}{feda9ccfe432a161b59f18da98f3b0f1}
       \strng{authornamehash}{63372091cae0336f536eba3a6c8faa5d}
       \strng{authorfullhash}{feda9ccfe432a161b59f18da98f3b0f1}
-      \field{extraname}{2}
       \field{sortinit}{B}
       \field{sortinithash}{8de16967003c7207dae369d874f1456e}
       \field{labelnamesource}{author}
@@ -201,55 +108,9 @@
       \field{volume}{70}
       \field{year}{2002}
       \field{dateera}{ce}
-      \true{nocite}
       \field{pages}{191\bibrangedash 221}
       \range{pages}{31}
       \keyw{bai2002determining}
-    \endentry
-    \entry{black1996unification}{article}{}
-      \name{author}{2}{}{%
-        {{hash=54960bfd1d66de256b111681241131bb}{%
-           family={Black},
-           familyi={B\bibinitperiod},
-           given={Michael\bibnamedelima J},
-           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
-        {{hash=f7babc8fccb57abd2ce3ec7dcd7a54e8}{%
-           family={Rangarajan},
-           familyi={R\bibinitperiod},
-           given={Anand},
-           giveni={A\bibinitperiod}}}%
-      }
-      \list{language}{1}{%
-        {english}%
-      }
-      \list{publisher}{1}{%
-        {Springer}%
-      }
-      \strng{namehash}{4eaf769518c9384a5fa8712a665cc3eb}
-      \strng{fullhash}{3729b210801c2c2859f65fdfa4654d30}
-      \strng{bibnamehash}{3729b210801c2c2859f65fdfa4654d30}
-      \strng{authorbibnamehash}{3729b210801c2c2859f65fdfa4654d30}
-      \strng{authornamehash}{4eaf769518c9384a5fa8712a665cc3eb}
-      \strng{authorfullhash}{3729b210801c2c2859f65fdfa4654d30}
-      \field{sortinit}{B}
-      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{International journal of computer vision}
-      \field{langid}{english}
-      \field{lansortorder}{4}
-      \field{number}{1}
-      \field{title}{On the unification of line processes, outlier rejection, and robust statistics with applications in early vision}
-      \field{usera}{J}
-      \field{userd}{english}
-      \field{userf}{english}
-      \field{volume}{19}
-      \field{year}{1996}
-      \field{dateera}{ce}
-      \true{nocite}
-      \field{pages}{57\bibrangedash 91}
-      \range{pages}{35}
-      \keyw{black1996unification}
     \endentry
     \entry{brooks2013pure}{article}{}
       \name{author}{3}{}{%
@@ -295,10 +156,61 @@
       \field{volume}{61}
       \field{year}{2013}
       \field{dateera}{ce}
-      \true{nocite}
       \field{pages}{83\bibrangedash 98}
       \range{pages}{16}
       \keyw{brooks2013pure}
+    \endentry
+    \entry{bunn2016analysis}{article}{}
+      \name{author}{4}{}{%
+        {{hash=f3b0010dbdc1dfb3f58c9a5d23a418ca}{%
+           family={Bunn},
+           familyi={B\bibinitperiod},
+           given={Derek},
+           giveni={D\bibinitperiod}}}%
+        {{hash=5990f3bbcea5bcf05222853e2031b98a}{%
+           family={Andresen},
+           familyi={A\bibinitperiod},
+           given={Arne},
+           giveni={A\bibinitperiod}}}%
+        {{hash=be57ba4cbb7ed1044360e311c3126fe6}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Dipeng},
+           giveni={D\bibinitperiod}}}%
+        {{hash=579a0918b1c2a5abd02efb2f69792b59}{%
+           family={Westgaard},
+           familyi={W\bibinitperiod},
+           given={Sjur},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {International Association for Energy Economics}%
+      }
+      \strng{namehash}{f270676e0b2ac03c11f7fb383f971171}
+      \strng{fullhash}{466088ae2f54de4144c618512e3ed65b}
+      \strng{bibnamehash}{41309776cdee53f123f471523af0e709}
+      \strng{authorbibnamehash}{41309776cdee53f123f471523af0e709}
+      \strng{authornamehash}{f270676e0b2ac03c11f7fb383f971171}
+      \strng{authorfullhash}{466088ae2f54de4144c618512e3ed65b}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Energy Journal}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{number}{1}
+      \field{title}{Analysis and forecasting of electricty price risks with quantile factor models}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{37}
+      \field{year}{2016}
+      \field{dateera}{ce}
+      \keyw{bunn2016analysis}
     \endentry
     \entry{chamberlain1982arbitrage}{misc}{}
       \name{author}{2}{}{%
@@ -337,7 +249,6 @@
       \field{userf}{english}
       \field{year}{1982}
       \field{dateera}{ce}
-      \true{nocite}
       \keyw{chamberlain1982arbitrage}
     \endentry
     \entry{chan1999dynamic}{article}{}
@@ -385,7 +296,6 @@
       \field{volume}{1}
       \field{year}{1999}
       \field{dateera}{ce}
-      \true{nocite}
       \field{pages}{91\bibrangedash 121}
       \range{pages}{31}
       \keyw{chan1999dynamic}
@@ -433,7 +343,6 @@
       \field{userf}{english}
       \field{year}{2018}
       \field{dateera}{ce}
-      \true{nocite}
       \keyw{chen2018quantile}
     \endentry
     \entry{svn}{article}{}
@@ -484,7 +393,6 @@
       \field{volume}{21}
       \field{year}{2020}
       \field{dateera}{ce}
-      \true{nocite}
       \field{pages}{1\bibrangedash 43}
       \range{pages}{43}
       \verb{urlraw}
@@ -530,55 +438,9 @@
       \field{volume}{50}
       \field{year}{2006}
       \field{dateera}{ce}
-      \true{nocite}
       \field{pages}{1441\bibrangedash 1451}
       \range{pages}{11}
       \keyw{choulakian2006l1}
-    \endentry
-    \entry{clayton1999application}{article}{}
-      \name{author}{2}{}{%
-        {{hash=d9dbe5794b9f94695ff7a8d47b31e779}{%
-           family={Clayton-Matthews},
-           familyi={C\bibinithyphendelim M\bibinitperiod},
-           given={Alan},
-           giveni={A\bibinitperiod}}}%
-        {{hash=2d01c3b46f4061430cc9eb2a1f6408a4}{%
-           family={Stock},
-           familyi={S\bibinitperiod},
-           given={James\bibnamedelima H},
-           giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
-      }
-      \list{language}{1}{%
-        {english}%
-      }
-      \list{publisher}{1}{%
-        {IOS Press}%
-      }
-      \strng{namehash}{a42d6ccf8a92f7ddc2495b15582218aa}
-      \strng{fullhash}{880dba20ca1976b8a7625eede81b2908}
-      \strng{bibnamehash}{880dba20ca1976b8a7625eede81b2908}
-      \strng{authorbibnamehash}{880dba20ca1976b8a7625eede81b2908}
-      \strng{authornamehash}{a42d6ccf8a92f7ddc2495b15582218aa}
-      \strng{authorfullhash}{880dba20ca1976b8a7625eede81b2908}
-      \field{sortinit}{C}
-      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal of Economic and Social Measurement}
-      \field{langid}{english}
-      \field{lansortorder}{4}
-      \field{number}{3-4}
-      \field{title}{An application of the Stock/Watson index methodology to the Massachusetts economy}
-      \field{usera}{J}
-      \field{userd}{english}
-      \field{userf}{english}
-      \field{volume}{25}
-      \field{year}{1999}
-      \field{dateera}{ce}
-      \true{nocite}
-      \field{pages}{183\bibrangedash 233}
-      \range{pages}{51}
-      \keyw{clayton1999application}
     \endentry
     \entry{connor1993test}{article}{}
       \name{author}{2}{}{%
@@ -620,7 +482,6 @@
       \field{volume}{48}
       \field{year}{1993}
       \field{dateera}{ce}
-      \true{nocite}
       \field{pages}{1263\bibrangedash 1291}
       \range{pages}{29}
       \keyw{connor1993test}
@@ -660,7 +521,6 @@
       \field{userf}{english}
       \field{year}{2004}
       \field{dateera}{ce}
-      \true{nocite}
       \keyw{dasgupta2004least}
     \endentry
     \entry{davis1997least}{article}{}
@@ -703,7 +563,6 @@
       \field{volume}{10}
       \field{year}{1997}
       \field{dateera}{ce}
-      \true{nocite}
       \field{pages}{481\bibrangedash 497}
       \range{pages}{17}
       \keyw{davis1997least}
@@ -753,10 +612,43 @@
       \field{userf}{english}
       \field{year}{2006}
       \field{dateera}{ce}
-      \true{nocite}
       \field{pages}{281\bibrangedash 288}
       \range{pages}{8}
       \keyw{ding2006r}
+    \endentry
+    \entry{dodge2012statistical}{book}{}
+      \name{author}{1}{}{%
+        {{hash=733d56666b5bd8c1281144e1a187eec4}{%
+           family={Dodge},
+           familyi={D\bibinitperiod},
+           given={Yadolah},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {Birkh{ä}user}%
+      }
+      \strng{namehash}{733d56666b5bd8c1281144e1a187eec4}
+      \strng{fullhash}{733d56666b5bd8c1281144e1a187eec4}
+      \strng{bibnamehash}{733d56666b5bd8c1281144e1a187eec4}
+      \strng{authorbibnamehash}{733d56666b5bd8c1281144e1a187eec4}
+      \strng{authornamehash}{733d56666b5bd8c1281144e1a187eec4}
+      \strng{authorfullhash}{733d56666b5bd8c1281144e1a187eec4}
+      \field{sortinit}{D}
+      \field{sortinithash}{c438b3d5d027251ba63f5ed538d98af5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Statistical data analysis based on the L1-norm and related methods}
+      \field{usera}{M}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2012}
+      \field{dateera}{ce}
+      \keyw{dodge2012statistical}
     \endentry
     \entry{eickmeier2008successful}{article}{}
       \name{author}{2}{}{%
@@ -798,7 +690,6 @@
       \field{volume}{27}
       \field{year}{2008}
       \field{dateera}{ce}
-      \true{nocite}
       \field{pages}{237\bibrangedash 265}
       \range{pages}{29}
       \keyw{eickmeier2008successful}
@@ -840,53 +731,9 @@
       \field{volume}{13}
       \field{year}{1998}
       \field{dateera}{ce}
-      \true{nocite}
       \field{pages}{337\bibrangedash 350}
       \range{pages}{14}
       \keyw{ellis1998instability}
-    \endentry
-    \entry{eriksson2010efficient}{inproceedings}{}
-      \name{author}{2}{}{%
-        {{hash=12ffe87b462ff07adf45cbad5e2956d8}{%
-           family={Eriksson},
-           familyi={E\bibinitperiod},
-           given={Anders},
-           giveni={A\bibinitperiod}}}%
-        {{hash=391cf8d44b25428741c620023f018f0a}{%
-           family={Van\bibnamedelimb Den\bibnamedelima Hengel},
-           familyi={V\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim H\bibinitperiod},
-           given={Anton},
-           giveni={A\bibinitperiod}}}%
-      }
-      \list{language}{1}{%
-        {english}%
-      }
-      \list{organization}{1}{%
-        {IEEE}%
-      }
-      \strng{namehash}{a893cdbf31a55aa2e1adc334dc574f5b}
-      \strng{fullhash}{cde519f8ae80f1fc58e57fc59222afd4}
-      \strng{bibnamehash}{cde519f8ae80f1fc58e57fc59222afd4}
-      \strng{authorbibnamehash}{cde519f8ae80f1fc58e57fc59222afd4}
-      \strng{authornamehash}{a893cdbf31a55aa2e1adc334dc574f5b}
-      \strng{authorfullhash}{cde519f8ae80f1fc58e57fc59222afd4}
-      \field{sortinit}{E}
-      \field{sortinithash}{c554bd1a0b76ea92b9f105fe36d9c7b0}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{2010 IEEE Computer Society Conference on Computer Vision and Pattern Recognition}
-      \field{langid}{english}
-      \field{lansortorder}{4}
-      \field{title}{Efficient computation of robust low-rank matrix approximations in the presence of missing data using the L 1 norm}
-      \field{usera}{C}
-      \field{userd}{english}
-      \field{userf}{english}
-      \field{year}{2010}
-      \field{dateera}{ce}
-      \true{nocite}
-      \field{pages}{771\bibrangedash 778}
-      \range{pages}{8}
-      \keyw{eriksson2010efficient}
     \endentry
     \entry{forni2000generalized}{article}{}
       \name{author}{4}{}{%
@@ -938,7 +785,6 @@
       \field{volume}{82}
       \field{year}{2000}
       \field{dateera}{ce}
-      \true{nocite}
       \field{pages}{540\bibrangedash 554}
       \range{pages}{15}
       \keyw{forni2000generalized}
@@ -983,7 +829,6 @@
       \field{volume}{5}
       \field{year}{1987}
       \field{dateera}{ce}
-      \true{nocite}
       \field{pages}{305\bibrangedash 319}
       \range{pages}{15}
       \keyw{galpin1987methods}
@@ -1023,7 +868,6 @@
       \field{volume}{20}
       \field{year}{2008}
       \field{dateera}{ce}
-      \true{nocite}
       \field{pages}{555\bibrangedash 572}
       \range{pages}{18}
       \keyw{gao2008robust}
@@ -1061,8 +905,44 @@
       \field{userf}{english}
       \field{year}{1977}
       \field{dateera}{ce}
-      \true{nocite}
       \keyw{geweke1977dynamic}
+    \endentry
+    \entry{gonccalves2020bayesian}{article}{}
+      \name{author}{2}{}{%
+        {{hash=4a3dbe4ec5344afaf6ac956d08a8af69}{%
+           family={Gon{ç}alves},
+           familyi={G\bibinitperiod},
+           given={Kelly},
+           giveni={K\bibinitperiod}}}%
+        {{hash=c15f5f94eed6ce0f18e777e8b07e44d2}{%
+           family={Silva},
+           familyi={S\bibinitperiod},
+           given={Afonso\bibnamedelima CB},
+           giveni={A\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{5f66afd877a4505b821f4ba28b0067a8}
+      \strng{fullhash}{c97c945b2a770f9a2d4fc551b80f41f9}
+      \strng{bibnamehash}{c97c945b2a770f9a2d4fc551b80f41f9}
+      \strng{authorbibnamehash}{c97c945b2a770f9a2d4fc551b80f41f9}
+      \strng{authornamehash}{5f66afd877a4505b821f4ba28b0067a8}
+      \strng{authorfullhash}{c97c945b2a770f9a2d4fc551b80f41f9}
+      \field{sortinit}{G}
+      \field{sortinithash}{62eb2aa29549e4fdbd3cb154ec5711cb}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:2002.07242}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Bayesian Quantile Factor Models}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \keyw{gonccalves2020bayesian}
     \endentry
     \entry{jeon2018data}{article}{}
       \name{author}{4}{}{%
@@ -1114,7 +994,6 @@
       \field{volume}{13}
       \field{year}{2018}
       \field{dateera}{ce}
-      \true{nocite}
       \field{pages}{e0200605}
       \range{pages}{-1}
       \keyw{jeon2018data}
@@ -1154,7 +1033,6 @@
       \field{volume}{27}
       \field{year}{1996}
       \field{dateera}{ce}
-      \true{nocite}
       \field{pages}{2\bibrangedash 23}
       \range{pages}{22}
       \keyw{kalman1996singularly}
@@ -1194,7 +1072,6 @@
       \field{volume}{28}
       \field{year}{2010}
       \field{dateera}{ce}
-      \true{nocite}
       \field{pages}{397\bibrangedash 409}
       \range{pages}{13}
       \keyw{kapetanios2010testing}
@@ -1239,7 +1116,6 @@
       \field{volume}{1}
       \field{year}{2005}
       \field{dateera}{ce}
-      \true{nocite}
       \field{pages}{739\bibrangedash 746}
       \range{pages}{8}
       \keyw{ke2005robust}
@@ -1282,7 +1158,6 @@
       \field{userf}{english}
       \field{year}{2003}
       \field{dateera}{ce}
-      \true{nocite}
       \keyw{ke2003robust}
     \endentry
     \entry{kwak2008principal}{article}{}
@@ -1320,10 +1195,92 @@
       \field{volume}{30}
       \field{year}{2008}
       \field{dateera}{ce}
-      \true{nocite}
       \field{pages}{1672\bibrangedash 1680}
       \range{pages}{9}
       \keyw{kwak2008principal}
+    \endentry
+    \entry{li2004maximum}{article}{}
+      \name{author}{2}{}{%
+        {{hash=5a18e123b056d16223821afebbd9dcb9}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Yinbo},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=90c51270078e8c49cd0da946fb9de8bd}{%
+           family={Arce},
+           familyi={A\bibinitperiod},
+           given={Gonzalo\bibnamedelima R},
+           giveni={G\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{56a385972b8915f7bf72456dc7bccd0c}
+      \strng{fullhash}{ad5d28579213e0580e426137071c08db}
+      \strng{bibnamehash}{ad5d28579213e0580e426137071c08db}
+      \strng{authorbibnamehash}{ad5d28579213e0580e426137071c08db}
+      \strng{authornamehash}{56a385972b8915f7bf72456dc7bccd0c}
+      \strng{authorfullhash}{ad5d28579213e0580e426137071c08db}
+      \field{sortinit}{L}
+      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{EURASIP Journal on Advances in Signal Processing}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{number}{12}
+      \field{title}{A maximum likelihood approach to least absolute deviation regression}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{2004}
+      \field{year}{2004}
+      \field{dateera}{ce}
+      \field{pages}{1\bibrangedash 8}
+      \range{pages}{8}
+      \keyw{li2004maximum}
+    \endentry
+    \entry{lucas1997robustness}{article}{}
+      \name{author}{1}{}{%
+        {{hash=9d009e9321d829646151725fce4b27b0}{%
+           family={Lucas},
+           familyi={L\bibinitperiod},
+           given={Andr{é}},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {Taylor \& Francis}%
+      }
+      \strng{namehash}{9d009e9321d829646151725fce4b27b0}
+      \strng{fullhash}{9d009e9321d829646151725fce4b27b0}
+      \strng{bibnamehash}{9d009e9321d829646151725fce4b27b0}
+      \strng{authorbibnamehash}{9d009e9321d829646151725fce4b27b0}
+      \strng{authornamehash}{9d009e9321d829646151725fce4b27b0}
+      \strng{authorfullhash}{9d009e9321d829646151725fce4b27b0}
+      \field{sortinit}{L}
+      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Communications in Statistics-Theory and Methods}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{number}{5}
+      \field{title}{Robustness of the student t based M-estimator}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{26}
+      \field{year}{1997}
+      \field{dateera}{ce}
+      \field{pages}{1165\bibrangedash 1182}
+      \range{pages}{18}
+      \keyw{lucas1997robustness}
     \endentry
     \entry{luciani2014large}{article}{}
       \name{author}{1}{}{%
@@ -1355,8 +1312,52 @@
       \field{userf}{english}
       \field{year}{2014}
       \field{dateera}{ce}
-      \true{nocite}
       \keyw{luciani2014large}
+    \endentry
+    \entry{ma2020estimation}{article}{}
+      \name{author}{3}{}{%
+        {{hash=2b558e68c7b8c3e37cb318939197008c}{%
+           family={Ma},
+           familyi={M\bibinitperiod},
+           given={Shujie},
+           giveni={S\bibinitperiod}}}%
+        {{hash=5a0866101878426973767ab807061225}{%
+           family={Linton},
+           familyi={L\bibinitperiod},
+           given={Oliver},
+           giveni={O\bibinitperiod}}}%
+        {{hash=3f1f9da59a509c9ebdd54ccbc576963e}{%
+           family={Gao},
+           familyi={G\bibinitperiod},
+           given={Jiti},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{ce2daca1a370b716de81cea485da97d6}
+      \strng{fullhash}{f4ec30f8398f6cca2c33ed21641ac4c0}
+      \strng{bibnamehash}{f4ec30f8398f6cca2c33ed21641ac4c0}
+      \strng{authorbibnamehash}{f4ec30f8398f6cca2c33ed21641ac4c0}
+      \strng{authornamehash}{ce2daca1a370b716de81cea485da97d6}
+      \strng{authorfullhash}{f4ec30f8398f6cca2c33ed21641ac4c0}
+      \field{sortinit}{M}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Econometrics}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Estimation and inference in semiparametric quantile factor models}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \keyw{ma2020estimation}
     \endentry
     \entry{markopoulos2014optimal}{article}{}
       \name{author}{3}{}{%
@@ -1388,7 +1389,6 @@
       \strng{authorbibnamehash}{f7c3b2298485335ff9f9d62713d300f6}
       \strng{authornamehash}{43b7d41526f4a0dd9dc794cef4648eb7}
       \strng{authorfullhash}{f7c3b2298485335ff9f9d62713d300f6}
-      \field{extraname}{1}
       \field{sortinit}{M}
       \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
       \field{labelnamesource}{author}
@@ -1397,118 +1397,16 @@
       \field{langid}{english}
       \field{lansortorder}{4}
       \field{number}{19}
-      \field{title}{Optimal algorithms for $ L\_ $\{$1$\}$ $-subspace signal processing}
+      \field{title}{Optimal algorithms for L1-subspace signal processing}
       \field{usera}{J}
       \field{userd}{english}
       \field{userf}{english}
       \field{volume}{62}
       \field{year}{2014}
       \field{dateera}{ce}
-      \true{nocite}
       \field{pages}{5046\bibrangedash 5058}
       \range{pages}{13}
       \keyw{markopoulos2014optimal}
-    \endentry
-    \entry{markopoulos2017efficient}{article}{}
-      \name{author}{4}{}{%
-        {{hash=8625fbe67d74ae0cc161ddc8fcda031d}{%
-           family={Markopoulos},
-           familyi={M\bibinitperiod},
-           given={Panos\bibnamedelima P},
-           giveni={P\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
-        {{hash=22f5b9594fb5e4b60682b792befc3a35}{%
-           family={Kundu},
-           familyi={K\bibinitperiod},
-           given={Sandipan},
-           giveni={S\bibinitperiod}}}%
-        {{hash=06fafde5480fc7ee2cf8d856952c0d37}{%
-           family={Chamadia},
-           familyi={C\bibinitperiod},
-           given={Shubham},
-           giveni={S\bibinitperiod}}}%
-        {{hash=dddb00f97b0e5f508e8ae99c2eeb751f}{%
-           family={Pados},
-           familyi={P\bibinitperiod},
-           given={Dimitris\bibnamedelima A},
-           giveni={D\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
-      }
-      \list{language}{1}{%
-        {english}%
-      }
-      \list{publisher}{1}{%
-        {IEEE}%
-      }
-      \strng{namehash}{43b7d41526f4a0dd9dc794cef4648eb7}
-      \strng{fullhash}{9bfbe9f8dc4f225edc0d3607e867ce96}
-      \strng{bibnamehash}{eeb50758c7522d3097451173abb6aeab}
-      \strng{authorbibnamehash}{eeb50758c7522d3097451173abb6aeab}
-      \strng{authornamehash}{43b7d41526f4a0dd9dc794cef4648eb7}
-      \strng{authorfullhash}{9bfbe9f8dc4f225edc0d3607e867ce96}
-      \field{extraname}{2}
-      \field{sortinit}{M}
-      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{IEEE Transactions on Signal Processing}
-      \field{langid}{english}
-      \field{lansortorder}{4}
-      \field{number}{16}
-      \field{title}{Efficient L1-norm principal-component analysis via bit flipping}
-      \field{usera}{J}
-      \field{userd}{english}
-      \field{userf}{english}
-      \field{volume}{65}
-      \field{year}{2017}
-      \field{dateera}{ce}
-      \true{nocite}
-      \field{pages}{4252\bibrangedash 4264}
-      \range{pages}{13}
-      \keyw{markopoulos2017efficient}
-    \endentry
-    \entry{masih1996stock}{article}{}
-      \name{author}{2}{}{%
-        {{hash=f8e07d8afa13e6d5569db47e64bb4cfb}{%
-           family={Masih},
-           familyi={M\bibinitperiod},
-           given={Rumi},
-           giveni={R\bibinitperiod}}}%
-        {{hash=2905039121b1d5e134103d9af70d3b1d}{%
-           family={Masih},
-           familyi={M\bibinitperiod},
-           given={Abul\bibnamedelima MM},
-           giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
-      }
-      \list{language}{1}{%
-        {english}%
-      }
-      \list{publisher}{1}{%
-        {Elsevier}%
-      }
-      \strng{namehash}{27fbb86c00cdd1b88ecf09cc428fcc8a}
-      \strng{fullhash}{df5f84da0863ccb441e8049caf3040dc}
-      \strng{bibnamehash}{df5f84da0863ccb441e8049caf3040dc}
-      \strng{authorbibnamehash}{df5f84da0863ccb441e8049caf3040dc}
-      \strng{authornamehash}{27fbb86c00cdd1b88ecf09cc428fcc8a}
-      \strng{authorfullhash}{df5f84da0863ccb441e8049caf3040dc}
-      \field{sortinit}{M}
-      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Energy Economics}
-      \field{langid}{english}
-      \field{lansortorder}{4}
-      \field{number}{4}
-      \field{title}{Stock-Watson dynamic OLS (DOLS) and error-correction modelling approaches to estimating long-and short-run elasticities in a demand function: new evidence and methodological implications from an application to the demand for coal in mainland China}
-      \field{usera}{J}
-      \field{userd}{english}
-      \field{userf}{english}
-      \field{volume}{18}
-      \field{year}{1996}
-      \field{dateera}{ce}
-      \true{nocite}
-      \field{pages}{315\bibrangedash 334}
-      \range{pages}{20}
-      \keyw{masih1996stock}
     \endentry
     \entry{mccoy2010two}{article}{}
       \name{author}{2}{}{%
@@ -1545,53 +1443,7 @@
       \field{userf}{english}
       \field{year}{2010}
       \field{dateera}{ce}
-      \true{nocite}
       \keyw{mccoy2010two}
-    \endentry
-    \entry{mccrae1992introduction}{article}{}
-      \name{author}{2}{}{%
-        {{hash=78a7e01bb7d08a09d2d5fa2cc10e783f}{%
-           family={McCrae},
-           familyi={M\bibinitperiod},
-           given={Robert\bibnamedelima R},
-           giveni={R\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
-        {{hash=122e749ee9606b5a5456f163a96bd5d6}{%
-           family={John},
-           familyi={J\bibinitperiod},
-           given={Oliver\bibnamedelima P},
-           giveni={O\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
-      }
-      \list{language}{1}{%
-        {english}%
-      }
-      \list{publisher}{1}{%
-        {Wiley Online Library}%
-      }
-      \strng{namehash}{e67dbbd655dc65c6070e160df97ba05d}
-      \strng{fullhash}{ddc28175dbb91a4b73c9f1801f42dab3}
-      \strng{bibnamehash}{ddc28175dbb91a4b73c9f1801f42dab3}
-      \strng{authorbibnamehash}{ddc28175dbb91a4b73c9f1801f42dab3}
-      \strng{authornamehash}{e67dbbd655dc65c6070e160df97ba05d}
-      \strng{authorfullhash}{ddc28175dbb91a4b73c9f1801f42dab3}
-      \field{sortinit}{M}
-      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal of personality}
-      \field{langid}{english}
-      \field{lansortorder}{4}
-      \field{number}{2}
-      \field{title}{An introduction to the five-factor model and its applications}
-      \field{usera}{J}
-      \field{userd}{english}
-      \field{userf}{english}
-      \field{volume}{60}
-      \field{year}{1992}
-      \field{dateera}{ce}
-      \true{nocite}
-      \field{pages}{175\bibrangedash 215}
-      \range{pages}{41}
-      \keyw{mccrae1992introduction}
     \endentry
     \entry{nie2011robust}{inproceedings}{}
       \name{author}{5}{}{%
@@ -1645,60 +1497,9 @@
       \field{volume}{22}
       \field{year}{2011}
       \field{dateera}{ce}
-      \true{nocite}
       \field{pages}{1433}
       \range{pages}{1}
       \keyw{nie2011robust}
-    \endentry
-    \entry{osborne2000lasso}{article}{}
-      \name{author}{3}{}{%
-        {{hash=be999e77941c26321f0b2dd69c7e15b6}{%
-           family={Osborne},
-           familyi={O\bibinitperiod},
-           given={Michael\bibnamedelima R},
-           giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
-        {{hash=5eea355832af13dd65920d8051c0f83f}{%
-           family={Presnell},
-           familyi={P\bibinitperiod},
-           given={Brett},
-           giveni={B\bibinitperiod}}}%
-        {{hash=b4f8801094c32e2f883bb63e27055334}{%
-           family={Turlach},
-           familyi={T\bibinitperiod},
-           given={Berwin\bibnamedelima A},
-           giveni={B\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
-      }
-      \list{language}{1}{%
-        {english}%
-      }
-      \list{publisher}{1}{%
-        {Taylor \& Francis}%
-      }
-      \strng{namehash}{314d4d8cf59dc756f2ae65d082c41c33}
-      \strng{fullhash}{98b2c78e500ceaafa0926161519b4c6d}
-      \strng{bibnamehash}{98b2c78e500ceaafa0926161519b4c6d}
-      \strng{authorbibnamehash}{98b2c78e500ceaafa0926161519b4c6d}
-      \strng{authornamehash}{314d4d8cf59dc756f2ae65d082c41c33}
-      \strng{authorfullhash}{98b2c78e500ceaafa0926161519b4c6d}
-      \field{sortinit}{O}
-      \field{sortinithash}{ff8d4eeb5101e3cf3809959b3592d942}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal of Computational and Graphical statistics}
-      \field{langid}{english}
-      \field{lansortorder}{4}
-      \field{number}{2}
-      \field{title}{On the lasso and its dual}
-      \field{usera}{J}
-      \field{userd}{english}
-      \field{userf}{english}
-      \field{volume}{9}
-      \field{year}{2000}
-      \field{dateera}{ce}
-      \true{nocite}
-      \field{pages}{319\bibrangedash 337}
-      \range{pages}{19}
-      \keyw{osborne2000lasso}
     \endentry
     \entry{park2021optimization}{article}{}
       \name{author}{1}{}{%
@@ -1735,7 +1536,6 @@
       \field{volume}{33}
       \field{year}{2021}
       \field{dateera}{ce}
-      \true{nocite}
       \field{pages}{120\bibrangedash 142}
       \range{pages}{23}
       \keyw{park2021optimization}
@@ -1778,7 +1578,6 @@
       \field{userf}{english}
       \field{year}{2016}
       \field{dateera}{ce}
-      \true{nocite}
       \field{pages}{430\bibrangedash 438}
       \range{pages}{9}
       \keyw{park2016iteratively}
@@ -1816,10 +1615,66 @@
       \field{userf}{english}
       \field{year}{1991}
       \field{dateera}{ce}
-      \true{nocite}
       \field{pages}{186\bibrangedash 199}
       \range{pages}{14}
       \keyw{pollard1991asymptotics}
+    \endentry
+    \entry{qiu2015robust}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{hash=a1f1cc74a95416781a673e15490f73f5}{%
+           family={Qiu},
+           familyi={Q\bibinitperiod},
+           given={Huitong},
+           giveni={H\bibinitperiod}}}%
+        {{hash=0d25ef231ae9d36fe0f48c3d4679ca65}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Sheng},
+           giveni={S\bibinitperiod}}}%
+        {{hash=26e958b9c08c04865fd5810230a47beb}{%
+           family={Han},
+           familyi={H\bibinitperiod},
+           given={Fang},
+           giveni={F\bibinitperiod}}}%
+        {{hash=1fd24db54860bcc68afc8ed6e58bfa9a}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Han},
+           giveni={H\bibinitperiod}}}%
+        {{hash=02718c3a6f8c62a612ee950406ac15bf}{%
+           family={Caffo},
+           familyi={C\bibinitperiod},
+           given={Brian},
+           giveni={B\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{organization}{1}{%
+        {PMLR}%
+      }
+      \strng{namehash}{57b8cbdbc70d8b6475ab6e0245b34f80}
+      \strng{fullhash}{1e34528815568cd1a3ca2e0254db8dae}
+      \strng{bibnamehash}{c1439a05d6febae29193ab92d19fabf8}
+      \strng{authorbibnamehash}{c1439a05d6febae29193ab92d19fabf8}
+      \strng{authornamehash}{57b8cbdbc70d8b6475ab6e0245b34f80}
+      \strng{authorfullhash}{1e34528815568cd1a3ca2e0254db8dae}
+      \field{sortinit}{Q}
+      \field{sortinithash}{c54e16deb53fc904a621fa8fd8703b5a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{International Conference on Machine Learning}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Robust estimation of transition matrices in high dimensional heavy-tailed vector autoregressive processes}
+      \field{usera}{C}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2015}
+      \field{dateera}{ce}
+      \field{pages}{1843\bibrangedash 1851}
+      \range{pages}{9}
+      \keyw{qiu2015robust}
     \endentry
     \entry{sargent1977business}{article}{}
       \true{moreauthor}
@@ -1859,43 +1714,9 @@
       \field{volume}{1}
       \field{year}{1977}
       \field{dateera}{ce}
-      \true{nocite}
       \field{pages}{145\bibrangedash 168}
       \range{pages}{24}
       \keyw{sargent1977business}
-    \endentry
-    \entry{shlens2014tutorial}{article}{}
-      \name{author}{1}{}{%
-        {{hash=8f128e70084608a2c29c497ebd794f87}{%
-           family={Shlens},
-           familyi={S\bibinitperiod},
-           given={Jonathon},
-           giveni={J\bibinitperiod}}}%
-      }
-      \list{language}{1}{%
-        {english}%
-      }
-      \strng{namehash}{8f128e70084608a2c29c497ebd794f87}
-      \strng{fullhash}{8f128e70084608a2c29c497ebd794f87}
-      \strng{bibnamehash}{8f128e70084608a2c29c497ebd794f87}
-      \strng{authorbibnamehash}{8f128e70084608a2c29c497ebd794f87}
-      \strng{authornamehash}{8f128e70084608a2c29c497ebd794f87}
-      \strng{authorfullhash}{8f128e70084608a2c29c497ebd794f87}
-      \field{sortinit}{S}
-      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{arXiv preprint arXiv:1404.1100}
-      \field{langid}{english}
-      \field{lansortorder}{4}
-      \field{title}{A tutorial on principal component analysis}
-      \field{usera}{J}
-      \field{userd}{english}
-      \field{userf}{english}
-      \field{year}{2014}
-      \field{dateera}{ce}
-      \true{nocite}
-      \keyw{shlens2014tutorial}
     \endentry
     \entry{srebro2003weighted}{inproceedings}{}
       \name{author}{2}{}{%
@@ -1932,7 +1753,6 @@
       \field{userf}{english}
       \field{year}{2003}
       \field{dateera}{ce}
-      \true{nocite}
       \field{pages}{720\bibrangedash 727}
       \range{pages}{8}
       \keyw{srebro2003weighted}
@@ -1976,7 +1796,6 @@
       \field{userf}{english}
       \field{year}{1993}
       \field{dateera}{ce}
-      \true{nocite}
       \field{pages}{783\bibrangedash 820}
       \range{pages}{38}
       \keyw{stock1993simple}
@@ -2021,7 +1840,6 @@
       \field{volume}{1}
       \field{year}{1999}
       \field{dateera}{ce}
-      \true{nocite}
       \field{pages}{3\bibrangedash 64}
       \range{pages}{62}
       \keyw{stock1999business}
@@ -2067,7 +1885,6 @@
       \field{volume}{44}
       \field{year}{1999}
       \field{dateera}{ce}
-      \true{nocite}
       \field{pages}{293\bibrangedash 335}
       \range{pages}{43}
       \keyw{stock1999forecasting}
@@ -2113,7 +1930,6 @@
       \field{volume}{97}
       \field{year}{2002}
       \field{dateera}{ce}
-      \true{nocite}
       \field{pages}{1167\bibrangedash 1179}
       \range{pages}{13}
       \keyw{stock2002forecasting}
@@ -2159,7 +1975,6 @@
       \field{volume}{20}
       \field{year}{2002}
       \field{dateera}{ce}
-      \true{nocite}
       \field{pages}{147\bibrangedash 162}
       \range{pages}{16}
       \keyw{stock2002macroeconomic}
@@ -2204,58 +2019,9 @@
       \field{volume}{4}
       \field{year}{1989}
       \field{dateera}{ce}
-      \true{nocite}
       \field{pages}{351\bibrangedash 394}
       \range{pages}{44}
       \keyw{stock1989new}
-    \endentry
-    \entry{visentin2016robust}{inproceedings}{}
-      \name{author}{3}{}{%
-        {{hash=f161f337343ff60c96e1a19172268c46}{%
-           family={Visentin},
-           familyi={V\bibinitperiod},
-           given={Andrea},
-           giveni={A\bibinitperiod}}}%
-        {{hash=48723f71036121efe3847a4c1b61635a}{%
-           family={Prestwich},
-           familyi={P\bibinitperiod},
-           given={Steven},
-           giveni={S\bibinitperiod}}}%
-        {{hash=e13c7d63b9abb2a014a8987385ca9f00}{%
-           family={Tarim},
-           familyi={T\bibinitperiod},
-           given={S\bibnamedelima Armagan},
-           giveni={S\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
-      }
-      \list{language}{1}{%
-        {english}%
-      }
-      \list{organization}{1}{%
-        {Springer}%
-      }
-      \strng{namehash}{6201ac513c61a851943c23c95cf14992}
-      \strng{fullhash}{c8226a350222176d51474d6ce64cad76}
-      \strng{bibnamehash}{c8226a350222176d51474d6ce64cad76}
-      \strng{authorbibnamehash}{c8226a350222176d51474d6ce64cad76}
-      \strng{authornamehash}{6201ac513c61a851943c23c95cf14992}
-      \strng{authorfullhash}{c8226a350222176d51474d6ce64cad76}
-      \field{sortinit}{V}
-      \field{sortinithash}{02432525618c08e2b03cac47c19764af}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{Joint European Conference on Machine Learning and Knowledge Discovery in Databases}
-      \field{langid}{english}
-      \field{lansortorder}{4}
-      \field{title}{Robust principal component analysis by reverse iterative linear programming}
-      \field{usera}{C}
-      \field{userd}{english}
-      \field{userf}{english}
-      \field{year}{2016}
-      \field{dateera}{ce}
-      \true{nocite}
-      \field{pages}{593\bibrangedash 605}
-      \range{pages}{13}
-      \keyw{visentin2016robust}
     \endentry
     \entry{wang2006regularized}{inproceedings}{}
       \name{author}{3}{}{%
@@ -2300,60 +2066,9 @@
       \field{userf}{english}
       \field{year}{2006}
       \field{dateera}{ce}
-      \true{nocite}
       \field{pages}{690\bibrangedash 700}
       \range{pages}{11}
       \keyw{wang2006regularized}
-    \endentry
-    \entry{wold1987principal}{article}{}
-      \name{author}{3}{}{%
-        {{hash=633e6dcc2c798200dfa73780715ac047}{%
-           family={Wold},
-           familyi={W\bibinitperiod},
-           given={Svante},
-           giveni={S\bibinitperiod}}}%
-        {{hash=c87fb09717379ac55d127945ba39af6c}{%
-           family={Esbensen},
-           familyi={E\bibinitperiod},
-           given={Kim},
-           giveni={K\bibinitperiod}}}%
-        {{hash=33beb61995bee952138fa81bb04ea4df}{%
-           family={Geladi},
-           familyi={G\bibinitperiod},
-           given={Paul},
-           giveni={P\bibinitperiod}}}%
-      }
-      \list{language}{1}{%
-        {english}%
-      }
-      \list{publisher}{1}{%
-        {Elsevier}%
-      }
-      \strng{namehash}{2327184eef6cd65f3594c48584e767e5}
-      \strng{fullhash}{53d1dd516fd9335ed516d0336280951c}
-      \strng{bibnamehash}{53d1dd516fd9335ed516d0336280951c}
-      \strng{authorbibnamehash}{53d1dd516fd9335ed516d0336280951c}
-      \strng{authornamehash}{2327184eef6cd65f3594c48584e767e5}
-      \strng{authorfullhash}{53d1dd516fd9335ed516d0336280951c}
-      \field{sortinit}{W}
-      \field{sortinithash}{1af34bd8c148ffb32de1494636b49713}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Chemometrics and intelligent laboratory systems}
-      \field{langid}{english}
-      \field{lansortorder}{4}
-      \field{number}{1-3}
-      \field{title}{Principal component analysis}
-      \field{usera}{J}
-      \field{userd}{english}
-      \field{userf}{english}
-      \field{volume}{2}
-      \field{year}{1987}
-      \field{dateera}{ce}
-      \true{nocite}
-      \field{pages}{37\bibrangedash 52}
-      \range{pages}{16}
-      \keyw{wold1987principal}
     \endentry
     \entry{ying1995survival}{article}{}
       \name{author}{3}{}{%
@@ -2400,7 +2115,6 @@
       \field{volume}{90}
       \field{year}{1995}
       \field{dateera}{ce}
-      \true{nocite}
       \field{pages}{178\bibrangedash 184}
       \range{pages}{7}
       \keyw{ying1995survival}
@@ -2437,7 +2151,6 @@
       \field{volume}{4}
       \field{year}{2007}
       \field{dateera}{ce}
-      \true{nocite}
       \field{pages}{14\bibrangedash 19}
       \range{pages}{6}
       \keyw{何问陶2007我国宏观经济先行指标体系及对经济预测实证研究}
@@ -2474,7 +2187,6 @@
       \field{volume}{3}
       \field{year}{2011}
       \field{dateera}{ce}
-      \true{nocite}
       \field{pages}{4\bibrangedash 17}
       \range{pages}{14}
       \keyw{刘汉2011中国宏观经济总量的实时预报与短期预测}
@@ -2515,7 +2227,6 @@
       \field{volume}{35}
       \field{year}{2019}
       \field{dateera}{ce}
-      \true{nocite}
       \field{pages}{5\bibrangedash 12}
       \range{pages}{8}
       \keyw{孔新兵2019高维}
@@ -2555,7 +2266,6 @@
       \field{volume}{5}
       \field{year}{2011}
       \field{dateera}{ce}
-      \true{nocite}
       \keyw{杜勇宏2011动态因子模型与}
     \endentry
     \entry{杜海韬2013部门价格动态}{article}{}
@@ -2590,41 +2300,9 @@
       \field{volume}{12}
       \field{year}{2013}
       \field{dateera}{ce}
-      \true{nocite}
       \field{pages}{93\bibrangedash 105}
       \range{pages}{13}
       \keyw{杜海韬2013部门价格动态}
-    \endentry
-    \entry{梁志贞2013lp}{thesis}{}
-      \name{author}{1}{}{%
-        {{hash=7908711eb2208a95c9dcf838fd148a67}{%
-           family={梁志贞},
-           familyi={梁\bibinitperiod}}}%
-      }
-      \list{language}{1}{%
-        {chinese}%
-      }
-      \strng{namehash}{7908711eb2208a95c9dcf838fd148a67}
-      \strng{fullhash}{7908711eb2208a95c9dcf838fd148a67}
-      \strng{bibnamehash}{7908711eb2208a95c9dcf838fd148a67}
-      \strng{authorbibnamehash}{7908711eb2208a95c9dcf838fd148a67}
-      \strng{authornamehash}{7908711eb2208a95c9dcf838fd148a67}
-      \strng{authorfullhash}{7908711eb2208a95c9dcf838fd148a67}
-      \field{sortinit}{梁}
-      \field{sortinithash}{4da9e3d0b3d98bfb9d26b202ef34c2b3}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{langid}{english}
-      \field{lansortorder}{1}
-      \field{title}{Lp 范数约束下的最大化 L1 范数主成分分析}
-      \field{type}{phdthesis}
-      \field{usera}{D}
-      \field{userd}{chinese}
-      \field{userf}{chinese}
-      \field{year}{2013}
-      \field{dateera}{ce}
-      \true{nocite}
-      \keyw{梁志贞2013lp}
     \endentry
     \entry{王维2000人工神经网络在非线性经济预测中的应用}{thesis}{}
       \name{author}{1}{}{%
@@ -2654,7 +2332,6 @@
       \field{userf}{chinese}
       \field{year}{2000}
       \field{dateera}{ce}
-      \true{nocite}
       \keyw{王维2000人工神经网络在非线性经济预测中的应用}
     \endentry
     \entry{白仲林2014两类}{thesis}{}
@@ -2685,7 +2362,6 @@
       \field{userf}{chinese}
       \field{year}{2014}
       \field{dateera}{ce}
-      \true{nocite}
       \keyw{白仲林2014两类}
     \endentry
     \entry{郭崇慧2001宏观经济预测模型体系研究}{thesis}{}
@@ -2716,7 +2392,6 @@
       \field{userf}{chinese}
       \field{year}{2001}
       \field{dateera}{ce}
-      \true{nocite}
       \keyw{郭崇慧2001宏观经济预测模型体系研究}
     \endentry
     \entry{韩艾2010广义动态因子模型在景气指数构建中的应用}{article}{}
@@ -2755,7 +2430,6 @@
       \field{volume}{30}
       \field{year}{2010}
       \field{dateera}{ce}
-      \true{nocite}
       \field{pages}{803\bibrangedash 811}
       \range{pages}{9}
       \keyw{韩艾2010广义动态因子模型在景气指数构建中的应用}
@@ -2793,7 +2467,6 @@
       \field{volume}{32}
       \field{year}{2015}
       \field{dateera}{ce}
-      \true{nocite}
       \field{pages}{101\bibrangedash 109}
       \range{pages}{9}
       \keyw{高华川2015动态因子模型及其应用研究综述}

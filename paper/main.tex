@@ -16,6 +16,8 @@
 \usepackage[final]{pdfpages}
 \usepackage{pdfpages}
 
+\setmainfont{Times New Roman}%Times New Roman
+
 \ctexset{
    section={
    name={第,章},
@@ -48,6 +50,7 @@
 \renewcommand\sectionmark[1]{
 \numberwithin{figure}{section}
 \numberwithin{equation}{section}
+\numberwithin{table}{section}
 \renewcommand{\thesubfigure}{\alph{subfigure}}
 
 \captionsetup{margin=10pt,font={small,bf}}
@@ -77,7 +80,7 @@
    \newpage
    \pagenumbering{arabic}
 
-   \nocite{*}
+   % \nocite{*}
    \include{chapter1}
    \include{chapter2}
    \include{chapter3}

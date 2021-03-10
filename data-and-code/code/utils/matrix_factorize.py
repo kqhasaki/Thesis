@@ -133,8 +133,8 @@ def l1_solution(X, m: int):
         print(f'---------iteration{iteration}------------')
         iteration += 1
 
-    # A = A.dot(np.sqrt(Sigma))
-    # F = np.sqrt(Sigma).dot(F)
+    A, _= np.linalg.qr(A)
+    F = A.T.dot(X)
     return (A, F)
 
 
@@ -222,8 +222,8 @@ def pca_solution(X, m: int):
 def test_method(X, m, method):
     solution_map = {
         'SVD': pca_solution,
-        'ACP-L2': svd_solution,
-        'ACP-L1': l1_solution,
+        'L2-PCA': svd_solution,
+        'L1-PCA': l1_solution,
         'IRLS': l2_solution,
         # 'SV-ICP-L1': sv_l1_solution,
     }
@@ -241,9 +241,9 @@ def test():
     X = disturb_matrix(X, 3, 0)
     X = centralize_data(X)
     # print(l1_solution(X, 3))
-    # test_method(X, 3, 'SVD')
-    test_method(X, 3, 'ACP-L2')
-    # test_method(X, 3, 'ACP-L1')
+    test_method(X, 3, 'SVD')
+    # test_method(X, 3, 'ACP-L2')
+    # test_method(X, 3, 'L1-PCA')
     # test_method(X, 3, 'SV-ICP-L1')
     # test_method(X, 3, 'IRLS')
 

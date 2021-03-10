@@ -122,7 +122,7 @@ $\bm{F}$为一系数矩阵，给出了$\bm{X}$各列元素在特征空间中的�
 $\bm{F} = \bm{A}^T \bm{X}$。
 问题$P_1$可以解释为，需要找到一个合适的投射矩阵，使得数据在低维的投影上升回高维空间后和原矩阵各元素的误差平方和最小。
 
-对于问题$P_1$常用奇异值分解法求解。同样地我们也可考虑其对偶问题$P_2$，
+对于问题$P_1$常用奇异值分解法求解\cite{kalman1996singularly}。同样地我们也可考虑其对偶问题$P_2$，
 \begin{equation}\label{pca-l2-p2}
 P_2: \ \hat{\bm{A}} = \underset{\bm{A}}{\operatorname{arg\ max}} \| \bm{A}^T \bm{X}\|_{L_2}, \text{其中}\ \bm{A}^T
 \bm{A} = \bm{I}_m.
@@ -255,10 +255,10 @@ $L_1$范数在统计学中主要有两种用途。一种是作为稳健手段，
 为了加快收敛速度，可以使用经过缺失值插补（这里我们使用均值插补）后通过PCA计算得到的因子载荷矩阵作为$\bm{A}^{(0)}$。
 在本章后续小结的实验中我们可以发现，在含有大量缺失值和离群值的条件下，两种不同的初始化方法最终结果差异并不大。
 
-因为目标函数$\xi (\bm{A},\bm F) = \|X - \bm{A}\bm{F}\|_{L_1}$在每一个交替的优化步骤中都递减，并且$\xi( \bm{A},F)$具有下界（$\geq 0$）。
+因为目标函数$\xi (\bm{A},\bm F) = \|\bm X - \bm{A}\bm{F}\|_{L_1}$在每一个交替的优化步骤中都递减，并且$\xi( \bm{A},\bm F)$具有下界（$\geq 0$）。
 因此交替优化算法一定收敛。因此我们可以设定一个收敛阈值来停止迭代，这里我们设置终止条件：
-    $$ \theta(a_i^{(t)}, a_i^{(t-1)}) <  \alpha $$
-这里$\theta(a, b)$表示向量$a$和$b$的夹角；其中$a_i$是$\bm{A}$或者$F$的第i列；$\alpha$是一个很小的正数。
+    $$ \theta(\bm a_i^{(t)}, \bm a_i^{(t-1)}) <  \alpha $$
+这里$\theta(\bm a, \bm b)$表示向量$a$和$b$的夹角；其中$\bm a_i$是$\bm{A}$或者$\bm F$的第i列；$\alpha$是一个很小的正数。
 
 算法3.1给出了算法具体步骤，其中归一化步骤是为了计算过程中保持数值的稳定性。在最终求解得到$\hat {\bm{A}}$后，我们可以对其
 进行QR分解来得到主成分。
@@ -268,27 +268,27 @@ $L_1$范数在统计学中主要有两种用途。一种是作为稳健手段，
     \begin{tabular}{{p{0.9\columnwidth}}}%三个c代表该表一共三列，内容全部居中
     
     \toprule%第一道横线 表头
-    算法3.1：交替凸优化求解$L_1$主成分分析 (ACP, Alternate Convex Programming) \\
+    {\heiti 算法}{\bf 3.1}交替凸优化求解$L_1$主成分分析 (ACP, Alternate Convex Programming) \\
     \midrule%第二道横线 符号+解释+单位 中间用&隔开
-    1.初始化：给出$\bm{A}$，$\Sigma$的初始值$\bm{A}^{(0)}$，$\Sigma^{(0)} = I$，（其中$\Sigma$为一对角矩阵，
-    $I$为单位矩阵）； \\
+    1.初始化：给出$\bm{A}$，$\bm \Sigma$的初始值$\bm{A}^{(0)}$，$\bm \Sigma^{(0)} = \bm I$，（其中$\bm \Sigma$为一对角矩阵，
+    $\bm I$为单位矩阵）； \\
 
-    2.交替凸优化：对于迭代次数$t = 1, ..., T$： \\
-    $$ F^{(t)} = \underset{F}{\operatorname{arg\ min}} \|X - \bm{A}^{(t-1)}\Sigma^{(t-1)}F^{T}\|_{L_1}$$ \\
-    $$ \bm{A}^{(t)} = \underset{\bm{A}}{\operatorname{arg\ min}} \|X - \bm{A}\Sigma^{(t-1)}F^{Tt} \|_{L_1}$$ \\
+    2.交替凸优化：对于迭代次数$t = 1, ..., \tau$： \\
+    $$ \bm F^{(t)} = \underset{\bm F}{\operatorname{arg\ min}} \|\bm X - \bm{A}^{(t-1)}\bm\Sigma^{(t-1)}\bm F^{T}\|_{L_1}$$ \\
+    $$ \bm{A}^{(t)} = \underset{\bm{A}}{\operatorname{arg\ min}} \|\bm X - \bm{A}\bm\Sigma^{(t-1)}\bm F^{T(t)} \|_{L_1}$$ \\
     \begin{equation*}
         \text{归一化：}\left\{
                     \begin{array}{clr}
-                    N_a = diag(\bm{A}^{(t)T}\bm{A}^{(t)})\\
-                    N_f = diag(F^{(t)T}F^{(t)})\\
-                    F^{(t)} \leftarrow F^{(t)}N_f^{-1}\\
-                    \bm{A}^{(t)}\leftarrow \bm{A}^{(t)}N_a^{-1}\\
-                    \Sigma^{(t)} \leftarrow N_a\Sigma^{(t-1)}N_f\\
+                    \bm N_a = diag(\bm{A}^{T(t)}\bm{A}^{(t)})\\
+                    \bm N_f = diag(\bm F^{T(t)}\bm F^{(t)})\\
+                    \bm F^{(t)} \leftarrow \bm F^{(t)}\bm N_f^{-1}\\
+                    \bm{A}^{(t)}\leftarrow \bm{A}^{(t)}\bm N_a^{-1}\\
+                    \bm \Sigma^{(t)} \leftarrow \bm N_a\bm \Sigma^{(t-1)}\bm N_f\\
                     \end{array}
         \right.
     \end{equation*} \\
 
-    3.输出结果：$\bm{A} \leftarrow \bm{A}^{(T)}\Sigma^{1/2}$，对$\bm{A}$进行QR分解取正交矩阵得到$\hat{\bm{A}}$；
+    3.输出结果：$\bm{A} \leftarrow \bm{A}^{(\tau)}\bm \Sigma^{1/2}$，对$\bm{A}$进行QR分解取正交矩阵得到$\hat{\bm{A}}$；
     $\hat{\bm{F}} \leftarrow \hat{\bm{A}}^T\bm{X}$。 \\
     \bottomrule%第三道横线
     \end{tabular}
@@ -300,8 +300,9 @@ $L_1$范数在统计学中主要有两种用途。一种是作为稳健手段，
 
 \subsubsection{数据准备}
 为了进行模拟实验，我们首先需要随机产生一个高维低秩的矩阵来模拟高维宏观经济数据集。
-我们产生一个$n$维方阵$M$，其中每一个随机元素均服从$[-100, 100]$的均分分布。然后我们对方阵$M$进行奇异值分解
-，$M = U\Sigma V^{T}$。假设我们需要产生的低秩矩阵的秩为$r$，则$$X = U_{(:,1:r)}\Sigma_{(1:r,1:r)}V^T_{(:,1:r)}$$
+我们产生一个$n$维方阵$\bm M$，其中每一个随机元素均服从$[-100, 100]$的均分分布。然后我们对方阵$M$进行奇异值分解
+，$\bm M = \bm U\bm\Sigma \bm V^{\bm T}$。假设我们需要产生的低秩矩阵的秩为$r$，则$$\bm X = \bm 
+U_{(:,1:r)}\bm \Sigma_{(1:r,1:r)}\bm V^T_{(:,1:r)}$$
 即为我们得到的模拟高维低秩矩阵。
 
 之后我们可以设置一定比例的缺失值和离群值，首先我们在矩阵的左下角剔除部分元素。在剩下的元素中，我们随机选取一部分
@@ -330,7 +331,10 @@ $\bm{E} = \hat{\bm{X}} -\bm{X}$。观察重构残差的平方的分布情况，
 试验每一种算法作用在无干扰数据上和干扰后数据上的情况。
 
 对于无干扰数据，每一种算法都具有很好的表现；
-对于进行了缺失值和离群值模拟的数据，我们每组试验（给定$M$，$ N$）下均重复多次取平均值，图2.3给出了一个典型结果。
+对于进行了缺失值和离群值模拟的数据，我们每组试验（给定$M$，$ N$）下均重复多次取平均值。图2.3给出了一个典型结果，
+图中$N = 80, M=3$，缺失值和离群值比例均为$10\%$，进行了10次实验后重构残差的平方的分布情况，横轴表示残差平方，
+纵轴表示平均频数。
+可以看出ACP-$L_1$的重构残差表现最好。
 \begin{figure}[H]
     \centering
     \begin{minipage}[t]{0.48\textwidth}
@@ -345,9 +349,7 @@ $\bm{E} = \hat{\bm{X}} -\bm{X}$。观察重构残差的平方的分布情况，
     \begin{minipage}[t]{0.48\textwidth}
     \includegraphics[width=8cm]{pics/lab1/acp-l1.pdf}
     \end{minipage}
-    \caption{\small 图示为取$N = 80, M=3$，缺失值和离群值比例均为$10\%$的情况下，多次实验后平均重构残差的平方的分布情况，横轴表示残差平方，
-    纵轴表示频数。
-    可以看出ACP-$L_1$的重构残差表现最好。}
+    \caption{\small 几种方法重构残差对比}
 \end{figure}
 
 实验表明，$L_1$范数主成分分析相比$L_2$主成分分析法和其他基于$L_2$范数优化的方法相比具有更好的稳健性，
@@ -380,7 +382,11 @@ $p$维随机向量，假设$(X_t,y_t)$服从近似因子模型并且$\bm{X}_t$�
 $\bm{\alpha}(L)$表示$y_t$自身的滞后项的影响。
 
 \subsubsection{因子个数判定}
-本节采用Bai和Ng于2002年提出的确定静态因子个数的信息准则\cite{bai2002determining}，该准则
+在进行因子分析前，我们需要判定因子个数，这方面国内外学者已经做了较多的研究
+（Connor et al, 1993\cite{connor1993test}；Bai and Ng, 2002\cite{bai2002determining}；
+Kapetanios et al, 2010\cite{kapetanios2010testing}
+）。
+本节采用Bai和Ng于2002年提出的确定静态因子个数的信息准则，该准则
 平衡了模型的拟合优度和模型简约性。
 在该信息准则下，我们的因子个数需要最小化
 \begin{equation}\label{number}

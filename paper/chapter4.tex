@@ -41,29 +41,30 @@ $L_1$范数主成分分析得出的因子同样适用于宏观经济预测中，
     \begin{tabular}{{p{0.9\columnwidth}}}%三个c代表该表一共三列，内容全部居中
     
     \toprule%第一道横线 表头
-    算法4.1：基于替代变量算法改进的交替凸优化算法（ACP-SVN） \\
+    {\heiti 算法} {\bf 4.1} 基于替代变量算法改进的交替凸优化算法（ACP-SVN） \\
     \midrule%第二道横线 符号+解释+单位 中间用&隔开
-    1.初始化：给出$\bm{A}$，$\Sigma$的初始值$\bm{A}^{(0)}$，这里我们始终采用$L_2$主成分估计的因子载荷矩阵作为初始估计
-    ，$\Sigma^{(0)} = I$，（其中$\Sigma$为一对角矩阵，
+    1.初始化：给出$\bm{A}$，$\bm \Sigma$的初始值$\bm{A}^{(0)}$，这里我们始终采用$L_2$主成分估计的因子载荷矩阵作为初始估计
+    ，$\bm \Sigma^{(0)} = \bm I$，（其中$\bm \Sigma$为一对角矩阵，
     $I$为单位矩阵）； \\
 
-    2.交替凸优化：对于迭代次数$t = 1, ..., T$： \\
-    $$p_1:\ F^{(t)} = \underset{F}{\operatorname{arg\ min}} \|X - \bm{A}^{(t-1)}\Sigma^{t-1}F^{T}\|_{L_1}$$ \\
-    $$p_2:\ \bm{A}^{(t)} = \underset{\bm{A}}{\operatorname{arg\ min}} \|X - \bm{A}\Sigma^{t-1}F^{Tt} \|_{L_1}$$ \\
+    2.交替凸优化：对于迭代次数$t = 1, ..., \tau$： \\
+    $$p_1:\ \bm F^{(t)} = \underset{\bm F}{\operatorname{arg\ min}} \|\bm X - \bm{A}^{(t-1)}\bm\Sigma^{(t-1)}
+    \bm F^{T}\|_{L_1}$$ \\
+    $$p_2:\ \bm{A}^{(t)} = \underset{\bm{A}}{\operatorname{arg\ min}} \|\bm X - \bm{A}\bm\Sigma^{(t-1)}\bm F^{T(t)} \|_{L_1}$$ \\
     $p_1$对应的若干子问题，采用线性规划法求解；$p_2$对应的若干子问题，采用SVN算法求解\\
     \begin{equation*}
         \text{归一化：}\left\{
                     \begin{array}{clr}
-                    N_a = diag(\bm{A}^{tT}\bm{A}^{t})\\
-                    N_f = diag(F^{Tt}F^{t})\\
-                    F^{t} \leftarrow F^{t}N_f^{-1}\\
-                    \bm{A}^{t}\leftarrow \bm{A}^{t}N_a^{-1}\\
-                    \Sigma^{t} \leftarrow N_a\Sigma^{t-1}N_f\\
+                    \bm N_a = diag(\bm{A}^{T(t)}\bm{A}^{(t)})\\
+                    \bm N_f = diag(\bm F^{T(t)}\bm F^{(t)})\\
+                    \bm F^{(t)} \leftarrow \bm F^{(t)}\bm N_f^{-1}\\
+                    \bm{A}^{(t)}\leftarrow \bm{A}^{(t)}\bm N_a^{-1}\\
+                    \bm \Sigma^{(t)} \leftarrow \bm N_a\bm\Sigma^{(t-1)}\bm N_f\\
                     \end{array}
         \right.
     \end{equation*} \\
 
-    3.输出结果：$\bm{A} \leftarrow \bm{A}^T\Sigma^{1/2}$，对$\bm{A}$进行QR分解取正交矩阵得到$\hat{\bm{A}}$；
+    3.输出结果：$\bm{A} \leftarrow \bm{A}^{(\tau)}\bm\Sigma^{1/2}$，对$\bm{A}$进行QR分解取正交矩阵得到$\hat{\bm{A}}$；
     $\hat{\bm{F}} \leftarrow \hat{\bm{A}}^T\bm{X}$。
      \\
     \bottomrule%第三道横线
@@ -151,10 +152,10 @@ $L_1$范数主成分分析得出的因子同样适用于宏观经济预测中，
     \begin{tabular}{{p{0.9\columnwidth}}}%三个c代表该表一共三列，内容全部居中
     
     \toprule%第一道横线 表头
-    算法4.2 $m=1$时的$P_4$求解算法\\
+    {\heiti 算法} {\bf 4.2} $m=1$时的$P_4$求解算法\\
     \midrule%第二道横线 符号+解释+单位 中间用&隔开
         初始化：取$\bm a$的任意初始值；$\bm a^0\leftarrow \bm a^0/\|a^0\|$。 \\
-        对于$t = 1, ..., T$：\\
+        对于$t = 1, ..., \tau$：\\
             1.对所有的$i \in \{1, ..., n\}$，若$\bm a^{0T}\bm x_i < 0$，令
             $p_i^t = -1 $，否则$p_i^t = 1$ 。\\
             2.令$t \leftarrow t+1$并且$\bm a^t = \sum_{i=1}^np_i^{t-1}\bm x_i$；
@@ -181,30 +182,70 @@ $\bm a^0$可以任意设置，因此可以采用$L_2$主成分作为其初始值
     \begin{tabular}{{p{0.9\columnwidth}}}%三个c代表该表一共三列，内容全部居中
     
     \toprule%第一道横线 表头
-    算法4.3：求解特征空间$L_1$范数最大化的贪婪算法\\
+    {\heiti 算法}{\bf 4.3} 求解特征空间$L_1$范数最大化的贪婪算法\\
     \midrule%第二道横线 符号+解释+单位 中间用&隔开
         输入：$\bm a^0$，$\{\bm x_i^0 = \bm x_i\}_{i=1}^n$。\\
         对于$j = 1, ..., m$： \\
-        对所有的$i \in \{ 1, ..., n\}$，$\bm x_i^j = x_i^{j-1} - \bm a^{j-1}(\bm {a^{(j-1)T}}\bm x_i^{j-1})$ ， \\
+        对所有的$i \in \{ 1, ..., n\}$，$\bm x_i^j = \bm x_i^{j-1} - \bm a^{j-1}(\bm {a^{(j-1)T}}\bm x_i^{j-1})$ ， \\
         通过算法4.2求解$\bm a^j$，令$\bm{X}^j = [\bm x_1^j, \bm x_2^j, ..., \bm x_i^j]$。 \\
     \bottomrule%第三道横线
     \end{tabular}
 \end{table}%%%%%%结束表格
 
 \subsubsection{模拟与实证}
-参考\ref{lab-1}中的实验，我们首先测试该方法是否同样能够获得稳健的$L_1$主成分，
-对照交替凸优化算法和$L_2$主成分分析的结果，我们发现求解$P_4$同样可以获得很好的
-重构表现。
+接下来测试该求解$P_4$是否同样能够获得稳健的$L_1$主成分，
+参考\ref{lab-1}中的实验，首先对比交替凸优化算法和$L_2$主成分分析的结果。
+为简便起见，我们接下来将求解$P_4$的$L_1$S主成分分析称为PCA-$L_1$，求解$P_3$称为$L_1$-PCA。
+我们利用算法4.3求解PCA-$L_1$，将$L_2$主成分作为$\bm a^{(0)}$的初始值。
+
+图\ref{compare-con-error}展示了一次典型的实验结果，其中$m = 3, n = 80$，离群值占比$10\%$。
+我们发现PCA-$L_1$同样具有很好的重构表现。
+
+\begin{figure}[H]
+    \centering
+    \begin{minipage}[t]{0.3\textwidth}
+    \includegraphics[width=5.5cm]{pics/lab1/l1-pca.pdf}
+    \end{minipage}
+    \begin{minipage}[t]{0.3\textwidth}
+    \includegraphics[width=5.5cm]{pics/lab1/pca-l1.pdf}
+    \end{minipage}
+    \begin{minipage}[t]{0.3\textwidth}
+    \includegraphics[width=5.5cm]{pics/lab1/svd.pdf}
+    \end{minipage}
+    \caption{重构残差对比图}
+    \label{compare-con-error}
+\end{figure}
+
+注意到$L_1$-PCA方法相比PCA-$L_1$在重构误差分布上更加靠近零，这个现象也符合两种方法的理论出发点相符合，
+另一个可能的原因是算法4.3并没有获得全局最优解。
+另外可以看到两种$L_1$主成分分析面对含有大量离群值的数据的稳健性均远好于$L_2$主成分分析，
 我们的结论是$P_4$同样可以作为稳健主成分分析的手段，适合处理带有大量离群值的数据。
 
 需要注意的是由于$P_3$和$P_4$并不是一组对偶问题，它们求解获得的主成分是不同的。
-前文已经通过实证研究发现，$P_3$求解获得的主成分可以作为因子模型的主成分估计，
+\begin{figure}[H]
+    \centering
+    \begin{minipage}[t]{0.3\textwidth}
+    \includegraphics[width=5.5cm,height=8cm]{pics/lab1/l1-pca-rotated.pdf}
+    \end{minipage}
+    \begin{minipage}[t]{0.3\textwidth}
+    \includegraphics[width=5.5cm,height=8cm]{pics/lab1/pca-l1-rotated.pdf}
+    \end{minipage}
+    \begin{minipage}[t]{0.3\textwidth}
+    \includegraphics[width=5.5cm, height=8cm]{pics/lab1/l2-pca-rotated.pdf}
+    \end{minipage}
+    \caption{旋转后的因子载荷矩阵}
+    \label{compare-rotate}
+\end{figure}
+
+图\ref{compare-rotate}中展示了同一组数据分别采用PCA-$L_1$、$L_1$-PCA以及$L_2$-PCA得到的因子载荷矩阵热力图。
+为便于分析，我们已将因子载荷矩阵进行了最大方差旋转，可以看出三种不同的主成分分析方法得到的主成分是很不一样的。
+
+前文已经通过实证研究发现，$L_1$-PCA可以作为因子模型的主成分估计，
 并且在扩散指数模型中拥有良好的预测表现。
-这里我们同样基于国内月度宏观经济数据对算法4.2进行测试，将得到的$L_1$主成分
+这里我们同样基于国内月度宏观经济数据对PCA-$L_1$进行测试，将得到的$L_1$主成分
 作为扩散指数模型的因子得分对部分指标进行经济预测。
 
-我们列出一些在第\ref{chapter2}中展示的经济指标预测情况，部分结果见表\ref{outcome4}至表\ref{outcome6}，
-注意其中PCA L1代表因子得分使用算法4.2估计。
+我们列出一些在第\ref{chapter2}中展示的经济指标预测情况，部分结果见表\ref{outcome4}至表\ref{outcome6}。
 
 \begin{table}[H]
     \centering
@@ -269,6 +310,10 @@ $\bm a^0$可以任意设置，因此可以采用$L_2$主成分作为其初始值
     \end{tabularx}
 \end{table}
 
+从结果中可以看出，采用PCA-$L_1$估计得到的因子得分同样具有很好的预测表现。在向前一个月的预测中，其表现与$L_1$-PCA估计
+得到的因子得分较为接近，都好于$L_2$主成分估计的因子得分。在向前一个季度与半年的预测中，两种$L_1$主成分分析
+的预测表现都稍强于$L_2$主成分分析。
+
 \subsection{本章小结}
 本章进一步讨论了$L_1$范数主成分分析的求解算法问题。
 首先我们结合上一章的研究内容，结合交替凸优化算法的特点，
@@ -281,5 +326,5 @@ $\bm a^0$可以任意设置，因此可以采用$L_2$主成分作为其初始值
 另外针对$L_1$范数主成分分析的另一种求解思路，
 我们也介绍了实现的经典算法。通过模拟实验和实证，
 证明了两种$L_1$范数主成分分析的求解都具有很好的稳健性，
-并且同样适用于扩散因子模型进行宏观经济预测。
+并且同样适用于扩散指数模型进行宏观经济预测。
 
