@@ -1,5 +1,4 @@
 import numpy as np
-
 from optimize import l1_optimize, l2_optimize
 import time
 
