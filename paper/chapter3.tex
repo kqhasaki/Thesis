@@ -313,7 +313,6 @@ $\bm{H}(\bm{\beta}):=\partial\mathbb{E}[g(\bm{\beta};\bm{X},Y)
 $f(x)$是噪声$e$的密度函数。当初始估计量$\bm{\beta}_0$和$\bm{\beta}^*$很接近时，$\bm{H}(\bm{\beta}_0)$就会很接近
 $\bm{H}(\bm{\beta}^*) = \bm{\Sigma}f(0)$，这里$\bm{\Sigma} = \mathbb{E}\bm{X}\bm{X}^T$是$\bm{X}$的协方差
 矩阵。使用$\bm{H}(\bm{\beta}^*)$替换$\bm{H}(\bm{\beta}_0)$，可得
-
 \begin{equation}\label{rho-beta1}
     \bm{\beta}_1 = \bm{\beta}_0 - \bm{H}(\bm{\beta}^*)^{-1}\mathbb{E}[g(\bm{\beta};\bm{X}, Y)]
     = \bm{\beta}_0 - \bm{\Sigma}^{-1}f^{-1}(0)\mathbb{E}[g(\bm{\beta}_0;\bm{X},Y)]

@@ -2,3 +2,5 @@
 \beamer@sectionintoc {2}{扩散指数模型}{8}{0}{2}
 \beamer@sectionintoc {3}{$L_1$因子分析}{13}{0}{3}
 \beamer@sectionintoc {4}{最小绝对值回归性能优化}{27}{0}{4}
+\beamer@sectionintoc {5}{另一种$L_1$主成分分析}{46}{0}{5}
+\beamer@sectionintoc {6}{结束语}{52}{0}{6}
