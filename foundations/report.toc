@@ -1,0 +1,4 @@
+\beamer@sectionintoc {1}{选题背景}{2}{0}{1}
+\beamer@sectionintoc {2}{扩散指数模型}{8}{0}{2}
+\beamer@sectionintoc {3}{$L_1$因子分析}{13}{0}{3}
+\beamer@sectionintoc {4}{最小绝对值回归性能优化}{27}{0}{4}
