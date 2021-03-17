@@ -64,15 +64,15 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {\bfseries 3.1.2}最小绝对值回归的估计方法}{26}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {\bfseries \S 3.2}聚类——迭代拆解算法}{26}%
+\contentsline {subsection}{\numberline {\bfseries \S 3.2}聚类——迭代拆解算法}{27}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {\bfseries 3.2.1}聚类——迭代拆解算法说明}{26}%
+\contentsline {subsubsection}{\numberline {\bfseries 3.2.1}聚类——迭代拆解算法说明}{27}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {\bfseries 3.2.2}优化最小绝对值回归}{27}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {\bfseries 3.2.3}优化带有惩罚项的最小绝对值回归}{29}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {\bfseries \S 3.3}一种基于替代变量的估计方法}{29}%
+\contentsline {subsection}{\numberline {\bfseries \S 3.3}一种基于替代变量的估计方法}{30}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {\bfseries 3.3.1}基于替代变量的迭代算法}{30}%
 \defcounter {refsection}{0}\relax 

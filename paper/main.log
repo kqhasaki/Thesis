@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2021.1.20)  12 MAR 2021 15:00
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2021.1.20)  17 MAR 2021 12:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1153,20 +1153,20 @@ Package biblatex Info: ... file 'main.bbl' found.
 (./main.bbl)
 Package biblatex Info: Reference section=0 on input line 62.
 Package biblatex Info: Reference segment=0 on input line 62.
-File: cover.pdf Graphic file (type pdf)
-<use cover.pdf>
-File: cover.pdf Graphic file (type pdf)
-<use cover.pdf>
-File: cover.pdf Graphic file (type pdf)
-<use cover.pdf, page 1>
-File: cover.pdf Graphic file (type pdf)
-<use cover.pdf, page 1>
-File: cover.pdf Graphic file (type pdf)
-<use cover.pdf, page 1>
-File: cover.pdf Graphic file (type pdf)
-<use cover.pdf, page 1>
-File: cover.pdf Graphic file (type pdf)
-<use cover.pdf, page 1>
+File: cover-zh.pdf Graphic file (type pdf)
+<use cover-zh.pdf>
+File: cover-zh.pdf Graphic file (type pdf)
+<use cover-zh.pdf>
+File: cover-zh.pdf Graphic file (type pdf)
+<use cover-zh.pdf, page 1>
+File: cover-zh.pdf Graphic file (type pdf)
+<use cover-zh.pdf, page 1>
+File: cover-zh.pdf Graphic file (type pdf)
+<use cover-zh.pdf, page 1>
+File: cover-zh.pdf Graphic file (type pdf)
+<use cover-zh.pdf, page 1>
+File: cover-zh.pdf Graphic file (type pdf)
+<use cover-zh.pdf, page 1>
  [1
 
 ]
@@ -1382,26 +1382,26 @@ File: pics/chapter2/l1-l2-diff.pdf Graphic file (type pdf)
 File: pics/chapter2/aid-demo-a.pdf Graphic file (type pdf)
 <use pics/chapter2/aid-demo-a.pdf>
 
-Overfull \hbox (27.31264pt too wide) in paragraph at lines 210--211
+Overfull \hbox (27.31264pt too wide) in paragraph at lines 212--213
 [][] 
  []
 
 File: pics/chapter2/aid-demo-b.pdf Graphic file (type pdf)
 <use pics/chapter2/aid-demo-b.pdf>
 
-Overfull \hbox (27.31264pt too wide) in paragraph at lines 214--215
+Overfull \hbox (27.31264pt too wide) in paragraph at lines 216--217
 [][] 
  []
 
 File: pics/chapter2/aid-demo-c.pdf Graphic file (type pdf)
 <use pics/chapter2/aid-demo-c.pdf>
 
-Overfull \hbox (27.31264pt too wide) in paragraph at lines 218--219
+Overfull \hbox (27.31264pt too wide) in paragraph at lines 220--221
 [][] 
  []
 
-
-Overfull \hbox (14.9836pt too wide) in paragraph at lines 243--246
+[28]
+Overfull \hbox (14.9836pt too wide) in paragraph at lines 245--248
 []\TU/FandolSong-Regular(0)/m/n/12.045 因 为 $[]$ 是[]的 可 行 解，|  又 显 然 $\OML/cmm/m
 /it/12.045 ^^X[] \OMS/cmsy/m/n/12.045 ^^T \OML/cmm/m/it/12.045 ^^X[]$\TU/Fandol
 Song-Regular(0)/m/n/12.045 ，|  这 就 证 明 了 $\OML/cmm/m/it/12.045 ^^X[] \OT1/cmr/m
@@ -1410,25 +1410,25 @@ Song-Regular(0)/m/n/12.045 ，|  这 就 证 明 了 $\OML/cmm/m/it/12.045 ^^X[]
  jj\OML/cmm/m/it/12.045 y[] \OMS/cmsy/m/n/12.045 ^^@
  []
 
-[28] [29] [30] [31] [32] [33]
+[29] [30] [31] [32] [33]
 File: pics/chapter2/gaussian-svn.pdf Graphic file (type pdf)
 <use pics/chapter2/gaussian-svn.pdf>
 
-Overfull \hbox (13.08626pt too wide) in paragraph at lines 516--517
+Overfull \hbox (13.08626pt too wide) in paragraph at lines 518--519
 [][] 
  []
 
 File: pics/chapter2/exp-svn.pdf Graphic file (type pdf)
 <use pics/chapter2/exp-svn.pdf>
 
-Overfull \hbox (13.08626pt too wide) in paragraph at lines 520--521
+Overfull \hbox (13.08626pt too wide) in paragraph at lines 522--523
 [][] 
  []
 
 File: pics/chapter2/cauchy-svn.pdf Graphic file (type pdf)
 <use pics/chapter2/cauchy-svn.pdf>
 
-Overfull \hbox (13.08626pt too wide) in paragraph at lines 524--525
+Overfull \hbox (13.08626pt too wide) in paragraph at lines 526--527
 [][] 
  []
 
@@ -1436,35 +1436,35 @@ Overfull \hbox (13.08626pt too wide) in paragraph at lines 524--525
 File: pics/chapter2/l2-svn-demo.pdf Graphic file (type pdf)
 <use pics/chapter2/l2-svn-demo.pdf>
 
-Overfull \hbox (13.08626pt too wide) in paragraph at lines 537--538
+Overfull \hbox (13.08626pt too wide) in paragraph at lines 539--540
 [][] 
  []
 
 File: pics/chapter2/l1-svn-demo.pdf Graphic file (type pdf)
 <use pics/chapter2/l1-svn-demo.pdf>
 
-Overfull \hbox (13.08626pt too wide) in paragraph at lines 541--542
+Overfull \hbox (13.08626pt too wide) in paragraph at lines 543--544
 [][] 
  []
 
 File: pics/chapter2/svn-con-1.pdf Graphic file (type pdf)
 <use pics/chapter2/svn-con-1.pdf>
 
-Overfull \hbox (13.08626pt too wide) in paragraph at lines 562--563
+Overfull \hbox (13.08626pt too wide) in paragraph at lines 564--565
 [][] 
  []
 
 File: pics/chapter2/svn-con-2.pdf Graphic file (type pdf)
 <use pics/chapter2/svn-con-2.pdf>
 
-Overfull \hbox (13.08626pt too wide) in paragraph at lines 566--567
+Overfull \hbox (13.08626pt too wide) in paragraph at lines 568--569
 [][] 
  []
 
 File: pics/chapter2/svn-con-3.pdf Graphic file (type pdf)
 <use pics/chapter2/svn-con-3.pdf>
 
-Overfull \hbox (13.08626pt too wide) in paragraph at lines 570--571
+Overfull \hbox (13.08626pt too wide) in paragraph at lines 572--573
 [][] 
  []
 
@@ -1475,7 +1475,7 @@ Overfull \hbox (13.08626pt too wide) in paragraph at lines 570--571
 
 
 ]
-Overfull \hbox (0.84746pt too wide) in paragraph at lines 87--91
+Overfull \hbox (0.84746pt too wide) in paragraph at lines 86--90
 []\TU/FandolSong-Regular(0)/m/n/12.045 令 $\OML/cmm/b/it/12.045 f \OT1/cmr/m/n/1
 2.045 = (\OML/cmm/m/it/12.045 f[]; :::; f[]\OT1/cmr/m/n/12.045 )$ \TU/FandolSon
 g-Regular(0)/m/n/12.045 为 一 $\OML/cmm/m/it/12.045 m$ \TU/FandolSong-Regular(0)/
@@ -1490,21 +1490,21 @@ t/12.045 X[]; :::; X[]\OT1/cmr/m/n/12.045 )$\TU/FandolSong-Regular(0)/m/n/12.04
 File: pics/lab1/l1-pca.pdf Graphic file (type pdf)
 <use pics/lab1/l1-pca.pdf>
 
-Overfull \hbox (13.08626pt too wide) in paragraph at lines 243--244
+Overfull \hbox (13.08626pt too wide) in paragraph at lines 241--242
 [][] 
  []
 
 File: pics/lab1/pca-l1.pdf Graphic file (type pdf)
 <use pics/lab1/pca-l1.pdf>
 
-Overfull \hbox (13.08626pt too wide) in paragraph at lines 246--247
+Overfull \hbox (13.08626pt too wide) in paragraph at lines 244--245
 [][] 
  []
 
 File: pics/lab1/svd.pdf Graphic file (type pdf)
 <use pics/lab1/svd.pdf>
 
-Overfull \hbox (13.08626pt too wide) in paragraph at lines 249--250
+Overfull \hbox (13.08626pt too wide) in paragraph at lines 247--248
 [][] 
  []
 
@@ -1512,114 +1512,114 @@ Overfull \hbox (13.08626pt too wide) in paragraph at lines 249--250
 File: pics/lab1/l1-pca-rotated.pdf Graphic file (type pdf)
 <use pics/lab1/l1-pca-rotated.pdf>
 
-Overfull \hbox (13.08427pt too wide) in paragraph at lines 264--265
+Overfull \hbox (13.08427pt too wide) in paragraph at lines 262--263
 [][] 
  []
 
 File: pics/lab1/pca-l1-rotated.pdf Graphic file (type pdf)
 <use pics/lab1/pca-l1-rotated.pdf>
 
-Overfull \hbox (13.08427pt too wide) in paragraph at lines 267--268
+Overfull \hbox (13.08427pt too wide) in paragraph at lines 265--266
 [][] 
  []
 
 File: pics/lab1/l2-pca-rotated.pdf Graphic file (type pdf)
 <use pics/lab1/l2-pca-rotated.pdf>
 
-Overfull \hbox (13.08427pt too wide) in paragraph at lines 270--271
+Overfull \hbox (13.08427pt too wide) in paragraph at lines 268--269
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 304--304
+Underfull \hbox (badness 10000) in paragraph at lines 302--302
 []|\TU/TimesNewRoman(0)/m/n/10.53937 MSE |\TU/FandolSong-Regular(0)/m/n/10.5393
 7 （\TU/TimesNewRoman(0)/m/n/10.53937 L1
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 304--304
+Underfull \hbox (badness 10000) in paragraph at lines 302--302
 []|\TU/TimesNewRoman(0)/m/n/10.53937 MSE
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 304--304
+Underfull \hbox (badness 10000) in paragraph at lines 302--302
 []|\TU/TimesNewRoman(0)/m/n/10.53937 MAE(L1
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 304--304
+Underfull \hbox (badness 10000) in paragraph at lines 302--302
 []|\TU/TimesNewRoman(0)/m/n/10.53937 MAE
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 304--304
+Underfull \hbox (badness 10000) in paragraph at lines 302--302
 []|\TU/TimesNewRoman(0)/m/n/10.53937 MPAE(L1
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 304--304
+Underfull \hbox (badness 10000) in paragraph at lines 302--302
 []|\TU/TimesNewRoman(0)/m/n/10.53937 MPAE
  []
 
 [43]
-Underfull \hbox (badness 10000) in paragraph at lines 325--325
+Underfull \hbox (badness 10000) in paragraph at lines 323--323
 []|\TU/TimesNewRoman(0)/m/n/10.53937 MSE |\TU/FandolSong-Regular(0)/m/n/10.5393
 7 （\TU/TimesNewRoman(0)/m/n/10.53937 L1
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 325--325
+Underfull \hbox (badness 10000) in paragraph at lines 323--323
 []|\TU/TimesNewRoman(0)/m/n/10.53937 MSE
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 325--325
+Underfull \hbox (badness 10000) in paragraph at lines 323--323
 []|\TU/TimesNewRoman(0)/m/n/10.53937 MAE(L1
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 325--325
+Underfull \hbox (badness 10000) in paragraph at lines 323--323
 []|\TU/TimesNewRoman(0)/m/n/10.53937 MAE
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 325--325
+Underfull \hbox (badness 10000) in paragraph at lines 323--323
 []|\TU/TimesNewRoman(0)/m/n/10.53937 MPAE(L1
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 325--325
+Underfull \hbox (badness 10000) in paragraph at lines 323--323
 []|\TU/TimesNewRoman(0)/m/n/10.53937 MPAE
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 346--346
+Underfull \hbox (badness 10000) in paragraph at lines 344--344
 []|\TU/TimesNewRoman(0)/m/n/10.53937 MSE |\TU/FandolSong-Regular(0)/m/n/10.5393
 7 （\TU/TimesNewRoman(0)/m/n/10.53937 L1
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 346--346
+Underfull \hbox (badness 10000) in paragraph at lines 344--344
 []|\TU/TimesNewRoman(0)/m/n/10.53937 MSE
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 346--346
+Underfull \hbox (badness 10000) in paragraph at lines 344--344
 []|\TU/TimesNewRoman(0)/m/n/10.53937 MAE(L1
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 346--346
+Underfull \hbox (badness 10000) in paragraph at lines 344--344
 []|\TU/TimesNewRoman(0)/m/n/10.53937 MAE
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 346--346
+Underfull \hbox (badness 10000) in paragraph at lines 344--344
 []|\TU/TimesNewRoman(0)/m/n/10.53937 MPAE(L1
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 346--346
+Underfull \hbox (badness 10000) in paragraph at lines 344--344
 []|\TU/TimesNewRoman(0)/m/n/10.53937 MPAE
  []
 
@@ -1690,10 +1690,10 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 20810 strings out of 479418
- 471852 string characters out of 5884585
+ 20777 strings out of 479418
+ 469278 string characters out of 5884585
  1261829 words of memory out of 5000000
- 37902 multiletter control sequences out of 15000+600000
+ 37869 multiletter control sequences out of 15000+600000
  553254 words of font info for 151 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  64i,23n,90p,1125b,4857s stack positions out of 5000i,500n,10000p,200000b,80000s

@@ -75,7 +75,10 @@ $L_2$范数最优化问题最常见的是最小二乘法。
 \hat{\bm{\beta}} = \underset{\bm{\beta}}{\operatorname{arg\ min}} \sum_{i=1}^n\|y_i - \bm{x}^T_i\bm{\beta}\|_{L_1}
 =\underset{\bm{\beta}}{\operatorname{arg\ min}} \sum_{i=1}^n|y_i - \bm{x}^T_i\bm{\beta}|
 \end{equation}
-如图所示，通常使用$L_1$范数在线性回归中可以有效避免离群值造成的干扰。
+
+通常使用$L_1$范数在线性回归中可以有效避免离群值造成的干扰。
+如图\ref{fig2.1}所示，在简单的线性模型的拟合中，出现一个离群值就可以导致最小二乘法拟合出现明显的偏差；
+    而含有较多离群值时最小二乘法拟合变得很不可靠；而采用$L_1$范数则具有相当稳健性。
 \begin{figure}[H]
     \centering
     \begin{minipage}[t]{0.48\textwidth}
@@ -84,8 +87,7 @@ $L_2$范数最优化问题最常见的是最小二乘法。
     \begin{minipage}[t]{0.48\textwidth}
     \includegraphics[width=8cm]{pics/chapter2/l1-l2-diff.pdf}
     \end{minipage}
-    \caption{\small 如图所示，在简单的线性模型的拟合中，出现一个离群值就可以导致最小二乘法拟合出现明显的偏差；
-    而含有较多离群值时最小二乘法拟合变得很不可靠；而采用$L_1$范数则具有相当稳健性。}
+    \caption{\small 数据含有离群值时最小二乘和最小绝对值回归的拟合情况}
     \label{fig2.1}
 
 \end{figure}

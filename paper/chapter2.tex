@@ -275,12 +275,12 @@ $L_1$范数在统计学中主要有两种用途。一种是作为稳健手段，
 
     2.交替凸优化：对于迭代次数$t = 1, ..., \tau$： \\
     $$ \bm F^{(t)} = \underset{\bm F}{\operatorname{arg\ min}} \|\bm X - \bm{A}^{(t-1)}\bm\Sigma^{(t-1)}\bm F^{T}\|_{L_1}$$ \\
-    $$ \bm{A}^{(t)} = \underset{\bm{A}}{\operatorname{arg\ min}} \|\bm X - \bm{A}\bm\Sigma^{(t-1)}\bm F^{T(t)} \|_{L_1}$$ \\
+    $$ \bm{A}^{(t)} = \underset{\bm{A}}{\operatorname{arg\ min}} \|\bm X - \bm{A}\bm\Sigma^{(t-1)}{(\bm F^{(t)})}^T \|_{L_1}$$ \\
     \begin{equation*}
         \text{归一化：}\left\{
                     \begin{array}{clr}
-                    \bm N_a = diag(\bm{A}^{T(t)}\bm{A}^{(t)})\\
-                    \bm N_f = diag(\bm F^{T(t)}\bm F^{(t)})\\
+                    \bm N_a = diag({(\bm A^{(t)})}^T\bm{A}^{(t)})\\
+                    \bm N_f = diag({(\bm F^{(t)})}^T\bm F^{(t)})\\
                     \bm F^{(t)} \leftarrow \bm F^{(t)}\bm N_f^{-1}\\
                     \bm{A}^{(t)}\leftarrow \bm{A}^{(t)}\bm N_a^{-1}\\
                     \bm \Sigma^{(t)} \leftarrow \bm N_a\bm \Sigma^{(t-1)}\bm N_f\\
