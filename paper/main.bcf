@@ -2717,33 +2717,36 @@
     <bcf:citekey order="50">markopoulos2014optimal</bcf:citekey>
     <bcf:citekey order="51">mccoy2010two</bcf:citekey>
     <bcf:citekey order="52">park2021optimization</bcf:citekey>
-    <bcf:citekey order="53">stock1989new</bcf:citekey>
-    <bcf:citekey order="54">stock2002forecasting</bcf:citekey>
-    <bcf:citekey order="55">kalman1996singularly</bcf:citekey>
-    <bcf:citekey order="56">ke2005robust</bcf:citekey>
-    <bcf:citekey order="57">srebro2003weighted</bcf:citekey>
-    <bcf:citekey order="58">stock2002macroeconomic</bcf:citekey>
-    <bcf:citekey order="59">connor1993test</bcf:citekey>
-    <bcf:citekey order="60">bai2002determining</bcf:citekey>
-    <bcf:citekey order="61">kapetanios2010testing</bcf:citekey>
-    <bcf:citekey order="62">stock2002forecasting</bcf:citekey>
-    <bcf:citekey order="63">孔新兵2019高维</bcf:citekey>
-    <bcf:citekey order="64">dodge2012statistical</bcf:citekey>
-    <bcf:citekey order="65">davis1997least</bcf:citekey>
-    <bcf:citekey order="66">ellis1998instability</bcf:citekey>
-    <bcf:citekey order="67">pollard1991asymptotics</bcf:citekey>
-    <bcf:citekey order="68">dasgupta2004least</bcf:citekey>
-    <bcf:citekey order="69">li2004maximum</bcf:citekey>
+    <bcf:citekey order="53">chamberlain1982arbitrage</bcf:citekey>
+    <bcf:citekey order="54">stock1989new</bcf:citekey>
+    <bcf:citekey order="55">stock2002forecasting</bcf:citekey>
+    <bcf:citekey order="56">kalman1996singularly</bcf:citekey>
+    <bcf:citekey order="57">ke2005robust</bcf:citekey>
+    <bcf:citekey order="58">srebro2003weighted</bcf:citekey>
+    <bcf:citekey order="59">stock2002macroeconomic</bcf:citekey>
+    <bcf:citekey order="60">connor1993test</bcf:citekey>
+    <bcf:citekey order="61">bai2002determining</bcf:citekey>
+    <bcf:citekey order="62">kapetanios2010testing</bcf:citekey>
+    <bcf:citekey order="63">stock2002forecasting</bcf:citekey>
+    <bcf:citekey order="64">孔新兵2019高维</bcf:citekey>
+    <bcf:citekey order="65">chen2018quantile</bcf:citekey>
+    <bcf:citekey order="66">dodge2012statistical</bcf:citekey>
+    <bcf:citekey order="67">davis1997least</bcf:citekey>
+    <bcf:citekey order="68">ellis1998instability</bcf:citekey>
+    <bcf:citekey order="69">pollard1991asymptotics</bcf:citekey>
     <bcf:citekey order="70">dasgupta2004least</bcf:citekey>
-    <bcf:citekey order="71">ying1995survival</bcf:citekey>
+    <bcf:citekey order="71">li2004maximum</bcf:citekey>
     <bcf:citekey order="72">dasgupta2004least</bcf:citekey>
-    <bcf:citekey order="73">lucas1997robustness</bcf:citekey>
-    <bcf:citekey order="74">park2021optimization</bcf:citekey>
-    <bcf:citekey order="75">wang2006regularized</bcf:citekey>
-    <bcf:citekey order="76">svn</bcf:citekey>
-    <bcf:citekey order="77">svn</bcf:citekey>
-    <bcf:citekey order="78">svn</bcf:citekey>
-    <bcf:citekey order="79">kwak2008principal</bcf:citekey>
+    <bcf:citekey order="73">ying1995survival</bcf:citekey>
+    <bcf:citekey order="74">dasgupta2004least</bcf:citekey>
+    <bcf:citekey order="75">lucas1997robustness</bcf:citekey>
+    <bcf:citekey order="76">park2021optimization</bcf:citekey>
+    <bcf:citekey order="77">park2021optimization</bcf:citekey>
+    <bcf:citekey order="78">wang2006regularized</bcf:citekey>
+    <bcf:citekey order="79">svn</bcf:citekey>
+    <bcf:citekey order="80">svn</bcf:citekey>
+    <bcf:citekey order="81">svn</bcf:citekey>
+    <bcf:citekey order="82">kwak2008principal</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">
@@ -2775,13 +2778,4 @@
     </bcf:sort>
   </bcf:sortingtemplate>
   <!-- DATALISTS -->
-  <bcf:datalist section="0"
-                name="nty/global//global/global"
-                type="entry"
-                sortingtemplatename="nty"
-                sortingnamekeytemplatename="global"
-                labelprefix=""
-                uniquenametemplatename="global"
-                labelalphanametemplatename="global">
-  </bcf:datalist>
 </bcf:controlfile>

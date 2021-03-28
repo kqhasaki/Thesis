@@ -249,6 +249,8 @@
       \field{volume}{37}
       \field{year}{2016}
       \field{dateera}{ce}
+      \field{pages}{77\bibrangedash 103}
+      \range{pages}{27}
       \keyw{bunn2016analysis}
     \endentry
     \entry{chamberlain1982arbitrage}{misc}{}
@@ -374,15 +376,16 @@
       \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
+      \field{journaltitle}{Econometrica}
       \field{langid}{english}
       \field{lansortorder}{4}
       \field{title}{Quantile factor models}
       \field{usera}{J}
       \field{userd}{english}
       \field{userf}{english}
-      \field{year}{2018}
-      \field{dateera}{ce}
+      \field{year}{2021, to appear}
       \keyw{chen2018quantile}
+      \warn{\item Entry 'chen2018quantile' (refs.bib): Invalid format '2021, to appear' of date field 'date' - ignoring}
     \endentry
     \entry{svn}{article}{}
       \name{author}{4}{}{%
@@ -434,12 +437,6 @@
       \field{dateera}{ce}
       \field{pages}{1\bibrangedash 43}
       \range{pages}{43}
-      \verb{urlraw}
-      \verb http://jmlr.org/papers/v21/20-297.html
-      \endverb
-      \verb{url}
-      \verb http://jmlr.org/papers/v21/20-297.html
-      \endverb
       \keyw{svn}
     \endentry
     \entry{choulakian2006l1}{article}{}
@@ -938,12 +935,16 @@
       \field{journaltitle}{Latent variables in socio-economic models}
       \field{langid}{english}
       \field{lansortorder}{4}
+      \field{number}{6}
       \field{title}{The dynamic factor analysis of economic time series}
       \field{usera}{J}
       \field{userd}{english}
       \field{userf}{english}
+      \field{volume}{33}
       \field{year}{1977}
       \field{dateera}{ce}
+      \field{pages}{583\bibrangedash 606}
+      \range{pages}{24}
       \keyw{geweke1977dynamic}
     \endentry
     \entry{gonccalves2020bayesian}{article}{}
@@ -972,7 +973,7 @@
       \field{sortinithash}{62eb2aa29549e4fdbd3cb154ec5711cb}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{arXiv preprint arXiv:2002.07242}
+      \field{journaltitle}{arXiv preprint arXiv, 2002.07242}
       \field{langid}{english}
       \field{lansortorder}{4}
       \field{title}{Bayesian Quantile Factor Models}
@@ -1228,6 +1229,7 @@
       \field{sortinithash}{d3edc18d54b9438a72c24c925bfb38f4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
+      \field{journaltitle}{Tech. Rep. CMU-CS-03-172, Carnegie Mellon University}
       \field{langid}{english}
       \field{lansortorder}{4}
       \field{title}{Robust subspace computation using L1 norm}
@@ -1236,6 +1238,12 @@
       \field{userf}{english}
       \field{year}{2003}
       \field{dateera}{ce}
+      \verb{urlraw}
+      \verb http://citeseer.ist.psu.edu/ke03robust.html
+      \endverb
+      \verb{url}
+      \verb http://citeseer.ist.psu.edu/ke03robust.html
+      \endverb
       \keyw{ke2003robust}
     \endentry
     \entry{kwak2008principal}{article}{}
@@ -1435,6 +1443,12 @@
       \field{userf}{english}
       \field{year}{2020}
       \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://doi.org/10.1016/j.jeconom.2020.07.003
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1016/j.jeconom.2020.07.003
+      \endverb
       \keyw{ma2020estimation}
     \endentry
     \entry{markopoulos2014optimal}{article}{}
@@ -2344,6 +2358,8 @@
       \field{volume}{5}
       \field{year}{2011}
       \field{dateera}{ce}
+      \field{pages}{82\bibrangedash 89}
+      \range{pages}{8}
       \keyw{杜勇宏2011动态因子模型与}
     \endentry
     \entry{杜海韬2013部门价格动态}{article}{}

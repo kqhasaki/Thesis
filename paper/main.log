@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2021.1.20)  17 MAR 2021 23:17
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2021.1.20)  29 MAR 2021 00:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1002,7 +1002,7 @@ LaTeX Warning: Label `svn-demo3' multiply defined.
 
 LaTeX Warning: Label `sub@svn-demo3' multiply defined.
 
-) (./chapter4.aux) (./chapter5.aux) (./appendix.aux) (./backnote.aux))
+) (./chapter4.aux) (./chapter5.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 62.
@@ -1021,8 +1021,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 62.
 LaTeX Font Info:    ... okay on input line 62.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 62.
 LaTeX Font Info:    ... okay on input line 62.
-
-ABD: EverySelectfont initializing macros
+ ABD: EverySelectfont initializing macros
 LaTeX Info: Redefining \selectfont on input line 62.
 
 Package fontspec Info: Adjusting the maths setup (use [no-math] to avoid
@@ -1096,14 +1095,14 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(90.47955pt, 416.54877pt, 90.47955pt)
+* h-part:(L,W,R)=(85.35826pt, 426.79135pt, 85.35826pt)
 * v-part:(T,H,B)=(72.2698pt, 700.50723pt, 72.2698pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
-* \textwidth=416.54877pt
+* \textwidth=426.79135pt
 * \textheight=686.28087pt
-* \oddsidemargin=18.20956pt
-* \evensidemargin=18.20956pt
+* \oddsidemargin=13.08827pt
+* \evensidemargin=13.08827pt
 * \topmargin=-37.00018pt
 * \headheight=12.0pt
 * \headsep=25.0pt
@@ -1150,56 +1149,16 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
 
-(./main.bbl)
+(./main.bbl
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'chen2018quantile':
+(biblatex)                - Entry 'chen2018quantile' (refs.bib): Invalid format
+ '2021, to appear' of date field 'date' - ignoring.
+
+)
 Package biblatex Info: Reference section=0 on input line 62.
 Package biblatex Info: Reference segment=0 on input line 62.
-File: cover-zh.pdf Graphic file (type pdf)
-<use cover-zh.pdf>
-File: cover-zh.pdf Graphic file (type pdf)
-<use cover-zh.pdf>
-File: cover-zh.pdf Graphic file (type pdf)
-<use cover-zh.pdf, page 1>
-File: cover-zh.pdf Graphic file (type pdf)
-<use cover-zh.pdf, page 1>
-File: cover-zh.pdf Graphic file (type pdf)
-<use cover-zh.pdf, page 1>
-File: cover-zh.pdf Graphic file (type pdf)
-<use cover-zh.pdf, page 1>
-File: cover-zh.pdf Graphic file (type pdf)
-<use cover-zh.pdf, page 1>
- [1
-
-]
-File: cover-en.pdf Graphic file (type pdf)
-<use cover-en.pdf>
-File: cover-en.pdf Graphic file (type pdf)
-<use cover-en.pdf>
-File: cover-en.pdf Graphic file (type pdf)
-<use cover-en.pdf, page 1>
-File: cover-en.pdf Graphic file (type pdf)
-<use cover-en.pdf, page 1>
-File: cover-en.pdf Graphic file (type pdf)
-<use cover-en.pdf, page 1>
-File: cover-en.pdf Graphic file (type pdf)
-<use cover-en.pdf, page 1>
-File: cover-en.pdf Graphic file (type pdf)
-<use cover-en.pdf, page 1>
- [2]
-File: declaration.pdf Graphic file (type pdf)
-<use declaration.pdf>
-File: declaration.pdf Graphic file (type pdf)
-<use declaration.pdf>
-File: declaration.pdf Graphic file (type pdf)
-<use declaration.pdf, page 1>
-File: declaration.pdf Graphic file (type pdf)
-<use declaration.pdf, page 1>
-File: declaration.pdf Graphic file (type pdf)
-<use declaration.pdf, page 1>
-File: declaration.pdf Graphic file (type pdf)
-<use declaration.pdf, page 1>
-File: declaration.pdf Graphic file (type pdf)
-<use declaration.pdf, page 1>
- [1]
 \openout2 = `abstract-zh.aux'.
 
  (./abstract-zh.tex
@@ -1233,41 +1192,37 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 11.
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [2
+) [1
+
 
 ])
 \openout2 = `abstract-en.aux'.
 
 
-(./abstract-en.tex [3
+(./abstract-en.tex [2
 
 
-] [4]) (./main.toc [5
-
-])
-\tf@toc=\write4
-\openout4 = `main.toc'.
-
- [6]
+] [3])
 \openout2 = `chapter1.aux'.
 
- (./chapter1.tex
+ (./chapter1.tex [1
+
+
+]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
 Make it at least 12.64723pt.
 We now make it that large for the rest of the document.
 This may cause the page layout to be inconsistent, however.
 
-[1
-
-] [2] [3] [4] [5] [6]) [7]
+[2] [3] [4] [5] [6]) [7]
 \openout2 = `chapter2.aux'.
 
  (./chapter2.tex [8
 
 
-] [9] [10] [11] [12] [13]
-[14] [15]
+] [9] [10] [11] [12] [13] [14]
+[15]
 File: pics/chapter2/matrix.pdf Graphic file (type pdf)
 <use pics/chapter2/matrix.pdf>
 File: pics/lab1/svd.pdf Graphic file (type pdf)
@@ -1281,162 +1236,155 @@ File: pics/lab1/acp-l1.pdf Graphic file (type pdf)
  [16] [17] [18]
 File: pics/chapter2/box.pdf Graphic file (type pdf)
 <use pics/chapter2/box.pdf>
+
+Overfull \hbox (28.45273pt too wide) in paragraph at lines 434--435
+[][] 
+ []
+
 File: pics/chapter2/skew.pdf Graphic file (type pdf)
 <use pics/chapter2/skew.pdf>
- [19] [20]
-Overfull \hbox (3.74461pt too wide) in paragraph at lines 456--458
-[]\TU/FandolSong-Regular(0)/m/n/12.045 将 得 到 的 $\OML/cmm/m/it/12.045 L[]$ \TU/F
-andolSong-Regular(0)/m/n/12.045 因 子 和 $\OML/cmm/m/it/12.045 L[]$ \TU/FandolSong
--Regular(0)/m/n/12.045 因 子 看 作 $\OML/cmm/m/it/12.045 m$ \TU/FandolSong-Regular(
-0)/m/n/12.045 维 随 机 向 量 的 一 组 时 间 序 列，|  根 据[]建
- []
-
+[19]
 File: pics/chapter2/predict.png Graphic file (type bmp)
 <pics/chapter2/predict.png>
-
-Overfull \hbox (10.24257pt too wide) in paragraph at lines 474--475
- [][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 501--501
+ [20]
+Underfull \hbox (badness 10000) in paragraph at lines 505--505
 []|\TU/TimesNewRoman(0)/m/n/10.53937 MSE
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 501--501
+Underfull \hbox (badness 10000) in paragraph at lines 505--505
 |\TU/FandolSong-Regular(0)/m/n/10.53937 （\TU/TimesNewRoman(0)/m/n/10.53937 L1
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 501--501
+Underfull \hbox (badness 10000) in paragraph at lines 505--505
 []|\TU/TimesNewRoman(0)/m/n/10.53937 MSE
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 501--501
+Underfull \hbox (badness 10000) in paragraph at lines 505--505
 []|\TU/TimesNewRoman(0)/m/n/10.53937 MAE
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 501--501
+Underfull \hbox (badness 10000) in paragraph at lines 505--505
 |\TU/FandolSong-Regular(0)/m/n/10.53937 （\TU/TimesNewRoman(0)/m/n/10.53937 L1
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 501--501
+Underfull \hbox (badness 10000) in paragraph at lines 505--505
 []|\TU/TimesNewRoman(0)/m/n/10.53937 MAE
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 501--501
+Underfull \hbox (badness 10000) in paragraph at lines 505--505
 []|\TU/TimesNewRoman(0)/m/n/10.53937 MPAE
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 501--501
+Underfull \hbox (badness 10000) in paragraph at lines 505--505
 |\TU/FandolSong-Regular(0)/m/n/10.53937 （\TU/TimesNewRoman(0)/m/n/10.53937 L1
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 501--501
+Underfull \hbox (badness 10000) in paragraph at lines 505--505
+[]|\TU/TimesNewRoman(0)/m/n/10.53937 MPAE
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 526--526
+[]|\TU/TimesNewRoman(0)/m/n/10.53937 MSE
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 526--526
+|\TU/FandolSong-Regular(0)/m/n/10.53937 （\TU/TimesNewRoman(0)/m/n/10.53937 L1
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 526--526
+[]|\TU/TimesNewRoman(0)/m/n/10.53937 MSE
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 526--526
+[]|\TU/TimesNewRoman(0)/m/n/10.53937 MAE
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 526--526
+|\TU/FandolSong-Regular(0)/m/n/10.53937 （\TU/TimesNewRoman(0)/m/n/10.53937 L1
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 526--526
+[]|\TU/TimesNewRoman(0)/m/n/10.53937 MAE
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 526--526
+[]|\TU/TimesNewRoman(0)/m/n/10.53937 MPAE
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 526--526
+|\TU/FandolSong-Regular(0)/m/n/10.53937 （\TU/TimesNewRoman(0)/m/n/10.53937 L1
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 526--526
 []|\TU/TimesNewRoman(0)/m/n/10.53937 MPAE
  []
 
 [21]
-Underfull \hbox (badness 10000) in paragraph at lines 522--522
+Underfull \hbox (badness 10000) in paragraph at lines 547--547
 []|\TU/TimesNewRoman(0)/m/n/10.53937 MSE
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 522--522
+Underfull \hbox (badness 10000) in paragraph at lines 547--547
 |\TU/FandolSong-Regular(0)/m/n/10.53937 （\TU/TimesNewRoman(0)/m/n/10.53937 L1
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 522--522
+Underfull \hbox (badness 10000) in paragraph at lines 547--547
 []|\TU/TimesNewRoman(0)/m/n/10.53937 MSE
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 522--522
+Underfull \hbox (badness 10000) in paragraph at lines 547--547
 []|\TU/TimesNewRoman(0)/m/n/10.53937 MAE
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 522--522
+Underfull \hbox (badness 10000) in paragraph at lines 547--547
 |\TU/FandolSong-Regular(0)/m/n/10.53937 （\TU/TimesNewRoman(0)/m/n/10.53937 L1
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 522--522
+Underfull \hbox (badness 10000) in paragraph at lines 547--547
 []|\TU/TimesNewRoman(0)/m/n/10.53937 MAE
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 522--522
+Underfull \hbox (badness 10000) in paragraph at lines 547--547
 []|\TU/TimesNewRoman(0)/m/n/10.53937 MPAE
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 522--522
+Underfull \hbox (badness 10000) in paragraph at lines 547--547
 |\TU/FandolSong-Regular(0)/m/n/10.53937 （\TU/TimesNewRoman(0)/m/n/10.53937 L1
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 522--522
+Underfull \hbox (badness 10000) in paragraph at lines 547--547
 []|\TU/TimesNewRoman(0)/m/n/10.53937 MPAE
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 543--543
-[]|\TU/TimesNewRoman(0)/m/n/10.53937 MSE
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 543--543
-|\TU/FandolSong-Regular(0)/m/n/10.53937 （\TU/TimesNewRoman(0)/m/n/10.53937 L1
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 543--543
-[]|\TU/TimesNewRoman(0)/m/n/10.53937 MSE
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 543--543
-[]|\TU/TimesNewRoman(0)/m/n/10.53937 MAE
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 543--543
-|\TU/FandolSong-Regular(0)/m/n/10.53937 （\TU/TimesNewRoman(0)/m/n/10.53937 L1
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 543--543
-[]|\TU/TimesNewRoman(0)/m/n/10.53937 MAE
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 543--543
-[]|\TU/TimesNewRoman(0)/m/n/10.53937 MPAE
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 543--543
-|\TU/FandolSong-Regular(0)/m/n/10.53937 （\TU/TimesNewRoman(0)/m/n/10.53937 L1
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 543--543
-[]|\TU/TimesNewRoman(0)/m/n/10.53937 MPAE
- []
-
-[22] [23]) [24]
+[22]) [23]
 \openout2 = `chapter3.aux'.
 
- (./chapter3.tex [25
+ (./chapter3.tex [24
 
 
 ]
@@ -1444,8 +1392,8 @@ File: pics/chapter2/l1-l2-diff2.pdf Graphic file (type pdf)
 <use pics/chapter2/l1-l2-diff2.pdf>
 File: pics/chapter2/l1-l2-diff.pdf Graphic file (type pdf)
 <use pics/chapter2/l1-l2-diff.pdf>
- [26] [27] [28]
-Overfull \hbox (35.41618pt too wide) in paragraph at lines 179--182
+ [25] [26]
+Overfull \hbox (25.1736pt too wide) in paragraph at lines 179--182
 []\TU/FandolSong-Regular(0)/m/n/12.045 首 先 给 出 聚 类 方 法。|  给 定 $\OMS/cmsy/m/n/12
 .045 j\OML/cmm/m/it/12.045 K[]\OMS/cmsy/m/n/12.045 j$ \TU/FandolSong-Regular(0)
 /m/n/12.045 为 目 标 聚 类 个 数，|  初 始 化 $\OML/cmm/m/it/12.045 C[] \OT1/cmr/m/n/12.04
@@ -1453,136 +1401,137 @@ Overfull \hbox (35.41618pt too wide) in paragraph at lines 179--182
 12.045 g$\TU/FandolSong-Regular(0)/m/n/12.045 ，|
  []
 
-[29]
+[27]
 File: pics/chapter2/aid-demo-a.pdf Graphic file (type pdf)
 <use pics/chapter2/aid-demo-a.pdf>
 
-Overfull \hbox (14.45242pt too wide) in paragraph at lines 212--213
+Overfull \hbox (11.37962pt too wide) in paragraph at lines 212--213
 [][] 
  []
 
 File: pics/chapter2/aid-demo-b.pdf Graphic file (type pdf)
 <use pics/chapter2/aid-demo-b.pdf>
 
-Overfull \hbox (14.45242pt too wide) in paragraph at lines 216--217
+Overfull \hbox (11.37962pt too wide) in paragraph at lines 216--217
 [][] 
  []
 
 File: pics/chapter2/aid-demo-c.pdf Graphic file (type pdf)
 <use pics/chapter2/aid-demo-c.pdf>
 
-Overfull \hbox (14.45242pt too wide) in paragraph at lines 220--221
+Overfull \hbox (11.37962pt too wide) in paragraph at lines 220--221
 [][] 
  []
 
-[30] [31] [32] [33] [34] [35]
+[28] [29] [30] [31] [32] [33]
 File: pics/chapter2/gaussian-svn.pdf Graphic file (type pdf)
 <use pics/chapter2/gaussian-svn.pdf>
 
-Overfull \hbox (14.45242pt too wide) in paragraph at lines 517--518
+Overfull \hbox (11.37962pt too wide) in paragraph at lines 517--518
 [][] 
  []
 
 File: pics/chapter2/exp-svn.pdf Graphic file (type pdf)
 <use pics/chapter2/exp-svn.pdf>
 
-Overfull \hbox (14.45242pt too wide) in paragraph at lines 521--522
+Overfull \hbox (11.37962pt too wide) in paragraph at lines 521--522
 [][] 
  []
 
 File: pics/chapter2/cauchy-svn.pdf Graphic file (type pdf)
 <use pics/chapter2/cauchy-svn.pdf>
 
-Overfull \hbox (14.45242pt too wide) in paragraph at lines 525--526
+Overfull \hbox (11.37962pt too wide) in paragraph at lines 525--526
 [][] 
  []
 
-[36]
+[34]
 File: pics/chapter2/l2-svn-demo.pdf Graphic file (type pdf)
 <use pics/chapter2/l2-svn-demo.pdf>
 
-Overfull \hbox (14.45242pt too wide) in paragraph at lines 538--539
+Overfull \hbox (11.37962pt too wide) in paragraph at lines 538--539
 [][] 
  []
 
 File: pics/chapter2/l1-svn-demo.pdf Graphic file (type pdf)
 <use pics/chapter2/l1-svn-demo.pdf>
 
-Overfull \hbox (14.45242pt too wide) in paragraph at lines 542--543
+Overfull \hbox (11.37962pt too wide) in paragraph at lines 542--543
 [][] 
  []
 
 File: pics/chapter2/svn-con-1.pdf Graphic file (type pdf)
 <use pics/chapter2/svn-con-1.pdf>
 
-Overfull \hbox (14.45242pt too wide) in paragraph at lines 563--564
+Overfull \hbox (11.37962pt too wide) in paragraph at lines 563--564
 [][] 
  []
 
 File: pics/chapter2/svn-con-2.pdf Graphic file (type pdf)
 <use pics/chapter2/svn-con-2.pdf>
 
-Overfull \hbox (14.45242pt too wide) in paragraph at lines 567--568
+Overfull \hbox (11.37962pt too wide) in paragraph at lines 567--568
 [][] 
  []
 
 File: pics/chapter2/svn-con-3.pdf Graphic file (type pdf)
 <use pics/chapter2/svn-con-3.pdf>
 
-Overfull \hbox (14.45242pt too wide) in paragraph at lines 571--572
+Overfull \hbox (11.37962pt too wide) in paragraph at lines 571--572
 [][] 
  []
 
-[37] [38]) [39]
+[35] [36]) [37]
 \openout2 = `chapter4.aux'.
 
- (./chapter4.tex [40
+ (./chapter4.tex [38
 
 
-] [41] [42] [43] [44]
+] [39] [40] [41]
 File: pics/lab1/l1-pca.pdf Graphic file (type pdf)
 <use pics/lab1/l1-pca.pdf>
 
-Overfull \hbox (14.45242pt too wide) in paragraph at lines 241--242
+Overfull \hbox (11.37962pt too wide) in paragraph at lines 241--242
 [][] 
  []
 
 File: pics/lab1/pca-l1.pdf Graphic file (type pdf)
 <use pics/lab1/pca-l1.pdf>
 
-Overfull \hbox (14.45242pt too wide) in paragraph at lines 244--245
+Overfull \hbox (11.37962pt too wide) in paragraph at lines 244--245
 [][] 
  []
 
 File: pics/lab1/svd.pdf Graphic file (type pdf)
 <use pics/lab1/svd.pdf>
 
-Overfull \hbox (14.45242pt too wide) in paragraph at lines 247--248
+Overfull \hbox (11.37962pt too wide) in paragraph at lines 247--248
 [][] 
  []
 
+[42]
 File: pics/lab1/l1-pca-rotated.pdf Graphic file (type pdf)
 <use pics/lab1/l1-pca-rotated.pdf>
 
-Overfull \hbox (14.44992pt too wide) in paragraph at lines 262--263
+Overfull \hbox (11.37712pt too wide) in paragraph at lines 262--263
 [][] 
  []
 
 File: pics/lab1/pca-l1-rotated.pdf Graphic file (type pdf)
 <use pics/lab1/pca-l1-rotated.pdf>
 
-Overfull \hbox (14.44992pt too wide) in paragraph at lines 265--266
+Overfull \hbox (11.37712pt too wide) in paragraph at lines 265--266
 [][] 
  []
 
 File: pics/lab1/l2-pca-rotated.pdf Graphic file (type pdf)
 <use pics/lab1/l2-pca-rotated.pdf>
 
-Overfull \hbox (14.44992pt too wide) in paragraph at lines 268--269
+Overfull \hbox (11.37712pt too wide) in paragraph at lines 268--269
 [][] 
  []
 
-[45]
+[43]
 Underfull \hbox (badness 10000) in paragraph at lines 302--302
 []|\TU/TimesNewRoman(0)/m/n/10.53937 MSE
  []
@@ -1603,7 +1552,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 302--302
  []
 
 
-Overfull \hbox (2.53464pt too wide) in paragraph at lines 302--302
+Overfull \hbox (0.82755pt too wide) in paragraph at lines 302--302
 []|\TU/TimesNewRoman(0)/m/n/10.53937 MAE(L1
  []
 
@@ -1618,7 +1567,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 302--302
  []
 
 
-Overfull \hbox (7.42865pt too wide) in paragraph at lines 302--302
+Overfull \hbox (5.72156pt too wide) in paragraph at lines 302--302
 []|\TU/TimesNewRoman(0)/m/n/10.53937 MPAE(L1
  []
 
@@ -1653,7 +1602,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 323--323
  []
 
 
-Overfull \hbox (2.53464pt too wide) in paragraph at lines 323--323
+Overfull \hbox (0.82755pt too wide) in paragraph at lines 323--323
 []|\TU/TimesNewRoman(0)/m/n/10.53937 MAE(L1
  []
 
@@ -1668,7 +1617,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 323--323
  []
 
 
-Overfull \hbox (7.42865pt too wide) in paragraph at lines 323--323
+Overfull \hbox (5.72156pt too wide) in paragraph at lines 323--323
 []|\TU/TimesNewRoman(0)/m/n/10.53937 MPAE(L1
  []
 
@@ -1703,7 +1652,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 344--344
  []
 
 
-Overfull \hbox (2.53464pt too wide) in paragraph at lines 344--344
+Overfull \hbox (0.82755pt too wide) in paragraph at lines 344--344
 []|\TU/TimesNewRoman(0)/m/n/10.53937 MAE(L1
  []
 
@@ -1718,7 +1667,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 344--344
  []
 
 
-Overfull \hbox (7.42865pt too wide) in paragraph at lines 344--344
+Overfull \hbox (5.72156pt too wide) in paragraph at lines 344--344
 []|\TU/TimesNewRoman(0)/m/n/10.53937 MPAE(L1
  []
 
@@ -1732,102 +1681,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 344--344
 |\TU/FandolSong-Regular(0)/m/n/10.53937 （\TU/TimesNewRoman(0)/m/n/10.53937 PCA
  []
 
-[46]) [47]
+[44]) [45]
 \openout2 = `chapter5.aux'.
 
- (./chapter5.tex) [48
+ (./chapter5.tex) [46
 
 
-]
-
-Package fontspec Warning: Font "FandolFang-Regular" does not contain requested
-(fontspec)                Script "CJK".
-
-
-Package fontspec Info: Font family 'FandolFang-Regular(0)' created for font
-(fontspec)             'FandolFang-Regular' with options
-(fontspec)             [Script={CJK},Extension={.otf}].
-(fontspec)              
-(fontspec)              This font family consists of the following NFSS
-(fontspec)             series/shapes:
-(fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->"[FandolFang-Regular.otf]/OT:language=dflt;"
-(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
-
-
-Overfull \hbox (2.23253pt too wide) in paragraph at lines 91--91
-[]\TU/TimesNewRoman(0)/m/n/12.045 Choulakian V. L1-norm projection pursuit prin
-cipal component analysis[J]. Com-
- []
-
-[49
-
-]
-Overfull \hbox (8.22609pt too wide) in paragraph at lines 91--91
-[]\TU/TimesNewRoman(0)/m/n/12.045 Hofmarcher P, Gr B, et al. Macroeconomic Fore
-casting in the Era of Big Data[G]\TU/lmtt/m/n/12.045 //
- []
-
-
-Overfull \hbox (2.84679pt too wide) in paragraph at lines 91--91
-\TU/TimesNewRoman(0)/m/n/12.045 ciety Conference on Computer Vision and Pattern
- Recognition (CVPR’05): vol. 1.
- []
-
-
-Overfull \hbox (0.20523pt too wide) in paragraph at lines 91--91
-[]\TU/TimesNewRoman(0)/m/n/12.045 Kwak N. Principal component analysis based on
- L1-norm maximization[J]. IEEE
- []
-
-[50]
-Overfull \hbox (4.61606pt too wide) in paragraph at lines 91--91
-\TU/TimesNewRoman(0)/m/n/12.045 gression[J]. EURASIP Journal on Advances in Sig
-nal Processing, 2004, 2004(12):
- []
-
-
-Overfull \hbox (7.96257pt too wide) in paragraph at lines 91--91
-[]\TU/TimesNewRoman(0)/m/n/12.045 Markopoulos P P, Karystinos G N, Pados D A. O
-ptimal algorithms for L1-subspace
- []
-
-
-Overfull \hbox (5.49849pt too wide) in paragraph at lines 91--91
-\TU/TimesNewRoman(0)/m/n/12.045 signal processing[J]. IEEE Transactions on Sign
-al Processing, 2014, 62(19): 5046-
- []
-
-
-Overfull \hbox (11.59174pt too wide) in paragraph at lines 91--91
-[]\TU/TimesNewRoman(0)/m/n/12.045 Pollard D. Asymptotics for least absolute dev
-iation regression estimators[J]. Econo-
- []
-
-[51] [52]
-Overfull \hbox (1.97025pt too wide) in paragraph at lines 91--91
-[]\TU/FandolSong-Regular(0)/m/n/12.045 高 华 川\TU/TimesNewRoman(0)/m/n/12.045 , \
-TU/FandolSong-Regular(0)/m/n/12.045 张 晓 峒\TU/TimesNewRoman(0)/m/n/12.045 . \TU/
-FandolSong-Regular(0)/m/n/12.045 动 态 因 子 模 型 及 其 应 用 研 究 综 述\TU/TimesNewRoman(0
-)/m/n/12.045 [J]. \TU/FandolSong-Regular(0)/m/n/12.045 统 计 研 究\TU/TimesNewRoman
-(0)/m/n/12.045 , 2015, 32(12):
- []
-
-[53]
-\openout2 = `appendix.aux'.
-
- (./appendix.tex) [54
-
-]
-\openout2 = `backnote.aux'.
-
- (./backnote.tex) [55
-
-
-] (./main.aux (./abstract-zh.aux) (./abstract-en.aux) (./chapter1.aux) (./chapt
-er2.aux) (./chapter3.aux)
-(./chapter4.aux) (./chapter5.aux) (./appendix.aux) (./backnote.aux))
+] (./main.aux (./abstract-zh.aux)
+(./abstract-en.aux) (./chapter1.aux) (./chapter2.aux) (./chapter3.aux)
+(./chapter4.aux) (./chapter5.aux))
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -1836,12 +1698,12 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 20777 strings out of 479418
- 469278 string characters out of 5884585
- 1262803 words of memory out of 5000000
- 37869 multiletter control sequences out of 15000+600000
- 553254 words of font info for 151 fonts, out of 8000000 for 9000
+ 20625 strings out of 479418
+ 463569 string characters out of 5884585
+ 1255028 words of memory out of 5000000
+ 37746 multiletter control sequences out of 15000+600000
+ 553214 words of font info for 146 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 64i,23n,90p,1125b,4857s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 58i,23n,83p,1125b,1212s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.pdf (63 pages).
+Output written on main.pdf (49 pages).

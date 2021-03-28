@@ -15,13 +15,15 @@ high-dimensional macroeconomic data. And it has been playing a more and more
  Traditional factor analysis uses principal component analysis based 
  on $L_2$ norm to estimate factor loadings and factor scores. Hence it is not robust enough
   to deal with
-macroeconomic data with heavy tail characteristics in distribution.
+macroeconomic data with heavy tail characteristics in distribution. It is worth mentioning that
+ $L_2$ norm PCA focuses on the mean feature of macroeconomic variables.
 
 \thispagestyle{plain}
 In this paper we use principal component analysis based on $L_1$ norm to 
-estimate factor model. First, an alternating convex programming method , which solves 
+estimate factor model, which means the model mainly focuses on the medium feature of macroeconomic variables.
+First, an alternating convex programming method , which solves 
 the problem of minimizing $L_1$ norm reconstruction error 
-is introduced. Then an simulation experiment is conducted to verify the robustness of $L_1$ norm
+is introduced. Then a simulation experiment is conducted to verify the robustness of $L_1$ norm
 principal component analysis. 
 Next for empirical research, we collected a set of
 domestic macroeconomic data in which the economic variables are observed at a monthly basis.

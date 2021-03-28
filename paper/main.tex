@@ -3,7 +3,7 @@
 \usepackage{ctex}
 \usepackage{amsmath,amsfonts,amssymb}
 \usepackage{geometry}                                               
-\geometry{a4paper, left=3.18cm, right=3.18cm, top=2.54cm, bottom=2.54cm}
+\geometry{a4paper, left=3cm, right=3cm, top=2.54cm, bottom=2.54cm}
 \usepackage{booktabs}
 \usepackage{caption}
 \usepackage{subcaption}
@@ -60,24 +60,24 @@
 \addtolength{\hoffset}{0.4cm}
 
 \begin{document}
-   \includepdf{cover-zh.pdf}
-   \includepdf{cover-en.pdf}
-   \thispagestyle{empty} 
-   \newpage
+   % \includepdf{cover-zh.pdf}
+   % \includepdf{cover-en.pdf}
+   % \thispagestyle{empty} 
+   % \newpage
 
    \setcounter{page}{1}
    \pagenumbering{Roman}
    \includepdfset{pagecommand={\thispagestyle{plain}}} % 给下面引入的所有 pdf 标页码
-   \includepdf{declaration.pdf}
+   % \includepdf{declaration.pdf}
    \addcontentsline{toc}{section}{摘要}
    \include{abstract-zh}
    \addcontentsline{toc}{section}{Abstract}
    \include{abstract-en}
 
    \thispagestyle{plain}
-   \tableofcontents
-   \thispagestyle{plain}
-   \newpage
+   % \tableofcontents
+   % \thispagestyle{plain}
+   % \newpage
    \pagenumbering{arabic}
 
    % \nocite{*}
@@ -86,10 +86,10 @@
    \include{chapter3}
    \include{chapter4}
    \include{chapter5}
-   \addcontentsline{toc}{section}{参考文献}%将“参考文献加入目录中”
-   \printbibliography
-   \addcontentsline{toc}{section}{附录}
-   \include{appendix}
-   \addcontentsline{toc}{section}{后记}
-   \include{backnote}
+   % \addcontentsline{toc}{section}{参考文献}%将“参考文献加入目录中”
+   % \printbibliography
+   % \addcontentsline{toc}{section}{附录}
+   % \include{appendix}
+   % \addcontentsline{toc}{section}{后记}
+   % \include{backnote}
 \end{document}
